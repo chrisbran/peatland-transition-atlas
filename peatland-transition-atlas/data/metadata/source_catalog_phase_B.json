@@ -1,0 +1,38 @@
+[
+  {
+    "dataset_id": "D001",
+    "dataset_name": "FAOSTAT / FAO Drained Organic Soils Area and Emissions",
+    "target_output": "country_hotspots.csv",
+    "status": "todo_phase_B",
+    "access_method": "FAOSTAT API / Google Earth Engine / CSV download",
+    "purpose": "Country-level drained organic soils area and GHG emissions.",
+    "license_note": "Check source terms before redistribution; publish derived country-level table only."
+  },
+  {
+    "dataset_id": "D002",
+    "dataset_name": "Global Peatland Map / Global Peatland Database",
+    "target_output": "peatland_extent_country.csv or simplified raster-derived aggregates",
+    "status": "todo_phase_B",
+    "access_method": "Download / GIS processing",
+    "purpose": "Global peatland/organic soil extent as hotspot context.",
+    "license_note": "Check source terms; do not commit large raw rasters."
+  },
+  {
+    "dataset_id": "D003",
+    "dataset_name": "Natural Earth",
+    "target_output": "world_countries_simplified.geojson",
+    "status": "todo_phase_B",
+    "access_method": "Download public domain vector data",
+    "purpose": "Base map for country-level hotspot visualisation.",
+    "license_note": "Public domain; suitable for GitHub."
+  },
+  {
+    "dataset_id": "D004",
+    "dataset_name": "Eurostat GISCO NUTS",
+    "target_output": "nuts_regions_simplified.geojson",
+    "status": "todo_phase_B",
+    "access_method": "Download GeoJSON/TopoJSON",
+    "purpose": "European/regional zoom layer.",
+    "license_note": "Follow Eurostat/GISCO attribution requirements."
+  }
+]

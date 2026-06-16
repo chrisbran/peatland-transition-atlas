@@ -1,0 +1,377 @@
+{
+  "type": "FeatureCollection",
+  "name": "region_case_studies",
+  "metadata": {
+    "description": "Aggregated study-region nodes for the Peatland Transition Atlas. Points are approximate display locations, not exact field-site coordinates.",
+    "source": "Derived from curated peatland literature dataset papers.csv and literature coding.",
+    "coordinate_caution": "Several features represent national, regional or conceptual evidence clusters. Coordinates should be interpreted as map anchors only.",
+    "last_review": "2026-06-16",
+    "review_agent": "Research & Evidence Agent",
+    "evidence_caution": "This layer maps evidence clusters, not peatland extent or precise field sites. Use it to explore literature transfer logic, not to infer local suitability."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          5.3,
+          52.2
+        ]
+      },
+      "properties": {
+        "region_id": "R001",
+        "region_name": "Dutch peat grasslands and water-management cases",
+        "country": "Netherlands",
+        "country_iso3": "NLD",
+        "region_type": "country_cluster",
+        "dominant_theme": "raised groundwater, peat pasture, water infiltration, trafficability, land-use alternatives",
+        "dominant_pathway_ids": "T02|T03|T04",
+        "supporting_paper_ids": "P004|P006|P007|P008|P009",
+        "supporting_papers": "Liu et al. (2023); Wils et al. (2025); Heuts et al. (2024); Jongbloed et al. (2026); van Dijk et al. (2026)",
+        "study_count": 5,
+        "evidence_strength": "high",
+        "key_message": "Dutch peatland studies are the strongest cluster in this dataset for raised groundwater, peat pasture, trafficability and water-management trade-offs in dairy/grassland contexts.",
+        "south_germany_transfer_note": "Useful analogue for South German grassland and dairy regions, but transfer should be treated as conditional on local peat type, drainage infrastructure, water availability, machinery and governance.",
+        "caveat": "Do not generalise Dutch results directly. Dutch water-board governance, peat soils and lowland hydrology differ from many South German peatland settings.",
+        "visual_story_role": "main analogue for grassland-oriented transition, with hydrological transfer caution",
+        "map_label": "Netherlands: peat pasture & water management",
+        "marker_size_hint": 5,
+        "marker_category": "hydrology_grassland",
+        "evidence_type": "empirical_and_synthesis_cluster",
+        "transfer_confidence": "medium_high",
+        "coordinate_precision": "country_anchor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.0,
+          63.0
+        ]
+      },
+      "properties": {
+        "region_id": "R002",
+        "region_name": "Finnish agricultural peatlands",
+        "country": "Finland",
+        "country_iso3": "FIN",
+        "region_type": "national_model_cluster",
+        "dominant_theme": "emissions tax, adjustable drainage, national cost-effectiveness, compensation",
+        "dominant_pathway_ids": "T02|T08",
+        "supporting_paper_ids": "P010|P011",
+        "supporting_papers": "Purola & Lehtonen (2022); Niemi et al. (2024)",
+        "study_count": 2,
+        "evidence_strength": "high",
+        "key_message": "Finnish studies contribute economic modelling of emissions taxes, adjustable drainage, national abatement potential and compensation needs.",
+        "south_germany_transfer_note": "Relevant for thinking about compensation and policy incentives, but not as a direct estimate of South German costs.",
+        "caveat": "Finnish climate, farm types, land-use systems and peatland policy context differ substantially from Upper Swabia.",
+        "visual_story_role": "economic-policy evidence node, not a direct transfer model",
+        "map_label": "Finland: farm-level economics & compensation",
+        "marker_size_hint": 2,
+        "marker_category": "economics_policy",
+        "evidence_type": "model_and_policy_cluster",
+        "transfer_confidence": "medium",
+        "coordinate_precision": "country_anchor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.8,
+          56.8
+        ]
+      },
+      "properties": {
+        "region_id": "R003",
+        "region_name": "Denmark / Store Vildmose and Vejrumbro",
+        "country": "Denmark",
+        "country_iso3": "DNK",
+        "region_type": "site_and_national_cluster",
+        "dominant_theme": "reed canary grass LCA, water-table dependent GHG mitigation",
+        "dominant_pathway_ids": "T05",
+        "supporting_paper_ids": "P014",
+        "supporting_papers": "Thers et al. (2023)",
+        "study_count": 1,
+        "evidence_strength": "medium_high",
+        "key_message": "Danish reed canary grass evidence supports wet biomass as a potential lower-emission alternative to deeply drained annual cropping, but only under suitable water-table conditions.",
+        "south_germany_transfer_note": "Relevant for biomass pathway hypotheses, especially where wet mowing or bioenergy outlets exist. It should not be read as proof that reed canary grass is automatically suitable in South Germany.",
+        "caveat": "LCA results depend on assumptions about water table, yield, harvest, product use and site conditions.",
+        "visual_story_role": "biomass pathway example with strong hydrological dependency",
+        "map_label": "Denmark: Reed canary grass LCA",
+        "marker_size_hint": 1,
+        "marker_category": "biomass_lca",
+        "evidence_type": "site_lca_case",
+        "transfer_confidence": "medium",
+        "coordinate_precision": "approximate_site_region_anchor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          0.1,
+          52.6
+        ]
+      },
+      "properties": {
+        "region_id": "R004",
+        "region_name": "UK lowland agricultural peatlands / Fens",
+        "country": "United Kingdom",
+        "country_iso3": "GBR",
+        "region_type": "regional_synthesis_cluster",
+        "dominant_theme": "food production, lowland agricultural peat, net zero transition, policy/adoption",
+        "dominant_pathway_ids": "T01|T02|T08",
+        "supporting_paper_ids": "P005",
+        "supporting_papers": "Lloyd et al. (2023)",
+        "study_count": 1,
+        "evidence_strength": "medium",
+        "key_message": "The UK lowland peatland literature illustrates the tension between food production, net-zero targets, water management and the social feasibility of major land-use change.",
+        "south_germany_transfer_note": "Useful for framing productive peatland regions as transition landscapes, but not for quantitative transfer to Upper Swabia.",
+        "caveat": "The Fens are an exceptionally productive and highly engineered agricultural peatland context; analogy should remain conceptual.",
+        "visual_story_role": "productive-peatland framing node",
+        "map_label": "UK Fens: food production & net zero",
+        "marker_size_hint": 1,
+        "marker_category": "productive_peatland_context",
+        "evidence_type": "national_synthesis_context",
+        "transfer_confidence": "medium",
+        "coordinate_precision": "regional_context_anchor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.9,
+          53.2
+        ]
+      },
+      "properties": {
+        "region_id": "R005",
+        "region_name": "Teufelsmoor, Lower Saxony",
+        "country": "Germany",
+        "country_iso3": "DEU",
+        "region_type": "regional_qualitative_case",
+        "dominant_theme": "farmer typologies, planning security, farm identity, rewetting acceptance",
+        "dominant_pathway_ids": "T04|T08",
+        "supporting_paper_ids": "P016",
+        "supporting_papers": "Hünnebeck-Wells et al. (2025)",
+        "study_count": 1,
+        "evidence_strength": "high",
+        "key_message": "The Teufelsmoor case shows that farmer responses to rewetting are heterogeneous and conditional, shaped by planning security, income, ownership, trust and cooperation.",
+        "south_germany_transfer_note": "Highly relevant for anticipating adoption barriers in South Germany, but the specific farmer typology should not be copied unchanged.",
+        "caveat": "Qualitative adoption evidence does not quantify GHG mitigation, farm income effects or hydrological feasibility.",
+        "visual_story_role": "farmer adoption and implementation-risk node",
+        "map_label": "Teufelsmoor: farmer transition",
+        "marker_size_hint": 1,
+        "marker_category": "adoption",
+        "evidence_type": "regional_qualitative_adoption_case",
+        "transfer_confidence": "medium_high",
+        "coordinate_precision": "regional_anchor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.5,
+          52.5
+        ]
+      },
+      "properties": {
+        "region_id": "R006",
+        "region_name": "German paludiculture pioneer regions",
+        "country": "Germany",
+        "country_iso3": "DEU",
+        "region_type": "multi_region_qualitative_case",
+        "dominant_theme": "pioneer farmers, paludiculture adoption, water buffalo, reed, peat moss, wet meadow hay",
+        "dominant_pathway_ids": "T04|T06|T07",
+        "supporting_paper_ids": "P017",
+        "supporting_papers": "Merkelbach et al. (2026)",
+        "study_count": 1,
+        "evidence_strength": "high",
+        "key_message": "German paludiculture pioneer cases show possible adoption pathways, but also reveal strong dependence on networks, advice, programmes, entrepreneurial motivation, regulation and markets.",
+        "south_germany_transfer_note": "Relevant because it includes German and Bavarian examples, but pioneer farms are not representative of mainstream farms.",
+        "caveat": "Pioneer evidence can overstate practical readiness if transferred to average farms without considering risk tolerance and support networks.",
+        "visual_story_role": "pioneer-pathway node with representativeness caveat",
+        "map_label": "Germany: paludiculture pioneers",
+        "marker_size_hint": 1,
+        "marker_category": "adoption_pathways",
+        "evidence_type": "multi_region_qualitative_pioneer_case",
+        "transfer_confidence": "medium",
+        "coordinate_precision": "multi_region_anchor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          9.9,
+          53.7
+        ]
+      },
+      "properties": {
+        "region_id": "R007",
+        "region_name": "Northern Germany reed value chains",
+        "country": "Germany",
+        "country_iso3": "DEU",
+        "region_type": "regional_market_case",
+        "dominant_theme": "common reed, thatching, processing, regional value-chain development",
+        "dominant_pathway_ids": "T06",
+        "supporting_paper_ids": "P015",
+        "supporting_papers": "Becker et al. (2020)",
+        "study_count": 1,
+        "evidence_strength": "medium",
+        "key_message": "Northern German reed value-chain evidence shows that wet biomass only becomes a viable pathway if harvest logistics, quality standards, processing and market demand align.",
+        "south_germany_transfer_note": "Useful as a value-chain analogy; direct transfer to South Germany would require a separate market and infrastructure assessment.",
+        "caveat": "This is mainly a market/value-chain case, not evidence for regional GHG mitigation or hydrological suitability.",
+        "visual_story_role": "value-chain caution node",
+        "map_label": "Northern Germany: reed value chains",
+        "marker_size_hint": 1,
+        "marker_category": "value_chain",
+        "evidence_type": "regional_market_case",
+        "transfer_confidence": "low_medium",
+        "coordinate_precision": "regional_market_anchor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.5,
+          47.2
+        ]
+      },
+      "properties": {
+        "region_id": "R008",
+        "region_name": "Hungarian wetland and grassland grazing cases",
+        "country": "Hungary",
+        "country_iso3": "HUN",
+        "region_type": "site_management_case",
+        "dominant_theme": "water buffalo grazing, wetland/dry grassland habitat management, invasive species control",
+        "dominant_pathway_ids": "T07",
+        "supporting_paper_ids": "P013",
+        "supporting_papers": "Fűrész et al. (2023)",
+        "study_count": 1,
+        "evidence_strength": "medium",
+        "key_message": "Hungarian water-buffalo grazing studies support robust grazing as a habitat-management option for wet or mosaic landscapes.",
+        "south_germany_transfer_note": "Relevant as a niche pathway for difficult-to-machine wet sites, not as a broad substitute for dairy, forage or biogas systems.",
+        "caveat": "Habitat-management evidence does not establish farm-level profitability or net GHG mitigation.",
+        "visual_story_role": "niche wet-grazing option with limited production transfer",
+        "map_label": "Hungary: water buffalo grazing",
+        "marker_size_hint": 1,
+        "marker_category": "wet_grazing",
+        "evidence_type": "habitat_management_case",
+        "transfer_confidence": "low_medium",
+        "coordinate_precision": "country_anchor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -25.0,
+          45.0
+        ]
+      },
+      "properties": {
+        "region_id": "R009",
+        "region_name": "International synthesis and transition frameworks",
+        "country": "International",
+        "country_iso3": "",
+        "region_type": "conceptual_global_node",
+        "dominant_theme": "responsible agriculture, transition trajectories, paludiculture innovation, reed utilisation",
+        "dominant_pathway_ids": "T01|T02|T04|T05|T06|T08",
+        "supporting_paper_ids": "P001|P002|P003|P020|P021",
+        "supporting_papers": "Freeman et al. (2022); Temmink et al. (2026); Ziegler et al. (2021); Köbbing et al. (2013); Girkin et al. (2023)",
+        "study_count": 5,
+        "evidence_strength": "high_conceptual",
+        "key_message": "International syntheses support the central framing of the Atlas: peatland management is a transition spectrum, not a binary choice between business-as-usual drainage and full restoration.",
+        "south_germany_transfer_note": "Strong framing source for South Germany, but conceptual reviews should not be treated as local feasibility evidence.",
+        "caveat": "Use this node for conceptual structure, not for site-specific hydrological, economic or adoption claims.",
+        "visual_story_role": "global framing node",
+        "map_label": "International: transition frameworks",
+        "marker_size_hint": 5,
+        "marker_category": "conceptual_synthesis",
+        "evidence_type": "conceptual_and_review_cluster",
+        "transfer_confidence": "high_for_framing_low_for_quantification",
+        "coordinate_precision": "conceptual_anchor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          10.0,
+          50.0
+        ]
+      },
+      "properties": {
+        "region_id": "R010",
+        "region_name": "European reed and Phragmites management literature",
+        "country": "Europe",
+        "country_iso3": "",
+        "region_type": "european_review_node",
+        "dominant_theme": "reed ecology, ecosystem services, management objectives, product pathways",
+        "dominant_pathway_ids": "T06",
+        "supporting_paper_ids": "P019|P020",
+        "supporting_papers": "Čížková et al. (2023); Köbbing et al. (2013)",
+        "study_count": 2,
+        "evidence_strength": "medium",
+        "key_message": "European reed literature shows that reed can be raw material, habitat, treatment system or management problem depending on objectives and context.",
+        "south_germany_transfer_note": "Useful for avoiding simplistic reed-as-solution narratives; local feasibility requires hydrology, harvest and market assessment.",
+        "caveat": "Broad review evidence does not identify where reed-based systems are economically or hydrologically feasible in South Germany.",
+        "visual_story_role": "reed-context review node",
+        "map_label": "Europe: reed management",
+        "marker_size_hint": 2,
+        "marker_category": "reed_context",
+        "evidence_type": "european_review_cluster",
+        "transfer_confidence": "medium_for_context_low_for_local_feasibility",
+        "coordinate_precision": "review_anchor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.35,
+          50.85
+        ]
+      },
+      "properties": {
+        "region_id": "R011",
+        "region_name": "EU Common Agricultural Policy context",
+        "country": "European Union",
+        "country_iso3": "",
+        "region_type": "policy_node",
+        "dominant_theme": "CAP, GAEC 2, Eco-Schemes, Pillar II, paludiculture eligibility, implementation gaps",
+        "dominant_pathway_ids": "T02|T04|T05|T06|T08",
+        "supporting_paper_ids": "P018",
+        "supporting_papers": "Nordbeck et al. (2025)",
+        "study_count": 1,
+        "evidence_strength": "high_policy",
+        "key_message": "EU Common Agricultural Policy analysis shows that peatland measures are entering policy frameworks, but implementation remains uneven.",
+        "south_germany_transfer_note": "Relevant as a governance layer: even technically plausible pathways require eligibility, incentives, advice and administrative support.",
+        "caveat": "Policy inclusion does not guarantee farm-level uptake, sufficient compensation or local hydrological feasibility.",
+        "visual_story_role": "governance and enabling-conditions node",
+        "map_label": "EU: CAP governance",
+        "marker_size_hint": 1,
+        "marker_category": "policy",
+        "evidence_type": "policy_analysis_node",
+        "transfer_confidence": "medium_high_for_policy_context",
+        "coordinate_precision": "policy_anchor"
+      }
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+[
+  {
+    "screen_id": "W01",
+    "section_id": "S01",
+    "layout": "full_screen_map_with_left_scrolly_text",
+    "visual_elements": [
+      "world/europe map",
+      "peatland/hotspot layer placeholder",
+      "country emission ranking callout"
+    ],
+    "data_inputs": [
+      "country_hotspots.csv",
+      "base_boundaries"
+    ],
+    "mvp_status": "needs_external_hotspot_data"
+  },
+  {
+    "screen_id": "W02",
+    "section_id": "S02",
+    "layout": "split_screen_slider_and_outcome_cards",
+    "visual_elements": [
+      "water-table slider",
+      "CO2/CH4/trafficability/farm-compatibility cards",
+      "pathway highlight strip"
+    ],
+    "data_inputs": [
+      "transition_pathways.csv"
+    ],
+    "mvp_status": "ready"
+  },
+  {
+    "screen_id": "W03",
+    "section_id": "S03",
+    "layout": "map_with_side_panel_cards",
+    "visual_elements": [
+      "evidence region markers",
+      "filter chips",
+      "paper cards",
+      "transfer note panel"
+    ],
+    "data_inputs": [
+      "region_case_studies.geojson",
+      "papers.csv"
+    ],
+    "mvp_status": "ready"
+  },
+  {
+    "screen_id": "W04",
+    "section_id": "S04",
+    "layout": "horizontal_pathway_spectrum_with_matrix",
+    "visual_elements": [
+      "wetness gradient",
+      "pathway nodes",
+      "comparison matrix",
+      "supporting paper tooltip"
+    ],
+    "data_inputs": [
+      "transition_pathways.csv",
+      "papers.csv"
+    ],
+    "mvp_status": "ready"
+  },
+  {
+    "screen_id": "W05",
+    "section_id": "S05",
+    "layout": "bubble_matrix_plus_pathway_cards",
+    "visual_elements": [
+      "hydrological requirement vs farm compatibility chart",
+      "bubble size by GHG score",
+      "colour by adoption/market risk",
+      "South Germany fit card"
+    ],
+    "data_inputs": [
+      "transition_pathways.csv"
+    ],
+    "mvp_status": "ready_for_qualitative_version"
+  },
+  {
+    "screen_id": "W06",
+    "section_id": "S06",
+    "layout": "conceptual_dependency_diagram",
+    "visual_elements": [
+      "hydrology node",
+      "water-table node",
+      "GHG mitigation node",
+      "farm exposure node",
+      "transition pathway node"
+    ],
+    "data_inputs": [
+      "papers.csv",
+      "transition_pathways.csv"
+    ],
+    "mvp_status": "ready"
+  }
+]

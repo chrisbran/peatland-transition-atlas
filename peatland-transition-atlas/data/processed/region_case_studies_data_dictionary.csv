@@ -1,0 +1,24 @@
+﻿field,description
+region_id,Stable ID for the region/evidence cluster.
+region_name,Human-readable region or cluster name.
+country,Country or supra-national scope.
+country_iso3,ISO3 code where applicable.
+lat,Approximate latitude for map display.
+lon,Approximate longitude for map display.
+region_type,"Type of evidence cluster: country, regional case, review node, policy node, etc."
+dominant_theme,Main evidence theme of the cluster.
+dominant_pathway_ids,Pipe-separated transition_pathways.csv IDs most closely linked to the cluster.
+supporting_paper_ids,Pipe-separated papers.csv IDs supporting this cluster.
+supporting_papers,Human-readable supporting papers.
+study_count,Number of papers represented in the cluster.
+evidence_strength,Qualitative evidence strength for visual uncertainty display.
+key_message,Main message for map tooltip or story card.
+south_germany_transfer_note,Transfer interpretation for South Germany / Upper Swabia.
+caveat,Main limitation/caution.
+visual_story_role,Role in the Atlas storyline.
+map_label,Short label for map annotation.
+marker_size_hint,Suggested marker size based on study_count or story importance.
+marker_category,Categorical styling variable for map markers.
+evidence_type,"Type of evidence represented by the region node, e.g. empirical cluster, policy node, review cluster."
+transfer_confidence,Qualitative confidence for using the evidence as analogy/framing for South Germany.
+coordinate_precision,"How the coordinate should be interpreted: country anchor, regional anchor, conceptual anchor, etc."

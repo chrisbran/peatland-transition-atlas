@@ -1,0 +1,32 @@
+﻿field,description
+paper_id,Stable ID used in visualisation and joins.
+include_in_mvp,Whether the paper should be included in the first public prototype.
+source_set,Origin of the record: uploaded_top20 or added_core_from_research_discussion.
+authors_year,Short citation label.
+first_author,First author surname.
+year,Publication year.
+title,Paper title.
+doi,DOI if validated or known; blank if to verify.
+source_url,DOI URL or source URL for reproducibility.
+country,Country or supra-national scope.
+country_iso3,ISO3 country code where applicable.
+region,Study region or conceptual scope.
+lat,Approximate latitude for map display; blank for global reviews.
+lon,Approximate longitude for map display; blank for global reviews.
+geometry_note,Explanation of how the map geometry should be interpreted.
+theme_block,Curated evidence block.
+study_design,Study design / method.
+study_scale,Spatial or analytical scale.
+land_use_system,Land-use systems addressed.
+hydrology_focus,"1 if hydrology/water table is central or relevant, else 0."
+economics_focus,"1 if economics/markets/policy incentives are central or relevant, else 0."
+adoption_focus,"1 if farmer adoption, governance or social transition are central or relevant, else 0."
+ghg_focus,"1 if greenhouse gas mitigation/emissions are central or relevant, else 0."
+pathway_tags,Pipe-separated tags used for filtering and linking to transition pathways.
+key_finding_short,Short evidence statement for cards/tooltips.
+south_germany_relevance,Interpretive transfer note for South Germany/Upper Swabia.
+evidence_strength,Qualitative evidence category for visual uncertainty display.
+caveat,Main limitation or caution for use in the Atlas.
+visualization_role,Suggested role in the visual story.
+citation_short,Short citation label for display.
+validation_status,Metadata validation status.

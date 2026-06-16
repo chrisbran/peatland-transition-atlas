@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peatland Transition Atlas</title>
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">Portfolio prototype · Literature-driven MVP</p>
+      <h1>Peatland Transition Atlas</h1>
+      <p class="lead">Mapping the space between drainage-based agriculture and rewetting-compatible land use.</p>
+    </div>
+    <nav>
+      <a href="#story">Story</a>
+      <a href="#map">Evidence Map</a>
+      <a href="#pathways">Pathways</a>
+      <a href="#fit">South Germany Fit</a>
+      <a href="#methodology">Method</a>
+      <a href="#data">Data</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <h2>The climate problem is spatial. The transition problem is systemic.</h2>
+        <p>
+          This prototype turns a curated peatland rewetting literature review into an exploratory atlas:
+          where international evidence comes from, what transition pathways it supports, and which options
+          might be relevant for South German dairy, forage and biogas regions.
+        </p>
+      </div>
+      <div class="hero-card">
+        <span class="metric" id="metricPapers">—</span>
+        <span class="label">papers</span>
+        <span class="metric" id="metricPathways">—</span>
+        <span class="label">transition pathways</span>
+        <span class="metric" id="metricRegions">—</span>
+        <span class="label">evidence regions</span>
+      </div>
+    </section>
+
+    <section id="story" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Scrollytelling structure</p>
+        <h2>Six-part story</h2>
+      </div>
+      <div id="storySections" class="cards-grid"></div>
+    </section>
+
+    <section id="map" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">International evidence map</p>
+        <h2>Evidence from elsewhere</h2>
+        <p>
+          Points are approximate visual anchors for study regions, policy nodes and review clusters.
+          They are not exact field-site coordinates.
+        </p>
+      </div>
+
+      <div class="map-layout">
+        <div class="map-panel">
+          <div class="map-toolbar">
+            <button data-filter="all" class="active">All</button>
+            <button data-filter="hydrology_grassland">Hydrology</button>
+            <button data-filter="economics_policy">Economics</button>
+            <button data-filter="biomass_lca">Biomass</button>
+            <button data-filter="adoption">Adoption</button>
+            <button data-filter="value_chain">Value chains</button>
+            <button data-filter="policy">Policy</button>
+          </div>
+          <div id="evidenceMap" class="evidence-map" aria-label="Approximate evidence map"></div>
+        </div>
+        <aside id="regionCard" class="detail-card">
+          <p class="eyebrow">Selected region</p>
+          <h3>Click an evidence node</h3>
+          <p>Region cards show key message, supporting papers and South Germany transfer relevance.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="pathways" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Transition space</p>
+        <h2>Between drained farming and full restoration</h2>
+      </div>
+      <div id="pathwaySpectrum" class="pathway-spectrum"></div>
+      <div id="pathwayMatrix" class="matrix"></div>
+    </section>
+
+    <section id="fit" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Transfer view</p>
+        <h2>What fits South Germany?</h2>
+        <p>
+          Qualitative scores translate literature evidence into a first transfer hypothesis.
+          They are not statistical estimates.
+        </p>
+      </div>
+      <div class="legend-box">
+        <span><strong>X-axis:</strong> water-table / wetness requirement</span>
+        <span><strong>Y-axis:</strong> compatibility with existing South German dairy and forage systems</span>
+        <span><strong>Bubble size:</strong> qualitative GHG mitigation potential</span>
+        <span><strong>Colour:</strong> adoption / market barrier</span>
+      </div>
+      <div id="fitChart" class="fit-chart"></div>
+    </section>
+
+
+    <section id="methodology" class="section methodology-panel">
+      <div class="section-heading">
+        <p class="eyebrow">Method and uncertainty</p>
+        <h2>How to read this prototype</h2>
+        <p>
+          This Atlas is a literature-driven prototype. It is designed to make evidence, assumptions and transition hypotheses visible,
+          not to replace local hydrological-economic modelling.
+        </p>
+      </div>
+
+      <div class="method-grid">
+        <article class="method-card">
+          <h3>Qualitative scores</h3>
+          <p>
+            Scores are literature-informed expert codings, not statistical estimates. The scale is deliberately simple:
+            <strong>1 = low</strong>, <strong>2 = medium</strong>, <strong>3 = high</strong>.
+          </p>
+        </article>
+        <article class="method-card">
+          <h3>Evidence-map points</h3>
+          <p>
+            Map points are approximate visual anchors for study regions, national model studies, review clusters and policy nodes.
+            They are not exact field-site coordinates.
+          </p>
+        </article>
+        <article class="method-card">
+          <h3>South Germany fit</h3>
+          <p>
+            South Germany fit is a transfer hypothesis based on international literature. It is not a validated regional model result
+            and must be checked against local hydrology, farm structure, machinery access and markets.
+          </p>
+        </article>
+        <article class="method-card">
+          <h3>Publication boundary</h3>
+          <p>
+            The public repository should contain code, derived metadata and own coding tables. It should not contain copyrighted PDFs,
+            confidential project data, licence-unclear raw rasters or unpublished partner data.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="data" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Data model</p>
+        <h2>Current prototype datasets</h2>
+      </div>
+      <div class="data-list">
+        <a href="public/data/papers.csv">papers.csv</a>
+        <a href="public/data/transition_pathways.csv">transition_pathways.csv</a>
+        <a href="public/data/region_case_studies.geojson">region_case_studies.geojson</a>
+        <a href="public/data/atlas_story_sections.json">atlas_story_sections.json</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Prototype based on curated literature coding. Scores are qualitative and evidence-map points are approximate visual anchors.
+      Hotspot layers from FAO/FAOSTAT, Global Peatland Map, Natural Earth and Eurostat GISCO are planned for Phase B.
+    </p>
+  </footer>
+
+  <script src="src/app.js"></script>
+</body>
+</html>
