@@ -804,3 +804,107 @@ header.site-header {
 .hotspot-toggle + .hotspot-map {
   margin-top: .25rem;
 }
+
+
+/* B6c ranking-map linking */
+.hotspot-row {
+  border-radius: .65rem;
+  padding-left: .2rem;
+  padding-right: .2rem;
+}
+
+.hotspot-row.link-active {
+  background: rgba(182,211,124,.075);
+  box-shadow: inset 0 0 0 1px rgba(182,211,124,.24);
+}
+
+.hotspot-row.link-active .hotspot-rank {
+  background: rgba(182,211,124,.30);
+}
+
+.hotspot-country.link-active {
+  stroke: var(--accent);
+  stroke-width: 1.8;
+  opacity: 1;
+}
+
+.hotspot-ranking {
+  cursor: default;
+}
+
+
+/* B6c v2 robust ranking-map linking */
+.hotspot-row[data-country-key] {
+  cursor: pointer;
+}
+
+.hotspot-row.link-active {
+  background: rgba(182,211,124,.105);
+  box-shadow: inset 0 0 0 1px rgba(182,211,124,.32);
+}
+
+.hotspot-row.link-active .hotspot-rank {
+  background: rgba(182,211,124,.36);
+}
+
+.hotspot-country.link-active {
+  fill: rgba(208,236,142,.92) !important;
+  stroke: #ecffb0 !important;
+  stroke-width: 2.2 !important;
+  opacity: 1 !important;
+  filter: drop-shadow(0 0 6px rgba(236,255,176,.45));
+}
+
+
+/* B6c v3: unmistakable linked selection state */
+.hotspot-row.link-active {
+  background: rgba(236,255,176,.16) !important;
+  box-shadow: inset 4px 0 0 var(--accent), inset 0 0 0 1px rgba(236,255,176,.42) !important;
+}
+
+.hotspot-row.link-active strong,
+.hotspot-row.link-active .hotspot-row-head span {
+  color: #ecffb0 !important;
+}
+
+.hotspot-country.link-active {
+  fill: #ecffb0 !important;
+  stroke: #ffffff !important;
+  stroke-width: 2.8 !important;
+  opacity: 1 !important;
+  filter: drop-shadow(0 0 9px rgba(236,255,176,.75));
+}
+
+.hotspot-active-marker {
+  fill: #ecffb0;
+  stroke: #0b1411;
+  stroke-width: 2;
+  pointer-events: none;
+  filter: drop-shadow(0 0 8px rgba(236,255,176,.8));
+}
+
+.hotspot-active-marker-ring {
+  fill: none;
+  stroke: #ecffb0;
+  stroke-width: 2;
+  opacity: .72;
+  pointer-events: none;
+}
+
+.hotspot-active-label {
+  fill: #ecffb0;
+  font-size: 14px;
+  font-weight: 800;
+  paint-order: stroke;
+  stroke: #0b1411;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.hotspot-map-details {
+  border: 1px solid rgba(236,255,176,.22);
+  border-radius: .8rem;
+  padding: .75rem .85rem;
+  background: rgba(236,255,176,.045);
+}

@@ -1,13 +1,45 @@
-
 /*
-B3 hotspot ranking layer.
-
-This file is independent from app.js on purpose.
-It reads public/data/country_hotspots.csv and renders a compact ranking layer.
+Hotspot module: rankings, choropleth map, metric toggle and ranking-map linking.
+Static GitHub Pages compatible. No external dependencies.
 */
 
 (function () {
   const HOTSPOT_DATA_URL = "public/data/country_hotspots.csv";
+  const GEOJSON_URL = "public/data/hotspot_countries_110m.geojson";
+  const WIDTH = 960;
+  const HEIGHT = 500;
+
+  const METRICS = {
+    emissions_total_kt_co2e: {
+      label: "Total emissions",
+      legendLabel: "Total emissions",
+      formatter: fmtKt
+    },
+    emissions_density_t_co2e_per_ha: {
+      label: "Emissions density",
+      legendLabel: "Emissions density",
+      formatter: fmtDensity
+    }
+  };
+
+  let activeMetric = "emissions_total_kt_co2e";
+  let geoFeatures = [];
+  let activeCountryKey = "";
+
+  function countryKey(value) {
+    return String(value || "")
+      .trim()
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/&/g, "and")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+
+  function escapeAttr(value) {
+    return String(value || "").replace(/"/g, "&quot;");
+  }
 
   function parseCSV(text) {
     const rows = [];
@@ -48,6 +80,7 @@ It reads public/data/country_hotspots.csv and renders a compact ranking layer.
         cur += ch;
       }
     }
+
     out.push(cur);
     return out;
   }
@@ -100,129 +133,28 @@ It reads public/data/country_hotspots.csv and renders a compact ranking layer.
     const top = topBy(rows, field, 10);
     const max = top.length ? num(top[0][field]) : 0;
 
-    container.innerHTML = top.map((r, idx) => `
-      <article class="hotspot-row">
-        <div class="hotspot-rank">${idx + 1}</div>
-        <div class="hotspot-main">
-          <div class="hotspot-row-head">
-            <strong>${r.country}</strong>
-            <span>${formatter(r[field])}</span>
+    container.innerHTML = top.map((r, idx) => {
+      const key = countryKey(r.country);
+      return `
+        <article class="hotspot-row" data-country-key="${escapeAttr(key)}" tabindex="0">
+          <div class="hotspot-rank">${idx + 1}</div>
+          <div class="hotspot-main">
+            <div class="hotspot-row-head">
+              <strong>${r.country}</strong>
+              <span>${formatter(r[field])}</span>
+            </div>
+            <div class="hotspot-bar-wrap" aria-label="${label}">
+              <div class="hotspot-bar" style="width:${barWidth(r[field], max)}%"></div>
+            </div>
+            <p>
+              Area: ${fmtHa(r.drained_organic_soils_area_ha)}
+              · CO₂: ${fmtKt(r.co2_kt_co2)}
+              · N₂O: ${fmtKt(r.n2o_ar5_kt_co2e)}
+            </p>
           </div>
-          <div class="hotspot-bar-wrap" aria-label="${label}">
-            <div class="hotspot-bar" style="width:${barWidth(r[field], max)}%"></div>
-          </div>
-          <p>
-            Area: ${fmtHa(r.drained_organic_soils_area_ha)}
-            · CO₂: ${fmtKt(r.co2_kt_co2)}
-            · N₂O: ${fmtKt(r.n2o_ar5_kt_co2e)}
-          </p>
-        </div>
-      </article>
-    `).join("");
-  }
-
-  async function renderHotspots() {
-    const root = document.querySelector("#hotspotLayer");
-    if (!root) return;
-
-    try {
-      const res = await fetch(HOTSPOT_DATA_URL);
-      if (!res.ok) throw new Error(`Failed to load ${HOTSPOT_DATA_URL}`);
-      const rows = parseCSV(await res.text());
-      const complete = completeRows(rows);
-
-      const total = document.querySelector("#hotspotMetricCountries");
-      const year = document.querySelector("#hotspotMetricYear");
-      const emissions = document.querySelector("#hotspotMetricEmissions");
-
-      if (total) total.textContent = complete.length;
-      if (year) year.textContent = complete[0]?.year || "—";
-      if (emissions) {
-        const sum = complete.reduce((acc, r) => acc + (num(r.emissions_total_kt_co2e) || 0), 0);
-        emissions.textContent = `${(sum / 1000).toFixed(1)} Mt CO₂e`;
-      }
-
-      const totalEl = document.querySelector("#hotspotRankingTotal");
-      const densityEl = document.querySelector("#hotspotRankingDensity");
-
-      if (totalEl) renderRanking(totalEl, complete, "emissions_total_kt_co2e", "Total emissions", fmtKt);
-      if (densityEl) renderRanking(densityEl, complete, "emissions_density_t_co2e_per_ha", "Emissions density", fmtDensity);
-
-      root.classList.remove("loading");
-    } catch (err) {
-      root.innerHTML = `
-        <div class="detail-card">
-          <p class="eyebrow">Hotspot layer</p>
-          <h3>Could not load hotspot data</h3>
-          <p>${err.message}</p>
-        </div>
+        </article>
       `;
-      console.error(err);
-    }
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", renderHotspots);
-  } else {
-    renderHotspots();
-  }
-})();
-
-
-/*
-B6b choropleth metric toggle.
-Dependency-free SVG renderer for public/data/hotspot_countries_110m.geojson.
-Allows switching between total emissions and emissions density.
-*/
-
-(function () {
-  const GEOJSON_URL = "public/data/hotspot_countries_110m.geojson";
-  const WIDTH = 960;
-  const HEIGHT = 500;
-
-  const METRICS = {
-    emissions_total_kt_co2e: {
-      label: "Total emissions",
-      legendLabel: "Total emissions",
-      formatter: fmtKt,
-      classPrefix: "total"
-    },
-    emissions_density_t_co2e_per_ha: {
-      label: "Emissions density",
-      legendLabel: "Emissions density",
-      formatter: fmtDensity,
-      classPrefix: "density"
-    }
-  };
-
-  let geoFeatures = [];
-  let activeMetric = "emissions_total_kt_co2e";
-
-  function num(value) {
-    if (value === undefined || value === null || value === "") return null;
-    const n = Number(String(value).replace(",", "."));
-    return Number.isFinite(n) ? n : null;
-  }
-
-  function fmtKt(value) {
-    const n = num(value);
-    if (n === null) return "no data";
-    if (n >= 1000) return `${(n / 1000).toFixed(1)} Mt CO₂e`;
-    return `${Math.round(n)} kt CO₂e`;
-  }
-
-  function fmtHa(value) {
-    const n = num(value);
-    if (n === null) return "no data";
-    if (n >= 1000000) return `${(n / 1000000).toFixed(1)} Mha`;
-    if (n >= 1000) return `${Math.round(n / 1000)} kha`;
-    return `${Math.round(n)} ha`;
-  }
-
-  function fmtDensity(value) {
-    const n = num(value);
-    if (n === null) return "no data";
-    return `${n.toFixed(1)} t CO₂e/ha`;
+    }).join("");
   }
 
   function project(coord) {
@@ -250,6 +182,69 @@ Allows switching between total emissions and emissions density.
       return geometry.coordinates.flatMap(poly => poly.map(ringToPath)).join(" ");
     }
     return "";
+  }
+
+
+  function geometryCentroid(geometry) {
+    const points = [];
+
+    function collectRing(ring) {
+      if (!ring) return;
+      ring.forEach(coord => {
+        const projected = project(coord);
+        points.push(projected);
+      });
+    }
+
+    if (!geometry) return null;
+
+    if (geometry.type === "Polygon") {
+      geometry.coordinates.forEach(collectRing);
+    } else if (geometry.type === "MultiPolygon") {
+      geometry.coordinates.forEach(poly => poly.forEach(collectRing));
+    }
+
+    if (!points.length) return null;
+
+    const x = points.reduce((sum, p) => sum + p[0], 0) / points.length;
+    const y = points.reduce((sum, p) => sum + p[1], 0) / points.length;
+
+    return [x, y];
+  }
+
+  function addActiveMarker(feature) {
+    const svg = document.querySelector("#hotspotMap svg");
+    if (!svg || !feature || !feature.geometry) return;
+
+    svg.querySelectorAll(".hotspot-active-marker, .hotspot-active-marker-ring, .hotspot-active-label").forEach(el => el.remove());
+
+    const centroid = geometryCentroid(feature.geometry);
+    if (!centroid) return;
+
+    const props = feature.properties || {};
+    const [x, y] = centroid;
+    const label = props.country || "Selected";
+
+    const ring = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    ring.setAttribute("class", "hotspot-active-marker-ring");
+    ring.setAttribute("cx", x);
+    ring.setAttribute("cy", y);
+    ring.setAttribute("r", "13");
+    svg.appendChild(ring);
+
+    const dot = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    dot.setAttribute("class", "hotspot-active-marker");
+    dot.setAttribute("cx", x);
+    dot.setAttribute("cy", y);
+    dot.setAttribute("r", "5.5");
+    svg.appendChild(dot);
+
+    const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+    text.setAttribute("class", "hotspot-active-label");
+    text.setAttribute("x", Math.min(WIDTH - 140, x + 16));
+    text.setAttribute("y", Math.max(16, y - 10));
+    text.textContent = label;
+    svg.appendChild(text);
   }
 
   function quantileBreaks(values) {
@@ -307,6 +302,39 @@ Allows switching between total emissions and emissions density.
     `;
   }
 
+  function applyLinkedHighlight(countryKeyValue, options = {}) {
+    if (!countryKeyValue) return;
+    activeCountryKey = countryKeyValue;
+
+    document.querySelectorAll(".hotspot-row.link-active, .hotspot-country.link-active").forEach(el => {
+      el.classList.remove("link-active");
+    });
+
+    document.querySelectorAll(".hotspot-row[data-country-key], .hotspot-country[data-country-key]").forEach(el => {
+      if (el.dataset.countryKey === countryKeyValue) {
+        el.classList.add("link-active");
+      }
+    });
+
+    const feature = geoFeatures.find(f => countryKey(f.properties?.country) === countryKeyValue);
+    if (feature) {
+      addActiveMarker(feature);
+    }
+
+    const details = document.querySelector("#hotspotMapDetails");
+    if (details && options.detailsHTML) {
+      details.innerHTML = options.detailsHTML;
+    }
+  }
+
+  function updateToggleState(metricKey) {
+    document.querySelectorAll("[data-map-metric]").forEach(button => {
+      const isActive = button.dataset.mapMetric === metricKey;
+      button.classList.toggle("active", isActive);
+      button.setAttribute("aria-pressed", isActive ? "true" : "false");
+    });
+  }
+
   function renderMap(metricKey) {
     const map = document.querySelector("#hotspotMap");
     if (!map) return;
@@ -325,6 +353,7 @@ Allows switching between total emissions and emissions density.
 
     const paths = geoFeatures.map((feature, idx) => {
       const props = feature.properties || {};
+      const key = countryKey(props.country);
       const d = geometryToPath(feature.geometry);
       const fillClass = classForValue(props[metricKey], breaks);
       const label = `${props.country}: ${metricConfig.formatter(props[metricKey])}`;
@@ -333,6 +362,7 @@ Allows switching between total emissions and emissions density.
         d="${d}"
         class="hotspot-country ${fillClass}"
         data-idx="${idx}"
+        data-country-key="${escapeAttr(key)}"
         tabindex="0"
         role="img"
         aria-label="${label.replace(/"/g, "&quot;")}"
@@ -349,28 +379,91 @@ Allows switching between total emissions and emissions density.
     map.querySelectorAll(".hotspot-country").forEach(path => {
       const feature = geoFeatures[Number(path.dataset.idx)];
       const props = feature.properties || {};
+      const key = countryKey(props.country);
 
       const show = () => {
-        map.querySelectorAll(".hotspot-country.active").forEach(el => el.classList.remove("active"));
-        path.classList.add("active");
-        if (details) details.innerHTML = detailHTML(props, metricKey);
+        applyLinkedHighlight(key, { detailsHTML: detailHTML(props, metricKey) });
       };
 
       path.addEventListener("mouseenter", show);
       path.addEventListener("focus", show);
       path.addEventListener("click", show);
     });
+
+    if (activeCountryKey) {
+      const feature = geoFeatures.find(f => countryKey(f.properties?.country) === activeCountryKey);
+      if (feature) {
+        applyLinkedHighlight(activeCountryKey, { detailsHTML: detailHTML(feature.properties || {}, metricKey) });
+      }
+    }
   }
 
-  function updateToggleState(metricKey) {
-    document.querySelectorAll("[data-map-metric]").forEach(button => {
-      const isActive = button.dataset.mapMetric === metricKey;
-      button.classList.toggle("active", isActive);
-      button.setAttribute("aria-pressed", isActive ? "true" : "false");
-    });
+  function bindRankingEvents() {
+    const section = document.querySelector("#hotspots");
+    if (!section || section.dataset.rankingBound === "true") return;
+
+    section.dataset.rankingBound = "true";
+
+    function handleRankingEvent(event) {
+      const row = event.target.closest?.(".hotspot-row[data-country-key]");
+      if (!row) return;
+
+      const key = row.dataset.countryKey;
+      const feature = geoFeatures.find(f => countryKey(f.properties?.country) === key);
+      const html = feature
+        ? detailHTML(feature.properties || {}, activeMetric)
+        : `<strong>${row.querySelector("strong")?.textContent || "Country"}</strong> · ranking row highlighted.`;
+
+      applyLinkedHighlight(key, { detailsHTML: html });
+    }
+
+    section.addEventListener("mouseover", handleRankingEvent);
+    section.addEventListener("focusin", handleRankingEvent);
+    section.addEventListener("click", handleRankingEvent);
   }
 
-  async function initMap() {
+  async function renderHotspotRankings() {
+    const root = document.querySelector("#hotspotLayer");
+    if (!root) return;
+
+    try {
+      const res = await fetch(HOTSPOT_DATA_URL);
+      if (!res.ok) throw new Error(`Failed to load ${HOTSPOT_DATA_URL}`);
+      const rows = parseCSV(await res.text());
+      const complete = completeRows(rows);
+
+      const total = document.querySelector("#hotspotMetricCountries");
+      const year = document.querySelector("#hotspotMetricYear");
+      const emissions = document.querySelector("#hotspotMetricEmissions");
+
+      if (total) total.textContent = complete.length;
+      if (year) year.textContent = complete[0]?.year || "—";
+      if (emissions) {
+        const sum = complete.reduce((acc, r) => acc + (num(r.emissions_total_kt_co2e) || 0), 0);
+        emissions.textContent = `${(sum / 1000).toFixed(1)} Mt CO₂e`;
+      }
+
+      const totalEl = document.querySelector("#hotspotRankingTotal");
+      const densityEl = document.querySelector("#hotspotRankingDensity");
+
+      if (totalEl) renderRanking(totalEl, complete, "emissions_total_kt_co2e", "Total emissions", fmtKt);
+      if (densityEl) renderRanking(densityEl, complete, "emissions_density_t_co2e_per_ha", "Emissions density", fmtDensity);
+
+      bindRankingEvents();
+      root.classList.remove("loading");
+    } catch (err) {
+      root.innerHTML = `
+        <div class="detail-card">
+          <p class="eyebrow">Hotspot layer</p>
+          <h3>Could not load hotspot data</h3>
+          <p>${err.message}</p>
+        </div>
+      `;
+      console.error(err);
+    }
+  }
+
+  async function renderHotspotMap() {
     const map = document.querySelector("#hotspotMap");
     if (!map) return;
 
@@ -390,6 +483,7 @@ Allows switching between total emissions and emissions density.
 
       updateToggleState(activeMetric);
       renderMap(activeMetric);
+      bindRankingEvents();
     } catch (err) {
       map.innerHTML = `
         <div class="map-loading">
@@ -400,9 +494,14 @@ Allows switching between total emissions and emissions density.
     }
   }
 
+  function initHotspots() {
+    renderHotspotRankings();
+    renderHotspotMap();
+  }
+
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", initMap);
+    document.addEventListener("DOMContentLoaded", initHotspots);
   } else {
-    initMap();
+    initHotspots();
   }
 })();

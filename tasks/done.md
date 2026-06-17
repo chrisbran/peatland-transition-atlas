@@ -6,3 +6,6 @@
 - 2026-06-17: Task B6a completed — hotspot layout refined and sticky header disabled for cleaner screenshots.
 - 2026-06-17: Task B6b completed — added total emissions vs emissions density toggle to hotspot map.
 - 2026-06-17: Task B6b legend fix completed — made hotspot map legend swatches visible.
+- 2026-06-17: Task B6c completed — linked hotspot rankings and map highlighting.
+- 2026-06-17: Task B6c v2 completed — replaced hotspot module with robust ranking-map linking.
+- 2026-06-17: Task B6c v3 completed — made ranking-map linking visibly explicit with marker and stronger highlights.
