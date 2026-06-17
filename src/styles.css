@@ -474,3 +474,96 @@ footer {
   color: rgba(236,244,239,.58) !important;
   font-size: .84rem !important;
 }
+
+
+/* B3 hotspot ranking layer */
+.hotspot-section {
+  background: linear-gradient(180deg, rgba(121,183,168,.055), transparent);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.hotspot-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hotspot-metric {
+  background: linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.018));
+  border: 1px solid var(--line);
+  border-radius: 1.2rem;
+  padding: 1.1rem;
+}
+
+.hotspot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 1rem;
+}
+
+.hotspot-row {
+  display: grid;
+  grid-template-columns: 2.2rem minmax(0, 1fr);
+  gap: .8rem;
+  padding: .8rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.hotspot-row:last-child {
+  border-bottom: 0;
+}
+
+.hotspot-rank {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: rgba(182,211,124,.16);
+  color: var(--accent);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+}
+
+.hotspot-row-head {
+  display: flex;
+  justify-content: space-between;
+  gap: .8rem;
+  align-items: baseline;
+}
+
+.hotspot-row-head span {
+  color: var(--accent);
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.hotspot-main p {
+  color: var(--muted);
+  font-size: .82rem;
+  margin: .4rem 0 0;
+}
+
+.hotspot-bar-wrap {
+  height: .45rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.07);
+  overflow: hidden;
+  margin-top: .45rem;
+}
+
+.hotspot-bar {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+}
+
+.hotspot-caveat {
+  margin-top: 1rem;
+  padding: .9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  color: var(--muted);
+  background: rgba(255,255,255,.035);
+}

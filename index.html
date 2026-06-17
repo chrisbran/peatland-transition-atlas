@@ -15,6 +15,7 @@
     </div>
     <nav>
       <a href="#story">Story</a>
+      <a href="#hotspots">Hotspots</a>
       <a href="#map">Evidence Map</a>
       <a href="#pathways">Pathways</a>
       <a href="#fit">South Germany Fit</a>
@@ -50,6 +51,57 @@
       </div>
       <div id="storySections" class="cards-grid"></div>
     </section>
+
+
+    <section id="hotspots" class="section hotspot-section">
+      <div class="section-heading">
+        <p class="eyebrow">Phase B hotspot layer</p>
+        <h2>Where are drained organic soil emissions concentrated?</h2>
+        <p>
+          A first country-level hotspot layer based on FAO/FAOSTAT-derived drained organic soils data.
+          The layer ranks countries by total CO₂ + N₂O AR5 CO₂-equivalent emissions and by emissions density.
+        </p>
+      </div>
+
+      <div id="hotspotLayer" class="hotspot-layer loading">
+        <div class="hotspot-metrics">
+          <div class="hotspot-metric">
+            <span id="hotspotMetricCountries" class="metric">—</span>
+            <span class="label">countries with complete data</span>
+          </div>
+          <div class="hotspot-metric">
+            <span id="hotspotMetricYear" class="metric">—</span>
+            <span class="label">selected year</span>
+          </div>
+          <div class="hotspot-metric">
+            <span id="hotspotMetricEmissions" class="metric">—</span>
+            <span class="label">total emissions in complete records</span>
+          </div>
+        </div>
+
+        <div class="hotspot-grid">
+          <article class="detail-card">
+            <p class="eyebrow">Ranking 1</p>
+            <h3>Top countries by total emissions</h3>
+            <div id="hotspotRankingTotal" class="hotspot-ranking"></div>
+          </article>
+
+          <article class="detail-card">
+            <p class="eyebrow">Ranking 2</p>
+            <h3>Top countries by emissions density</h3>
+            <div id="hotspotRankingDensity" class="hotspot-ranking"></div>
+          </article>
+        </div>
+
+        <div class="hotspot-caveat">
+          <strong>Interpretation:</strong>
+          This is a country-level hotspot layer, not a local suitability map.
+          It uses complete records only; missing CO₂ or N₂O CO₂e records are excluded from rankings.
+          Hotspot classes are exploratory and will be replaced by a geographic choropleth in the next step.
+        </div>
+      </div>
+    </section>
+
 
     <section id="map" class="section">
       <div class="section-heading">
@@ -158,6 +210,7 @@
         <h2>Current prototype datasets</h2>
       </div>
       <div class="data-list">
+        <a href="public/data/country_hotspots.csv">country_hotspots.csv</a>
         <a href="public/data/papers.csv">papers.csv</a>
         <a href="public/data/transition_pathways.csv">transition_pathways.csv</a>
         <a href="public/data/region_case_studies.geojson">region_case_studies.geojson</a>
@@ -174,5 +227,6 @@
   </footer>
 
   <script src="src/app.js"></script>
+  <script src="src/hotspots.js"></script>
 </body>
 </html>
