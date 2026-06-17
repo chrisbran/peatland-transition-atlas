@@ -84,6 +84,16 @@
         <article class="detail-card hotspot-map-card">
           <p class="eyebrow">Map layer</p>
           <h3>Country-level hotspot map</h3>
+
+          <div id="hotspotMapToggle" class="hotspot-toggle" role="group" aria-label="Map metric">
+            <button type="button" class="hotspot-toggle-btn active" data-map-metric="emissions_total_kt_co2e">
+              Total emissions
+            </button>
+            <button type="button" class="hotspot-toggle-btn" data-map-metric="emissions_density_t_co2e_per_ha">
+              Emissions density
+            </button>
+          </div>
+
           <div id="hotspotMap" class="hotspot-map" aria-label="Country-level hotspot choropleth map">
             <div class="map-loading">Loading country hotspot map…</div>
           </div>

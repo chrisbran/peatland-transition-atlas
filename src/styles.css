@@ -729,3 +729,78 @@ header.site-header {
     flex-direction: column;
   }
 }
+
+
+/* B6b hotspot metric toggle */
+.hotspot-toggle {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  padding: .35rem;
+  margin: .35rem 0 .85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255,255,255,.035);
+}
+
+.hotspot-toggle-btn {
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  padding: .48rem .78rem;
+  cursor: pointer;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 700;
+  transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+
+.hotspot-toggle-btn:hover,
+.hotspot-toggle-btn:focus {
+  color: var(--text);
+  border-color: var(--line);
+  outline: none;
+}
+
+.hotspot-toggle-btn.active {
+  color: var(--bg);
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+@media (max-width: 520px) {
+  .hotspot-toggle {
+    border-radius: 1rem;
+    width: 100%;
+  }
+
+  .hotspot-toggle-btn {
+    flex: 1 1 100%;
+  }
+}
+
+
+/* B6b-fix: visible legend swatches for HTML legend items */
+.hotspot-map-legend {
+  padding: .75rem .85rem;
+  border: 1px solid var(--line);
+  border-radius: .85rem;
+  background: rgba(255,255,255,.035);
+}
+
+.legend-item i.map-fill-1 { background: rgba(121,183,168,.22); }
+.legend-item i.map-fill-2 { background: rgba(121,183,168,.38); }
+.legend-item i.map-fill-3 { background: rgba(182,211,124,.50); }
+.legend-item i.map-fill-4 { background: rgba(233,186,102,.68); }
+.legend-item i.map-fill-5 { background: rgba(239,126,89,.82); }
+.legend-item i.map-fill-no-data { background: rgba(255,255,255,.08); }
+
+.legend-item i {
+  flex: 0 0 auto;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.12);
+}
+
+.hotspot-toggle + .hotspot-map {
+  margin-top: .25rem;
+}
