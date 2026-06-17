@@ -1,9 +1,0 @@
-﻿pathway_id,pathway_name,ghg_score,farm_compatibility_score,market_maturity_score,adoption_barrier_score,south_germany_fit_score,qa_judgement,decision,note
-T01,Drainage-based agriculture,0,3,3,1,3,baseline_reference,keep,Reference state is useful as baseline; not a mitigation pathway.
-T02,Responsible water-table management / shallow drainage,1,3,3,2,2,low_disruption_but_limited_mitigation_risk,keep,Scores capture the trade-off: compatible but mitigation may be limited.
-T03,Raised-water-table peat pasture,2,3,3,2,3,core_candidate_for_south_germany,keep,"High South Germany fit is acceptable because the pathway remains close to grassland/forage systems, with caveats on hydrology and trafficability."
-T04,Wet grassland mowing / Nassgrünland,2,3,2,2,3,core_candidate_for_south_germany,keep,"High South Germany fit is acceptable because the pathway remains close to grassland/forage systems, with caveats on hydrology and trafficability."
-T05,Reed canary grass biomass / Phalaris paludiculture,3,2,2,3,2,promising_biomass_option_but_context_dependent,keep,Medium South Germany fit is appropriate; not oversold as universal solution.
-T06,Reed-based value chains / Common reed,2,1,2,3,1,value_chain_dependent_niche,keep,Low South Germany fit is appropriate unless regional reed markets and processing capacity are demonstrated.
-T07,Robust grazing / water buffalo,1,1,1,3,2,niche_management_option,keep_with_watch,"Medium-niche interpretation is acceptable if text keeps it as a specialised option, not a broad replacement for dairy/forage systems."
-T08,Full restoration / conservation,3,1,0,3,1,restoration_end_member,keep,High GHG/low farm compatibility framing is clear and not overclaiming.
