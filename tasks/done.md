@@ -11,3 +11,4 @@
 - 2026-06-17: Task B6c v3 completed — made ranking-map linking visibly explicit with marker and stronger highlights.
 - 2026-06-17: Task B7 completed — prepared Phase B release notes, README/CHANGELOG update and QA checklist.
 - 2026-06-17: Task B8a completed — added base land layer and softened hotspot map palette.
+- 2026-06-17: Task B8b completed — replaced equirectangular map display with Robinson-style visual projection.

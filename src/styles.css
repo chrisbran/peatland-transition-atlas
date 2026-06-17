@@ -983,3 +983,18 @@ header.site-header {
   border-color: rgba(212,196,118,.22) !important;
   background: rgba(212,196,118,.045) !important;
 }
+
+
+/* B8b Robinson-style projection refinement */
+.hotspot-map::after {
+  content: "Projection: Robinson-style visual approximation · country-level screening layer";
+  display: block;
+  color: var(--muted);
+  font-size: .72rem;
+  padding: .35rem .55rem .55rem;
+  opacity: .78;
+}
+
+.hotspot-svg {
+  background: radial-gradient(circle at 50% 45%, rgba(255,255,255,.025), rgba(255,255,255,0) 62%);
+}

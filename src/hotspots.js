@@ -158,10 +158,45 @@ Static GitHub Pages compatible. No external dependencies.
   }
 
   function project(coord) {
-    const lon = coord[0];
-    const lat = coord[1];
-    const x = ((lon + 180) / 360) * WIDTH;
-    const y = ((90 - lat) / 180) * HEIGHT;
+    /*
+    Robinson-style pseudo-projection using the standard 5-degree coefficient table.
+    This is not a GIS-grade reprojection step; it is a lightweight visual projection
+    for the static SVG prototype.
+    */
+    const lon = Math.max(-180, Math.min(180, Number(coord[0]) || 0));
+    const lat = Math.max(-90, Math.min(90, Number(coord[1]) || 0));
+    const absLat = Math.abs(lat);
+
+    const X = [
+      1.0000, 0.9986, 0.9954, 0.9900, 0.9822, 0.9730, 0.9600,
+      0.9427, 0.9216, 0.8962, 0.8679, 0.8350, 0.7986, 0.7597,
+      0.7186, 0.6732, 0.6213, 0.5722, 0.5322
+    ];
+
+    const Y = [
+      0.0000, 0.0620, 0.1240, 0.1860, 0.2480, 0.3100, 0.3720,
+      0.4340, 0.4958, 0.5571, 0.6176, 0.6769, 0.7346, 0.7903,
+      0.8435, 0.8936, 0.9394, 0.9761, 1.0000
+    ];
+
+    const i = Math.min(17, Math.floor(absLat / 5));
+    const t = (absLat - i * 5) / 5;
+
+    const xCoef = X[i] + (X[i + 1] - X[i]) * t;
+    const yCoef = Y[i] + (Y[i + 1] - Y[i]) * t;
+
+    const lonRad = lon * Math.PI / 180;
+    const sign = lat < 0 ? -1 : 1;
+
+    const rawX = 0.8487 * xCoef * lonRad;
+    const rawY = 1.3523 * yCoef * sign;
+
+    const maxX = 0.8487 * Math.PI;
+    const maxY = 1.3523;
+
+    const x = (0.5 + rawX / (2 * maxX)) * WIDTH;
+    const y = (0.5 - rawY / (2 * maxY)) * HEIGHT;
+
     return [x, y];
   }
 
