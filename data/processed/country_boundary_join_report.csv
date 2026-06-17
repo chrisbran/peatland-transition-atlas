@@ -1,0 +1,103 @@
+﻿country,m49_code,iso3,join_status,join_method,ne_name,emissions_total_kt_co2e,emissions_density_t_co2e_per_ha
+Indonesia,360,IDN,matched,m49_code,Indonesia,271006.0,55.44559884217422
+Russian Federation,643,RUS,matched,m49_code,Russia,58845.0,31.14212122062085
+United States of America,840,USA,matched,m49_code,United States of America,57262.0,37.04007964050514
+Belarus,112,BLR,matched,m49_code,Belarus,46861.0,31.476721090363668
+Canada,124,CAN,matched,m49_code,Canada,42493.0,31.02199639355512
+Malaysia,458,MYS,matched,m49_code,Malaysia,35955.0,54.36952221960115
+Poland,616,POL,matched,m49_code,Poland,31792.0,30.054319363066238
+Germany,276,DEU,matched,m49_code,Germany,31183.0,28.08831384544987
+Mongolia,496,MNG,matched,m49_code,Mongolia,25829.0,25.1554379923177
+Papua New Guinea,598,PNG,matched,m49_code,Papua New Guinea,24139.0,54.45100109177201
+Ukraine,804,UKR,matched,m49_code,Ukraine,21707.0,31.501650763704966
+Bangladesh,50,BGD,matched,m49_code,Bangladesh,19765.0,55.411486003448324
+Zambia,894,ZMB,matched,m49_code,Zambia,16973.0,48.152130433179096
+Myanmar,104,MMR,matched,m49_code,Myanmar,15909.0,53.40759167312902
+Finland,246,FIN,matched,m49_code,Finland,15582.0,30.97499060731417
+Ireland,372,IRL,matched,m49_code,Ireland,12669.0,23.897641359952917
+South Sudan,728,SSD,matched,m49_code,South Sudan,11176.0,44.28313310298919
+Sweden,752,SWE,matched,m49_code,Sweden,11125.0,30.683899296132036
+Lithuania,440,LTU,matched,m49_code,Lithuania,10821.0,30.961904925406444
+Uganda,800,UGA,matched,m49_code,Uganda,6632.0,55.53276114716349
+France,250,FRA,matched,m49_code,France,6484.0,29.91119824703033
+Falkland Islands (Malvinas),238,FLK,matched,m49_code,Falkland Islands,6417.0,22.88949052424317
+Ethiopia,231,ETH,matched,m49_code,Ethiopia,6401.0,51.18670633016665
+Norway,578,NOR,matched,country_name,Norway,6318.0,25.95055511515097
+Argentina,32,ARG,matched,m49_code,Argentina,6215.0,34.10581307929122
+Hungary,348,HUN,matched,m49_code,Hungary,6191.0,31.248107245967173
+Latvia,428,LVA,matched,m49_code,Latvia,5872.0,30.228774993307663
+Estonia,233,EST,matched,m49_code,Estonia,5806.0,30.63787571766295
+India,356,IND,matched,m49_code,India,5558.0,54.309165526675784
+United Republic of Tanzania,834,TZA,matched,m49_code,United Republic of Tanzania,5186.0,51.24657845588308
+Madagascar,450,MDG,matched,m49_code,Madagascar,5074.0,53.38636196248014
+Japan,392,JPN,matched,m49_code,Japan,4815.0,30.90004813091609
+China,159,CHN,matched,country_name,China,4411.0,29.08076819113798
+"China, mainland",156,CHN,matched,m49_code,China,4411.0,29.08076819113798
+Viet Nam,704,VNM,matched,m49_code,Vietnam,4275.0,57.02737313910677
+Guyana,328,GUY,matched,m49_code,Guyana,3594.0,51.286442056594886
+Burundi,108,BDI,matched,m49_code,Burundi,3481.0,51.11450471351796
+Congo,178,COG,matched,m49_code,Republic of the Congo,3339.0,55.215636989019714
+Australia,36,AUS,matched,m49_code,Australia,3255.0,27.53038491791632
+New Zealand,554,NZL,matched,m49_code,New Zealand,2841.0,22.510994017669663
+Nepal,524,NPL,matched,m49_code,Nepal,2762.0,42.82236933905952
+Denmark,208,DNK,matched,m49_code,Denmark,2624.0,30.49319016408683
+Rwanda,646,RWA,matched,m49_code,Rwanda,1899.0,52.26797313662887
+Venezuela (Bolivarian Republic of),862,VEN,matched,m49_code,Venezuela,1843.0,52.50861847915895
+Cameroon,120,CMR,matched,m49_code,Cameroon,1717.0,57.19139297848245
+Sri Lanka,144,LKA,matched,m49_code,Sri Lanka,1418.0,51.34704519119351
+Greece,300,GRC,matched,m49_code,Greece,1413.0,30.62153259361997
+Bulgaria,100,BGR,matched,m49_code,Bulgaria,1225.0,31.38370097097328
+Chile,152,CHL,matched,m49_code,Chile,1189.0,26.115796872254435
+Thailand,764,THA,matched,m49_code,Thailand,1187.0,54.38717067583047
+Malawi,454,MWI,matched,m49_code,Malawi,952.0,56.70379415093216
+Switzerland,756,CHE,matched,m49_code,Switzerland,920.0,28.45830240039594
+Iceland,352,ISL,matched,m49_code,Iceland,868.0,23.044655657622258
+Colombia,170,COL,matched,m49_code,Colombia,816.0,51.81281351196901
+Guinea,324,GIN,matched,m49_code,Guinea,808.0,52.01158673962021
+Italy,380,ITA,matched,m49_code,Italy,769.0,31.66694119584912
+Panama,591,PAN,matched,m49_code,Panama,765.0,53.11393459695897
+Suriname,740,SUR,matched,m49_code,Suriname,725.0,53.359829248546404
+Botswana,72,BWA,matched,m49_code,Botswana,700.0,56.81357032708384
+Gabon,266,GAB,matched,m49_code,Gabon,655.0,56.38288714814496
+Romania,642,ROU,matched,m49_code,Romania,614.0,30.87288817377313
+South Africa,710,ZAF,matched,m49_code,South Africa,591.0,29.75081802164611
+Brazil,76,BRA,matched,m49_code,Brazil,574.0,43.28482014931001
+Democratic Republic of the Congo,180,COD,matched,m49_code,Democratic Republic of the Congo,510.0,56.32869449966866
+Spain,724,ESP,matched,m49_code,Spain,487.0,28.967404235070187
+Angola,24,AGO,matched,m49_code,Angola,359.0,54.692260816575256
+Austria,40,AUT,matched,m49_code,Austria,329.0,25.968900465703687
+Czechia,203,CZE,matched,m49_code,Czechia,298.0,29.895666131621187
+Portugal,620,PRT,matched,m49_code,Portugal,286.0,29.11830584402362
+Jamaica,388,JAM,matched,m49_code,Jamaica,280.0,47.7245611044827
+Faroe Islands,234,,unmatched,,,272.0,20.551567812618057
+Brunei Darussalam,96,BRN,matched,m49_code,Brunei,267.0,48.32579185520362
+Belgium,56,BEL,matched,m49_code,Belgium,227.0,28.38209552388097
+Uruguay,858,URY,matched,m49_code,Uruguay,219.0,23.58642972536349
+Republic of Moldova,498,MDA,matched,m49_code,Moldova,209.0,31.254673246597875
+Belize,84,BLZ,matched,m49_code,Belize,208.0,48.36084631481051
+Kenya,404,KEN,matched,m49_code,Kenya,185.0,29.253636938646427
+Slovenia,705,SVN,matched,m49_code,Slovenia,185.0,29.685494223363285
+Democratic People's Republic of Korea,408,PRK,matched,m49_code,North Korea,160.0,31.24389767623511
+Liberia,430,LBR,matched,m49_code,Liberia,138.0,55.71255551069842
+Bosnia and Herzegovina,70,BIH,matched,m49_code,Bosnia and Herzegovina,119.0,27.35632183908046
+Albania,8,ALB,matched,m49_code,Albania,117.0,30.47668663714509
+Peru,604,PER,matched,m49_code,Peru,115.0,55.663117134559535
+Ecuador,218,ECU,matched,m49_code,Ecuador,92.0,55.85913782635094
+Fiji,242,FJI,matched,m49_code,Fiji,91.0,52.11912943871707
+Costa Rica,188,CRI,matched,m49_code,Costa Rica,88.0,54.054054054054056
+Ghana,288,GHA,matched,m49_code,Ghana,83.0,51.84259837601499
+Slovakia,703,SVK,matched,m49_code,Slovakia,72.0,30.264817150063053
+Puerto Rico,630,PRI,matched,m49_code,Puerto Rico,68.0,54.22647527910686
+Central African Republic,140,CAF,matched,m49_code,Central African Republic,61.0,55.30371713508613
+French Guiana,254,,unmatched,,,40.0,53.191489361702125
+Nicaragua,558,NIC,matched,m49_code,Nicaragua,40.0,53.05039787798408
+Isle of Man,833,,unmatched,,,23.0,23.760330578512395
+Montenegro,499,MNE,matched,m49_code,Montenegro,20.0,31.201248049921997
+Croatia,191,HRV,matched,m49_code,Croatia,10.0,30.303030303030305
+Eritrea,232,ERI,matched,m49_code,Eritrea,8.0,48.78048780487805
+Luxembourg,442,LUX,matched,m49_code,Luxembourg,3.0,16.75977653631285
+Namibia,516,NAM,matched,m49_code,Namibia,3.0,28.846153846153847
+Serbia,688,SRB,matched,m49_code,Republic of Serbia,2.0,22.727272727272727
+Equatorial Guinea,226,GNQ,matched,m49_code,Equatorial Guinea,0.0,0.0
+Guinea-Bissau,624,GNB,matched,m49_code,Guinea-Bissau,0.0,
+Solomon Islands,90,SLB,matched,m49_code,Solomon Islands,0.0,0.0
