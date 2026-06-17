@@ -2,3 +2,4 @@
 - 2026-06-17: Task B1 completed — country hotspot schema and Phase B source catalog created.
 - 2026-06-17: Task B3 completed — hotspot ranking layer added to interface.
 - 2026-06-17: Task B4 completed — prepared country boundary join for hotspot data.
+- 2026-06-17: Task B5 completed — dependency-free choropleth map added to hotspot section.

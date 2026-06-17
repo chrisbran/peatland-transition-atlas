@@ -567,3 +567,97 @@ footer {
   color: var(--muted);
   background: rgba(255,255,255,.035);
 }
+
+
+/* B5 choropleth map */
+.hotspot-map-card {
+  grid-column: 1 / -1;
+}
+
+.hotspot-map {
+  position: relative;
+  width: 100%;
+  min-height: 22rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  overflow: hidden;
+  background: rgba(255,255,255,.025);
+}
+
+.hotspot-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.map-ocean {
+  fill: rgba(255,255,255,.025);
+}
+
+.hotspot-country {
+  stroke: rgba(13, 22, 20, .95);
+  stroke-width: .55;
+  cursor: pointer;
+  transition: opacity .15s ease, stroke-width .15s ease;
+}
+
+.hotspot-country:hover,
+.hotspot-country:focus,
+.hotspot-country.active {
+  opacity: 1;
+  stroke: var(--accent);
+  stroke-width: 1.2;
+  outline: none;
+}
+
+.hotspot-country:not(:hover) {
+  opacity: .9;
+}
+
+.map-fill-no-data { fill: rgba(255,255,255,.08); }
+.map-fill-1 { fill: rgba(121,183,168,.22); }
+.map-fill-2 { fill: rgba(121,183,168,.38); }
+.map-fill-3 { fill: rgba(182,211,124,.50); }
+.map-fill-4 { fill: rgba(233,186,102,.68); }
+.map-fill-5 { fill: rgba(239,126,89,.82); }
+
+.hotspot-map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem .9rem;
+  align-items: center;
+  color: var(--muted);
+  font-size: .82rem;
+  margin-top: .75rem;
+}
+
+.legend-title {
+  color: var(--text);
+  font-weight: 700;
+  margin-right: .2rem;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+}
+
+.legend-item i {
+  display: inline-block;
+  width: .9rem;
+  height: .9rem;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: .2rem;
+}
+
+.hotspot-map-details {
+  color: var(--muted);
+  font-size: .92rem;
+  margin-top: .8rem;
+}
+
+.map-loading {
+  color: var(--muted);
+  padding: 1rem;
+}
