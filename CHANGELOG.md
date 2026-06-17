@@ -1,5 +1,36 @@
 # Changelog
 
+## v0.2.0 — Country-level hotspot atlas draft (2026-06-17)
+
+### Added
+
+- Country-level drained organic soils hotspot dataset.
+- Public hotspot dataset for GitHub Pages.
+- Natural Earth 110m country boundary join.
+- Country-level choropleth map.
+- Map metric toggle:
+  - total emissions,
+  - emissions density.
+- Top-10 hotspot rankings by total emissions and emissions density.
+- Ranking/map interaction with selected-country highlighting.
+- Method notes for B2b–B6c.
+
+### Known limitations
+
+- The choropleth is national-level only.
+- It is not a local rewetting suitability map.
+- Some small territories are unmatched in the Natural Earth 110m join.
+- The map uses a simple dependency-free SVG projection and is not yet cartographically refined.
+- Highlight colors and map palette are intentionally provisional.
+
+### Next
+
+- B8 visual refinement:
+  - softer highlight color,
+  - clearer ocean/land contrast,
+  - map projection/perspective review,
+  - possible no-data and desert/background distinction.
+
 ## 0.1.0 — Phase A literature-driven MVP (2026-06-16)
 
 ### Added

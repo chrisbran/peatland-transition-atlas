@@ -178,3 +178,26 @@ scientific-visualization
 
 Code: MIT License.  
 Derived literature-coding data: treat as project-authored research metadata; check and document reuse terms before external publication.
+
+## Phase B — Country-level peatland hotspot layer
+
+Phase B extends the atlas from a literature-driven transition prototype into a first data-backed hotspot atlas.
+
+The current hotspot layer uses country-level drained organic soils data to show:
+
+- total drained-organic-soils greenhouse-gas emissions,
+- emissions density per hectare of drained organic soils,
+- top hotspot countries by total emissions,
+- top hotspot countries by emissions density,
+- a lightweight country-level choropleth map,
+- a toggle between total emissions and emissions density,
+- linked ranking/map interaction.
+
+Important interpretation boundary:
+
+This layer is a national-level screening layer. It does not show local rewetting suitability, hydrological feasibility, farm-scale constraints, land tenure or policy readiness.
+
+Key public data files:
+
+- `public/data/country_hotspots.csv`
+- `public/data/hotspot_countries_110m.geojson`

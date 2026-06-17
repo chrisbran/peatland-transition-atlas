@@ -9,3 +9,4 @@
 - 2026-06-17: Task B6c completed — linked hotspot rankings and map highlighting.
 - 2026-06-17: Task B6c v2 completed — replaced hotspot module with robust ranking-map linking.
 - 2026-06-17: Task B6c v3 completed — made ranking-map linking visibly explicit with marker and stronger highlights.
+- 2026-06-17: Task B7 completed — prepared Phase B release notes, README/CHANGELOG update and QA checklist.
