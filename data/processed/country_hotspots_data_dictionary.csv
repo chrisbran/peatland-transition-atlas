@@ -1,0 +1,18 @@
+﻿field,description
+country,FAOSTAT/KAPSARC country or territory name.
+m49_code,FAOSTAT Area Code (M49) from combined drained-organic-soils export.
+iso3,Reserved for ISO3 code; filled in B3 when country boundary join is prepared.
+year,Exact selected year.
+drained_organic_soils_area_ha,Sum of cropland and grassland organic soils area in hectares.
+co2_kt_co2,"Sum of CO2 emissions from cropland and grassland organic soils, in kt CO2."
+n2o_ar5_kt_co2e,"N2O emissions from cultivation of organic soils, AR5 CO2-equivalent, in kt CO2e."
+n2o_kt_gas_diagnostic,"Gas-specific N2O emissions from combined export; diagnostic only, not used in CO2e total."
+emissions_total_kt_co2e,co2_kt_co2 + n2o_ar5_kt_co2e.
+emissions_density_t_co2e_per_ha,emissions_total_kt_co2e * 1000 / drained_organic_soils_area_ha.
+hotspot_class,Quantile-based class for MVP choropleth.
+hotspot_rank_total,Rank by total emissions; 1 = highest.
+hotspot_rank_density,Rank by emissions density; 1 = highest.
+source_area,Source file for area values.
+source_co2,Source file for CO2 values.
+source_n2o_co2e,Source file for N2O AR5 CO2e values.
+data_quality_note,Short processing caveat.
