@@ -661,3 +661,71 @@ footer {
   color: var(--muted);
   padding: 1rem;
 }
+
+
+/* B6a layout refinement: hotspot section and full-page screenshot cleanup */
+
+/*
+The sticky header is useful during browsing, but it appears repeatedly in long
+stitched screenshots and can overlap the hotspot section. For the portfolio
+prototype we keep the header static.
+*/
+.site-header,
+header.site-header {
+  position: relative;
+  top: auto;
+  z-index: 20;
+}
+
+.hotspot-section {
+  scroll-margin-top: 2rem;
+}
+
+.hotspot-section .section-heading {
+  margin-bottom: 1.4rem;
+}
+
+.hotspot-layer {
+  margin-top: 1.2rem;
+}
+
+.hotspot-map-card {
+  margin-bottom: .4rem;
+}
+
+.hotspot-map {
+  min-height: clamp(20rem, 46vw, 34rem);
+}
+
+.hotspot-map-details {
+  line-height: 1.55;
+}
+
+.hotspot-caveat {
+  line-height: 1.55;
+}
+
+@media (max-width: 760px) {
+  .hotspot-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hotspot-row-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .25rem;
+  }
+
+  .hotspot-row-head span {
+    white-space: normal;
+  }
+
+  .hotspot-map {
+    min-height: 18rem;
+  }
+
+  .hotspot-map-legend {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
