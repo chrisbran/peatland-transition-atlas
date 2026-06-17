@@ -1,38 +1,52 @@
 [
   {
-    "dataset_id": "D001",
-    "dataset_name": "FAOSTAT / FAO Drained Organic Soils Area and Emissions",
-    "target_output": "country_hotspots.csv",
-    "status": "todo_phase_B",
-    "access_method": "FAOSTAT API / Google Earth Engine / CSV download",
-    "purpose": "Country-level drained organic soils area and GHG emissions.",
-    "license_note": "Check source terms before redistribution; publish derived country-level table only."
+    "source_id": "SRC_FAOSTAT_DOS",
+    "source_name": "FAOSTAT / FAO drained organic soils statistics",
+    "role": "core_country_statistics",
+    "planned_use": "Country-level drained organic soil area and GHG emissions for hotspot ranking.",
+    "access_method": "FAOSTAT API or bulk download; fallback: FAO/GHG Earth Engine layers.",
+    "licence_or_terms_note": "Check FAO/FAOSTAT terms at fetch time; commit only derived country table.",
+    "status": "priority_for_B2",
+    "url": "https://www.fao.org/faostat/en/"
   },
   {
-    "dataset_id": "D002",
-    "dataset_name": "Global Peatland Map / Global Peatland Database",
-    "target_output": "peatland_extent_country.csv or simplified raster-derived aggregates",
-    "status": "todo_phase_B",
-    "access_method": "Download / GIS processing",
-    "purpose": "Global peatland/organic soil extent as hotspot context.",
-    "license_note": "Check source terms; do not commit large raw rasters."
+    "source_id": "SRC_FAO_DROSA_GEE",
+    "source_name": "FAO/GHG/1/DROSA_A Drained Organic Soils Area",
+    "role": "geospatial_area_fallback",
+    "planned_use": "Fallback or validation source for area of drained organic soils at approx. 1 km resolution.",
+    "access_method": "Google Earth Engine dataset.",
+    "licence_or_terms_note": "Check Earth Engine/FAO terms; commit only derived outputs.",
+    "status": "fallback_or_validation",
+    "url": "https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSA_A"
   },
   {
-    "dataset_id": "D003",
-    "dataset_name": "Natural Earth",
-    "target_output": "world_countries_simplified.geojson",
-    "status": "todo_phase_B",
-    "access_method": "Download public domain vector data",
-    "purpose": "Base map for country-level hotspot visualisation.",
-    "license_note": "Public domain; suitable for GitHub."
+    "source_id": "SRC_FAO_DROSE_GEE",
+    "source_name": "FAO/GHG/1/DROSE_A Drained Organic Soils Emissions",
+    "role": "geospatial_emissions_fallback",
+    "planned_use": "Fallback or validation source for C and N2O emissions from drained organic soils.",
+    "access_method": "Google Earth Engine dataset.",
+    "licence_or_terms_note": "Check Earth Engine/FAO terms; commit only derived outputs.",
+    "status": "fallback_or_validation",
+    "url": "https://developers.google.com/earth-engine/datasets/catalog/FAO_GHG_1_DROSE_A"
   },
   {
-    "dataset_id": "D004",
-    "dataset_name": "Eurostat GISCO NUTS",
-    "target_output": "nuts_regions_simplified.geojson",
-    "status": "todo_phase_B",
-    "access_method": "Download GeoJSON/TopoJSON",
-    "purpose": "European/regional zoom layer.",
-    "license_note": "Follow Eurostat/GISCO attribution requirements."
+    "source_id": "SRC_GPM2",
+    "source_name": "Global Peatland Map 2.0 / Global Peatland Database",
+    "role": "global_peatland_extent",
+    "planned_use": "Optional peatland extent context for later Phase B/B3.",
+    "access_method": "Download grid from Greifswald Mire Centre / Global Peatland Database.",
+    "licence_or_terms_note": "Check download terms and attribution; do not commit heavy raw rasters.",
+    "status": "optional_after_FAOSTAT",
+    "url": "https://greifswaldmoor.de/global-peatland-database-en.html"
+  },
+  {
+    "source_id": "SRC_NATURAL_EARTH",
+    "source_name": "Natural Earth Admin 0 Countries",
+    "role": "country_boundaries",
+    "planned_use": "Lightweight world country boundaries for web choropleth.",
+    "access_method": "Download 110m or 50m Admin 0 countries; convert/simplify to GeoJSON if needed.",
+    "licence_or_terms_note": "Natural Earth states it is public domain/free for use; include attribution/source note.",
+    "status": "priority_for_B3",
+    "url": "https://www.naturalearthdata.com/downloads/"
   }
 ]

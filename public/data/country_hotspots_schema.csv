@@ -1,0 +1,17 @@
+﻿field,type,unit,required,description,source,notes
+iso3,string,,yes,ISO-3 country code used for joining to country boundaries.,FAOSTAT / Natural Earth,Harmonise with Natural Earth ADM0_A3 or ISO_A3.
+country,string,,yes,Country or territory name.,FAOSTAT,Keep FAOSTAT name; add display_name later if needed.
+year,integer,year,yes,Data year used for hotspot map.,FAOSTAT / FAO drained organic soils,Use latest common year available across variables.
+drained_organic_soils_area_ha,number,ha,yes,Area of organic soils drained for agricultural activities.,FAOSTAT / FAO DROSA-A,Should include cropland and grazed grassland if using FAO drained organic soils definition.
+emissions_co2_kt,number,kt CO2,recommended,CO2 emissions from drained organic soils.,FAOSTAT land-use emissions / FAO drained organic soils,"If source reports carbon C in Gg, convert to CO2 using 44/12 and document."
+emissions_n2o_kt_co2e,number,kt CO2e,recommended,N2O emissions converted to CO2 equivalent.,FAOSTAT emissions agriculture / FAO drained organic soils,Document GWP convention if conversion is needed.
+emissions_total_kt_co2e,number,kt CO2e,yes,Total GHG emissions from drained organic soils.,FAOSTAT / derived,Core visual metric for hotspot map.
+emissions_density_t_co2e_per_ha,number,t CO2e ha-1 yr-1,yes,Emissions intensity per drained organic soil area.,derived,emissions_total_kt_co2e * 1000 / drained_organic_soils_area_ha.
+hotspot_rank_total,integer,rank,recommended,Rank by total emissions from drained organic soils.,derived,1 = highest total emissions.
+hotspot_rank_density,integer,rank,recommended,Rank by emissions density.,derived,Density may be unstable for very small areas.
+peatland_area_km2,number,km2,optional_phase_B2,Total peatland extent from Global Peatland Map 2.0 or other source.,Global Peatland Map 2.0,Optional for MVP; raster aggregation can be postponed.
+drained_share_of_peatland,number,0-1,optional_phase_B2,Share of peatland area drained for agriculture.,derived,Only compute if peatland_area_km2 and drained area are harmonised.
+hotspot_class,string,,yes,Map class for public choropleth.,derived,"Example: very_high, high, medium, low, no_data."
+source_area,string,,yes,Source note for drained area.,project metadata,Human-readable source string.
+source_emissions,string,,yes,Source note for emissions.,project metadata,Human-readable source string.
+data_quality_note,string,,recommended,Short caveat for the country record.,project QA,"Use for missing data, unstable joins, small denominators, or uncertainty."
