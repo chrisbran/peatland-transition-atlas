@@ -54,6 +54,62 @@
 
 
     
+
+<section id="transitionLogic" class="transition-logic-block">
+  <p class="section-kicker">Atlas framing</p>
+  <h2>From peatland extent to transition priorities</h2>
+  <p class="transition-logic-lede">
+    This prototype is not a general peatland-awareness atlas. It tests how spatial peatland extent,
+    drained organic-soil emissions, national implementation layers and literature evidence can be linked
+    into a transition-priority workflow.
+  </p>
+
+  <div class="transition-chain" aria-label="Atlas evidence chain">
+    <article class="transition-chain-card">
+      <span class="chain-step">01</span>
+      <h3>Extent</h3>
+      <p>Global Peatland Map 2.0 shows where peat-dominated and peat-in-soil-mosaic areas occur.</p>
+      <small>Context layer</small>
+    </article>
+    <article class="transition-chain-card">
+      <span class="chain-step">02</span>
+      <h3>Pressure</h3>
+      <p>Country hotspot data show where drained organic-soil emissions are concentrated.</p>
+      <small>Emissions layer</small>
+    </article>
+    <article class="transition-chain-card">
+      <span class="chain-step">03</span>
+      <h3>Implementation</h3>
+      <p>Germany and Baden-Württemberg layers show how global evidence becomes spatially constrained.</p>
+      <small>Planning boundary</small>
+    </article>
+    <article class="transition-chain-card">
+      <span class="chain-step">04</span>
+      <h3>Pathways</h3>
+      <p>Literature evidence links spatial context to wet use, paludiculture, grazing, biomass and governance options.</p>
+      <small>Transition evidence</small>
+    </article>
+  </div>
+
+  <div class="atlas-boundary-grid">
+    <div>
+      <h3>What this atlas is</h3>
+      <p>
+        A data-visualization and decision-support prototype that connects spatial layers, emissions hotspots,
+        regional implementation constraints and evidence-based transition pathways.
+      </p>
+    </div>
+    <div>
+      <h3>What this atlas is not</h3>
+      <p>
+        It is not a parcel-level rewetting suitability map, not a substitute for hydrological planning,
+        and not a general educational Mooratlas replica.
+      </p>
+    </div>
+  </div>
+</section>
+
+
 <section id="guidedStory" class="section guided-story">
   <div class="section-kicker">Guided scrollytelling prototype</div>
   <h2>From national emission hotspots to real peatland landscapes</h2>
@@ -187,6 +243,36 @@
     </div>
   </div>
 </section>
+
+
+<section id="layerProvenance" class="layer-provenance-block">
+  <p class="section-kicker">Layer logic</p>
+  <h2>Each map layer answers a different question</h2>
+
+  <div class="layer-provenance-grid">
+    <article>
+      <span>Context</span>
+      <h3>Where are peatlands?</h3>
+      <p>GPM 2.0 global and Europe images provide spatial context only.</p>
+    </article>
+    <article>
+      <span>Pressure</span>
+      <h3>Where are emissions concentrated?</h3>
+      <p>Country-level drained organic-soil emissions identify hotspot countries.</p>
+    </article>
+    <article>
+      <span>Implementation</span>
+      <h3>Where do constraints become concrete?</h3>
+      <p>Germany and Baden-Württemberg layers bridge from global evidence to regional planning boundaries.</p>
+    </article>
+    <article>
+      <span>Evidence</span>
+      <h3>What transition pathways are plausible?</h3>
+      <p>Literature-derived pathways translate spatial pressure into possible land-use transitions.</p>
+    </article>
+  </div>
+</section>
+
 
 <section id="hotspots" class="section hotspot-section">
       <div class="section-heading">
@@ -441,5 +527,6 @@
   <script src="src/bw_peat_layer.js"></script>
   <script src="src/scrolly_story.js"></script>
   <script src="src/scrolly_story_layers.js"></script>
+  <script src="src/gpm2_context_images.js"></script>
 </body>
 </html>

@@ -21,3 +21,7 @@
 - 2026-06-18: Task B14c optimizer prepared — added optimized Germany organic-soils web-layer builder.
 - 2026-06-18: Task B14d completed — bound Germany organic-soils layer to sticky story.
 - 2026-06-18: Task B15a completed — prepared Europe wetland/peat source workflow and web-layer processor.
+- 2026-06-18: Task B15c completed — bound GPM 2.0 global and Europe context images to sticky story.
+- 2026-06-18: Task B15d completed — fixed GPM 2.0 sticky-story flicker with stable overlay.
+- 2026-06-18: Task B15e completed — fixed repeated GPM Europe overlay with exact state matching.
+- 2026-06-18: Task B16 completed — refined transition-evidence storyline and layer logic.

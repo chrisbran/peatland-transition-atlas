@@ -1472,3 +1472,175 @@ header.site-header {
 .story-germany-type-6 { fill: rgba(149, 158, 111, .72); }
 .story-germany-type-7 { fill: rgba(91, 132, 136, .72); }
 .story-germany-type-8 { fill: rgba(171, 151, 104, .74); }
+
+
+/* B15c GPM 2.0 context images */
+.story-gpm2-context-card {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  display: grid;
+  grid-template-rows: minmax(260px, 1fr) auto;
+  gap: .75rem;
+}
+
+.story-gpm2-context-image {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: contain;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.08), transparent 28%),
+    linear-gradient(180deg, rgba(244,241,228,.06), rgba(7,12,11,.18));
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.story-gpm2-caption {
+  line-height: 1.45;
+}
+
+
+/* B15d stable GPM 2.0 overlay — avoids scrolly renderer flicker */
+.story-gpm2-stable-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  display: none;
+  padding: inherit;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 78% 78%, rgba(108, 141, 101, .14), transparent 30%),
+    linear-gradient(180deg, rgba(8, 14, 12, .96), rgba(8, 14, 12, .92));
+  border-radius: inherit;
+}
+
+.story-gpm2-stable-overlay.is-visible {
+  display: block;
+}
+
+.story-gpm2-stable-overlay .story-gpm2-context-card {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: minmax(260px, 1fr) auto;
+  gap: .75rem;
+}
+
+.story-gpm2-stable-overlay .story-gpm2-context-image {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: contain;
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,.08), transparent 28%),
+    linear-gradient(180deg, rgba(244,241,228,.06), rgba(7,12,11,.18));
+  border: 1px solid rgba(255,255,255,.08);
+}
+
+.story-gpm2-stable-overlay .story-gpm2-caption {
+  line-height: 1.45;
+}
+
+
+/* B16 transition-evidence storyline refinement */
+.transition-logic-block,
+.layer-provenance-block {
+  max-width: 1180px;
+  margin: clamp(3rem, 8vw, 6rem) auto;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid rgba(232, 222, 159, .14);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 92% 8%, rgba(151, 170, 112, .10), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.012));
+}
+
+.transition-logic-block h2,
+.layer-provenance-block h2 {
+  max-width: 760px;
+  margin: .35rem 0 1rem;
+  font-size: clamp(2rem, 5vw, 4.5rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+
+.transition-logic-lede {
+  max-width: 800px;
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  line-height: 1.55;
+  color: rgba(238, 236, 219, .78);
+}
+
+.transition-chain {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .9rem;
+  margin-top: 2rem;
+}
+
+.transition-chain-card,
+.layer-provenance-grid article {
+  padding: 1rem;
+  border-radius: 18px;
+  background: rgba(6, 14, 12, .58);
+  border: 1px solid rgba(232, 222, 159, .12);
+}
+
+.transition-chain-card h3,
+.layer-provenance-grid h3,
+.atlas-boundary-grid h3 {
+  margin: .4rem 0 .55rem;
+  font-size: 1.02rem;
+}
+
+.transition-chain-card p,
+.layer-provenance-grid p,
+.atlas-boundary-grid p {
+  margin: 0;
+  color: rgba(238, 236, 219, .70);
+  line-height: 1.45;
+}
+
+.transition-chain-card small,
+.layer-provenance-grid span,
+.chain-step {
+  display: inline-flex;
+  color: rgb(217, 223, 130);
+  font-size: .76rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.atlas-boundary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .9rem;
+  margin-top: 1rem;
+}
+
+.atlas-boundary-grid > div {
+  padding: 1.1rem;
+  border-radius: 18px;
+  background: rgba(8, 16, 14, .72);
+  border: 1px solid rgba(232, 222, 159, .10);
+}
+
+.layer-provenance-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .9rem;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .transition-chain,
+  .layer-provenance-grid,
+  .atlas-boundary-grid {
+    grid-template-columns: 1fr;
+  }
+}
