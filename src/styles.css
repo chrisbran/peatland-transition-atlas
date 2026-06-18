@@ -998,3 +998,64 @@ header.site-header {
 .hotspot-svg {
   background: radial-gradient(circle at 50% 45%, rgba(255,255,255,.025), rgba(255,255,255,0) 62%);
 }
+
+
+/* B11c Baden-Württemberg BK50-Moor regional layer */
+.bw-moor-section { margin-top: 4rem; }
+.bw-moor-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+.bw-moor-map-card {
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.075);
+  border-radius: 1.15rem;
+  overflow: hidden;
+}
+.bw-moor-map { min-height: 420px; }
+.bw-moor-svg { display: block; width: 100%; height: auto; }
+.bw-moor-bg { fill: rgba(18, 27, 24, .95); }
+.bw-moor-feature {
+  stroke: rgba(18,27,24,.88);
+  stroke-width: .28;
+  opacity: .82;
+  cursor: pointer;
+  transition: opacity .12s ease, filter .12s ease, stroke-width .12s ease;
+}
+.bw-moor-feature:hover,
+.bw-moor-feature:focus,
+.bw-moor-feature.active {
+  opacity: 1;
+  stroke: rgba(238,225,170,.95);
+  stroke-width: 1.2;
+  filter: drop-shadow(0 0 5px rgba(212,196,118,.36));
+  outline: none;
+}
+.bw-moor-type-0 { fill: rgba(75, 120, 96, .68); }
+.bw-moor-type-1 { fill: rgba(108, 141, 101, .68); }
+.bw-moor-type-2 { fill: rgba(139, 124, 87, .72); }
+.bw-moor-type-3 { fill: rgba(92, 111, 132, .68); }
+.bw-moor-type-4 { fill: rgba(159, 128, 96, .72); }
+.bw-moor-type-5 { fill: rgba(119, 103, 139, .68); }
+.bw-moor-type-6 { fill: rgba(149, 158, 111, .68); }
+.legend-item i.bw-moor-type-0 { background: rgba(75, 120, 96, .68); }
+.legend-item i.bw-moor-type-1 { background: rgba(108, 141, 101, .68); }
+.legend-item i.bw-moor-type-2 { background: rgba(139, 124, 87, .72); }
+.legend-item i.bw-moor-type-3 { background: rgba(92, 111, 132, .68); }
+.legend-item i.bw-moor-type-4 { background: rgba(159, 128, 96, .72); }
+.legend-item i.bw-moor-type-5 { background: rgba(119, 103, 139, .68); }
+.legend-item i.bw-moor-type-6 { background: rgba(149, 158, 111, .68); }
+.bw-moor-side { display: grid; gap: 1rem; }
+.bw-moor-detail {
+  border: 1px solid rgba(212,196,118,.20);
+  border-radius: .9rem;
+  padding: .85rem;
+  background: rgba(212,196,118,.045);
+  color: var(--text);
+}
+@media (max-width: 900px) {
+  .bw-moor-grid { grid-template-columns: 1fr; }
+  .bw-moor-map { min-height: 320px; }
+}

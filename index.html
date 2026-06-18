@@ -240,7 +240,58 @@
         <a href="public/data/atlas_story_sections.json">atlas_story_sections.json</a>
       </div>
     </section>
-  </main>
+  
+<section id="bwPeatLayer" class="section bw-moor-section">
+  <div class="section-kicker">Regional peat/organic-soils layer</div>
+  <h2>Baden-Württemberg: where the peat and organic-soil context becomes spatial</h2>
+  <p class="section-lead">
+    The country hotspot map shows national emissions. The regional layer below shifts the question:
+    where are moor, moor-like and humus-rich groundwater soils actually located within Baden-Württemberg?
+  </p>
+
+  <div class="metric-row">
+    <div class="metric-card">
+      <span class="metric-label">BK50-Moor features</span>
+      <strong id="bwMoorFeatureCount">—</strong>
+    </div>
+    <div class="metric-card">
+      <span class="metric-label">Classes</span>
+      <strong id="bwMoorClassCount">—</strong>
+    </div>
+    <div class="metric-card">
+      <span class="metric-label">Source area sum</span>
+      <strong id="bwMoorArea">—</strong>
+    </div>
+  </div>
+
+  <div class="bw-moor-grid">
+    <div class="bw-moor-map-card">
+      <div id="bwMoorMap" class="bw-moor-map">
+        <div class="map-loading">Loading Baden-Württemberg BK50-Moor layer…</div>
+      </div>
+    </div>
+
+    <aside class="bw-moor-side">
+      <div class="detail-card">
+        <p class="eyebrow">Why this layer matters</p>
+        <h3>From national hotspots to real landscapes</h3>
+        <p>
+          This regional layer is a first spatial bridge from national drained-organic-soils emissions
+          to the actual distribution of moor and organic-soil contexts in Baden-Württemberg.
+        </p>
+        <p class="caveat">
+          Interpretation boundary: this is a medium-scale soil-context layer, not a local rewetting
+          suitability map or parcel-level planning instrument.
+        </p>
+      </div>
+
+      <div id="bwMoorLegend" class="map-legend"></div>
+      <div id="bwMoorDetails" class="bw-moor-detail"></div>
+    </aside>
+  </div>
+</section>
+
+</main>
 
   <footer>
     <p>
@@ -252,5 +303,6 @@
   <script src="src/app.js"></script>
   <script src="src/hotspots.js"></script>
   <script src="src/hotspot_base_layer.js"></script>
+  <script src="src/bw_peat_layer.js"></script>
 </body>
 </html>
