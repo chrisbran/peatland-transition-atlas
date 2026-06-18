@@ -53,7 +53,142 @@
     </section>
 
 
-    <section id="hotspots" class="section hotspot-section">
+    
+<section id="guidedStory" class="section guided-story">
+  <div class="section-kicker">Guided scrollytelling prototype</div>
+  <h2>From national emission hotspots to real peatland landscapes</h2>
+  <p class="section-lead">
+    This guided view is the bridge between the existing explorer layers. It turns the atlas into a
+    scroll-driven narrative: country emissions first, then peat/organic-soil extent, and finally the
+    regional Baden-Württemberg layer.
+  </p>
+
+  <div class="scrolly-layout">
+    <div class="story-steps">
+      <article class="story-step"
+        data-state="world-emissions"
+        data-visual-title="Country-level emissions hotspot view"
+        data-visual-text="National drained-organic-soils emissions identify where the accounting hotspots are.">
+        <div class="story-step-card">
+          <span class="story-step-number">1</span>
+          <h3>Start with country-level emissions</h3>
+          <p>
+            The first map answers a screening question: which countries report large drained-organic-soils emissions?
+          </p>
+          <p class="caveat">This is a national accounting layer, not a local peatland map.</p>
+          <div class="story-links"><a class="button ghost" href="#hotspots">Open hotspot explorer</a></div>
+        </div>
+      </article>
+
+      <article class="story-step"
+        data-state="global-peat"
+        data-visual-title="Peat and organic soils become the spatial context"
+        data-visual-text="The story then shifts from countries to the underlying land: where peat and organic soils occur.">
+        <div class="story-step-card">
+          <span class="story-step-number">2</span>
+          <h3>Then reveal the actual peat/organic-soil context</h3>
+          <p>
+            Emissions are reported nationally, but transition happens in real landscapes. A peat/organic-soils layer
+            makes that spatial context visible.
+          </p>
+        </div>
+      </article>
+
+      <article class="story-step"
+        data-state="europe"
+        data-visual-title="Zoom to Europe"
+        data-visual-text="The European step should connect global peatland patterns with continental policy and land-use contexts.">
+        <div class="story-step-card">
+          <span class="story-step-number">3</span>
+          <h3>Zoom to Europe</h3>
+          <p>
+            Europe is the bridge scale: detailed enough for policy and land-use comparison, but still broad enough
+            to show cross-country contrasts.
+          </p>
+        </div>
+      </article>
+
+      <article class="story-step"
+        data-state="germany"
+        data-visual-title="Germany as the national bridge layer"
+        data-visual-text="Germany links the country hotspot layer to national organic-soils spatial data.">
+        <div class="story-step-card">
+          <span class="story-step-number">4</span>
+          <h3>Translate the hotspot view to Germany</h3>
+          <p>
+            Germany can become the national bridge layer: from total drained-organic-soils emissions toward the
+            actual organic-soil distribution.
+          </p>
+        </div>
+      </article>
+
+      <article class="story-step"
+        data-state="bw"
+        data-visual-title="Baden-Württemberg: regional soil context"
+        data-visual-text="The BK50-Moor layer is the first concrete regional endpoint of the zoom story.">
+        <div class="story-step-card">
+          <span class="story-step-number">5</span>
+          <h3>End at Baden-Württemberg</h3>
+          <p>
+            The regional BK50-Moor layer shows where moor, moor-like and humus-rich groundwater soils occur.
+            This is the scale where transition questions start to become concrete.
+          </p>
+          <div class="story-links"><a class="button ghost" href="#bwPeatLayer">Open BW layer</a></div>
+        </div>
+      </article>
+
+      <article class="story-step"
+        data-state="boundary"
+        data-visual-title="The interpretation boundary"
+        data-visual-text="Peat/organic-soil extent is necessary context, but not sufficient for rewetting suitability.">
+        <div class="story-step-card">
+          <span class="story-step-number">6</span>
+          <h3>Keep the boundary visible</h3>
+          <p>
+            A peat/organic-soils map is not a rewetting suitability map. Suitability would require hydrology,
+            land use, management, ownership, policy and economic context.
+          </p>
+          <p class="caveat">This boundary is part of the atlas, not a footnote.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="story-visual-wrap">
+      <div id="storyVisual" class="story-visual" data-state="world-emissions">
+        <div class="story-visual-header">
+          <p class="eyebrow">Scroll-driven map states</p>
+          <h3 id="storyVisualTitle">Country-level emissions hotspot view</h3>
+          <p id="storyVisualText">National drained-organic-soils emissions identify where the accounting hotspots are.</p>
+        </div>
+
+        <div id="storyStage" class="story-stage" data-state="world-emissions">
+          <div class="story-map-bg"></div>
+          <div class="story-layer world-emissions active" data-story-layer="world-emissions"></div>
+          <div class="story-layer global-peat" data-story-layer="global-peat"></div>
+          <div class="story-layer europe-zoom" data-story-layer="europe"></div>
+          <div class="story-layer germany-zoom" data-story-layer="germany"></div>
+          <div class="story-layer bw-zoom" data-story-layer="bw"></div>
+          <div class="story-layer boundary" data-story-layer="boundary"></div>
+          <div class="story-state-label">
+            <strong>Prototype visual state</strong>
+            <span>The next implementation will bind these states to real map layers.</span>
+          </div>
+        </div>
+
+        <div class="story-layer-list">
+          <span class="story-layer-pill active" data-story-layer="world-emissions">World emissions</span>
+          <span class="story-layer-pill" data-story-layer="global-peat">Peat/organic soils</span>
+          <span class="story-layer-pill" data-story-layer="europe">Europe</span>
+          <span class="story-layer-pill" data-story-layer="germany">Germany</span>
+          <span class="story-layer-pill" data-story-layer="bw">Baden-Württemberg</span>
+          <span class="story-layer-pill" data-story-layer="boundary">Caveat</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="hotspots" class="section hotspot-section">
       <div class="section-heading">
         <p class="eyebrow">Phase B hotspot layer</p>
         <h2>Where are drained organic soil emissions concentrated?</h2>
@@ -304,5 +439,6 @@
   <script src="src/hotspots.js"></script>
   <script src="src/hotspot_base_layer.js"></script>
   <script src="src/bw_peat_layer.js"></script>
+  <script src="src/scrolly_story.js"></script>
 </body>
 </html>

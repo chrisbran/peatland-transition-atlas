@@ -15,3 +15,4 @@
 - 2026-06-17: Task B10 completed — created peat/organic-soils data source inventory and B11 layer-build task.
 - 2026-06-17: Task B11a completed — prepared BK50-Moor source acquisition workflow and web-layer processor.
 - 2026-06-18: Task B11c completed — added Baden-Württemberg BK50-Moor preview map to the public atlas.
+- 2026-06-18: Task B12 completed — added first sticky-scroll guided story scaffold.
