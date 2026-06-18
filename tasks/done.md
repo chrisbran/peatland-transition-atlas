@@ -20,3 +20,4 @@
 - 2026-06-18: Task B14a completed — prepared Germany organic-soils source acquisition workflow and web-layer processor.
 - 2026-06-18: Task B14c optimizer prepared — added optimized Germany organic-soils web-layer builder.
 - 2026-06-18: Task B14d completed — bound Germany organic-soils layer to sticky story.
+- 2026-06-18: Task B15a completed — prepared Europe wetland/peat source workflow and web-layer processor.
