@@ -1448,3 +1448,27 @@ header.site-header {
     margin: .75rem;
   }
 }
+
+
+/* B14d real Germany organic-soils sticky-story layer */
+.story-germany-organic {
+  stroke: rgba(12, 20, 18, .82);
+  stroke-width: .42;
+  opacity: .86;
+}
+
+.story-germany-organic:hover {
+  opacity: 1;
+  stroke: rgba(232,222,159,.88);
+  stroke-width: 1.1;
+}
+
+.story-germany-type-0 { fill: rgba(75, 120, 96, .72); }
+.story-germany-type-1 { fill: rgba(108, 141, 101, .72); }
+.story-germany-type-2 { fill: rgba(139, 124, 87, .76); }
+.story-germany-type-3 { fill: rgba(92, 111, 132, .72); }
+.story-germany-type-4 { fill: rgba(159, 128, 96, .76); }
+.story-germany-type-5 { fill: rgba(119, 103, 139, .72); }
+.story-germany-type-6 { fill: rgba(149, 158, 111, .72); }
+.story-germany-type-7 { fill: rgba(91, 132, 136, .72); }
+.story-germany-type-8 { fill: rgba(171, 151, 104, .74); }

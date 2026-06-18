@@ -14,7 +14,8 @@ No external dependencies.
   const URLS = {
     base: "public/data/world_countries_110m_base.geojson",
     hotspots: "public/data/hotspot_countries_110m.geojson",
-    bw: "public/data/bw_bk50_moor_simplified.geojson"
+    bw: "public/data/bw_bk50_moor_simplified.geojson",
+    germany: "public/data/germany_organic_soils_simplified.geojson"
   };
 
   const WIDTH = 960;
@@ -211,6 +212,31 @@ No external dependencies.
     `;
   }
 
+
+  function renderGermany() {
+    const features = (cache.germany?.features || []).filter(f => f.geometry);
+    const project = makeBBoxProject(features);
+
+    const paths = features.map((f, idx) => {
+      const props = f.properties || {};
+      const typeIdx = idx % 9;
+      const title = `${props.class || "Organic soils"} · ${props.class_long || ""} · ${props.source_area_ha || ""} ha`;
+      return `<path class="story-germany-organic story-germany-type-${typeIdx}" d="${geometryToPath(f.geometry, project)}">
+        <title>${title}</title>
+      </path>`;
+    }).join("");
+
+    return `
+      <svg class="story-real-svg" viewBox="0 0 ${WIDTH} ${HEIGHT}" preserveAspectRatio="xMidYMid meet">
+        <rect class="story-real-ocean" x="0" y="0" width="${WIDTH}" height="${HEIGHT}"></rect>
+        ${paths}
+      </svg>
+      <div class="story-real-caption">
+        <strong>Real layer:</strong> Germany organic-soils context layer · <span>${features.length.toLocaleString("en-US")} dissolved classes · public/data/germany_organic_soils_simplified.geojson</span>
+      </div>
+    `;
+  }
+
   function renderEuropeOrGermany(state) {
     const isGermany = state === "germany";
     const box = isGermany
@@ -293,7 +319,8 @@ No external dependencies.
     if (!htmlCache[key]) {
       if (key === "world-emissions") htmlCache[key] = renderWorldEmissions();
       else if (key === "global-peat") htmlCache[key] = renderPlannedGlobalPeat();
-      else if (key === "europe" || key === "germany") htmlCache[key] = renderEuropeOrGermany(key);
+      else if (key === "europe") htmlCache[key] = renderEuropeOrGermany(key);
+      else if (key === "germany") htmlCache[key] = renderGermany();
       else if (key === "bw") htmlCache[key] = renderBW();
       else if (key === "boundary") htmlCache[key] = renderBoundary();
       else htmlCache[key] = renderWorldEmissions();
@@ -306,17 +333,19 @@ No external dependencies.
     const container = ensureContainer();
     container.innerHTML = `<div class="map-loading">Loading real story layers…</div>`;
 
-    const [base, hotspots, bw] = await Promise.allSettled([
+    const [base, hotspots, bw, germany] = await Promise.allSettled([
       fetchJSON(URLS.base),
       fetchJSON(URLS.hotspots),
-      fetchJSON(URLS.bw)
+      fetchJSON(URLS.bw),
+      fetchJSON(URLS.germany)
     ]);
 
     if (base.status === "fulfilled") cache.base = base.value;
     if (hotspots.status === "fulfilled") cache.hotspots = hotspots.value;
     if (bw.status === "fulfilled") cache.bw = bw.value;
+    if (germany.status === "fulfilled") cache.germany = germany.value;
 
-    if (!cache.base || !cache.hotspots || !cache.bw) {
+    if (!cache.base || !cache.hotspots || !cache.bw || !cache.germany) {
       container.innerHTML = `
         <div class="map-loading">
           Some real story layers could not be loaded. Check public/data files.

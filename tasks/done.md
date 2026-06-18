@@ -17,3 +17,6 @@
 - 2026-06-18: Task B11c completed — added Baden-Württemberg BK50-Moor preview map to the public atlas.
 - 2026-06-18: Task B12 completed — added first sticky-scroll guided story scaffold.
 - 2026-06-18: Task B13 completed — bound sticky story to real world emissions and Baden-Württemberg BK50-Moor layers.
+- 2026-06-18: Task B14a completed — prepared Germany organic-soils source acquisition workflow and web-layer processor.
+- 2026-06-18: Task B14c optimizer prepared — added optimized Germany organic-soils web-layer builder.
+- 2026-06-18: Task B14d completed — bound Germany organic-soils layer to sticky story.

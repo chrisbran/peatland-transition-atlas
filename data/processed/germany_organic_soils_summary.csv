@@ -1,0 +1,10 @@
+class,class_long,feature_count,area_sum_ha
+NH,Niedermoorboden,1,915127.7170917038
+MF,Moorfolgeboden,1,471795.49249466107
+HH,Hochmoorboden,1,268941.85115379695
+DK_FL_NH,flach ueberdeckter Niedermoorboden,1,71085.79834635262
+TR_HH,Tiefumbruchboden aus Hochmoor,1,68452.85875390077
+DK_MA_NH,maechtig ueberdeckter Niedermoorboden,1,65784.40049851232
+TR_NH,Tiefumbruchboden aus Niedermoor,1,56136.27369143607
+DK_FL_HH,flach ueberdeckter Hochmoorboden,1,16545.039988987908
+DK_MA_HH,maechtig ueberdeckter Hochmoorboden,1,510.45066458310004
