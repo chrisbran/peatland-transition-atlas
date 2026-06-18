@@ -25,3 +25,5 @@
 - 2026-06-18: Task B15d completed — fixed GPM 2.0 sticky-story flicker with stable overlay.
 - 2026-06-18: Task B15e completed — fixed repeated GPM Europe overlay with exact state matching.
 - 2026-06-18: Task B16 completed — refined transition-evidence storyline and layer logic.
+- 2026-06-18: Task B17 completed — linked transition pathway evidence to spatial layers.
+- 2026-06-18: Task B17b completed — inserted pathway evidence matrix with non-conflicting ID.

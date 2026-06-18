@@ -1644,3 +1644,261 @@ header.site-header {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* B17 pathway evidence linked to spatial layers */
+.pathway-matrix-block {
+  max-width: 1180px;
+  margin: clamp(3rem, 8vw, 6rem) auto;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid rgba(232, 222, 159, .14);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 12% 92%, rgba(151, 170, 112, .10), transparent 28%),
+    linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.012));
+}
+
+.pathway-matrix-block h2 {
+  max-width: 860px;
+  margin: .35rem 0 1rem;
+  font-size: clamp(2rem, 5vw, 4.25rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+
+.pathway-matrix-lede {
+  max-width: 820px;
+  color: rgba(238, 236, 219, .76);
+  font-size: clamp(1.02rem, 1.6vw, 1.28rem);
+  line-height: 1.55;
+}
+
+.pathway-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .95rem;
+  margin-top: 1.75rem;
+}
+
+.pathway-card {
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(232, 222, 159, .12);
+  background: rgba(6, 14, 12, .62);
+}
+
+.pathway-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: .75rem;
+  align-items: center;
+  margin-bottom: .8rem;
+}
+
+.pathway-card-head strong {
+  color: rgba(238, 236, 219, .58);
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+
+.pathway-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: .32rem .55rem;
+  border-radius: 999px;
+  color: rgb(217, 223, 130);
+  border: 1px solid rgba(217, 223, 130, .22);
+  background: rgba(217, 223, 130, .06);
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.pathway-card h3 {
+  margin: 0 0 .95rem;
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  line-height: 1.15;
+}
+
+.pathway-card dl {
+  margin: 0;
+  display: grid;
+  gap: .65rem;
+}
+
+.pathway-card dl > div {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: .75rem;
+  padding-top: .55rem;
+  border-top: 1px solid rgba(232, 222, 159, .08);
+}
+
+.pathway-card dt {
+  color: rgba(217, 223, 130, .86);
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.pathway-card dd {
+  margin: 0;
+  color: rgba(238, 236, 219, .72);
+  line-height: 1.42;
+}
+
+.pathway-interpretation-note {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(217, 223, 130, .14);
+  background: rgba(217, 223, 130, .055);
+  color: rgba(238, 236, 219, .78);
+  line-height: 1.5;
+}
+
+.pathway-interpretation-note strong {
+  color: rgb(217, 223, 130);
+}
+
+@media (max-width: 900px) {
+  .pathway-matrix {
+    grid-template-columns: 1fr;
+  }
+
+  .pathway-card dl > div {
+    grid-template-columns: 1fr;
+    gap: .25rem;
+  }
+}
+
+
+/* B17b pathway evidence linked to spatial layers */
+.pathway-matrix-block {
+  max-width: 1180px;
+  margin: clamp(3rem, 8vw, 6rem) auto;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid rgba(232, 222, 159, .14);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 12% 92%, rgba(151, 170, 112, .10), transparent 28%),
+    linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.012));
+}
+
+.pathway-matrix-block h2 {
+  max-width: 860px;
+  margin: .35rem 0 1rem;
+  font-size: clamp(2rem, 5vw, 4.25rem);
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+
+.pathway-matrix-lede {
+  max-width: 820px;
+  color: rgba(238, 236, 219, .76);
+  font-size: clamp(1.02rem, 1.6vw, 1.28rem);
+  line-height: 1.55;
+}
+
+.pathway-matrix {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .95rem;
+  margin-top: 1.75rem;
+}
+
+.pathway-card {
+  padding: 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(232, 222, 159, .12);
+  background: rgba(6, 14, 12, .62);
+}
+
+.pathway-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: .75rem;
+  align-items: center;
+  margin-bottom: .8rem;
+}
+
+.pathway-card-head strong {
+  color: rgba(238, 236, 219, .58);
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  white-space: nowrap;
+}
+
+.pathway-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: .32rem .55rem;
+  border-radius: 999px;
+  color: rgb(217, 223, 130);
+  border: 1px solid rgba(217, 223, 130, .22);
+  background: rgba(217, 223, 130, .06);
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.pathway-card h3 {
+  margin: 0 0 .95rem;
+  font-size: clamp(1.05rem, 1.7vw, 1.35rem);
+  line-height: 1.15;
+}
+
+.pathway-card dl {
+  margin: 0;
+  display: grid;
+  gap: .65rem;
+}
+
+.pathway-card dl > div {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: .75rem;
+  padding-top: .55rem;
+  border-top: 1px solid rgba(232, 222, 159, .08);
+}
+
+.pathway-card dt {
+  color: rgba(217, 223, 130, .86);
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.pathway-card dd {
+  margin: 0;
+  color: rgba(238, 236, 219, .72);
+  line-height: 1.42;
+}
+
+.pathway-interpretation-note {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 18px;
+  border: 1px solid rgba(217, 223, 130, .14);
+  background: rgba(217, 223, 130, .055);
+  color: rgba(238, 236, 219, .78);
+  line-height: 1.5;
+}
+
+.pathway-interpretation-note strong {
+  color: rgb(217, 223, 130);
+}
+
+@media (max-width: 900px) {
+  .pathway-matrix {
+    grid-template-columns: 1fr;
+  }
+
+  .pathway-card dl > div {
+    grid-template-columns: 1fr;
+    gap: .25rem;
+  }
+}
