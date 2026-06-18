@@ -12,3 +12,5 @@
 - 2026-06-17: Task B7 completed — prepared Phase B release notes, README/CHANGELOG update and QA checklist.
 - 2026-06-17: Task B8a completed — added base land layer and softened hotspot map palette.
 - 2026-06-17: Task B8b completed — replaced equirectangular map display with Robinson-style visual projection.
+- 2026-06-17: Task B10 completed — created peat/organic-soils data source inventory and B11 layer-build task.
+- 2026-06-17: Task B11a completed — prepared BK50-Moor source acquisition workflow and web-layer processor.
