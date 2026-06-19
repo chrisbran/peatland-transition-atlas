@@ -274,6 +274,94 @@
 </section>
 
 
+
+<section id="centralGlobalMapStory" class="central-map-story" data-state="extent">
+  <div class="central-map-sticky" aria-live="polite">
+    <div class="central-map-shell" role="img" aria-label="Scroll-driven global peatland and emissions map">
+      <div class="central-map-titlebar">
+        <span id="centralMapMode">Global peatland context</span>
+        <strong id="centralMapTitle">Peatlands are spatially concentrated.</strong>
+      </div>
+
+      <div class="central-map-layer-stack">
+        <img class="central-map-layer layer-gpm" src="public/maps/global/global_gpm2_peat_extent.png" alt="">
+        <img class="central-map-layer layer-total" src="public/maps/global/global_hotspots_total.png" alt="">
+        <img class="central-map-layer layer-density" src="public/maps/global/global_hotspots_density.png" alt="">
+        <img class="central-map-layer layer-borders" src="public/maps/global/global_country_borders.png" alt="">
+      
+        <img class="central-map-layer layer-europe-peat" src="public/maps/europe/europe_gpm2_peat_extent.png" alt="">
+        <img class="central-map-layer layer-europe-borders" src="public/maps/europe/europe_country_borders.png" alt="">
+</div>
+
+      <div id="centralMapLegend" class="central-map-legend">
+        <span><i class="legend-peat"></i>Peatland context</span>
+      </div>
+
+      <p id="centralMapSource" class="central-map-source">
+        Layer stack: Global Peatland Map 2.0 context and country hotspot layers. All images exported from the same ArcGIS global map frame.
+      </p>
+    </div>
+  </div>
+
+  <div class="central-map-steps">
+    <article class="central-map-step is-active" data-global-state="extent">
+      <span>01 · Extent</span>
+      <h3>Peatlands are not everywhere — they are spatially concentrated.</h3>
+      <p>
+        The first question is geographic: where are peat-dominated areas and peat-in-soil-mosaic areas located?
+        The map starts with peatland extent before adding emissions pressure.
+      </p>
+    </article>
+
+    <article class="central-map-step" data-global-state="total">
+      <span>02 · Absolute pressure</span>
+      <h3>Total emissions identify national climate relevance.</h3>
+      <p>
+        Absolute drained-organic-soil emissions show which countries dominate the global mitigation signal.
+        This is the first prioritisation view, but not the only one.
+      </p>
+    </article>
+
+    <article class="central-map-step" data-global-state="density">
+      <span>03 · Intensity</span>
+      <h3>Emission density changes the interpretation.</h3>
+      <p>
+        Density asks a different question: where is pressure concentrated relative to the mapped drained
+        organic-soil area? The same geography now tells a different story.
+      </p>
+    </article>
+
+    <article class="central-map-step" data-global-state="compare">
+      <span>04 · Read together</span>
+      <h3>Transition priorities need both views.</h3>
+      <p>
+        High totals indicate global climate relevance. High density indicates intensity. A transition atlas
+        should not force users to choose one metric; it should show why both are needed.
+      </p>
+    </article>
+
+    <article class="central-map-step" data-global-state="europe-borders">
+      <span>05 · Europe frame</span>
+      <h3>Europe needs its own regional map frame.</h3>
+      <p>
+        The story now changes scale. Country borders make the European frame readable before the peatland
+        pattern is added back in.
+      </p>
+    </article>
+
+    <article class="central-map-step" data-global-state="europe-peat">
+      <span>06 · European peat context</span>
+      <h3>European peatlands are spatially concentrated, not evenly spread.</h3>
+      <p>
+        The European frame shows peatland context with higher regional clarity. This sets up the next move:
+        from continental structure to the national implementation layer in Germany.
+      </p>
+    </article>
+
+  </div>
+</section>
+
+
 <section id="pathwayEvidenceMatrix" class="pathway-matrix-block">
   <p class="section-kicker">Transition pathway bridge</p>
   <h2>Spatial pressure only becomes useful when linked to feasible pathways</h2>
@@ -604,5 +692,6 @@
   <script src="src/scrolly_story.js"></script>
   <script src="src/scrolly_story_layers.js"></script>
   <script src="src/gpm2_context_images.js"></script>
+  <script src="src/central_global_map_story.js"></script>
 </body>
 </html>

@@ -1,1 +1,13 @@
-data/external/faostat/*.csv
+data/external/faostat/*.csv*.lock
+*.aux.xml
+*.ovr
+*.tif
+*.tiff
+*.gdb/
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.sbn
+*.sbx

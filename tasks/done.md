@@ -27,3 +27,10 @@
 - 2026-06-18: Task B16 completed — refined transition-evidence storyline and layer logic.
 - 2026-06-18: Task B17 completed — linked transition pathway evidence to spatial layers.
 - 2026-06-18: Task B17b completed — inserted pathway evidence matrix with non-conflicting ID.
+- 2026-06-18: Task B18b-new completed — added central global map story using ArcGIS-rendered layer stack.
+- 2026-06-18: Task B18b4 completed — kept GPM2 context visible under total-emissions and density overlays.
+- 2026-06-18: Task B18b5 completed — increased GPM2 context opacity under emissions overlays.
+- 2026-06-18: Task B18b6 completed — simplified compare state to avoid mixed hotspot overlay.
+- 2026-06-18: Task B18c completed — cleaned central global story stage and reduced repeated text.
+- 2026-06-18: Task B19a completed — prepared Europe frame workflow and export folders.
+- 2026-06-19: Task B19b completed — bound Europe frame to central sticky story.

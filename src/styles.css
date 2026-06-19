@@ -1902,3 +1902,521 @@ header.site-header {
     gap: .25rem;
   }
 }
+
+
+/* B18b-new central global map story */
+.central-map-story {
+  position: relative;
+  min-height: 430vh;
+  margin: clamp(2.5rem, 7vw, 6rem) 0;
+  background:
+    linear-gradient(180deg, rgba(5, 12, 10, 0), rgba(10, 18, 15, .42) 18%, rgba(10, 18, 15, .42) 82%, rgba(5, 12, 10, 0));
+}
+
+.central-map-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.central-map-shell {
+  position: relative;
+  width: min(1320px, calc(100vw - 2.5rem));
+  aspect-ratio: 16 / 9;
+  border-radius: 30px;
+  overflow: hidden;
+  background: rgba(9, 18, 16, .94);
+  border: 1px solid rgba(232, 222, 159, .14);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, .28);
+}
+
+.central-map-layer-stack {
+  position: absolute;
+  inset: 0;
+}
+
+.central-map-layer {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity .7s ease;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.layer-gpm { opacity: .95; }
+.layer-total { opacity: 0; }
+.layer-density { opacity: 0; }
+.layer-borders { opacity: .82; }
+
+.central-map-story[data-state="extent"] .layer-gpm { opacity: .95; }
+.central-map-story[data-state="extent"] .layer-total { opacity: 0; }
+.central-map-story[data-state="extent"] .layer-density { opacity: 0; }
+.central-map-story[data-state="extent"] .layer-borders { opacity: .62; }
+
+.central-map-story[data-state="total"] .layer-gpm { opacity: .24; }
+.central-map-story[data-state="total"] .layer-total { opacity: .92; }
+.central-map-story[data-state="total"] .layer-density { opacity: 0; }
+.central-map-story[data-state="total"] .layer-borders { opacity: .82; }
+
+.central-map-story[data-state="density"] .layer-gpm { opacity: .22; }
+.central-map-story[data-state="density"] .layer-total { opacity: 0; }
+.central-map-story[data-state="density"] .layer-density { opacity: .92; }
+.central-map-story[data-state="density"] .layer-borders { opacity: .86; }
+
+.central-map-story[data-state="compare"] .layer-gpm { opacity: .12; }
+.central-map-story[data-state="compare"] .layer-total { opacity: .54; }
+.central-map-story[data-state="compare"] .layer-density { opacity: .48; }
+.central-map-story[data-state="compare"] .layer-borders { opacity: .90; }
+
+.central-map-titlebar {
+  position: absolute;
+  z-index: 3;
+  left: clamp(.8rem, 1.8vw, 1.35rem);
+  top: clamp(.8rem, 1.8vw, 1.35rem);
+  max-width: min(640px, calc(100% - 2rem));
+  padding: .7rem .85rem;
+  border-radius: 18px;
+  background: rgba(5, 11, 10, .70);
+  border: 1px solid rgba(232, 222, 159, .12);
+  backdrop-filter: blur(8px);
+}
+
+.central-map-titlebar span {
+  display: block;
+  color: rgb(217, 223, 130);
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  margin-bottom: .2rem;
+}
+
+.central-map-titlebar strong {
+  display: block;
+  color: rgba(238, 236, 219, .92);
+  font-size: clamp(1rem, 1.7vw, 1.5rem);
+  line-height: 1.08;
+  letter-spacing: -.02em;
+}
+
+.central-map-legend {
+  position: absolute;
+  z-index: 3;
+  left: clamp(.8rem, 1.8vw, 1.35rem);
+  bottom: clamp(.8rem, 1.8vw, 1.35rem);
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem .75rem;
+  max-width: min(740px, calc(100% - 2rem));
+  padding: .55rem .7rem;
+  border-radius: 999px;
+  background: rgba(5, 11, 10, .72);
+  border: 1px solid rgba(232, 222, 159, .12);
+  backdrop-filter: blur(8px);
+}
+
+.central-map-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  color: rgba(238, 236, 219, .74);
+  font-size: .76rem;
+  white-space: nowrap;
+}
+
+.central-map-legend i {
+  width: .95rem;
+  height: .55rem;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.legend-peat { background: #4B7860; }
+.legend-mosaic { background: #A5A877; }
+.legend-risk { background: #CF6546; }
+.legend-density { background: #BE7A52; }
+.legend-border {
+  background: transparent;
+  border: 1px solid rgba(216, 214, 197, .85);
+}
+
+.central-map-source {
+  position: absolute;
+  z-index: 3;
+  right: clamp(.8rem, 1.8vw, 1.35rem);
+  bottom: clamp(.8rem, 1.8vw, 1.35rem);
+  max-width: min(420px, 38%);
+  margin: 0;
+  color: rgba(238, 236, 219, .48);
+  font-size: .72rem;
+  line-height: 1.35;
+  text-align: right;
+}
+
+.central-map-steps {
+  position: relative;
+  z-index: 4;
+  width: min(430px, calc(100vw - 2rem));
+  margin-left: clamp(1rem, 7vw, 7rem);
+  padding-top: 22vh;
+  padding-bottom: 48vh;
+  pointer-events: auto;
+}
+
+.central-map-step {
+  min-height: 78vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: .55;
+  transition: opacity .2s ease;
+}
+
+.central-map-step.is-active {
+  opacity: 1;
+}
+
+.central-map-step > span,
+.central-map-step h3,
+.central-map-step p {
+  display: block;
+  max-width: 100%;
+  padding-left: .9rem;
+  padding-right: .9rem;
+}
+
+.central-map-step > span {
+  padding-top: .85rem;
+  color: rgb(217, 223, 130);
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+}
+
+.central-map-step h3 {
+  margin: .35rem 0 .45rem;
+  color: rgba(238, 236, 219, .94);
+  font-size: clamp(1.25rem, 2.4vw, 2rem);
+  line-height: 1.04;
+  letter-spacing: -.03em;
+}
+
+.central-map-step p {
+  margin: 0;
+  padding-bottom: .9rem;
+  color: rgba(238, 236, 219, .72);
+  line-height: 1.5;
+}
+
+.central-map-step::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: min(430px, calc(100vw - 2rem));
+  min-height: 11rem;
+  border-radius: 22px;
+  background: rgba(5, 11, 10, .74);
+  border: 1px solid rgba(232, 222, 159, .13);
+  box-shadow: 0 18px 52px rgba(0, 0, 0, .22);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+
+@media (max-width: 980px) {
+  .central-map-story {
+    min-height: auto;
+    margin: clamp(2rem, 6vw, 4rem) 0;
+  }
+
+  .central-map-sticky {
+    position: relative;
+    height: auto;
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .central-map-shell {
+    width: 100%;
+    border-radius: 22px;
+  }
+
+  .central-map-steps {
+    margin: 1rem auto 0;
+    padding: 0 1rem 2rem;
+    width: min(720px, 100%);
+  }
+
+  .central-map-step {
+    min-height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .central-map-step::before {
+    width: min(720px, calc(100vw - 2rem));
+  }
+
+  .central-map-source {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .central-map-titlebar,
+  .central-map-legend {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    top: auto;
+    max-width: none;
+    margin: .55rem;
+    border-radius: 16px;
+  }
+
+  .central-map-layer-stack {
+    position: relative;
+    aspect-ratio: 16 / 9;
+  }
+
+  .central-map-shell {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .central-map-legend {
+    order: 3;
+  }
+}
+
+/* B18b4 keep GPM2 context visible beneath emissions overlays */
+.central-map-layer {
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+.central-map-story[data-state="extent"] .layer-gpm {
+  opacity: 1;
+}
+
+.central-map-story[data-state="extent"] .layer-total,
+.central-map-story[data-state="extent"] .layer-density {
+  opacity: 0;
+}
+
+.central-map-story[data-state="extent"] .layer-borders {
+  opacity: .82;
+}
+
+.central-map-story[data-state="total"] .layer-gpm {
+  opacity: .58;
+}
+
+.central-map-story[data-state="total"] .layer-total {
+  opacity: .86;
+}
+
+.central-map-story[data-state="total"] .layer-density {
+  opacity: 0;
+}
+
+.central-map-story[data-state="total"] .layer-borders {
+  opacity: .96;
+}
+
+.central-map-story[data-state="density"] .layer-gpm {
+  opacity: .58;
+}
+
+.central-map-story[data-state="density"] .layer-total {
+  opacity: 0;
+}
+
+.central-map-story[data-state="density"] .layer-density {
+  opacity: .86;
+}
+
+.central-map-story[data-state="density"] .layer-borders {
+  opacity: .96;
+}
+
+.central-map-story[data-state="compare"] .layer-gpm {
+  opacity: .42;
+}
+
+.central-map-story[data-state="compare"] .layer-total {
+  opacity: .62;
+}
+
+.central-map-story[data-state="compare"] .layer-density {
+  opacity: .58;
+}
+
+.central-map-story[data-state="compare"] .layer-borders {
+  opacity: 1;
+}
+
+/* Keep the map visually calm after the alpha re-export. */
+.central-map-shell {
+  background: rgba(5, 13, 11, .96);
+}
+
+/* B18b5 increase GPM2 context opacity in emissions states */
+.central-map-story[data-state="total"] .layer-gpm {
+  opacity: .68;
+}
+
+.central-map-story[data-state="density"] .layer-gpm {
+  opacity: .68;
+}
+
+.central-map-story[data-state="compare"] .layer-gpm {
+  opacity: .50;
+}
+
+/* B18b6 simplify compare state: no extra mixed hotspot layer */
+.central-map-story[data-state="compare"] .layer-gpm {
+  opacity: .68;
+}
+
+.central-map-story[data-state="compare"] .layer-total {
+  opacity: 0;
+}
+
+.central-map-story[data-state="compare"] .layer-density {
+  opacity: .86;
+}
+
+.central-map-story[data-state="compare"] .layer-borders {
+  opacity: .96;
+}
+
+/* B18c clean central global story stage */
+.central-map-titlebar {
+  width: auto;
+  max-width: none;
+  padding: .45rem .65rem;
+  border-radius: 999px;
+  background: rgba(5, 11, 10, .62);
+}
+
+.central-map-titlebar span {
+  margin: 0;
+  font-size: .68rem;
+  letter-spacing: .10em;
+}
+
+.central-map-titlebar strong {
+  display: none;
+}
+
+/* Let the scroll card carry the narrative; keep it compact and away from the map legend. */
+.central-map-steps {
+  width: min(395px, calc(100vw - 2rem));
+  margin-left: clamp(.8rem, 5vw, 5.25rem);
+  padding-top: 28vh;
+  padding-bottom: 52vh;
+}
+
+.central-map-step {
+  min-height: 76vh;
+}
+
+.central-map-step::before {
+  width: min(395px, calc(100vw - 2rem));
+  min-height: 9.75rem;
+  background: rgba(5, 11, 10, .78);
+  border-color: rgba(232, 222, 159, .16);
+}
+
+.central-map-step h3 {
+  font-size: clamp(1.12rem, 2.05vw, 1.72rem);
+  line-height: 1.06;
+  margin-top: .32rem;
+}
+
+.central-map-step p {
+  font-size: .92rem;
+  line-height: 1.46;
+}
+
+.central-map-step > span {
+  font-size: .68rem;
+}
+
+/* Source stays readable but does not compete with the map. */
+.central-map-source {
+  max-width: min(360px, 34%);
+  color: rgba(238, 236, 219, .58);
+}
+
+/* Keep legend readable but subordinate. */
+.central-map-legend {
+  padding: .42rem .58rem;
+  gap: .32rem .62rem;
+}
+
+.central-map-legend span {
+  font-size: .70rem;
+}
+
+/* Slightly reduce visual heaviness around the central map shell. */
+.central-map-shell {
+  box-shadow: 0 20px 70px rgba(0, 0, 0, .24);
+}
+
+@media (max-width: 980px) {
+  .central-map-titlebar strong {
+    display: none;
+  }
+
+  .central-map-steps {
+    padding-top: 0;
+    padding-bottom: 2rem;
+  }
+
+  .central-map-step::before {
+    width: min(720px, calc(100vw - 2rem));
+  }
+}
+
+/* B19b bind Europe frame to central sticky story */
+.layer-europe-peat,
+.layer-europe-borders {
+  opacity: 0;
+}
+
+.central-map-story[data-state="europe-borders"] .layer-gpm,
+.central-map-story[data-state="europe-borders"] .layer-total,
+.central-map-story[data-state="europe-borders"] .layer-density,
+.central-map-story[data-state="europe-borders"] .layer-borders {
+  opacity: 0;
+}
+
+.central-map-story[data-state="europe-borders"] .layer-europe-peat {
+  opacity: 0;
+}
+
+.central-map-story[data-state="europe-borders"] .layer-europe-borders {
+  opacity: .96;
+}
+
+.central-map-story[data-state="europe-peat"] .layer-gpm,
+.central-map-story[data-state="europe-peat"] .layer-total,
+.central-map-story[data-state="europe-peat"] .layer-density,
+.central-map-story[data-state="europe-peat"] .layer-borders {
+  opacity: 0;
+}
+
+.central-map-story[data-state="europe-peat"] .layer-europe-peat {
+  opacity: .98;
+}
+
+.central-map-story[data-state="europe-peat"] .layer-europe-borders {
+  opacity: .96;
+}
+
