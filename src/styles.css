@@ -2420,3 +2420,212 @@ header.site-header {
   opacity: .96;
 }
 
+/* B50 fix Germany / Thuenen central-story layer binding */
+.layer-germany-admin,
+.layer-germany-thuenen-extent,
+.layer-germany-thuenen-types {
+  opacity: 0;
+}
+
+.central-map-story:not([data-state="germany-context"]):not([data-state="germany-thuenen-extent"]):not([data-state="germany-thuenen-types"]) .layer-germany-admin,
+.central-map-story:not([data-state="germany-context"]):not([data-state="germany-thuenen-extent"]):not([data-state="germany-thuenen-types"]) .layer-germany-thuenen-extent,
+.central-map-story:not([data-state="germany-context"]):not([data-state="germany-thuenen-extent"]):not([data-state="germany-thuenen-types"]) .layer-germany-thuenen-types {
+  opacity: 0;
+}
+
+.central-map-story[data-state="germany-context"] .layer-gpm,
+.central-map-story[data-state="germany-context"] .layer-total,
+.central-map-story[data-state="germany-context"] .layer-density,
+.central-map-story[data-state="germany-context"] .layer-borders,
+.central-map-story[data-state="germany-context"] .layer-europe-peat,
+.central-map-story[data-state="germany-context"] .layer-europe-borders,
+.central-map-story[data-state="germany-context"] .layer-germany-thuenen-extent,
+.central-map-story[data-state="germany-context"] .layer-germany-thuenen-types {
+  opacity: 0;
+}
+
+.central-map-story[data-state="germany-context"] .layer-germany-admin {
+  opacity: .96;
+}
+
+.central-map-story[data-state="germany-thuenen-extent"] .layer-gpm,
+.central-map-story[data-state="germany-thuenen-extent"] .layer-total,
+.central-map-story[data-state="germany-thuenen-extent"] .layer-density,
+.central-map-story[data-state="germany-thuenen-extent"] .layer-borders,
+.central-map-story[data-state="germany-thuenen-extent"] .layer-europe-peat,
+.central-map-story[data-state="germany-thuenen-extent"] .layer-europe-borders,
+.central-map-story[data-state="germany-thuenen-extent"] .layer-germany-thuenen-types {
+  opacity: 0;
+}
+
+.central-map-story[data-state="germany-thuenen-extent"] .layer-germany-thuenen-extent {
+  opacity: .98;
+}
+
+.central-map-story[data-state="germany-thuenen-extent"] .layer-germany-admin {
+  opacity: .88;
+}
+
+.central-map-story[data-state="germany-thuenen-types"] .layer-gpm,
+.central-map-story[data-state="germany-thuenen-types"] .layer-total,
+.central-map-story[data-state="germany-thuenen-types"] .layer-density,
+.central-map-story[data-state="germany-thuenen-types"] .layer-borders,
+.central-map-story[data-state="germany-thuenen-types"] .layer-europe-peat,
+.central-map-story[data-state="germany-thuenen-types"] .layer-europe-borders,
+.central-map-story[data-state="germany-thuenen-types"] .layer-germany-thuenen-extent {
+  opacity: 0;
+}
+
+.central-map-story[data-state="germany-thuenen-types"] .layer-germany-thuenen-types {
+  opacity: .98;
+}
+
+.central-map-story[data-state="germany-thuenen-types"] .layer-germany-admin {
+  opacity: .86;
+}
+
+.legend-thuenen-extent { background: #2F6B4F; }
+.legend-thuenen-hh { background: #6E4B78; }
+.legend-thuenen-mf { background: #8E7A4D; }
+.legend-thuenen-nh { background: #2F6B4F; }
+.legend-thuenen-tief-hh { background: #8A5A63; }
+.legend-thuenen-tief-nh { background: #1F7A5C; }
+.legend-thuenen-flach-hh { background: #9B7F8D; }
+.legend-thuenen-flach-nh { background: #6F9A78; }
+.legend-thuenen-maechtig-hh { background: #B08B6C; }
+.legend-thuenen-maechtig-nh { background: #B7A15A; }
+
+/* B51 hard central map layer fallback. JS controller is authoritative. */
+.layer-germany-admin,
+.layer-germany-thuenen-extent,
+.layer-germany-thuenen-types {
+  opacity: 0 !important;
+}
+
+/* B54 restore original Thuenen legend swatch colors */
+.central-map-legend i,
+.central-stage-legend i,
+.map-legend i,
+[data-central-map-legend] i,
+[data-map-legend] i {
+  display: inline-block;
+  width: .72rem;
+  height: .44rem;
+  min-width: .72rem;
+  border-radius: 999px;
+  margin-right: .38rem;
+  vertical-align: -0.05rem;
+  border: 1px solid rgba(255, 255, 255, .25);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .12);
+}
+
+.central-map-legend .legend-thuenen-extent,
+.central-stage-legend .legend-thuenen-extent,
+.map-legend .legend-thuenen-extent,
+[data-central-map-legend] .legend-thuenen-extent,
+[data-map-legend] .legend-thuenen-extent {
+  background: #2F6B4F !important;
+  background-color: #2F6B4F !important;
+}
+
+.central-map-legend .legend-thuenen-hh,
+.central-stage-legend .legend-thuenen-hh,
+.map-legend .legend-thuenen-hh,
+[data-central-map-legend] .legend-thuenen-hh,
+[data-map-legend] .legend-thuenen-hh {
+  background: #6E4B78 !important;
+  background-color: #6E4B78 !important;
+}
+
+.central-map-legend .legend-thuenen-mf,
+.central-stage-legend .legend-thuenen-mf,
+.map-legend .legend-thuenen-mf,
+[data-central-map-legend] .legend-thuenen-mf,
+[data-map-legend] .legend-thuenen-mf {
+  background: #8E7A4D !important;
+  background-color: #8E7A4D !important;
+}
+
+.central-map-legend .legend-thuenen-nh,
+.central-stage-legend .legend-thuenen-nh,
+.map-legend .legend-thuenen-nh,
+[data-central-map-legend] .legend-thuenen-nh,
+[data-map-legend] .legend-thuenen-nh {
+  background: #2F6B4F !important;
+  background-color: #2F6B4F !important;
+}
+
+.central-map-legend .legend-thuenen-tief-hh,
+.central-stage-legend .legend-thuenen-tief-hh,
+.map-legend .legend-thuenen-tief-hh,
+[data-central-map-legend] .legend-thuenen-tief-hh,
+[data-map-legend] .legend-thuenen-tief-hh {
+  background: #8A5A63 !important;
+  background-color: #8A5A63 !important;
+}
+
+.central-map-legend .legend-thuenen-tief-nh,
+.central-stage-legend .legend-thuenen-tief-nh,
+.map-legend .legend-thuenen-tief-nh,
+[data-central-map-legend] .legend-thuenen-tief-nh,
+[data-map-legend] .legend-thuenen-tief-nh {
+  background: #1F7A5C !important;
+  background-color: #1F7A5C !important;
+}
+
+.central-map-legend .legend-thuenen-flach-hh,
+.central-stage-legend .legend-thuenen-flach-hh,
+.map-legend .legend-thuenen-flach-hh,
+[data-central-map-legend] .legend-thuenen-flach-hh,
+[data-map-legend] .legend-thuenen-flach-hh {
+  background: #9B7F8D !important;
+  background-color: #9B7F8D !important;
+}
+
+.central-map-legend .legend-thuenen-flach-nh,
+.central-stage-legend .legend-thuenen-flach-nh,
+.map-legend .legend-thuenen-flach-nh,
+[data-central-map-legend] .legend-thuenen-flach-nh,
+[data-map-legend] .legend-thuenen-flach-nh {
+  background: #6F9A78 !important;
+  background-color: #6F9A78 !important;
+}
+
+.central-map-legend .legend-thuenen-maechtig-hh,
+.central-stage-legend .legend-thuenen-maechtig-hh,
+.map-legend .legend-thuenen-maechtig-hh,
+[data-central-map-legend] .legend-thuenen-maechtig-hh,
+[data-map-legend] .legend-thuenen-maechtig-hh {
+  background: #B08B6C !important;
+  background-color: #B08B6C !important;
+}
+
+.central-map-legend .legend-thuenen-maechtig-nh,
+.central-stage-legend .legend-thuenen-maechtig-nh,
+.map-legend .legend-thuenen-maechtig-nh,
+[data-central-map-legend] .legend-thuenen-maechtig-nh,
+[data-map-legend] .legend-thuenen-maechtig-nh {
+  background: #B7A15A !important;
+  background-color: #B7A15A !important;
+}
+
+/* B55 robust original legend layout for inline Thuenen swatches */
+.central-map-legend span,
+.central-stage-legend span,
+.map-legend span,
+[data-central-map-legend] span,
+[data-map-legend] span {
+  align-items: center;
+}
+
+.central-map-legend .legend-entry,
+.central-stage-legend .legend-entry,
+.map-legend .legend-entry,
+[data-central-map-legend] .legend-entry,
+[data-map-legend] .legend-entry {
+  display: inline-flex;
+  align-items: center;
+  gap: .28rem;
+  white-space: nowrap;
+}
+

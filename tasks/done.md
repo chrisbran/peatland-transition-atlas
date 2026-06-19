@@ -34,3 +34,10 @@
 - 2026-06-18: Task B18c completed — cleaned central global story stage and reduced repeated text.
 - 2026-06-18: Task B19a completed — prepared Europe frame workflow and export folders.
 - 2026-06-19: Task B19b completed — bound Europe frame to central sticky story.
+- 2026-06-19: Task B19c completed - prepared Germany / Thuenen frame workflow.
+- 2026-06-19: Task B50 completed - fixed Germany / Thuenen central-story state binding.
+- 2026-06-19: Task B51 completed - added hard central map layer controller.
+- 2026-06-19: Task B52 completed - added central step-state bridge.
+- 2026-06-19: Task B53 completed - improved Germany Thuenen distinction and legend.
+- 2026-06-19: Task B54 completed - removed B53 custom legend and restored original Thuenen legend colors.
+- 2026-06-19: Task B55 completed - fixed Thuenen legend inline color swatches.

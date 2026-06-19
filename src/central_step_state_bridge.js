@@ -1,50 +1,18 @@
 /*
-B18b-new — Central global map story.
-
-Uses four ArcGIS-rendered PNG layers exported from the same GLOBAL_FRAME_V1.
-The scroll state controls layer opacity only. The map frame, projection, size and placement remain fixed.
-*/
-
+ * B52 central map step-state bridge.
+ *
+ * Purpose:
+ * Ensure every .central-map-step[data-global-state] actively drives
+ * .central-map-story[data-state]. This is needed for newly inserted
+ * Europe/Germany steps when the original controller does not recognize them.
+ */
 (function () {
-  const STATE_META = {
-    extent: {
-      mode: "Peatland context",
-      title: "Peatlands are spatially concentrated.",
-      legend: `
-        <span><i class="legend-peat"></i>Peatland context</span>
-        <span><i class="legend-mosaic"></i>Peat in soil mosaic</span>
-      `,
-      source: "Global Peatland Map 2.0 context · exported from GLOBAL_FRAME_V1."
-    },
-    total: {
-      mode: "Total emissions",
-      title: "Absolute emissions show national climate pressure.",
-      legend: `
-        <span><i class="legend-peat"></i>Peatland context</span>
-        <span><i class="legend-risk"></i>Higher total emissions</span>
-      `,
-      source: "Country hotspot layer: emissions_total_kt_co2e · GPM context underneath · same ArcGIS frame."
-    },
-    density: {
-      mode: "Emission density",
-      title: "Density reveals concentrated pressure.",
-      legend: `
-        <span><i class="legend-peat"></i>Peatland context</span>
-        <span><i class="legend-risk"></i>Higher emission density</span>
-      `,
-      source: "Country hotspot layer: emissions_density_t_co2e_per_ha · GPM context underneath · same ArcGIS frame."
-    },
-    compare: {
-      mode: "Interpretation",
-      title: "Both views are needed for prioritisation.",
-      legend: `
-        <span><i class="legend-peat"></i>Peatland context</span>
-        <span><i class="legend-density"></i>Emission density view</span>
-        <span><i class="legend-border"></i>Country frame</span>
-      `,
-      source: "Interpretation state: density view remains visible; text explains why total emissions and density must be read together."
-    }
-    ,
+  const story = document.querySelector(".central-map-story");
+  const steps = Array.from(document.querySelectorAll(".central-map-step[data-global-state]"));
+
+  if (!story || !steps.length) return;
+
+  const META = {
     "europe-borders": {
       mode: "Europe frame",
       title: "Europe needs its own regional map frame.",
@@ -62,12 +30,7 @@ The scroll state controls layer opacity only. The map frame, projection, size an
         <span><i class="legend-border"></i>Country frame</span>
       `,
       source: "GPM2 peatland context rendered in Europe frame · ETRS89 / LAEA Europe."
-    }
-  };
-
-  
-  // B19d/B50 Germany / Thuenen states
-  Object.assign(STATE_META, {
+    },
     "germany-context": {
       mode: "Germany frame",
       title: "Germany is the national implementation frame.",
@@ -101,55 +64,136 @@ The scroll state controls layer opacity only. The map frame, projection, size an
       `,
       source: "Thuenen Kulisse symbolized by KAT_LANG / moor and soil type."
     }
+  };
+
+  function first(selectors) {
+    for (const selector of selectors) {
+      const el = story.querySelector(selector) || document.querySelector(selector);
+      if (el) return el;
+    }
+    return null;
+  }
+
+  function setText(selectors, value) {
+    const el = first(selectors);
+    if (el && value) el.textContent = value;
+  }
+
+  function setHTML(selectors, value) {
+    const el = first(selectors);
+    if (el && value) el.innerHTML = value;
+  }
+
+  function updateMeta(state) {
+    const meta = META[state];
+    if (!meta) return;
+
+    setText([
+      "[data-central-map-mode]",
+      "[data-map-mode]",
+      ".central-map-mode",
+      ".central-map-kicker",
+      ".central-stage-mode",
+      ".map-mode",
+      ".map-chip"
+    ], meta.mode);
+
+    setText([
+      "[data-central-map-title]",
+      "[data-map-title]",
+      ".central-map-title",
+      ".central-stage-title",
+      ".map-title"
+    ], meta.title);
+
+    setHTML([
+      "[data-central-map-legend]",
+      "[data-map-legend]",
+      ".central-map-legend",
+      ".central-stage-legend",
+      ".map-legend"
+    ], meta.legend);
+
+    setText([
+      "[data-central-map-source]",
+      "[data-map-source]",
+      ".central-map-source",
+      ".central-stage-source",
+      ".map-source"
+    ], meta.source);
+  }
+
+  function applyState(state) {
+    if (!state) return;
+
+    if (story.getAttribute("data-state") !== state) {
+      story.setAttribute("data-state", state);
+    }
+
+    updateMeta(state);
+
+    if (typeof window.__applyCentralMapState === "function") {
+      window.__applyCentralMapState(state);
+    }
+  }
+
+  function activeStepByPosition() {
+    const anchor = window.innerHeight * 0.48;
+    let best = null;
+    let bestDistance = Infinity;
+
+    for (const step of steps) {
+      const rect = step.getBoundingClientRect();
+      const center = rect.top + rect.height * 0.5;
+      const distance = Math.abs(center - anchor);
+
+      if (rect.bottom >= 0 && rect.top <= window.innerHeight && distance < bestDistance) {
+        best = step;
+        bestDistance = distance;
+      }
+    }
+
+    return best;
+  }
+
+  let ticking = false;
+  function refresh() {
+    ticking = false;
+    const active = activeStepByPosition();
+    if (!active) return;
+    applyState(active.dataset.globalState);
+  }
+
+  function requestRefresh() {
+    if (ticking) return;
+    ticking = true;
+    window.requestAnimationFrame(refresh);
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    const visible = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+    if (visible.length) {
+      applyState(visible[0].target.dataset.globalState);
+    } else {
+      requestRefresh();
+    }
+  }, {
+    root: null,
+    rootMargin: "-30% 0px -45% 0px",
+    threshold: [0, 0.15, 0.35, 0.6, 0.85]
   });
 
-function setState(state) {
-    const section = document.querySelector("#centralGlobalMapStory");
-    if (!section || !STATE_META[state]) return;
+  steps.forEach((step) => observer.observe(step));
+  window.addEventListener("scroll", requestRefresh, { passive: true });
+  window.addEventListener("resize", requestRefresh);
 
-    section.setAttribute("data-state", state);
+  document.addEventListener("DOMContentLoaded", requestRefresh);
+  window.addEventListener("load", requestRefresh);
+  setTimeout(requestRefresh, 50);
+  setTimeout(requestRefresh, 250);
 
-    document.querySelectorAll(".central-map-step").forEach(step => {
-      step.classList.toggle("is-active", step.getAttribute("data-global-state") === state);
-    });
-
-    const meta = STATE_META[state];
-
-    const mode = document.querySelector("#centralMapMode");
-    const title = document.querySelector("#centralMapTitle");
-    const legend = document.querySelector("#centralMapLegend");
-    const source = document.querySelector("#centralMapSource");
-
-    if (mode) mode.textContent = meta.mode;
-    if (title) title.textContent = meta.title;
-    if (legend) legend.innerHTML = meta.legend;
-    if (source) source.textContent = meta.source;
-  }
-
-  function init() {
-    const section = document.querySelector("#centralGlobalMapStory");
-    if (!section) return;
-
-    const steps = Array.from(document.querySelectorAll(".central-map-step"));
-    if (!steps.length) return;
-
-    const observer = new IntersectionObserver(entries => {
-      const visible = entries
-        .filter(entry => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-      if (!visible) return;
-
-      const state = visible.target.getAttribute("data-global-state");
-      setState(state);
-    }, {
-      threshold: [0.35, 0.5, 0.7],
-      rootMargin: "-28% 0px -38% 0px"
-    });
-
-    steps.forEach(step => observer.observe(step));
-    setState("extent");
-  }
-
-  window.addEventListener("DOMContentLoaded", init);
+  window.__centralStepStateBridgeRefresh = refresh;
 })();

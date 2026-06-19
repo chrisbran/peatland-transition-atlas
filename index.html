@@ -291,6 +291,10 @@
       
         <img class="central-map-layer layer-europe-peat" src="public/maps/europe/europe_gpm2_peat_extent.png" alt="">
         <img class="central-map-layer layer-europe-borders" src="public/maps/europe/europe_country_borders.png" alt="">
+
+        <img class="central-map-layer layer-germany-admin" src="public/maps/germany/germany_admin_context.png" alt="">
+        <img class="central-map-layer layer-germany-thuenen-extent" src="public/maps/germany/germany_thuenen_moor_extent.png" alt="">
+        <img class="central-map-layer layer-germany-thuenen-types" src="public/maps/germany/germany_thuenen_moor_types.png" alt="">
 </div>
 
       <div id="centralMapLegend" class="central-map-legend">
@@ -356,7 +360,34 @@
         The European frame shows peatland context with higher regional clarity. This sets up the next move:
         from continental structure to the national implementation layer in Germany.
       </p>
+    </article>\n
+    <article class="central-map-step" data-global-state="germany-context">
+      <span>07 · Germany frame</span>
+      <h3>Germany is the national implementation frame.</h3>
+      <p>
+        The atlas now moves from continental context to a national planning scale. Federal-state boundaries
+        provide orientation before the Thuenen peat and organic-soils Kulisse is added.
+      </p>
     </article>
+
+    <article class="central-map-step" data-global-state="germany-thuenen-extent">
+      <span>08 · Thuenen Kulisse</span>
+      <h3>The national peat and organic-soils Kulisse is spatially concentrated.</h3>
+      <p>
+        The Thuenen Kulisse identifies where peat and organic soils become relevant for land-use transition,
+        mitigation, and implementation planning in Germany.
+      </p>
+    </article>
+
+    <article class="central-map-step" data-global-state="germany-thuenen-types">
+      <span>09 · Moor and soil types</span>
+      <h3>Type differentiation matters for transition pathways.</h3>
+      <p>
+        The Kulisse is not homogeneous. Fen, raised bog, transformed peat soils, and covered or deeply
+        ploughed classes imply different hydrological, agricultural, and restoration constraints.
+      </p>
+    </article>
+
 
   </div>
 </section>
@@ -693,5 +724,7 @@
   <script src="src/scrolly_story_layers.js"></script>
   <script src="src/gpm2_context_images.js"></script>
   <script src="src/central_global_map_story.js"></script>
+  <script src="src/central_layer_state_hardener.js"></script>
+  <script src="src/central_step_state_bridge.js"></script>
 </body>
 </html>
