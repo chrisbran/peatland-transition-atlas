@@ -41,3 +41,7 @@
 - 2026-06-19: Task B53 completed - improved Germany Thuenen distinction and legend.
 - 2026-06-19: Task B54 completed - removed B53 custom legend and restored original Thuenen legend colors.
 - 2026-06-19: Task B55 completed - fixed Thuenen legend inline color swatches.
+- 2026-06-19: Task B56 completed - fixed central map stage label for Germany / Thuenen states.
+- 2026-06-19: Task B57 completed - refined Germany / Thuenen story text.
+- 2026-06-19: Task B58 completed - ran visual QA and commit hygiene check.
+- 2026-06-19: Task B60 completed - patched B58 QA with robust no-Pillow PNG header check.

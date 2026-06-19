@@ -70,24 +70,24 @@ The scroll state controls layer opacity only. The map frame, projection, size an
   Object.assign(STATE_META, {
     "germany-context": {
       mode: "Germany frame",
-      title: "Germany is the national implementation frame.",
+      title: "Germany is where peatland transition becomes an implementation problem.",
       legend: `
         <span><i class="legend-border"></i>Federal-state context</span>
       `,
-      source: "Germany frame: NUTS 1 / federal-state context exported from GERMANY_FRAME_V1."
+      source: "Germany frame: national implementation scale with NUTS 1 / federal-state context."
     },
     "germany-thuenen-extent": {
       mode: "Thuenen Kulisse",
-      title: "The national peat and organic-soils Kulisse is spatially concentrated.",
+      title: "The Thuenen Kulisse identifies the national peat and organic-soils target area.",
       legend: `
         <span class="legend-entry"><span class="legend-swatch legend-thuenen-extent" style="display:inline-block;width:.72rem;height:.44rem;min-width:.72rem;border-radius:999px;margin-right:.38rem;vertical-align:-0.05rem;border:1px solid rgba(255,255,255,.25);background:#2F6B4F;background-color:#2F6B4F;"></span>Thuenen peat / organic-soils Kulisse</span>
         <span><i class="legend-border"></i>Federal-state context</span>
       `,
-      source: "Thuenen Kulisse rendered as national extent layer · Germany frame."
+      source: "Thuenen Kulisse: national peat and organic-soils target area rendered as a one-colour extent layer."
     },
     "germany-thuenen-types": {
       mode: "Moor and soil types",
-      title: "Type differentiation matters for transition pathways.",
+      title: "The type distinction is not cosmetic — it changes the transition logic.",
       legend: `
         <span class="legend-entry"><span class="legend-swatch legend-thuenen-hh" style="display:inline-block;width:.72rem;height:.44rem;min-width:.72rem;border-radius:999px;margin-right:.38rem;vertical-align:-0.05rem;border:1px solid rgba(255,255,255,.25);background:#6E4B78;background-color:#6E4B78;"></span>Hochmoorboden</span>
         <span class="legend-entry"><span class="legend-swatch legend-thuenen-nh" style="display:inline-block;width:.72rem;height:.44rem;min-width:.72rem;border-radius:999px;margin-right:.38rem;vertical-align:-0.05rem;border:1px solid rgba(255,255,255,.25);background:#2F6B4F;background-color:#2F6B4F;"></span>Niedermoorboden</span>
@@ -99,7 +99,7 @@ The scroll state controls layer opacity only. The map frame, projection, size an
         <span class="legend-entry"><span class="legend-swatch legend-thuenen-maechtig-hh" style="display:inline-block;width:.72rem;height:.44rem;min-width:.72rem;border-radius:999px;margin-right:.38rem;vertical-align:-0.05rem;border:1px solid rgba(255,255,255,.25);background:#B08B6C;background-color:#B08B6C;"></span>maechtig ueberdeckter Hochmoorboden</span>
         <span class="legend-entry"><span class="legend-swatch legend-thuenen-maechtig-nh" style="display:inline-block;width:.72rem;height:.44rem;min-width:.72rem;border-radius:999px;margin-right:.38rem;vertical-align:-0.05rem;border:1px solid rgba(255,255,255,.25);background:#B7A15A;background-color:#B7A15A;"></span>maechtig ueberdeckter Niedermoorboden</span>
       `,
-      source: "Thuenen Kulisse symbolized by KAT_LANG / moor and soil type."
+      source: "Thuenen Kulisse symbolized by KAT_LANG to distinguish moor and soil types relevant for transition pathways."
     }
   });
 
