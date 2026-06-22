@@ -92,3 +92,10 @@
 - Replaced the large supporting-evidence intro with a compact evidence-explorer bridge.
 - Added compact CSS overrides.
 - Did not delete sections, scripts, data files, images or map assets.
+
+## B69 - Retire six-part story phase 1 (2026-06-22)
+
+- Reversibly retired the old `#story` / Six-part story section.
+- Retargeted navigation links from `#story` to `#transitionLogic` if present.
+- Kept `#transitionLogic`, `#mvpStoryline` and `#centralGlobalMapStory` as the visible story entry.
+- Did not delete sections, scripts, data files, images or map assets.
