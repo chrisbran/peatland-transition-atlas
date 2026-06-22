@@ -46,11 +46,8 @@ Date: 2026-06-22
 
 ### Current changed/untracked files
 
-- ` M index.html`
-- ` M tasks/done.md`
 - `?? data/external/`
 - `?? data/metadata/peat_soils_source_catalog.csv`
-- `?? docs/B67_harden_retired_guided_story_visibility.md`
 - `?? public/maps/bw/README.md`
 - `?? public/maps/europe/README.md`
 - `?? scripts/04_add_hotspot_ranking_layer.py`
@@ -72,7 +69,6 @@ Date: 2026-06-22
 - `?? scripts/62_bind_bw_extent_frame_to_central_story.py`
 - `?? scripts/62_bind_bw_extent_frame_to_central_story_fixed.py`
 - `?? scripts/62_repair_bw_extent_state_binding.py`
-- `?? scripts/67_harden_retired_guided_story_visibility.py`
 - `?? src/emissions_metric_scrolly.js`
 - `?? tasks/B11_build_first_peat_soils_layer.md`
 - `?? tasks/B11b_process_bk50_moor_web_layer.md`
