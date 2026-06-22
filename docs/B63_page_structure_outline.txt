@@ -1,0 +1,105 @@
+﻿13: <h1>Peatland Transition Atlas</h1>
+28: <section class="hero">
+30: <h2>The climate problem is spatial. The transition problem is systemic.</h2>
+47: <section id="story" class="section">
+50: <h2>Six-part story</h2>
+58: <section id="transitionLogic" class="transition-logic-block">
+60: <h2>From peatland extent to transition priorities</h2>
+68: <article class="transition-chain-card">
+70: <h3>Extent</h3>
+74: <article class="transition-chain-card">
+76: <h3>Pressure</h3>
+80: <article class="transition-chain-card">
+82: <h3>Implementation</h3>
+86: <article class="transition-chain-card">
+88: <h3>Pathways</h3>
+96: <h3>What this atlas is</h3>
+103: <h3>What this atlas is not</h3>
+113: <section id="guidedStory" class="section guided-story">
+115: <h2>From national emission hotspots to real peatland landscapes</h2>
+124: <article class="story-step"
+130: <h3>Start with country-level emissions</h3>
+139: <article class="story-step"
+145: <h3>Then reveal the actual peat/organic-soil context</h3>
+153: <article class="story-step"
+159: <h3>Zoom to Europe</h3>
+167: <article class="story-step"
+173: <h3>Translate the hotspot view to Germany</h3>
+181: <article class="story-step"
+187: <h3>End at Baden-Württemberg</h3>
+196: <article class="story-step"
+202: <h3>Keep the boundary visible</h3>
+216: <h3 id="storyVisualTitle">Country-level emissions hotspot view</h3>
+248: <section id="layerProvenance" class="layer-provenance-block">
+250: <h2>Each map layer answers a different question</h2>
+253: <article>
+255: <h3>Where are peatlands?</h3>
+258: <article>
+260: <h3>Where are emissions concentrated?</h3>
+263: <article>
+265: <h3>Where do constraints become concrete?</h3>
+268: <article>
+270: <h3>What transition pathways are plausible?</h3>
+278: <section id="centralGlobalMapStory" class="central-map-story" data-state="extent">
+313: <article class="central-map-step is-active" data-global-state="extent">
+315: <h3>Peatlands are not everywhere — they are spatially concentrated.</h3>
+322: <article class="central-map-step" data-global-state="total">
+324: <h3>Total emissions identify national climate relevance.</h3>
+331: <article class="central-map-step" data-global-state="density">
+333: <h3>Emission density changes the interpretation.</h3>
+340: <article class="central-map-step" data-global-state="compare">
+342: <h3>Transition priorities need both views.</h3>
+349: <article class="central-map-step" data-global-state="europe-borders">
+351: <h3>Europe needs its own regional map frame.</h3>
+358: <article class="central-map-step" data-global-state="europe-peat">
+360: <h3>European peatlands are spatially concentrated, not evenly spread.</h3>
+366: <article class="central-map-step" data-global-state="germany-context">
+368: <h3>Germany is where peatland transition becomes an implementation problem.</h3>
+376: <article class="central-map-step" data-global-state="germany-thuenen-extent">
+378: <h3>The Thuenen Kulisse identifies the national peat and organic-soils target area.</h3>
+385: <article class="central-map-step" data-global-state="germany-thuenen-types">
+387: <h3>The type distinction is not cosmetic — it changes the transition logic.</h3>
+394: <article class="central-map-step" data-global-state="bw-context">
+396: <h3>Baden-Württemberg narrows the national frame to a regional planning scale.</h3>
+403: <article class="central-map-step" data-global-state="bw-bk50-extent">
+405: <h3>BK50 shows the regional peat and wetland soil context.</h3>
+418: <section id="pathwayEvidenceMatrix" class="pathway-matrix-block">
+420: <h2>Spatial pressure only becomes useful when linked to feasible pathways</h2>
+428: <article class="pathway-card">
+433: <h3>Wet grassland use under raised water tables</h3>
+442: <article class="pathway-card">
+447: <h3>Biomass production on rewetted peat soils</h3>
+456: <article class="pathway-card">
+461: <h3>Raised water table, controlled drainage and partial rewetting</h3>
+470: <article class="pathway-card">
+475: <h3>Payments, cooperation models and transition governance</h3>
+494: <section id="hotspots" class="section hotspot-section">
+497: <h2>Where are drained organic soil emissions concentrated?</h2>
+522: <article class="detail-card hotspot-map-card">
+524: <h3>Country-level hotspot map</h3>
+544: <article class="detail-card">
+546: <h3>Top countries by total emissions</h3>
+550: <article class="detail-card">
+552: <h3>Top countries by emissions density</h3>
+567: <section id="map" class="section">
+570: <h2>Evidence from elsewhere</h2>
+592: <h3>Click an evidence node</h3>
+598: <section id="pathways" class="section">
+601: <h2>Between drained farming and full restoration</h2>
+607: <section id="fit" class="section">
+610: <h2>What fits South Germany?</h2>
+626: <section id="methodology" class="section methodology-panel">
+629: <h2>How to read this prototype</h2>
+637: <article class="method-card">
+638: <h3>Qualitative scores</h3>
+644: <article class="method-card">
+645: <h3>Evidence-map points</h3>
+651: <article class="method-card">
+652: <h3>South Germany fit</h3>
+658: <article class="method-card">
+659: <h3>Publication boundary</h3>
+668: <section id="data" class="section">
+671: <h2>Current prototype datasets</h2>
+682: <section id="bwPeatLayer" class="section bw-moor-section">
+684: <h2>Baden-Württemberg: where the peat and organic-soil context becomes spatial</h2>
+715: <h3>From national hotspots to real landscapes</h3>

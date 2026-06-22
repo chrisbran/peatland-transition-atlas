@@ -1,0 +1,148 @@
+﻿
+  index.html:124:      <article class="story-step"
+> index.html:125:        data-state="world-emissions"
+  index.html:126:        data-visual-title="Country-level emissions hotspot view"
+  index.html:127:        data-visual-text="National drained-organic-soils emissions identify where the accounting 
+hotspots are.">
+  index.html:139:      <article class="story-step"
+> index.html:140:        data-state="global-peat"
+  index.html:141:        data-visual-title="Peat and organic soils become the spatial context"
+  index.html:142:        data-visual-text="The story then shifts from countries to the underlying land: where peat and 
+organic soils occur.">
+  index.html:153:      <article class="story-step"
+> index.html:154:        data-state="europe"
+  index.html:155:        data-visual-title="Zoom to Europe"
+  index.html:156:        data-visual-text="The European step should connect global peatland patterns with continental 
+policy and land-use contexts.">
+  index.html:167:      <article class="story-step"
+> index.html:168:        data-state="germany"
+  index.html:169:        data-visual-title="Germany as the national bridge layer"
+  index.html:170:        data-visual-text="Germany links the country hotspot layer to national organic-soils spatial 
+data.">
+  index.html:181:      <article class="story-step"
+> index.html:182:        data-state="bw"
+  index.html:183:        data-visual-title="Baden-Württemberg: regional soil context"
+  index.html:184:        data-visual-text="The BK50-Moor layer is the first concrete regional endpoint of the zoom 
+story.">
+  index.html:196:      <article class="story-step"
+> index.html:197:        data-state="boundary"
+  index.html:198:        data-visual-title="The interpretation boundary"
+  index.html:199:        data-visual-text="Peat/organic-soil extent is necessary context, but not sufficient for 
+rewetting suitability.">
+  index.html:212:    <div class="story-visual-wrap">
+> index.html:213:      <div id="storyVisual" class="story-visual" data-state="world-emissions">
+  index.html:214:        <div class="story-visual-header">
+  index.html:215:          <p class="eyebrow">Scroll-driven map states</p>
+  index.html:219:
+> index.html:220:        <div id="storyStage" class="story-stage" data-state="world-emissions">
+  index.html:221:          <div class="story-map-bg"></div>
+  index.html:222:          <div class="story-layer world-emissions active" data-story-layer="world-emissions"></div>
+  index.html:277:
+> index.html:278:<section id="centralGlobalMapStory" class="central-map-story" data-state="extent">
+> index.html:279:  <div class="central-map-sticky" aria-live="polite">
+> index.html:280:    <div class="central-map-shell" role="img" aria-label="Scroll-driven global peatland and emissions 
+map">
+> index.html:281:      <div class="central-map-titlebar">
+  index.html:282:        <span id="centralMapMode">Global peatland context</span>
+  index.html:283:        <strong id="centralMapTitle">Peatlands are spatially concentrated.</strong>
+  index.html:285:
+> index.html:286:      <div class="central-map-layer-stack">
+> index.html:287:        <img class="central-map-layer layer-gpm" src="public/maps/global/global_gpm2_peat_extent.png" 
+alt="">
+> index.html:288:        <img class="central-map-layer layer-total" src="public/maps/global/global_hotspots_total.png" 
+alt="">
+> index.html:289:        <img class="central-map-layer layer-density" 
+src="public/maps/global/global_hotspots_density.png" alt="">
+> index.html:290:        <img class="central-map-layer layer-borders" 
+src="public/maps/global/global_country_borders.png" alt="">
+  index.html:291:      
+> index.html:292:        <img class="central-map-layer layer-europe-peat" 
+src="public/maps/europe/europe_gpm2_peat_extent.png" alt="">
+> index.html:293:        <img class="central-map-layer layer-europe-borders" 
+src="public/maps/europe/europe_country_borders.png" alt="">
+  index.html:294:
+> index.html:295:        <img class="central-map-layer layer-germany-admin" 
+src="public/maps/germany/germany_admin_context.png" alt="">
+> index.html:296:        <img class="central-map-layer layer-germany-thuenen-extent" 
+src="public/maps/germany/germany_thuenen_moor_extent.png" alt="">
+> index.html:297:        <img class="central-map-layer layer-germany-thuenen-types" 
+src="public/maps/germany/germany_thuenen_moor_types.png" alt="">
+> index.html:298:        <img class="central-map-layer layer-bw-bk50-extent" 
+src="public/maps/bw/bw_bk50_moor_extent.png" alt="">
+> index.html:299:        <img class="central-map-layer layer-bw-admin" src="public/maps/bw/bw_admin_context.png" 
+alt="">
+  index.html:300:</div>
+  index.html:301:
+> index.html:302:      <div id="centralMapLegend" class="central-map-legend">
+> index.html:303:        <span><i class="legend-peat"></i>Peatland context</span>
+  index.html:304:      </div>
+  index.html:305:
+> index.html:306:      <p id="centralMapSource" class="central-map-source">
+  index.html:307:        Layer stack: Global Peatland Map 2.0 context and country hotspot layers. All images exported 
+from the same ArcGIS global map frame.
+  index.html:308:      </p>
+  index.html:311:
+> index.html:312:  <div class="central-map-steps">
+> index.html:313:    <article class="central-map-step is-active" data-global-state="extent">
+  index.html:314:      <span>01 · Extent</span>
+  index.html:315:      <h3>Peatlands are not everywhere — they are spatially concentrated.</h3>
+  index.html:321:
+> index.html:322:    <article class="central-map-step" data-global-state="total">
+  index.html:323:      <span>02 · Absolute pressure</span>
+  index.html:324:      <h3>Total emissions identify national climate relevance.</h3>
+  index.html:330:
+> index.html:331:    <article class="central-map-step" data-global-state="density">
+  index.html:332:      <span>03 · Intensity</span>
+  index.html:333:      <h3>Emission density changes the interpretation.</h3>
+  index.html:339:
+> index.html:340:    <article class="central-map-step" data-global-state="compare">
+  index.html:341:      <span>04 · Read together</span>
+  index.html:342:      <h3>Transition priorities need both views.</h3>
+  index.html:348:
+> index.html:349:    <article class="central-map-step" data-global-state="europe-borders">
+  index.html:350:      <span>05 · Europe frame</span>
+  index.html:351:      <h3>Europe needs its own regional map frame.</h3>
+  index.html:357:
+> index.html:358:    <article class="central-map-step" data-global-state="europe-peat">
+  index.html:359:      <span>06 · European peat context</span>
+  index.html:360:      <h3>European peatlands are spatially concentrated, not evenly spread.</h3>
+  index.html:365:    </article>\n
+> index.html:366:    <article class="central-map-step" data-global-state="germany-context">
+  index.html:367:      <span>07 · Germany frame</span>
+  index.html:368:      <h3>Germany is where peatland transition becomes an implementation problem.</h3>
+  index.html:375:
+> index.html:376:    <article class="central-map-step" data-global-state="germany-thuenen-extent">
+  index.html:377:      <span>08 · Thuenen Kulisse</span>
+  index.html:378:      <h3>The Thuenen Kulisse identifies the national peat and organic-soils target area.</h3>
+  index.html:384:
+> index.html:385:    <article class="central-map-step" data-global-state="germany-thuenen-types">
+  index.html:386:      <span>09 · Moor and soil types</span>
+  index.html:387:      <h3>The type distinction is not cosmetic — it changes the transition logic.</h3>
+  index.html:393:
+> index.html:394:    <article class="central-map-step" data-global-state="bw-context">
+  index.html:395:      <span>10 · Baden-Württemberg frame</span>
+  index.html:396:      <h3>Baden-Württemberg narrows the national frame to a regional planning scale.</h3>
+  index.html:402:
+> index.html:403:    <article class="central-map-step" data-global-state="bw-bk50-extent">
+  index.html:404:      <span>11 · BK50 peat and wetland soils</span>
+  index.html:405:      <h3>BK50 shows the regional peat and wetland soil context.</h3>
+  index.html:537:          </div>
+> index.html:538:          <div id="hotspotMapLegend" class="hotspot-map-legend"></div>
+  index.html:539:          <p id="hotspotMapDetails" class="hotspot-map-details">
+  index.html:540:            Hover or click a country to inspect total emissions, emissions density and drained 
+organic soils area.
+  index.html:615:      </div>
+> index.html:616:      <div class="legend-box">
+  index.html:617:        <span><strong>X-axis:</strong> water-table / wetness requirement</span>
+  index.html:618:        <span><strong>Y-axis:</strong> compatibility with existing South German dairy and forage 
+systems</span>
+  index.html:699:    <div class="metric-card">
+> index.html:700:      <span class="metric-label">Source area sum</span>
+  index.html:701:      <strong id="bwMoorArea">—</strong>
+  index.html:702:    </div>
+  index.html:725:
+> index.html:726:      <div id="bwMoorLegend" class="map-legend"></div>
+  index.html:727:      <div id="bwMoorDetails" class="bw-moor-detail"></div>
+  index.html:728:    </aside>
+
+

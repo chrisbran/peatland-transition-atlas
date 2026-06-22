@@ -65,8 +65,8 @@
       source: "Thuenen Kulisse symbolized by KAT_LANG to distinguish moor and soil types relevant for transition pathways."
     },
     "bw-context": {
-      mode: "Baden-Württemberg frame",
-      title: "Baden-Württemberg narrows the national frame to a regional planning scale.",
+      mode: "Baden-Wuerttemberg frame",
+      title: "Baden-Wuerttemberg narrows the national frame to a regional planning scale.",
       legend: `
         <span><i class="legend-border"></i>Regional frame</span>
       `,

@@ -1,0 +1,100 @@
+=== REFERENCED ASSETS ===
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:287:        <img class="central-map-layer layer-gpm" src="public/maps/global/global_gpm2_peat_extent.png" alt="">
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:288:        <img class="central-map-layer layer-total" src="public/maps/global/global_hotspots_total.png" alt="">
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:289:        <img class="central-map-layer layer-density" src="public/maps/global/global_hotspots_density.png" alt="">
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:290:        <img class="central-map-layer layer-borders" src="public/maps/global/global_country_borders.png" alt="">
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:292:        <img class="central-map-layer layer-europe-peat" src="public/maps/europe/europe_gpm2_peat_extent.png" alt="">
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:293:        <img class="central-map-layer layer-europe-borders" src="public/maps/europe/europe_country_borders.png" alt="">
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:295:        <img class="central-map-layer layer-germany-admin" src="public/maps/germany/germany_admin_context.png" alt="">
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:296:        <img class="central-map-layer layer-germany-thuenen-extent" src="public/maps/germany/germany_thuenen_moor_extent.png" alt="">
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:297:        <img class="central-map-layer layer-germany-thuenen-types" src="public/maps/germany/germany_thuenen_moor_types.png" alt="">
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:298:        <img class="central-map-layer layer-bw-bk50-extent" src="public/maps/bw/bw_bk50_moor_extent.png" alt="">
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:299:        <img class="central-map-layer layer-bw-admin" src="public/maps/bw/bw_admin_context.png" alt="">
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:674:        <a href="public/data/country_hotspots.csv">country_hotspots.csv</a>
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:675:        <a href="public/data/papers.csv">papers.csv</a>
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:676:        <a href="public/data/transition_pathways.csv">transition_pathways.csv</a>
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:677:        <a href="public/data/region_case_studies.geojson">region_case_studies.geojson</a>
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\index.html:678:        <a href="public/data/atlas_story_sections.json">atlas_story_sections.json</a>
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\app.js:3:  papers: "public/data/papers.json",
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\app.js:4:  pathways: "public/data/transition_pathways.json",
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\app.js:5:  regions: "public/data/region_case_studies.geojson",
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\app.js:6:  sections: "public/data/atlas_story_sections.json"
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\app.js:21:  return res.json();
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\bw_peat_layer.js:7:  const DATA_URL = "public/data/bw_bk50_moor_simplified.geojson";
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\bw_peat_layer.js:137:      const geo = await res.json();
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\emissions_metric_scrolly.js:10:  public/data/world_countries_110m_base.geojson
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\emissions_metric_scrolly.js:11:  public/data/hotspot_countries_110m.geojson
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\emissions_metric_scrolly.js:19:    base: "public/data/world_countries_110m_base.geojson",
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\emissions_metric_scrolly.js:20:    hotspots: "public/data/hotspot_countries_110m.geojson",
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\emissions_metric_scrolly.js:232:    return res.json();
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\gpm2_context_images.js:19:    globalPeat: "public/images/gpm2_global_context.png",
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\gpm2_context_images.js:20:    europePeat: "public/images/gpm2_europe_context.png",
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\hotspots.js:7:  const HOTSPOT_DATA_URL = "public/data/country_hotspots.csv";
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\hotspots.js:8:  const GEOJSON_URL = "public/data/hotspot_countries_110m.geojson";
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\hotspots.js:508:      const geo = await res.json();
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\hotspot_base_layer.js:9:  const BASE_GEOJSON_URL = "public/data/world_countries_110m_base.geojson";
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\hotspot_base_layer.js:119:      const geo = await res.json();
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\scrolly_story_layers.js:15:    base: "public/data/world_countries_110m_base.geojson",
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\scrolly_story_layers.js:16:    hotspots: "public/data/hotspot_countries_110m.geojson",
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\scrolly_story_layers.js:17:    bw: "public/data/bw_bk50_moor_simplified.geojson",
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\scrolly_story_layers.js:18:    germany: "public/data/germany_organic_soils_simplified.geojson"
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\scrolly_story_layers.js:54:    return res.json();
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\scrolly_story_layers.js:194:        <strong>Real layer:</strong> country-level drained organic soils emissions · <span>public/data/hotspot_countries_110m.geojson</span>
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\scrolly_story_layers.js:235:        <strong>Real layer:</strong> Germany organic-soils context layer · <span>${features.length.toLocaleString("en-US")} dissolved classes · public/data/germany_organic_soils_simplified.geojson</span>
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\src\scrolly_story_layers.js:351:          Some real story layers could not be loaded. Check public/data files.
+
+=== EXISTING PUBLIC FILES ===
+
+FullName                                                                                                       Length L
+                                                                                                                      a
+                                                                                                                      s
+                                                                                                                      t
+                                                                                                                      W
+                                                                                                                      r
+                                                                                                                      i
+                                                                                                                      t
+                                                                                                                      e
+                                                                                                                      T
+                                                                                                                      i
+                                                                                                                      m
+                                                                                                                      e
+--------                                                                                                       ------ -
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\atlas_story_sections.csv                    7640 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\atlas_story_sections.json                  10649 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\atlas_story_sections_data_dictionary.csv    1121 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\atlas_wireframes.json                       2339 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\bw_bk50_moor_simplified.geojson          6468050 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\country_hotspots.csv                       64731 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\country_hotspots_n2o.csv                   35314 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\country_hotspots_schema.csv                 2543 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\germany_organic_soils_simplified.geojson 3153687 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\hotspot_countries_110m.geojson            200494 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\papers.csv                                 20364 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\papers.json                                34969 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\papers_data_dictionary.csv                  1870 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\region_case_studies.csv                     9485 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\region_case_studies.geojson                18920 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\region_case_studies_data_dictionary.csv     1577 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\transition_pathways.csv                    10681 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\transition_pathways.json                   17849 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\transition_pathways_data_dictionary.csv     2016 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\data\world_countries_110m_base.geojson         256788 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\images\gpm2_europe_context.png                 128799 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\images\gpm2_global_context.png                  74969 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\bw\bw_admin_context.png                    25033 2
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\bw\bw_bk50_moor_extent.png                 57977 2
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\bw\README.md                                1323 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\europe\europe_country_borders.png         128069 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\europe\europe_gpm2_peat_extent.png         70319 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\europe\README.md                             269 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\germany\germany_admin_context.png          71220 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\germany\germany_thuenen_moor_extent.png   237418 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\germany\germany_thuenen_moor_types.png    263038 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\germany\README.md                            578 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\global\global_country_borders.png          97227 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\global\global_gpm2_peat_extent.png         34952 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\global\global_hotspots_density.png        113311 1
+C:\Users\User\Documents\GitHub\peatland-transition-atlas\public\maps\global\global_hotspots_total.png          115422 1
+
+
+

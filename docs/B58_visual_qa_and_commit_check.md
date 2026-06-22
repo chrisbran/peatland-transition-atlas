@@ -47,30 +47,17 @@ Date: 2026-06-22
 ### Current changed/untracked files
 
 - ` M docs/B58_visual_qa_and_commit_check.md`
-- ` M index.html`
 - ` M src/central_global_map_story.js`
-- ` M src/central_layer_state_hardener.js`
 - ` M src/central_stage_label_fix.js`
 - ` M src/central_step_state_bridge.js`
-- ` M src/styles.css`
-- ` M tasks/done.md`
 - `?? data/external/`
 - `?? data/metadata/peat_soils_source_catalog.csv`
-- `?? docs/B10_peat_soils_data_source_inventory.md`
-- `?? docs/B11a_bk50_moor_source_acquisition.md`
-- `?? docs/B14a_germany_organic_soils_source_acquisition.md`
-- `?? docs/B14b_germany_organic_soils_web_layer_method.md`
-- `?? docs/B15c_bind_gpm2_context_images_to_sticky_story.md`
-- `?? docs/B15d_fix_gpm2_context_flicker.md`
-- `?? docs/B15e_fix_gpm2_overlay_exact_step.md`
-- `?? docs/B17_link_transition_pathways_to_spatial_layers.md`
-- `?? docs/B18a2_stabilize_scroll_driven_emissions_stage.md`
-- `?? docs/B18a_scroll_driven_emissions_metric_story.md`
-- `?? docs/B2_faostat_fetch_method.md`
-- `?? docs/B61_prepare_bw_regional_frame_workflow.md`
-- `?? docs/B62_repair_bw_extent_state_binding.md`
-- `?? docs/B6c_ranking_map_linking.md`
-- `?? public/maps/bw/`
+- `?? docs/B63_asset_reference_scan.txt`
+- `?? docs/B63_central_global_map_story_diff.txt`
+- `?? docs/B63_central_story_dom_refs.txt`
+- `?? docs/B63_page_structure_outline.txt`
+- `?? docs/B63_project_inventory_input.txt`
+- `?? public/maps/bw/README.md`
 - `?? public/maps/europe/README.md`
 - `?? scripts/04_add_hotspot_ranking_layer.py`
 - `?? scripts/10_link_rankings_and_map.py`
@@ -91,7 +78,9 @@ Date: 2026-06-22
 - `?? scripts/62_bind_bw_extent_frame_to_central_story.py`
 - `?? scripts/62_bind_bw_extent_frame_to_central_story_fixed.py`
 - `?? scripts/62_repair_bw_extent_state_binding.py`
-- `?? scripts/62_repair_bw_extent_state_binding_v2.py`
+- `?? scripts/63_rebuild_bw_label_files_utf8.py`
+- `?? scripts/63_rebuild_central_global_map_story_utf8.py`
+- `?? scripts/63_sanitize_bw_encoding_labels.py`
 - `?? src/emissions_metric_scrolly.js`
 - `?? tasks/B11_build_first_peat_soils_layer.md`
 - `?? tasks/B11b_process_bk50_moor_web_layer.md`

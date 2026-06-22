@@ -20,7 +20,7 @@
     "germany-context": "GERMANY FRAME",
     "germany-thuenen-extent": "THUENEN KULISSE",
     "germany-thuenen-types": "MOOR AND SOIL TYPES",
-    "bw-context": "BADEN-WÜRTTEMBERG FRAME",
+    "bw-context": "BADEN-WUERTTEMBERG FRAME",
     "bw-bk50-extent": "BK50 PEAT / WETLAND SOILS"
   };
 
