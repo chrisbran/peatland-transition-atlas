@@ -70,3 +70,10 @@
 - Removed script tags only; no JS files, data files, images or map assets were deleted.
 - Kept central PNG map story controller stack unchanged.
 - Kept hotspot, evidence, pathway, fit and BW interactive modules loaded.
+
+## B67 - Harden retired guidedStory visibility (2026-06-22)
+
+- Added native HTML-level hiding to `#guidedStory`.
+- Kept the retired section content in `index.html` for reversibility.
+- Did not delete scripts, data files, images or map assets.
+- Purpose: make B64 retirement robust against public stylesheet caching.
