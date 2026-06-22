@@ -63,3 +63,10 @@
 - Created `docs/B65_referenced_assets.txt`.
 - Audited active sections, script tags and public asset references after B64.
 - No application code, script tags, public data files or map assets were removed.
+
+## B66 - Retire guidedStory script tags phase 1 (2026-06-22)
+
+- Removed old guidedStory script tags from `index.html`.
+- Removed script tags only; no JS files, data files, images or map assets were deleted.
+- Kept central PNG map story controller stack unchanged.
+- Kept hotspot, evidence, pathway, fit and BW interactive modules loaded.
