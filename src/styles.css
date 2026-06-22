@@ -2762,3 +2762,39 @@ header.site-header {
   margin-top: 0.65rem;
   font-size: 0.82rem;
 }
+
+/* B70 central story readability pass */
+.central-story-read-note {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.55;
+  margin-top: 0.75rem;
+}
+
+.central-map-step span {
+  letter-spacing: 0.06em;
+}
+
+.central-map-step h3 {
+  max-width: 30rem;
+}
+
+.central-map-step p {
+  max-width: 31rem;
+  line-height: 1.48;
+}
+
+.central-map-step[data-global-state="extent"] h3,
+.central-map-step[data-global-state="total"] h3,
+.central-map-step[data-global-state="density"] h3,
+.central-map-step[data-global-state="compare"] h3,
+.central-map-step[data-global-state="europe-borders"] h3,
+.central-map-step[data-global-state="europe-peat"] h3,
+.central-map-step[data-global-state="germany-context"] h3,
+.central-map-step[data-global-state="germany-thuenen-extent"] h3,
+.central-map-step[data-global-state="germany-thuenen-types"] h3,
+.central-map-step[data-global-state="bw-context"] h3,
+.central-map-step[data-global-state="bw-bk50-extent"] h3 {
+  text-wrap: balance;
+}

@@ -99,3 +99,10 @@
 - Retargeted navigation links from `#story` to `#transitionLogic` if present.
 - Kept `#transitionLogic`, `#mvpStoryline` and `#centralGlobalMapStory` as the visible story entry.
 - Did not delete sections, scripts, data files, images or map assets.
+
+## B70 - Refine central story readability (2026-06-22)
+
+- Rewrote central sticky-map step text for clarity and shorter interpretation.
+- Added a compact read-note explaining the scale-transition sequence.
+- Added small CSS refinements for central step readability.
+- Did not change central map state names, layer bindings, scripts, data files, images or map assets.
