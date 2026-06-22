@@ -19,7 +19,9 @@
     "europe-peat": "EUROPEAN PEAT CONTEXT",
     "germany-context": "GERMANY FRAME",
     "germany-thuenen-extent": "THUENEN KULISSE",
-    "germany-thuenen-types": "MOOR AND SOIL TYPES"
+    "germany-thuenen-types": "MOOR AND SOIL TYPES",
+    "bw-context": "BADEN-WÜRTTEMBERG FRAME",
+    "bw-bk50-extent": "BK50 PEAT / WETLAND SOILS"
   };
 
   const ALIASES = {
@@ -34,7 +36,7 @@
     "global-compare": "compare"
   };
 
-  const KNOWN_LABEL_PATTERN = /(GLOBAL|EUROPE|EUROPEAN|GERMANY|THUENEN|MOOR AND SOIL|EMISSION)/i;
+  const KNOWN_LABEL_PATTERN = /(GLOBAL|EUROPE|EUROPEAN|GERMANY|THUENEN|MOOR AND SOIL|EMISSION|BADEN|BK50)/i;
 
   function activeState() {
     const raw = story.getAttribute("data-state") || "extent";

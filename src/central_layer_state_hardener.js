@@ -19,7 +19,9 @@
     germanyAdmin: ".layer-germany-admin",
     germanyExtent: ".layer-germany-thuenen-extent",
     germanyTypes: ".layer-germany-thuenen-types"
-  };
+  ,
+    bwAdmin: ".layer-bw-admin",
+    bwExtent: ".layer-bw-bk50-extent"};
 
   const aliases = {
     "global-peat": "extent",
@@ -70,6 +72,13 @@
     "germany-thuenen-types": {
       germanyTypes: 0.98,
       germanyAdmin: 0.86
+    },
+    "bw-context": {
+      bwAdmin: 0.96
+    },
+    "bw-bk50-extent": {
+      bwExtent: 0.98,
+      bwAdmin: 0.88
     }
   };
 

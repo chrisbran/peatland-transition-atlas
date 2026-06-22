@@ -45,3 +45,5 @@
 - 2026-06-19: Task B57 completed - refined Germany / Thuenen story text.
 - 2026-06-19: Task B58 completed - ran visual QA and commit hygiene check.
 - 2026-06-19: Task B60 completed - patched B58 QA with robust no-Pillow PNG header check.
+- 2026-06-19: Task B61 completed - prepared BW / regional frame workflow.
+- B62 repair: Completed BW extent state binding across central map hardener, bridge, labels, and CSS.

@@ -2629,3 +2629,29 @@ header.site-header {
   white-space: nowrap;
 }
 
+/* B62 BW central-story layer binding. JS hardener remains authoritative. */
+.layer-bw-admin,
+.layer-bw-bk50-extent {
+  opacity: 0;
+}
+
+.layer-bw-bk50-extent {
+  z-index: 1;
+}
+
+.layer-bw-admin {
+  z-index: 2;
+}
+
+.central-map-story[data-state="bw-context"] .layer-bw-admin {
+  opacity: .96 !important;
+}
+
+.central-map-story[data-state="bw-bk50-extent"] .layer-bw-bk50-extent {
+  opacity: .98 !important;
+}
+
+.central-map-story[data-state="bw-bk50-extent"] .layer-bw-admin {
+  opacity: .88 !important;
+}
+

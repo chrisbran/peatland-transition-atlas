@@ -63,6 +63,23 @@
         <span class="legend-entry"><span class="legend-swatch legend-thuenen-maechtig-nh" style="display:inline-block;width:.72rem;height:.44rem;min-width:.72rem;border-radius:999px;margin-right:.38rem;vertical-align:-0.05rem;border:1px solid rgba(255,255,255,.25);background:#B7A15A;background-color:#B7A15A;"></span>maechtig ueberdeckter Niedermoorboden</span>
       `,
       source: "Thuenen Kulisse symbolized by KAT_LANG to distinguish moor and soil types relevant for transition pathways."
+    },
+    "bw-context": {
+      mode: "Baden-Württemberg frame",
+      title: "Baden-Württemberg narrows the national frame to a regional planning scale.",
+      legend: `
+        <span><i class="legend-border"></i>Regional frame</span>
+      `,
+      source: "BW frame: regional context exported from the same 16:9 ArcGIS map frame."
+    },
+    "bw-bk50-extent": {
+      mode: "BK50 peat and wetland soils",
+      title: "BK50 shows the regional peat and wetland soil context.",
+      legend: `
+        <span><i class="legend-peat"></i>BK50 peat / wetland soil context</span>
+        <span><i class="legend-border"></i>Regional frame</span>
+      `,
+      source: "BK50 BW layer: peat and wetland soil context shown as a single extent layer; no land-use or suitability classification is implied."
     }
   };
 

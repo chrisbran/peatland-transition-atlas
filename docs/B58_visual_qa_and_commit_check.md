@@ -1,6 +1,6 @@
 # B58 - Visual QA and Commit Check
 
-Date: 2026-06-19
+Date: 2026-06-22
 
 ## 1. Required map PNGs
 
@@ -46,9 +46,13 @@ Date: 2026-06-19
 
 ### Current changed/untracked files
 
+- ` M docs/B58_visual_qa_and_commit_check.md`
 - ` M index.html`
 - ` M src/central_global_map_story.js`
+- ` M src/central_layer_state_hardener.js`
+- ` M src/central_stage_label_fix.js`
 - ` M src/central_step_state_bridge.js`
+- ` M src/styles.css`
 - ` M tasks/done.md`
 - `?? data/external/`
 - `?? data/metadata/peat_soils_source_catalog.csv`
@@ -63,11 +67,10 @@ Date: 2026-06-19
 - `?? docs/B18a2_stabilize_scroll_driven_emissions_stage.md`
 - `?? docs/B18a_scroll_driven_emissions_metric_story.md`
 - `?? docs/B2_faostat_fetch_method.md`
-- `?? docs/B56_fix_central_map_stage_label.md`
-- `?? docs/B57_refine_germany_thuenen_story_text.md`
-- `?? docs/B58_visual_qa_and_commit_check.md`
-- `?? docs/B60_patch_b58_no_pillow_png_check_v2.md`
+- `?? docs/B61_prepare_bw_regional_frame_workflow.md`
+- `?? docs/B62_repair_bw_extent_state_binding.md`
 - `?? docs/B6c_ranking_map_linking.md`
+- `?? public/maps/bw/`
 - `?? public/maps/europe/README.md`
 - `?? scripts/04_add_hotspot_ranking_layer.py`
 - `?? scripts/10_link_rankings_and_map.py`
@@ -84,12 +87,11 @@ Date: 2026-06-19
 - `?? scripts/37_stabilize_emissions_metric_scrolly_stage.py`
 - `?? scripts/40_refine_central_global_map_contrast.py`
 - `?? scripts/49_bind_germany_thuenen_frame_to_central_story.py`
-- `?? scripts/56_fix_central_stage_label.py`
-- `?? scripts/57_refine_germany_thuenen_story_text.py`
-- `?? scripts/58_visual_qa_and_commit_check.py`
-- `?? scripts/59_patch_b58_no_pillow_png_check.py`
-- `?? scripts/60_patch_b58_no_pillow_png_check_v2.py`
-- `?? src/central_stage_label_fix.js`
+- `?? scripts/61_prepare_bw_regional_frame_workflow.py`
+- `?? scripts/62_bind_bw_extent_frame_to_central_story.py`
+- `?? scripts/62_bind_bw_extent_frame_to_central_story_fixed.py`
+- `?? scripts/62_repair_bw_extent_state_binding.py`
+- `?? scripts/62_repair_bw_extent_state_binding_v2.py`
 - `?? src/emissions_metric_scrolly.js`
 - `?? tasks/B11_build_first_peat_soils_layer.md`
 - `?? tasks/B11b_process_bk50_moor_web_layer.md`
@@ -101,6 +103,7 @@ Date: 2026-06-19
 - `?? tasks/B18d_global_callouts_and_metric_interpretation.md`
 - `?? tasks/B19b_bind_europe_frame_to_sticky_story.md`
 - `?? tasks/B2_run_faostat_export_workflow.md`
+- `?? tasks/B62_bind_bw_regional_frame_to_central_story.md`
 - `?? tasks/B7_prepare_phase_B_release.md`
 
 ## 7. Suggested add list for this milestone
