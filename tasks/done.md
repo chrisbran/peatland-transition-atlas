@@ -106,3 +106,11 @@
 - Added a compact read-note explaining the scale-transition sequence.
 - Added small CSS refinements for central step readability.
 - Did not change central map state names, layer bindings, scripts, data files, images or map assets.
+
+## B71 - Reframe lower evidence modules (2026-06-22)
+
+- Added lower-page grouping into interpretation, supporting evidence and prototype appendix.
+- Refreshed the supporting-evidence bridge after the main map.
+- Added `data-evidence-tier` attributes to lower modules.
+- Reversibly retired the old `#bwPeatLayer` experimental GeoJSON section from the visible page flow.
+- Did not delete sections, scripts, data files, images or map assets.

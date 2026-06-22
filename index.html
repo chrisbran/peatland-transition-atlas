@@ -401,24 +401,32 @@
   </div>
 </section>
 
-  <!-- B68b compact supporting evidence bridge -->
+  <!-- B68b / B71 compact supporting evidence bridge -->
   <section id="supportingEvidenceIntro" class="section evidence-explorer-intro evidence-explorer-bridge" data-story-role="supporting-evidence-intro">
     <div class="section-heading">
-      <p class="eyebrow">Evidence explorer</p>
-      <h2>The following modules support the map story.</h2>
+      <p class="eyebrow">After the main map</p>
+      <h2>The rest of the page is an evidence explorer.</h2>
       <p>
-        They add pathway evidence, country-level pressure signals, regional examples,
-        South Germany fit and methodological context.
+        Use the following modules as interpretation and prototype support for the main
+        atlas story, not as a second linear narrative.
       </p>
-
-      <p class="central-story-read-note">
-        Read the sequence as a scale transition: peatland extent first, pressure second,
-        implementation context third, pathway interpretation last.
-      </p>
-</div>
+    </div>
   </section>
 
-<section id="pathwayEvidenceMatrix" class="pathway-matrix-block" data-story-role="pathway-evidence">
+
+  <!-- B71 interpretation intro -->
+  <section id="interpretationIntro" class="section lower-evidence-group lower-evidence-interpretation" data-story-role="lower-evidence-group" data-evidence-tier="interpretation">
+    <div class="section-heading">
+      <p class="eyebrow">Interpretation</p>
+      <h2>What do the spatial patterns imply for transition pathways?</h2>
+      <p>
+        These modules translate the map story into pathway hypotheses: which forms of
+        wet use, management change or policy support may fit different contexts.
+      </p>
+    </div>
+  </section>
+
+<section id="pathwayEvidenceMatrix" class="pathway-matrix-block" data-story-role="pathway-evidence" data-evidence-tier="interpretation">
   <p class="section-kicker">Transition pathway bridge</p>
   <h2>Spatial pressure only becomes useful when linked to feasible pathways</h2>
   <p class="pathway-matrix-lede">
@@ -494,7 +502,20 @@
 
 
 
-<section id="hotspots" class="section hotspot-section" data-story-role="evidence-explorer">
+
+  <!-- B71 supporting evidence group intro -->
+  <section id="supportingEvidenceGroupIntro" class="section lower-evidence-group lower-evidence-supporting" data-story-role="lower-evidence-group" data-evidence-tier="supporting-evidence">
+    <div class="section-heading">
+      <p class="eyebrow">Supporting evidence</p>
+      <h2>Additional signals help test the atlas story.</h2>
+      <p>
+        Country hotspots, regional evidence and South Germany fit scores are exploratory
+        checks. They support interpretation, but they are not the main storyline.
+      </p>
+    </div>
+  </section>
+
+<section id="hotspots" class="section hotspot-section" data-story-role="evidence-explorer" data-evidence-tier="supporting-evidence">
       <div class="section-heading">
         <p class="eyebrow">Phase B hotspot layer</p>
         <h2>Evidence explorer: where are drained organic soil emissions concentrated?</h2>
@@ -567,7 +588,7 @@
     </section>
 
 
-    <section id="map" class="section" data-story-role="regional-evidence">
+    <section id="map" class="section" data-story-role="regional-evidence" data-evidence-tier="supporting-evidence">
       <div class="section-heading">
         <p class="eyebrow">International evidence map</p>
         <h2>Evidence explorer: cases and transition evidence</h2>
@@ -598,7 +619,7 @@
       </div>
     </section>
 
-    <section id="pathways" class="section" data-story-role="pathway-interpretation">
+    <section id="pathways" class="section" data-story-role="pathway-interpretation" data-evidence-tier="interpretation">
       <div class="section-heading">
         <p class="eyebrow">Transition space</p>
         <h2>Transition pathways between drained farming and full restoration</h2>
@@ -607,7 +628,7 @@
       <div id="pathwayMatrix" class="matrix"></div>
     </section>
 
-    <section id="fit" class="section" data-story-role="south-germany-fit">
+    <section id="fit" class="section" data-story-role="south-germany-fit" data-evidence-tier="supporting-evidence">
       <div class="section-heading">
         <p class="eyebrow">Transfer view</p>
         <h2>South Germany fit: which pathways remain plausible?</h2>
@@ -626,7 +647,20 @@
     </section>
 
 
-    <section id="methodology" class="section methodology-panel" data-story-role="method-and-limits">
+    
+  <!-- B71 prototype appendix intro -->
+  <section id="prototypeAppendixIntro" class="section lower-evidence-group lower-evidence-prototype" data-story-role="lower-evidence-group" data-evidence-tier="prototype-appendix">
+    <div class="section-heading">
+      <p class="eyebrow">Prototype appendix</p>
+      <h2>Method, data and experimental layers.</h2>
+      <p>
+        This part documents the prototype status, source limitations and remaining
+        experimental components. It is supporting material, not a finished decision tool.
+      </p>
+    </div>
+  </section>
+
+<section id="methodology" class="section methodology-panel" data-story-role="method-and-limits" data-evidence-tier="prototype-appendix">
       <div class="section-heading">
         <p class="eyebrow">Method and uncertainty</p>
         <h2>How to read this prototype</h2>
@@ -668,7 +702,7 @@
       </div>
     </section>
 
-    <section id="data" class="section" data-story-role="prototype-data">
+    <section id="data" class="section" data-story-role="prototype-data" data-evidence-tier="prototype-appendix">
       <div class="section-heading">
         <p class="eyebrow">Data model</p>
         <h2>Current prototype datasets</h2>
@@ -682,7 +716,7 @@
       </div>
     </section>
   
-<section id="bwPeatLayer" class="section bw-moor-section" data-story-role="experimental-regional-layer">
+<section id="bwPeatLayer" class="section bw-moor-section is-retired" data-story-role="retired-experimental-regional-layer" data-evidence-tier="retired-experimental-layer" hidden aria-hidden="true" data-retired="B71" style="display: none !important;">
   <div class="section-kicker">Regional peat/organic-soils layer</div>
   <h2>Baden-Württemberg: where the peat and organic-soil context becomes spatial</h2>
   <p class="section-lead">

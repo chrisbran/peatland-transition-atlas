@@ -2798,3 +2798,37 @@ header.site-header {
 .central-map-step[data-global-state="bw-bk50-extent"] h3 {
   text-wrap: balance;
 }
+
+/* B71 lower evidence reframing */
+.lower-evidence-group {
+  border-left: 2px solid rgba(209, 246, 168, 0.32);
+  padding: clamp(0.75rem, 1.5vw, 1.1rem) 0 clamp(0.75rem, 1.5vw, 1.1rem) clamp(0.9rem, 1.8vw, 1.25rem);
+  margin-block: clamp(1.2rem, 3vw, 2rem) clamp(0.4rem, 1vw, 0.8rem);
+  background: linear-gradient(90deg, rgba(209, 246, 168, 0.055), transparent 72%);
+}
+
+.lower-evidence-group .section-heading {
+  max-width: 780px;
+}
+
+.lower-evidence-group .section-heading h2 {
+  font-size: clamp(1.05rem, 1.55vw, 1.32rem);
+  margin-bottom: 0.35rem;
+}
+
+.lower-evidence-group .section-heading p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.lower-evidence-interpretation {
+  border-left-color: rgba(209, 246, 168, 0.42);
+}
+
+.lower-evidence-supporting {
+  border-left-color: rgba(153, 210, 170, 0.34);
+}
+
+.lower-evidence-prototype {
+  border-left-color: rgba(255, 215, 137, 0.34);
+}
