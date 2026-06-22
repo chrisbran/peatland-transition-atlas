@@ -114,3 +114,11 @@
 - Added `data-evidence-tier` attributes to lower modules.
 - Reversibly retired the old `#bwPeatLayer` experimental GeoJSON section from the visible page flow.
 - Did not delete sections, scripts, data files, images or map assets.
+
+## B72 - Public MVP quality pass (2026-06-22)
+
+- Created `docs/B72_public_mvp_quality_pass.md`.
+- Created `docs/B72_public_mvp_quality_report.md`.
+- Checked BW PNGs, central 11-step map states, retired legacy sections and lower evidence grouping.
+- Did not change application behavior, CSS, scripts, data files, images or map assets.
+- Result: FAIL.
