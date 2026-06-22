@@ -46,17 +46,12 @@ Date: 2026-06-22
 
 ### Current changed/untracked files
 
-- ` M docs/B58_visual_qa_and_commit_check.md`
-- ` M src/central_global_map_story.js`
-- ` M src/central_stage_label_fix.js`
-- ` M src/central_step_state_bridge.js`
+- ` M index.html`
+- ` M src/styles.css`
+- ` M tasks/done.md`
 - `?? data/external/`
 - `?? data/metadata/peat_soils_source_catalog.csv`
-- `?? docs/B63_asset_reference_scan.txt`
-- `?? docs/B63_central_global_map_story_diff.txt`
-- `?? docs/B63_central_story_dom_refs.txt`
-- `?? docs/B63_page_structure_outline.txt`
-- `?? docs/B63_project_inventory_input.txt`
+- `?? docs/B64_cleanup_story_flow_phase1.md`
 - `?? public/maps/bw/README.md`
 - `?? public/maps/europe/README.md`
 - `?? scripts/04_add_hotspot_ranking_layer.py`
@@ -78,9 +73,7 @@ Date: 2026-06-22
 - `?? scripts/62_bind_bw_extent_frame_to_central_story.py`
 - `?? scripts/62_bind_bw_extent_frame_to_central_story_fixed.py`
 - `?? scripts/62_repair_bw_extent_state_binding.py`
-- `?? scripts/63_rebuild_bw_label_files_utf8.py`
-- `?? scripts/63_rebuild_central_global_map_story_utf8.py`
-- `?? scripts/63_sanitize_bw_encoding_labels.py`
+- `?? scripts/64_cleanup_story_flow_phase1.py`
 - `?? src/emissions_metric_scrolly.js`
 - `?? tasks/B11_build_first_peat_soils_layer.md`
 - `?? tasks/B11b_process_bk50_moor_web_layer.md`

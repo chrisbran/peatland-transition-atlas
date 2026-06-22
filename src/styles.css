@@ -2655,3 +2655,12 @@ header.site-header {
   opacity: .88 !important;
 }
 
+/* B64 reversible story-flow cleanup.
+   Retired sections remain in index.html for rollback but are not displayed. */
+.is-retired {
+  display: none !important;
+}
+
+#centralGlobalMapStory {
+  scroll-margin-top: 5rem;
+}

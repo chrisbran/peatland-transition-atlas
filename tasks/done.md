@@ -47,3 +47,11 @@
 - 2026-06-19: Task B60 completed - patched B58 QA with robust no-Pillow PNG header check.
 - 2026-06-19: Task B61 completed - prepared BW / regional frame workflow.
 - B62 repair: Completed BW extent state binding across central map hardener, bridge, labels, and CSS.
+
+## 2026-06-22 - B64 - Cleanup story flow phase 1
+
+- Retired duplicate `guidedStory` section via reversible `is-retired` class.
+- Rerouted top Story navigation to `#centralGlobalMapStory`.
+- Reframed lower evidence/pathway headings as supporting sections.
+- Added `docs/B64_cleanup_story_flow_phase1.md`.
+- No data, assets or scripts were deleted.
