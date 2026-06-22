@@ -1,0 +1,56 @@
+public/data/atlas_story_sections.json
+  - index.html
+  - src/app.js
+public/data/bw_bk50_moor_simplified.geojson
+  - src/bw_peat_layer.js
+  - src/scrolly_story_layers.js
+public/data/country_hotspots.csv
+  - index.html
+  - src/hotspots.js
+public/data/germany_organic_soils_simplified.geojson
+  - src/scrolly_story_layers.js
+public/data/hotspot_countries_110m.geojson
+  - src/emissions_metric_scrolly.js
+  - src/hotspots.js
+  - src/scrolly_story_layers.js
+public/data/papers.csv
+  - index.html
+public/data/papers.json
+  - src/app.js
+public/data/region_case_studies.geojson
+  - index.html
+  - src/app.js
+public/data/transition_pathways.csv
+  - index.html
+public/data/transition_pathways.json
+  - src/app.js
+public/data/world_countries_110m_base.geojson
+  - src/emissions_metric_scrolly.js
+  - src/hotspot_base_layer.js
+  - src/scrolly_story_layers.js
+public/images/gpm2_europe_context.png
+  - src/gpm2_context_images.js
+public/images/gpm2_global_context.png
+  - src/gpm2_context_images.js
+public/maps/bw/bw_admin_context.png
+  - index.html
+public/maps/bw/bw_bk50_moor_extent.png
+  - index.html
+public/maps/europe/europe_country_borders.png
+  - index.html
+public/maps/europe/europe_gpm2_peat_extent.png
+  - index.html
+public/maps/germany/germany_admin_context.png
+  - index.html
+public/maps/germany/germany_thuenen_moor_extent.png
+  - index.html
+public/maps/germany/germany_thuenen_moor_types.png
+  - index.html
+public/maps/global/global_country_borders.png
+  - index.html
+public/maps/global/global_gpm2_peat_extent.png
+  - index.html
+public/maps/global/global_hotspots_density.png
+  - index.html
+public/maps/global/global_hotspots_total.png
+  - index.html

@@ -1,0 +1,63 @@
+type,path_or_id,status,loaded_or_referenced,references,note
+section,story,REVIEW,visible/active,,Introductory story overview; candidate to compress or merge into transitionLogic.
+section,transitionLogic,KEEP,visible/active,,Conceptual chain: Extent -> Pressure -> Implementation -> Pathways.
+section,guidedStory,RETIRE CANDIDATE,retired,,Retired B64 section; old scroll-driven story system.
+section,layerProvenance,REVIEW,visible/active,,Layer-reading note; keep but likely shorten/reposition.
+section,centralGlobalMapStory,KEEP,visible/active,,Main PNG-based atlas story; do not touch in cleanup.
+section,pathwayEvidenceMatrix,KEEP,visible/active,,Bridge from spatial pressure to transition pathways.
+section,hotspots,KEEP,visible/active,,Country-level pressure explorer; keep as evidence explorer.
+section,map,KEEP,visible/active,,Evidence nodes / region examples; keep if supporting evidence remains useful.
+section,pathways,KEEP,visible/active,,Transition pathway cards; keep but group with evidence/pathway interpretation.
+section,fit,KEEP,visible/active,,South Germany fit matrix; keep but strengthen relation to BW endpoint.
+section,methodology,KEEP,visible/active,,Method / limitations; keep.
+section,data,KEEP,visible/active,,Prototype datasets; keep.
+section,bwPeatLayer,REVIEW,visible/active,,Old BW GeoJSON interactive layer; review after central BW PNG story is stable.
+script,src/app.js,KEEP,loaded in index,,Evidence/pathways/fit/data app logic.
+script,src/bw_peat_layer.js,REVIEW,loaded in index,,Old interactive BW BK50 GeoJSON map section.
+script,src/central_global_map_story.js,KEEP,loaded in index,,Main central PNG map story metadata/controller.
+script,src/central_layer_state_hardener.js,KEEP,loaded in index,,Authoritative central PNG layer opacity controller.
+script,src/central_stage_label_fix.js,KEEP,loaded in index,,Central story label synchronizer.
+script,src/central_step_state_bridge.js,KEEP,loaded in index,,Central story step-state bridge.
+script,src/emissions_metric_scrolly.js,REVIEW,not loaded in index,,Untracked/legacy emissions metric scrolly module; review.
+script,src/gpm2_context_images.js,RETIRE CANDIDATE,loaded in index,,Old guidedStory image context renderer.
+script,src/hotspot_base_layer.js,KEEP,loaded in index,,Base country layer for hotspot map.
+script,src/hotspots.js,KEEP,loaded in index,,Country hotspot table/map interaction.
+script,src/scrolly_story.js,RETIRE CANDIDATE,loaded in index,,Old guidedStory scroll-state driver.
+script,src/scrolly_story_layers.js,RETIRE CANDIDATE,loaded in index,,Old guidedStory GeoJSON layer renderer.
+stylesheet,src/styles.css,KEEP,loaded via stylesheet link,,Main stylesheet linked by index.html; do not delete during cleanup.
+asset,public/data/atlas_story_sections.csv,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/data/atlas_story_sections.json,KEEP,referenced,index.html; src/app.js,Still referenced by visible explorer/data modules.
+asset,public/data/atlas_story_sections_data_dictionary.csv,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/data/atlas_wireframes.json,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/data/bw_bk50_moor_simplified.geojson,REVIEW,referenced,src/bw_peat_layer.js; src/scrolly_story_layers.js,Used by old BW interactive layer and old guidedStory; central BW PNG story reduces need.
+asset,public/data/country_hotspots.csv,KEEP,referenced,index.html; src/hotspots.js,Still referenced by visible explorer/data modules.
+asset,public/data/country_hotspots_n2o.csv,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/data/country_hotspots_schema.csv,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/data/germany_organic_soils_simplified.geojson,RETIRE CANDIDATE,referenced,src/scrolly_story_layers.js,Appears tied to old guidedStory GeoJSON renderer; verify after script-tag audit.
+asset,public/data/hotspot_countries_110m.geojson,KEEP,referenced,src/emissions_metric_scrolly.js; src/hotspots.js; src/scrolly_story_layers.js,Still referenced by visible explorer/data modules.
+asset,public/data/papers.csv,REVIEW,referenced,index.html,"Public data file; check whether it is linked as dataset, loaded by JS, or only legacy."
+asset,public/data/papers.json,KEEP,referenced,src/app.js,Still referenced by visible explorer/data modules.
+asset,public/data/papers_data_dictionary.csv,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/data/region_case_studies.csv,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/data/region_case_studies.geojson,KEEP,referenced,index.html; src/app.js,Still referenced by visible explorer/data modules.
+asset,public/data/region_case_studies_data_dictionary.csv,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/data/transition_pathways.csv,REVIEW,referenced,index.html,"Public data file; check whether it is linked as dataset, loaded by JS, or only legacy."
+asset,public/data/transition_pathways.json,KEEP,referenced,src/app.js,Still referenced by visible explorer/data modules.
+asset,public/data/transition_pathways_data_dictionary.csv,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/data/world_countries_110m_base.geojson,KEEP,referenced,src/emissions_metric_scrolly.js; src/hotspot_base_layer.js; src/scrolly_story_layers.js,Still referenced by visible explorer/data modules.
+asset,public/images/gpm2_europe_context.png,RETIRE CANDIDATE,referenced,src/gpm2_context_images.js,Likely old guidedStory image context; central PNG map stack now uses public/maps.
+asset,public/images/gpm2_global_context.png,RETIRE CANDIDATE,referenced,src/gpm2_context_images.js,Likely old guidedStory image context; central PNG map stack now uses public/maps.
+asset,public/maps/bw/README.md,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/maps/bw/bw_admin_context.png,KEEP,referenced,index.html,Central/static map asset; do not touch during B65/B66.
+asset,public/maps/bw/bw_bk50_moor_extent.png,KEEP,referenced,index.html,Central/static map asset; do not touch during B65/B66.
+asset,public/maps/europe/README.md,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/maps/europe/europe_country_borders.png,KEEP,referenced,index.html,Central/static map asset; do not touch during B65/B66.
+asset,public/maps/europe/europe_gpm2_peat_extent.png,KEEP,referenced,index.html,Central/static map asset; do not touch during B65/B66.
+asset,public/maps/germany/README.md,UNREFERENCED,not referenced,,No reference found in index.html or src/*.js/css; do not delete until reviewed.
+asset,public/maps/germany/germany_admin_context.png,KEEP,referenced,index.html,Central/static map asset; do not touch during B65/B66.
+asset,public/maps/germany/germany_thuenen_moor_extent.png,KEEP,referenced,index.html,Central/static map asset; do not touch during B65/B66.
+asset,public/maps/germany/germany_thuenen_moor_types.png,KEEP,referenced,index.html,Central/static map asset; do not touch during B65/B66.
+asset,public/maps/global/global_country_borders.png,KEEP,referenced,index.html,Central/static map asset; do not touch during B65/B66.
+asset,public/maps/global/global_gpm2_peat_extent.png,KEEP,referenced,index.html,Central/static map asset; do not touch during B65/B66.
+asset,public/maps/global/global_hotspots_density.png,KEEP,referenced,index.html,Central/static map asset; do not touch during B65/B66.
+asset,public/maps/global/global_hotspots_total.png,KEEP,referenced,index.html,Central/static map asset; do not touch during B65/B66.

@@ -55,3 +55,11 @@
 - Reframed lower evidence/pathway headings as supporting sections.
 - Added `docs/B64_cleanup_story_flow_phase1.md`.
 - No data, assets or scripts were deleted.
+
+## B65 - Legacy asset and script reference audit (2026-06-22)
+
+- Created `docs/B65_legacy_asset_and_script_reference_audit.md`.
+- Created `docs/B65_reference_inventory.csv`.
+- Created `docs/B65_referenced_assets.txt`.
+- Audited active sections, script tags and public asset references after B64.
+- No application code, script tags, public data files or map assets were removed.
