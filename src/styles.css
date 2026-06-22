@@ -2664,3 +2664,101 @@ header.site-header {
 #centralGlobalMapStory {
   scroll-margin-top: 5rem;
 }
+
+/* B68 MVP storyline lock */
+.mvp-storyline-lock,
+.evidence-explorer-intro {
+  border: 1px solid rgba(209, 246, 168, 0.16);
+  background:
+    radial-gradient(circle at 15% 10%, rgba(209, 246, 168, 0.08), transparent 34%),
+    rgba(12, 26, 20, 0.72);
+  border-radius: 18px;
+  padding: clamp(1.1rem, 2vw, 1.8rem);
+  margin-block: clamp(1.5rem, 4vw, 3rem);
+}
+
+.mvp-storyline-lock .section-heading,
+.evidence-explorer-intro .section-heading {
+  max-width: 820px;
+}
+
+.story-lock-chain {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin-top: 1.15rem;
+}
+
+.story-lock-chain span {
+  border: 1px solid rgba(209, 246, 168, 0.2);
+  border-radius: 999px;
+  padding: 0.65rem 0.75rem;
+  text-align: center;
+  color: var(--accent);
+  background: rgba(209, 246, 168, 0.055);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+.story-lock-note {
+  max-width: 820px;
+  margin: 1.1rem 0 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+@media (max-width: 760px) {
+  .story-lock-chain {
+    grid-template-columns: 1fr;
+  }
+
+  .story-lock-chain span {
+    text-align: left;
+  }
+}
+
+/* B68b compact storyline bridge */
+.mvp-storyline-bridge,
+.evidence-explorer-bridge {
+  border-color: rgba(209, 246, 168, 0.12);
+  background: rgba(12, 26, 20, 0.48);
+  border-radius: 14px;
+  padding: clamp(0.75rem, 1.4vw, 1.05rem);
+  margin-block: clamp(0.85rem, 2.2vw, 1.55rem);
+}
+
+.mvp-storyline-bridge .section-heading,
+.evidence-explorer-bridge .section-heading {
+  max-width: 760px;
+}
+
+.mvp-storyline-bridge .section-heading h2,
+.evidence-explorer-bridge .section-heading h2 {
+  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+  margin-bottom: 0.35rem;
+}
+
+.mvp-storyline-bridge .section-heading p,
+.evidence-explorer-bridge .section-heading p {
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.story-lock-chain.compact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.75rem;
+}
+
+.story-lock-chain.compact span {
+  flex: 0 1 auto;
+  padding: 0.38rem 0.58rem;
+  font-size: 0.72rem;
+  text-align: left;
+}
+
+.mvp-storyline-bridge .story-lock-note {
+  margin-top: 0.65rem;
+  font-size: 0.82rem;
+}

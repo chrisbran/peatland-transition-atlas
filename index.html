@@ -44,7 +44,7 @@
       </div>
     </section>
 
-    <section id="story" class="section">
+    <section id="story" class="section" data-story-role="intro-overview">
       <div class="section-heading">
         <p class="eyebrow">Scrollytelling structure</p>
         <h2>Six-part story</h2>
@@ -55,7 +55,7 @@
 
     
 
-<section id="transitionLogic" class="transition-logic-block">
+<section id="transitionLogic" class="transition-logic-block" data-story-role="conceptual-frame">
   <p class="section-kicker">Atlas framing</p>
   <h2>From peatland extent to transition priorities</h2>
   <p class="transition-logic-lede">
@@ -111,7 +111,7 @@
 
 
 <!-- B64: guidedStory retired because centralGlobalMapStory is now the main narrative spine. Kept in markup for reversible rollback. -->
-<section id="guidedStory" class="section guided-story is-retired" aria-hidden="true" data-retired="B64" style="display: none !important;">
+<section id="guidedStory" class="section guided-story is-retired" aria-hidden="true" data-retired="B64" style="display: none !important;" data-story-role="retired-legacy-story">
   <div class="section-kicker">Guided scrollytelling prototype</div>
   <h2>From national emission hotspots to real peatland landscapes</h2>
   <p class="section-lead">
@@ -246,7 +246,7 @@
 </section>
 
 
-<section id="layerProvenance" class="layer-provenance-block">
+<section id="layerProvenance" class="layer-provenance-block" data-story-role="layer-reading-note">
   <p class="section-kicker">Layer logic</p>
   <h2>Each map layer answers a different question</h2>
 
@@ -274,9 +274,30 @@
   </div>
 </section>
 
+  <!-- B68b compact MVP storyline bridge -->
+  <section id="mvpStoryline" class="section mvp-storyline-lock mvp-storyline-bridge" data-story-role="narrative-lock">
+    <div class="section-heading">
+      <p class="eyebrow">Main atlas story</p>
+      <h2>The map below is the core narrative.</h2>
+      <p>
+        It moves from global peatland extent and pressure to Germany,
+        Baden-Wuerttemberg and pathway interpretation.
+      </p>
+    </div>
 
+    <div class="story-lock-chain compact" aria-label="Peatland Transition Atlas storyline">
+      <span>Extent</span>
+      <span>Pressure</span>
+      <span>Implementation</span>
+      <span>Pathways</span>
+    </div>
 
-<section id="centralGlobalMapStory" class="central-map-story" data-state="extent">
+    <p class="story-lock-note">
+      Everything after the map is supporting evidence and exploratory interpretation.
+    </p>
+  </section>
+
+<section id="centralGlobalMapStory" class="central-map-story" data-state="extent" data-story-role="main-atlas-story">
   <div class="central-map-sticky" aria-live="polite">
     <div class="central-map-shell" role="img" aria-label="Scroll-driven global peatland and emissions map">
       <div class="central-map-titlebar">
@@ -415,8 +436,19 @@
   </div>
 </section>
 
+  <!-- B68b compact supporting evidence bridge -->
+  <section id="supportingEvidenceIntro" class="section evidence-explorer-intro evidence-explorer-bridge" data-story-role="supporting-evidence-intro">
+    <div class="section-heading">
+      <p class="eyebrow">Evidence explorer</p>
+      <h2>The following modules support the map story.</h2>
+      <p>
+        They add pathway evidence, country-level pressure signals, regional examples,
+        South Germany fit and methodological context.
+      </p>
+    </div>
+  </section>
 
-<section id="pathwayEvidenceMatrix" class="pathway-matrix-block">
+<section id="pathwayEvidenceMatrix" class="pathway-matrix-block" data-story-role="pathway-evidence">
   <p class="section-kicker">Transition pathway bridge</p>
   <h2>Spatial pressure only becomes useful when linked to feasible pathways</h2>
   <p class="pathway-matrix-lede">
@@ -492,7 +524,7 @@
 
 
 
-<section id="hotspots" class="section hotspot-section">
+<section id="hotspots" class="section hotspot-section" data-story-role="evidence-explorer">
       <div class="section-heading">
         <p class="eyebrow">Phase B hotspot layer</p>
         <h2>Evidence explorer: where are drained organic soil emissions concentrated?</h2>
@@ -565,7 +597,7 @@
     </section>
 
 
-    <section id="map" class="section">
+    <section id="map" class="section" data-story-role="regional-evidence">
       <div class="section-heading">
         <p class="eyebrow">International evidence map</p>
         <h2>Evidence explorer: cases and transition evidence</h2>
@@ -596,7 +628,7 @@
       </div>
     </section>
 
-    <section id="pathways" class="section">
+    <section id="pathways" class="section" data-story-role="pathway-interpretation">
       <div class="section-heading">
         <p class="eyebrow">Transition space</p>
         <h2>Transition pathways between drained farming and full restoration</h2>
@@ -605,7 +637,7 @@
       <div id="pathwayMatrix" class="matrix"></div>
     </section>
 
-    <section id="fit" class="section">
+    <section id="fit" class="section" data-story-role="south-germany-fit">
       <div class="section-heading">
         <p class="eyebrow">Transfer view</p>
         <h2>South Germany fit: which pathways remain plausible?</h2>
@@ -624,7 +656,7 @@
     </section>
 
 
-    <section id="methodology" class="section methodology-panel">
+    <section id="methodology" class="section methodology-panel" data-story-role="method-and-limits">
       <div class="section-heading">
         <p class="eyebrow">Method and uncertainty</p>
         <h2>How to read this prototype</h2>
@@ -666,7 +698,7 @@
       </div>
     </section>
 
-    <section id="data" class="section">
+    <section id="data" class="section" data-story-role="prototype-data">
       <div class="section-heading">
         <p class="eyebrow">Data model</p>
         <h2>Current prototype datasets</h2>
@@ -680,7 +712,7 @@
       </div>
     </section>
   
-<section id="bwPeatLayer" class="section bw-moor-section">
+<section id="bwPeatLayer" class="section bw-moor-section" data-story-role="experimental-regional-layer">
   <div class="section-kicker">Regional peat/organic-soils layer</div>
   <h2>Baden-Württemberg: where the peat and organic-soil context becomes spatial</h2>
   <p class="section-lead">

@@ -77,3 +77,18 @@
 - Kept the retired section content in `index.html` for reversibility.
 - Did not delete scripts, data files, images or map assets.
 - Purpose: make B64 retirement robust against public stylesheet caching.
+
+## B68 - Lock MVP storyline (2026-06-22)
+
+- Added a compact MVP storyline lock before the central map story.
+- Added a supporting-evidence intro before the lower explorer/pathway modules.
+- Added `data-story-role` attributes to major page sections.
+- Added small CSS styles for the new editorial framing blocks.
+- Did not delete sections, scripts, data files, images or map assets.
+
+## B68b - Refine MVP storyline lock (2026-06-22)
+
+- Replaced the large B68 MVP storyline block with a compact main-atlas-story bridge.
+- Replaced the large supporting-evidence intro with a compact evidence-explorer bridge.
+- Added compact CSS overrides.
+- Did not delete sections, scripts, data files, images or map assets.
