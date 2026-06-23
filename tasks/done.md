@@ -249,3 +249,11 @@
 - Neutralised old opacity/filter/blend/background changes on central scroll-trigger articles.
 - Did not change map state names, JavaScript logic, maps or data.
 - Created `docs/B89_force_uniform_central_step_card_state.md`.
+
+## B90 - Release check German presentation version (2026-06-23)
+
+- Created `docs/B90_release_check_german_presentation_version.md`.
+- Created `docs/B90_public_review_checklist.md`.
+- Checked German presentation structure, central states, map assets, app selector guard and method boundary.
+- Treated missing `#guidedStory` as acceptable when German presentation mode is active.
+- Did not modify application files, CSS, JavaScript, maps or data.
