@@ -298,3 +298,14 @@
 - Created `tasks/B95_build_oberschwaben_map_assets.md`.
 - Anchored the Oberschwaben map workflow to the SOLAMO flyer source-stack logic.
 - Did not modify production HTML, CSS, JavaScript, maps or data.
+
+## B95 - Build Oberschwaben map asset package (2026-06-23)
+
+- Created `public/maps/oberschwaben/oberschwaben_map_sources.json`.
+- Created `docs/B95_build_oberschwaben_map_assets.md`.
+- Created `docs/B95_oberschwaben_asset_manifest.csv`.
+- Created `docs/B95_oberschwaben_source_candidate_scan.txt`.
+- Created `docs/B95_oberschwaben_png_asset_qa.md`.
+- Created `docs/B95_oberschwaben_manual_export_checklist.md`.
+- Created `tasks/B96_bind_oberschwaben_map_section.md`.
+- Prepared Oberschwaben map asset package and QA without creating fake map images.

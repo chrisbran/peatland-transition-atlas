@@ -1,0 +1,90 @@
+{
+  "created_by": "B95_build_oberschwaben_map_assets",
+  "date": "2026-06-23",
+  "status": "source anchors defined; actual map assets pending unless PNGs are present",
+  "focus_area": [
+    "Ravensburg",
+    "Biberach",
+    "Sigmaringen",
+    "Bodenseekreis"
+  ],
+  "method_boundary": "Die Oberschwaben-Karten zeigen eine räumliche Einordnung der Überschneidung von landwirtschaftlicher Nutzung und Moor-/Feuchtbodenkontext. Sie ersetzen keine Flächeneignungsprüfung, keine Priorisierung und keine betriebliche Betroffenheitsanalyse.",
+  "source_anchors": [
+    {
+      "layer": "agricultural land-use context",
+      "reference": "Gemeinsamer Antrag Baden-Württemberg / MLR",
+      "year": "2024",
+      "status": "access and public-display rights open",
+      "expected_classes": [
+        "Ackerland",
+        "Grünland",
+        "Dauerkultur"
+      ]
+    },
+    {
+      "layer": "moor/wetland/soil context",
+      "reference": "Feuchtgebiete und Moore der Bodenkarte BW / GeoLa BK50MOOR / LGRB",
+      "year": "2025",
+      "status": "access and public-display rights open",
+      "expected_label": "Moor-/Feuchtbodenkontext"
+    },
+    {
+      "layer": "administrative base",
+      "reference": "BKG or project-compatible public administrative boundaries",
+      "year": "2026/reference year to be confirmed",
+      "status": "source to be confirmed"
+    }
+  ],
+  "expected_assets": [
+    {
+      "file": "public/maps/oberschwaben/oberschwaben_implementation_context_composite.png",
+      "role": "first visible composite",
+      "required_for_b96": "yes",
+      "expected_size": "1600x900",
+      "description": "Composite map: four districts, agriculture, moor/soil context and intersection."
+    },
+    {
+      "file": "public/maps/oberschwaben/oberschwaben_admin_context.png",
+      "role": "stack layer",
+      "required_for_b96": "optional",
+      "expected_size": "1600x900",
+      "description": "Four-district admin context for transparent layer stack."
+    },
+    {
+      "file": "public/maps/oberschwaben/oberschwaben_agriculture.png",
+      "role": "stack layer",
+      "required_for_b96": "optional",
+      "expected_size": "1600x900",
+      "description": "Agricultural land-use context."
+    },
+    {
+      "file": "public/maps/oberschwaben/oberschwaben_moor_context.png",
+      "role": "stack layer",
+      "required_for_b96": "optional",
+      "expected_size": "1600x900",
+      "description": "Moor-/Feuchtbodenkontext."
+    },
+    {
+      "file": "public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png",
+      "role": "stack layer",
+      "required_for_b96": "optional",
+      "expected_size": "1600x900",
+      "description": "Schnittmenge: landwirtschaftliche Nutzung × Moor-/Feuchtbodenkontext."
+    },
+    {
+      "file": "public/maps/oberschwaben/oberschwaben_landuse_classes_on_moor.png",
+      "role": "interpretation layer",
+      "required_for_b96": "no",
+      "expected_size": "1600x900",
+      "description": "Optional use-class split within the intersection."
+    }
+  ],
+  "do_not_use_labels": [
+    "Eignungskarte",
+    "Prioritätskarte",
+    "Wiedervernässungspotenzial",
+    "betroffene Betriebe",
+    "Maßnahmenfläche",
+    "SOLAMO-Ergebnis"
+  ]
+}

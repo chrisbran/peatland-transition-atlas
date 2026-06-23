@@ -1,0 +1,7 @@
+file,exists,role,required_for_b96,expected_size,actual_size,png_mode,description
+public/maps/oberschwaben/oberschwaben_implementation_context_composite.png,no,first visible composite,yes,1600x900,,,"Composite map: four districts, agriculture, moor/soil context and intersection."
+public/maps/oberschwaben/oberschwaben_admin_context.png,no,stack layer,optional,1600x900,,,Four-district admin context for transparent layer stack.
+public/maps/oberschwaben/oberschwaben_agriculture.png,no,stack layer,optional,1600x900,,,Agricultural land-use context.
+public/maps/oberschwaben/oberschwaben_moor_context.png,no,stack layer,optional,1600x900,,,Moor-/Feuchtbodenkontext.
+public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png,no,stack layer,optional,1600x900,,,Schnittmenge: landwirtschaftliche Nutzung × Moor-/Feuchtbodenkontext.
+public/maps/oberschwaben/oberschwaben_landuse_classes_on_moor.png,no,interpretation layer,no,1600x900,,,Optional use-class split within the intersection.
