@@ -287,3 +287,14 @@
 - Created `tasks/B94_build_oberschwaben_map_assets.md`.
 - Prepared map workflow for Oberschwaben implementation module.
 - Did not modify production HTML, CSS, JavaScript, maps or data.
+
+## B94 - Source-anchor Oberschwaben map workflow (2026-06-23)
+
+- Created `docs/B94_oberschwaben_source_stack.md`.
+- Created `docs/B94_oberschwaben_source_stack.csv`.
+- Created `docs/B94_oberschwaben_data_access_questions.md`.
+- Created `docs/B94_oberschwaben_legend_and_map_logic.md`.
+- Created `docs/B94_oberschwaben_flyer_map_reference_note.md`.
+- Created `tasks/B95_build_oberschwaben_map_assets.md`.
+- Anchored the Oberschwaben map workflow to the SOLAMO flyer source-stack logic.
+- Did not modify production HTML, CSS, JavaScript, maps or data.
