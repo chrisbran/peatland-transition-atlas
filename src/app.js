@@ -41,9 +41,9 @@ function project(lon, lat) {
 }
 
 function renderMetrics() {
-  document.querySelector("#metricPapers").textContent = state.papers.length;
-  document.querySelector("#metricPathways").textContent = state.pathways.length;
-  document.querySelector("#metricRegions").textContent = state.regions.length;
+  (function() { const __b83TextTarget = document.querySelector("#metricPapers"); if (__b83TextTarget) { __b83TextTarget.textContent = state.papers.length; } })();
+  (function() { const __b83TextTarget = document.querySelector("#metricPathways"); if (__b83TextTarget) { __b83TextTarget.textContent = state.pathways.length; } })();
+  (function() { const __b83TextTarget = document.querySelector("#metricRegions"); if (__b83TextTarget) { __b83TextTarget.textContent = state.regions.length; } })();
 }
 
 function renderStorySections() {
