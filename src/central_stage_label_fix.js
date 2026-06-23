@@ -15,13 +15,13 @@
     total: "GLOBAL EMISSIONS PRESSURE",
     density: "EMISSION DENSITY",
     compare: "GLOBAL HOTSPOT INTERPRETATION",
-    "europe-borders": "EUROPE FRAME",
+    "europe-borders": "EUROPA",
     "europe-peat": "EUROPEAN PEAT CONTEXT",
-    "germany-context": "GERMANY FRAME",
+    "germany-context": "DEUTSCHLAND",
     "germany-thuenen-extent": "THUENEN KULISSE",
     "germany-thuenen-types": "MOOR AND SOIL TYPES",
-    "bw-context": "BADEN-WUERTTEMBERG FRAME",
-    "bw-bk50-extent": "BK50 PEAT / WETLAND SOILS"
+    "bw-context": "BADEN-WÜRTTEMBERG",
+    "bw-bk50-extent": "BK50 MOOR- UND FEUCHTBÖDEN"
   };
 
   const ALIASES = {

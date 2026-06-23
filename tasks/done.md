@@ -172,3 +172,80 @@
 - Created `docs/B78_patch_strategy.md`.
 - Defined safe B79 production implementation strategy.
 - Did not modify production website files, CSS, scripts, maps or data.
+
+## B79 - German presentation version (2026-06-23)
+
+- Applied first German presentation version to `index.html`.
+- Added B79 editorial-nature design overrides to `src/styles.css`.
+- Inserted compact German implementation, pathway and method-boundary sections.
+- Hid older lower explorer/prototype sections reversibly with `data-retired="B79"`.
+- Created `docs/B79_german_presentation_version.md`.
+- Preserved map assets and central map state names.
+
+## B80 - Polish German presentation layout (2026-06-23)
+
+- Polished B79 German presentation layout via CSS only.
+- Kept B79 editorial-nature direction.
+- Improved header behaviour, hero cards, central map step readability and map framing.
+- Created `docs/B80_polish_german_presentation_layout.md`.
+- Did not modify HTML, JavaScript, maps or data.
+
+## B81 - Fix German copy and layout overflow (2026-06-23)
+
+- Replaced remaining visible English/meta hero texts with German copy.
+- Hardened hero layout to prevent narrow columns and overflow.
+- Added stronger wrapping/overflow rules for hero cards and central story cards.
+- Suppressed residual overlay artefacts.
+- Created `docs/B81_fix_german_copy_and_layout_overflow.md`.
+
+## B82 - Compact header and overflow fix (2026-06-23)
+
+- Replaced the old duplicated masthead with a compact German navigation header.
+- Added CSS safeguards to hide header hero/meta text.
+- Stabilized hero claim-card width and card text wrapping.
+- Improved central map step overflow and viewport-edge behaviour.
+- Created `docs/B82_compact_header_and_overflow_fix.md`.
+
+## B83 - Fix central panels and textContent error (2026-06-23)
+
+- Removed literal `\n` artefacts from `index.html`.
+- Applied consistent dark styling to central map step panels.
+- Hardened central step text wrapping and overlay suppression.
+- Guarded direct `document.querySelector(...).textContent = ...` assignment patterns in `src/*.js`.
+- Created `docs/B83_fix_central_panels_and_textcontent_error.md`.
+
+## B84 - JS textContent and panel hardening (2026-06-23)
+
+- Hardened broader `document.querySelector(...).textContent` patterns in `index.html` and `src/*.js`.
+- Removed literal `\n` artefacts from `index.html`.
+- Applied broad dark styling to all central map story text panels.
+- Created `docs/B84_js_textcontent_and_panel_hardening.md`.
+- Created `docs/B84_textcontent_patch_inventory.txt`.
+
+## B85 - Restore persistent dark central map stage (2026-06-23)
+
+- Restored a persistent dark central map stage via CSS.
+- Kept all central step cards on a consistent dark readable panel treatment.
+- Did not alter map state names, JavaScript logic, map assets or raw data.
+- Created `docs/B85_restore_persistent_dark_central_map_stage.md`.
+
+## B87 - Restore central story id and stage targeting (2026-06-23)
+
+- Restored canonical `id="centralGlobalMapStory"` on the actual central story section.
+- Added `data-b87-central-story="true"` for stable future targeting.
+- Added class/id/data-attribute CSS targeting for the central map stage and cards.
+- Created `docs/B87_restore_central_story_id_and_stage_targeting.md`.
+
+## B88 - Wrap central story step cards (2026-06-23)
+
+- Wrapped central `article[data-global-state]` contents in `.b88-step-card`.
+- Reset scroll-trigger articles to transparent so they no longer render as giant dark blocks.
+- Styled only `.b88-step-card` as the visible dark step panel.
+- Created `docs/B88_wrap_central_story_step_cards.md`.
+
+## B89 - Force uniform central step card state (2026-06-23)
+
+- Forced all central `.b88-step-card` panels to use one dark material independent of active/inactive state.
+- Neutralised old opacity/filter/blend/background changes on central scroll-trigger articles.
+- Did not change map state names, JavaScript logic, maps or data.
+- Created `docs/B89_force_uniform_central_step_card_state.md`.

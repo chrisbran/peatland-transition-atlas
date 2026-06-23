@@ -2832,3 +2832,1412 @@ header.site-header {
 .lower-evidence-prototype {
   border-left-color: rgba(255, 215, 137, 0.34);
 }
+
+/* B79 German presentation version */
+:root {
+  --b79-paper: #F5EFE6;
+  --b79-paper-soft: #FFFCF7;
+  --b79-ink: #221D18;
+  --b79-lead: #3B3129;
+  --b79-muted: #776A5D;
+  --b79-line: #DED4C7;
+  --b79-accent: #1F4E5F;
+  --b79-ocker: #C8901A;
+  --b79-salbei: #7A8B74;
+  --b79-rost: #A65041;
+}
+
+html,
+body {
+  background:
+    radial-gradient(circle at 15% 4%, rgba(200, 144, 26, 0.10), transparent 34rem),
+    radial-gradient(circle at 86% 18%, rgba(122, 139, 116, 0.14), transparent 32rem),
+    var(--b79-paper) !important;
+  color: var(--b79-ink) !important;
+}
+
+body {
+  font-family: Inter, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.site-header,
+.header,
+.navbar {
+  background: color-mix(in srgb, var(--b79-paper) 92%, white) !important;
+  border-bottom: 1px solid var(--b79-line) !important;
+  color: var(--b79-ink) !important;
+  backdrop-filter: blur(14px);
+}
+
+.site-header a,
+.header a,
+.navbar a {
+  color: var(--b79-muted) !important;
+}
+
+.site-header a:hover,
+.header a:hover,
+.navbar a:hover {
+  color: var(--b79-accent) !important;
+}
+
+.brand {
+  color: var(--b79-ink) !important;
+  font-weight: 750;
+}
+
+section.hero,
+.hero {
+  background: transparent !important;
+  color: var(--b79-ink) !important;
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-top: clamp(86px, 12vw, 152px);
+  padding-bottom: clamp(72px, 9vw, 128px);
+}
+
+.hero .kicker,
+.section-kicker,
+.kicker {
+  color: #8A5E11 !important;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  font-weight: 760;
+}
+
+.hero h1,
+section.hero h1 {
+  color: var(--b79-ink) !important;
+  max-width: 920px;
+  font-size: clamp(3rem, 7vw, 6.2rem);
+  line-height: 0.94;
+  letter-spacing: -0.07em;
+}
+
+.hero .lead,
+.lead {
+  color: var(--b79-lead) !important;
+  max-width: 760px;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.35;
+}
+
+.b79-claim-grid,
+.b79-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 32px);
+  margin-top: clamp(38px, 6vw, 70px);
+}
+
+.b79-claim-grid article,
+.b79-card-grid article {
+  border: 1px solid var(--b79-line);
+  background: color-mix(in srgb, var(--b79-paper-soft) 76%, transparent);
+  padding: clamp(20px, 2.8vw, 30px);
+}
+
+.b79-claim-grid h3,
+.b79-card-grid h3 {
+  color: var(--b79-ink) !important;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  margin: 0 0 0.65rem;
+}
+
+.b79-claim-grid p,
+.b79-card-grid p {
+  color: var(--b79-muted) !important;
+  margin: 0;
+}
+
+.b79-num,
+.central-map-step span,
+.central-map-step .step-number {
+  color: var(--b79-accent) !important;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  font-size: 0.78rem;
+}
+
+#transitionLogic {
+  background: transparent !important;
+  border-top: 1px solid var(--b79-line);
+  border-bottom: 1px solid var(--b79-line);
+  color: var(--b79-ink) !important;
+}
+
+#transitionLogic h2,
+#centralGlobalMapStory h2,
+.b79-section h2 {
+  color: var(--b79-ink) !important;
+  max-width: 820px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+#transitionLogic p,
+#centralGlobalMapStory p,
+.b79-section p {
+  color: var(--b79-muted) !important;
+}
+
+#centralGlobalMapStory {
+  background: transparent !important;
+  color: var(--b79-ink) !important;
+}
+
+#centralGlobalMapStory .central-story-read-note {
+  color: var(--b79-muted) !important;
+  max-width: 860px;
+}
+
+#centralGlobalMapStory .central-map-step,
+#centralGlobalMapStory article[data-global-state] {
+  background: color-mix(in srgb, var(--b79-paper-soft) 74%, transparent) !important;
+  border: 1px solid var(--b79-line) !important;
+  color: var(--b79-ink) !important;
+  box-shadow: none !important;
+}
+
+#centralGlobalMapStory .central-map-step h3,
+#centralGlobalMapStory article[data-global-state] h3 {
+  color: var(--b79-ink) !important;
+}
+
+#centralGlobalMapStory .central-map-step p,
+#centralGlobalMapStory article[data-global-state] p {
+  color: var(--b79-muted) !important;
+}
+
+#centralGlobalMapStory .central-map-visual,
+#centralGlobalMapStory .central-map-stage,
+#centralGlobalMapStory .map-frame,
+#centralGlobalMapStory figure {
+  background: var(--b79-paper-soft) !important;
+  border-color: var(--b79-line) !important;
+  box-shadow: 0 18px 70px rgba(70, 50, 30, 0.10) !important;
+}
+
+#centralGlobalMapStory figcaption,
+#centralGlobalMapStory .source,
+#centralGlobalMapStory .source-line {
+  color: var(--b79-muted) !important;
+  font-size: 0.78rem;
+}
+
+.b79-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: clamp(76px, 9vw, 128px) clamp(20px, 6vw, 72px);
+  background: transparent !important;
+  color: var(--b79-ink) !important;
+}
+
+.b79-section-heading {
+  max-width: 860px;
+}
+
+.b79-method-boundary {
+  margin-top: clamp(32px, 4vw, 64px);
+  margin-bottom: clamp(64px, 8vw, 120px);
+  background: color-mix(in srgb, var(--b79-paper-soft) 84%, transparent) !important;
+  border: 1px solid var(--b79-line);
+}
+
+.b79-source-line {
+  font-size: 0.82rem;
+  color: var(--b79-muted) !important;
+  margin-top: 1.5rem;
+}
+
+section[data-retired="B79"],
+.b79-hidden {
+  display: none !important;
+}
+
+@media (max-width: 860px) {
+  .b79-claim-grid,
+  .b79-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1,
+  section.hero h1 {
+    font-size: clamp(2.6rem, 12vw, 4.2rem);
+  }
+}
+/* End B79 German presentation version */
+
+/* B80 German presentation layout polish */
+
+/* Keep the navigation calm and top-oriented; avoid bottom overlay behaviour from earlier prototypes. */
+.site-header,
+.header,
+.navbar,
+header[role="banner"] {
+  position: sticky !important;
+  top: 0 !important;
+  bottom: auto !important;
+  left: 0;
+  right: 0;
+  z-index: 1000 !important;
+  min-height: 52px;
+  box-shadow: none !important;
+}
+
+.site-header nav,
+.header nav,
+.navbar nav {
+  margin-left: auto;
+  align-items: center;
+}
+
+/* B79 presentation rhythm: stronger centred content column without feeling boxed. */
+#problem.hero,
+section.hero#problem,
+.hero#problem {
+  max-width: 1180px !important;
+  padding-left: clamp(24px, 7vw, 96px) !important;
+  padding-right: clamp(24px, 7vw, 96px) !important;
+}
+
+#problem .b79-claim-grid {
+  max-width: 980px;
+}
+
+#problem .b79-claim-grid article {
+  min-height: 150px;
+}
+
+/* Keep the warm editorial feeling, but reduce card heaviness. */
+.b79-claim-grid article,
+.b79-card-grid article {
+  background: rgba(255, 252, 247, 0.76) !important;
+  border-color: rgba(222, 212, 199, 0.92) !important;
+  box-shadow: none !important;
+}
+
+/* Central map story: make text cards legible over the sticky map without grey ghost columns. */
+#centralGlobalMapStory {
+  isolation: isolate;
+}
+
+#centralGlobalMapStory .central-map-step,
+#centralGlobalMapStory article[data-global-state] {
+  background: rgba(255, 252, 247, 0.92) !important;
+  border: 1px solid rgba(222, 212, 199, 0.96) !important;
+  box-shadow: 0 12px 42px rgba(70, 50, 30, 0.10) !important;
+  color: var(--b79-ink) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Remove old overlay artefacts if previous step styling used pseudo-elements. */
+#centralGlobalMapStory .central-map-step::before,
+#centralGlobalMapStory .central-map-step::after,
+#centralGlobalMapStory article[data-global-state]::before,
+#centralGlobalMapStory article[data-global-state]::after {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+/* Step readability: no cramped paragraphs, no low-contrast grey on grey. */
+#centralGlobalMapStory .central-map-step h3,
+#centralGlobalMapStory article[data-global-state] h3 {
+  color: #221D18 !important;
+  line-height: 1.15;
+  letter-spacing: -0.018em;
+}
+
+#centralGlobalMapStory .central-map-step p,
+#centralGlobalMapStory article[data-global-state] p {
+  color: #5F554B !important;
+  line-height: 1.45;
+}
+
+/* Map stage: retain the dark PNG maps but place them deliberately on a warm page. */
+#centralGlobalMapStory .central-map-visual,
+#centralGlobalMapStory .central-map-stage,
+#centralGlobalMapStory .central-map-frame,
+#centralGlobalMapStory .map-frame,
+#centralGlobalMapStory figure {
+  border-color: rgba(222, 212, 199, 0.95) !important;
+  box-shadow: 0 22px 84px rgba(70, 50, 30, 0.13) !important;
+}
+
+/* Captions and source text should be present but quiet. */
+#centralGlobalMapStory figcaption,
+#centralGlobalMapStory .source,
+#centralGlobalMapStory .source-line,
+#centralGlobalMapStory .map-source {
+  color: #776A5D !important;
+  font-size: 0.76rem !important;
+  letter-spacing: 0.01em;
+}
+
+/* Section transition after the sticky map: make the new German lower path feel attached, not appended. */
+#b79RegionalImplementation {
+  border-top: 1px solid rgba(222, 212, 199, 0.85);
+}
+
+#b79MethodBoundary {
+  max-width: 1180px;
+}
+
+/* Mobile safeguard. */
+@media (max-width: 860px) {
+  .site-header,
+  .header,
+  .navbar,
+  header[role="banner"] {
+    position: sticky !important;
+    top: 0 !important;
+    bottom: auto !important;
+  }
+
+  #problem .b79-claim-grid article {
+    min-height: auto;
+  }
+
+  #centralGlobalMapStory .central-map-step,
+  #centralGlobalMapStory article[data-global-state] {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+/* End B80 German presentation layout polish */
+
+/* B81 fix German copy and layout overflow */
+
+/* Hard reset for the visible top presentation section.
+   Prevent legacy grid/flex rules from forcing narrow columns or mixed alignments. */
+#problem,
+#problem.hero,
+section#problem,
+section#problem.hero,
+.hero#problem {
+  display: block !important;
+  position: relative !important;
+  max-width: 1240px !important;
+  margin: 0 auto !important;
+  padding: clamp(88px, 10vw, 136px) clamp(24px, 6vw, 72px) clamp(56px, 8vw, 84px) !important;
+  min-height: 0 !important;
+}
+
+#problem > *,
+#problem.hero > *,
+section#problem > * {
+  max-width: none !important;
+  float: none !important;
+  clear: both !important;
+}
+
+/* Stronger, deterministic hero typography */
+#problem .kicker,
+#problem .eyebrow,
+#problem p.kicker,
+#problem p.eyebrow {
+  display: block !important;
+  margin: 0 0 18px 0 !important;
+  color: #9BAE56 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  font-weight: 760 !important;
+  font-size: 0.80rem !important;
+}
+
+#problem h1 {
+  display: block !important;
+  max-width: 900px !important;
+  margin: 0 0 22px 0 !important;
+  color: #221D18 !important;
+  font-size: clamp(3rem, 6.4vw, 5.4rem) !important;
+  line-height: 0.96 !important;
+  letter-spacing: -0.06em !important;
+}
+
+#problem .lead,
+#problem p.lead,
+#problem > p:not(.kicker):not(.eyebrow):not(.section-kicker) {
+  display: block !important;
+  max-width: 780px !important;
+  margin: 0 0 34px 0 !important;
+  color: #3B3129 !important;
+  font-size: clamp(1.18rem, 1.8vw, 1.55rem) !important;
+  line-height: 1.38 !important;
+}
+
+/* Hero claim cards: remove narrow forced widths and text spillover */
+#problem .b79-claim-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(240px, 1fr)) !important;
+  gap: 22px !important;
+  width: min(100%, 980px) !important;
+  max-width: 980px !important;
+  margin: 28px 0 0 0 !important;
+  align-items: stretch !important;
+  justify-content: start !important;
+}
+
+#problem .b79-claim-grid article {
+  display: block !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 24px 22px !important;
+  overflow: hidden !important;
+  background: rgba(255, 252, 247, 0.86) !important;
+  border: 1px solid rgba(222, 212, 199, 0.96) !important;
+  box-shadow: none !important;
+}
+
+#problem .b79-claim-grid article * {
+  max-width: 100% !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  hyphens: auto !important;
+}
+
+#problem .b79-claim-grid .b79-num {
+  display: inline-block !important;
+  margin-bottom: 10px !important;
+}
+
+#problem .b79-claim-grid h3 {
+  margin: 0 0 10px 0 !important;
+  font-size: 0.98rem !important;
+  line-height: 1.15 !important;
+  color: #221D18 !important;
+}
+
+#problem .b79-claim-grid p {
+  margin: 0 !important;
+  font-size: 0.96rem !important;
+  line-height: 1.36 !important;
+  color: #5F554B !important;
+}
+
+/* Central map steps and other cards: no overflow outside their frames */
+#centralGlobalMapStory .central-map-step,
+#centralGlobalMapStory article[data-global-state],
+.b79-card-grid article,
+.b79-section article {
+  overflow: hidden !important;
+}
+
+#centralGlobalMapStory .central-map-step *,
+#centralGlobalMapStory article[data-global-state] *,
+.b79-card-grid article *,
+.b79-section article * {
+  max-width: 100% !important;
+  overflow-wrap: anywhere !important;
+  word-break: normal !important;
+  hyphens: auto !important;
+}
+
+/* Remove residual grey overlays from earlier styles */
+#centralGlobalMapStory .central-map-step::before,
+#centralGlobalMapStory .central-map-step::after,
+#centralGlobalMapStory article[data-global-state]::before,
+#centralGlobalMapStory article[data-global-state]::after,
+#problem .b79-claim-grid article::before,
+#problem .b79-claim-grid article::after {
+  content: none !important;
+  display: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Mobile fallback */
+@media (max-width: 980px) {
+  #problem .b79-claim-grid {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  #problem h1 {
+    max-width: 100% !important;
+  }
+
+  #problem .lead,
+  #problem p.lead,
+  #problem > p:not(.kicker):not(.eyebrow):not(.section-kicker) {
+    max-width: 100% !important;
+  }
+}
+/* End B81 fix German copy and layout overflow */
+
+/* B82 compact header and overflow fix */
+
+/* The production header must be navigation only.
+   It must not carry the hero title, lead, kicker or old portfolio text. */
+header.site-header,
+.b82-compact-header {
+  position: sticky !important;
+  top: 0 !important;
+  bottom: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 1200 !important;
+  min-height: 54px !important;
+  height: auto !important;
+  padding: 14px clamp(22px, 4vw, 58px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 22px !important;
+  background: color-mix(in srgb, var(--b79-paper, #F5EFE6) 92%, white) !important;
+  border-bottom: 1px solid var(--b79-line, #DED4C7) !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+header.site-header h1,
+header.site-header .lead,
+header.site-header .kicker,
+header.site-header .eyebrow,
+header.site-header > p,
+.b82-compact-header h1,
+.b82-compact-header .lead,
+.b82-compact-header .kicker,
+.b82-compact-header .eyebrow,
+.b82-compact-header > p {
+  display: none !important;
+}
+
+header.site-header .brand,
+.b82-compact-header .brand {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex: 0 0 auto !important;
+  color: var(--b79-ink, #221D18) !important;
+  font-weight: 760 !important;
+  letter-spacing: -0.02em !important;
+  font-size: 0.95rem !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+header.site-header nav,
+.b82-compact-header nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: clamp(12px, 2vw, 24px) !important;
+  margin-left: auto !important;
+  color: var(--b79-muted, #776A5D) !important;
+  font-size: 0.92rem !important;
+  line-height: 1 !important;
+}
+
+header.site-header nav a,
+.b82-compact-header nav a {
+  color: var(--b79-muted, #776A5D) !important;
+  white-space: nowrap !important;
+}
+
+header.site-header nav a:hover,
+.b82-compact-header nav a:hover {
+  color: var(--b79-accent, #1F4E5F) !important;
+}
+
+/* The actual hero is the only place where the title/lead should appear. */
+#problem {
+  padding-top: clamp(78px, 9vw, 126px) !important;
+}
+
+/* Avoid giant empty lateral spacing and keep claim cards in readable boxes. */
+#problem .b79-claim-grid {
+  grid-template-columns: repeat(3, minmax(260px, 1fr)) !important;
+  gap: 22px !important;
+  max-width: 1040px !important;
+}
+
+#problem .b79-claim-grid article {
+  width: auto !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  padding: 24px 22px !important;
+}
+
+#problem .b79-claim-grid article,
+#problem .b79-claim-grid article * {
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+}
+
+/* Central map story: floating step panels must stay inside the viewport.
+   This fixes the cropped/edge-hugging panels visible in scroll recordings. */
+#centralGlobalMapStory .central-map-step,
+#centralGlobalMapStory article[data-global-state] {
+  box-sizing: border-box !important;
+  max-width: min(380px, calc(100vw - 48px)) !important;
+  min-width: 0 !important;
+  overflow: hidden !important;
+  padding: clamp(16px, 2.2vw, 24px) !important;
+}
+
+/* Only positioned panels receive explicit viewport-safe offsets. */
+#centralGlobalMapStory .central-map-step[style],
+#centralGlobalMapStory article[data-global-state][style] {
+  left: clamp(18px, 4vw, 72px) !important;
+  right: auto !important;
+}
+
+/* For absolute/fixed panels from the story script, keep them off the exact screen edge. */
+#centralGlobalMapStory .central-map-step,
+#centralGlobalMapStory article[data-global-state] {
+  margin-left: max(0px, env(safe-area-inset-left)) !important;
+}
+
+/* Text inside step panels must never run beyond the card. */
+#centralGlobalMapStory .central-map-step *,
+#centralGlobalMapStory article[data-global-state] * {
+  max-width: 100% !important;
+  word-break: normal !important;
+  overflow-wrap: break-word !important;
+  hyphens: auto !important;
+}
+
+/* Slightly calmer map card shadow after B80. */
+#centralGlobalMapStory .central-map-visual,
+#centralGlobalMapStory .central-map-stage,
+#centralGlobalMapStory .central-map-frame,
+#centralGlobalMapStory .map-frame,
+#centralGlobalMapStory figure {
+  box-shadow: 0 18px 64px rgba(70, 50, 30, 0.12) !important;
+}
+
+@media (max-width: 980px) {
+  header.site-header,
+  .b82-compact-header {
+    align-items: flex-start !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  header.site-header nav,
+  .b82-compact-header nav {
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+    margin-left: 0 !important;
+  }
+
+  #problem .b79-claim-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 100% !important;
+  }
+
+  #centralGlobalMapStory .central-map-step,
+  #centralGlobalMapStory article[data-global-state] {
+    max-width: calc(100vw - 32px) !important;
+  }
+}
+/* End B82 compact header and overflow fix */
+
+/* B83 central story panel polish and overflow guard */
+
+/* All central step panels should use the same dark, legible treatment.
+   This removes the mismatch where step 01 looked intentional but later cards looked pale/ghosted. */
+#centralGlobalMapStory .central-map-step,
+#centralGlobalMapStory article[data-global-state],
+#centralGlobalMapStory .central-map-step[style],
+#centralGlobalMapStory article[data-global-state][style] {
+  background: rgba(9, 18, 15, 0.84) !important;
+  color: #F5F0E7 !important;
+  border: 1px solid rgba(245, 240, 231, 0.14) !important;
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.24) !important;
+  backdrop-filter: blur(9px) saturate(0.92) !important;
+  -webkit-backdrop-filter: blur(9px) saturate(0.92) !important;
+  overflow: hidden !important;
+}
+
+#centralGlobalMapStory .central-map-step h3,
+#centralGlobalMapStory article[data-global-state] h3 {
+  color: #F5F0E7 !important;
+  text-shadow: none !important;
+}
+
+#centralGlobalMapStory .central-map-step p,
+#centralGlobalMapStory article[data-global-state] p {
+  color: rgba(245, 240, 231, 0.78) !important;
+  text-shadow: none !important;
+}
+
+#centralGlobalMapStory .central-map-step span,
+#centralGlobalMapStory article[data-global-state] span,
+#centralGlobalMapStory .central-map-step .step-number,
+#centralGlobalMapStory article[data-global-state] .step-number {
+  color: #55A3B5 !important;
+}
+
+/* Remove any old light/grey pseudo panel artefacts. */
+#centralGlobalMapStory .central-map-step::before,
+#centralGlobalMapStory .central-map-step::after,
+#centralGlobalMapStory article[data-global-state]::before,
+#centralGlobalMapStory article[data-global-state]::after {
+  content: none !important;
+  display: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Keep step panels away from the exact viewport edge without breaking the scroll script. */
+#centralGlobalMapStory .central-map-step,
+#centralGlobalMapStory article[data-global-state] {
+  max-width: min(420px, calc(100vw - 56px)) !important;
+  min-width: min(300px, calc(100vw - 56px)) !important;
+  box-sizing: border-box !important;
+}
+
+#centralGlobalMapStory .central-map-step *,
+#centralGlobalMapStory article[data-global-state] * {
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  hyphens: auto !important;
+}
+
+/* Kill visible stray newline artefacts if any survived as standalone text-like blocks. */
+#centralGlobalMapStory .central-map-copy,
+#centralGlobalMapStory .central-map-step {
+  white-space: normal !important;
+}
+
+@media (max-width: 860px) {
+  #centralGlobalMapStory .central-map-step,
+  #centralGlobalMapStory article[data-global-state] {
+    min-width: 0 !important;
+    max-width: calc(100vw - 32px) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
+/* End B83 central story panel polish and overflow guard */
+
+/* B84 harden central map story panels */
+
+/* Broad scoped panel treatment: all central story text cards/articles get the same dark surface. */
+#centralGlobalMapStory article,
+#centralGlobalMapStory .central-map-step,
+#centralGlobalMapStory .central-story-step,
+#centralGlobalMapStory .map-step,
+#centralGlobalMapStory .step,
+#centralGlobalMapStory [data-global-state] {
+  background: rgba(9, 18, 15, 0.86) !important;
+  color: #F5F0E7 !important;
+  border: 1px solid rgba(245, 240, 231, 0.14) !important;
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.24) !important;
+  backdrop-filter: blur(9px) saturate(0.92) !important;
+  -webkit-backdrop-filter: blur(9px) saturate(0.92) !important;
+}
+
+/* Do not accidentally style the map image/frame as a text panel. */
+#centralGlobalMapStory figure,
+#centralGlobalMapStory .central-map-visual,
+#centralGlobalMapStory .central-map-stage,
+#centralGlobalMapStory .central-map-frame,
+#centralGlobalMapStory .map-frame {
+  background: transparent !important;
+  color: inherit !important;
+  border-color: rgba(222, 212, 199, 0.95) !important;
+  box-shadow: 0 18px 64px rgba(70, 50, 30, 0.12) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+#centralGlobalMapStory article h1,
+#centralGlobalMapStory article h2,
+#centralGlobalMapStory article h3,
+#centralGlobalMapStory .central-map-step h1,
+#centralGlobalMapStory .central-map-step h2,
+#centralGlobalMapStory .central-map-step h3,
+#centralGlobalMapStory [data-global-state] h1,
+#centralGlobalMapStory [data-global-state] h2,
+#centralGlobalMapStory [data-global-state] h3 {
+  color: #F5F0E7 !important;
+}
+
+#centralGlobalMapStory article p,
+#centralGlobalMapStory .central-map-step p,
+#centralGlobalMapStory [data-global-state] p {
+  color: rgba(245, 240, 231, 0.78) !important;
+}
+
+#centralGlobalMapStory article span,
+#centralGlobalMapStory .central-map-step span,
+#centralGlobalMapStory [data-global-state] span,
+#centralGlobalMapStory .step-number {
+  color: #55A3B5 !important;
+}
+
+/* Remove pale overlay artefacts from all step cards. */
+#centralGlobalMapStory article::before,
+#centralGlobalMapStory article::after,
+#centralGlobalMapStory .central-map-step::before,
+#centralGlobalMapStory .central-map-step::after,
+#centralGlobalMapStory [data-global-state]::before,
+#centralGlobalMapStory [data-global-state]::after {
+  content: none !important;
+  display: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Text safety in all central panels. */
+#centralGlobalMapStory article *,
+#centralGlobalMapStory .central-map-step *,
+#centralGlobalMapStory [data-global-state] * {
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  hyphens: auto !important;
+}
+
+/* Hide standalone browser-like error bars if the old debug UI inserted one.
+   This is a visual safeguard; the JS guard above addresses the actual cause. */
+.error,
+.error-banner,
+.debug-error,
+.runtime-error,
+[role="alert"].error,
+body > pre:first-child {
+  display: none !important;
+}
+/* End B84 harden central map story panels */
+
+/* B85 restore persistent dark central map stage */
+
+/*
+  B84 fixed text panels, but the overall central map stage could visually collapse
+  into a grey scroll field between steps. B85 restores the dark map stage as the
+  persistent visual anchor throughout the centralGlobalMapStory section.
+*/
+
+#centralGlobalMapStory {
+  position: relative !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(245, 239, 230, 0.0) 0%,
+      rgba(9, 18, 15, 0.38) 8%,
+      rgba(9, 18, 15, 0.46) 50%,
+      rgba(9, 18, 15, 0.38) 92%,
+      rgba(245, 239, 230, 0.0) 100%
+    ) !important;
+  overflow: clip !important;
+}
+
+/* The actual map visual must stay as the dominant sticky object, not disappear
+   into the background after the first step. */
+#centralGlobalMapStory .central-map-visual,
+#centralGlobalMapStory .central-map-stage,
+#centralGlobalMapStory .central-map-frame,
+#centralGlobalMapStory .central-map-stack,
+#centralGlobalMapStory .map-frame {
+  position: sticky !important;
+  top: clamp(74px, 9vh, 116px) !important;
+  z-index: 1 !important;
+  background: #07120F !important;
+  border: 1px solid rgba(245, 240, 231, 0.14) !important;
+  border-radius: clamp(14px, 2vw, 28px) !important;
+  box-shadow: 0 26px 90px rgba(0, 0, 0, 0.30) !important;
+  overflow: hidden !important;
+}
+
+/* If the map images/layers are absolutely stacked, keep them inside the dark stage. */
+#centralGlobalMapStory .central-map-visual img,
+#centralGlobalMapStory .central-map-stage img,
+#centralGlobalMapStory .central-map-frame img,
+#centralGlobalMapStory .central-map-stack img,
+#centralGlobalMapStory .map-frame img,
+#centralGlobalMapStory img[class*="layer-"] {
+  background: transparent !important;
+}
+
+/* All central step cards should float above the persistent map/stage. */
+#centralGlobalMapStory article,
+#centralGlobalMapStory .central-map-step,
+#centralGlobalMapStory .central-story-step,
+#centralGlobalMapStory .map-step,
+#centralGlobalMapStory .step,
+#centralGlobalMapStory [data-global-state] {
+  position: relative;
+  z-index: 5 !important;
+  background: rgba(9, 18, 15, 0.88) !important;
+  color: #F5F0E7 !important;
+  border: 1px solid rgba(245, 240, 231, 0.16) !important;
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.28) !important;
+}
+
+/* Prevent the broad article rule from turning non-step explanatory blocks into dark cards
+   outside the step stream, where possible. */
+#centralGlobalMapStory .section-heading,
+#centralGlobalMapStory .section-heading *,
+#centralGlobalMapStory .central-story-read-note {
+  background: transparent !important;
+  color: var(--b79-muted, #776A5D) !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Keep headings in intro area dark on warm paper, while step-card headings stay light. */
+#centralGlobalMapStory .section-heading h2 {
+  color: var(--b79-ink, #221D18) !important;
+}
+
+/* If the story uses a scroll column plus a sticky visual, force a sane two-column relation. */
+#centralGlobalMapStory .central-map-layout,
+#centralGlobalMapStory .central-map-grid,
+#centralGlobalMapStory .central-story-grid,
+#centralGlobalMapStory .central-map-scroll-layout {
+  align-items: start !important;
+}
+
+/* If some steps are siblings after the map, keep enough vertical rhythm but not empty dead space. */
+#centralGlobalMapStory article[data-global-state],
+#centralGlobalMapStory .central-map-step {
+  margin-bottom: clamp(46px, 10vh, 92px) !important;
+}
+
+/* Mobile: map does not need to be sticky on narrow screens. */
+@media (max-width: 900px) {
+  #centralGlobalMapStory {
+    overflow: visible !important;
+    background: rgba(9, 18, 15, 0.30) !important;
+  }
+
+  #centralGlobalMapStory .central-map-visual,
+  #centralGlobalMapStory .central-map-stage,
+  #centralGlobalMapStory .central-map-frame,
+  #centralGlobalMapStory .central-map-stack,
+  #centralGlobalMapStory .map-frame {
+    position: relative !important;
+    top: auto !important;
+  }
+}
+/* End B85 restore persistent dark central map stage */
+
+/* B87 central story id restore and class-targeted stage styling */
+
+/*
+  Target both the canonical id and the stable class/data attribute.
+  B86 showed that id-based targeting can silently fail if the id is lost.
+*/
+#centralGlobalMapStory,
+.central-map-story,
+[data-b87-central-story="true"] {
+  position: relative !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(245, 239, 230, 0.0) 0%,
+      rgba(9, 18, 15, 0.40) 9%,
+      rgba(9, 18, 15, 0.48) 50%,
+      rgba(9, 18, 15, 0.38) 91%,
+      rgba(245, 239, 230, 0.0) 100%
+    ) !important;
+}
+
+/* Sticky visual stage: target actual historic classes from the central PNG story. */
+#centralGlobalMapStory .central-map-sticky,
+.central-map-story .central-map-sticky,
+[data-b87-central-story="true"] .central-map-sticky {
+  position: sticky !important;
+  top: clamp(68px, 8vh, 106px) !important;
+  z-index: 2 !important;
+}
+
+#centralGlobalMapStory .central-map-shell,
+.central-map-story .central-map-shell,
+[data-b87-central-story="true"] .central-map-shell {
+  background: #07120F !important;
+  border: 1px solid rgba(245, 240, 231, 0.16) !important;
+  border-radius: clamp(16px, 2vw, 28px) !important;
+  box-shadow: 0 26px 90px rgba(0, 0, 0, 0.32) !important;
+  overflow: hidden !important;
+}
+
+/* Preserve stacked PNG layer behaviour. */
+#centralGlobalMapStory .central-map-layer-stack,
+.central-map-story .central-map-layer-stack,
+[data-b87-central-story="true"] .central-map-layer-stack {
+  background: #07120F !important;
+}
+
+#centralGlobalMapStory .central-map-layer,
+.central-map-story .central-map-layer,
+[data-b87-central-story="true"] .central-map-layer {
+  background: transparent !important;
+}
+
+/* Step cards: target id, class and stable data attribute. */
+#centralGlobalMapStory .central-map-step,
+.central-map-story .central-map-step,
+[data-b87-central-story="true"] .central-map-step,
+#centralGlobalMapStory [data-global-state],
+.central-map-story [data-global-state],
+[data-b87-central-story="true"] [data-global-state] {
+  background: rgba(9, 18, 15, 0.88) !important;
+  color: #F5F0E7 !important;
+  border: 1px solid rgba(245, 240, 231, 0.16) !important;
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.28) !important;
+  z-index: 6 !important;
+  overflow: hidden !important;
+}
+
+#centralGlobalMapStory .central-map-step h3,
+.central-map-story .central-map-step h3,
+[data-b87-central-story="true"] .central-map-step h3,
+#centralGlobalMapStory [data-global-state] h3,
+.central-map-story [data-global-state] h3,
+[data-b87-central-story="true"] [data-global-state] h3 {
+  color: #F5F0E7 !important;
+}
+
+#centralGlobalMapStory .central-map-step p,
+.central-map-story .central-map-step p,
+[data-b87-central-story="true"] .central-map-step p,
+#centralGlobalMapStory [data-global-state] p,
+.central-map-story [data-global-state] p,
+[data-b87-central-story="true"] [data-global-state] p {
+  color: rgba(245, 240, 231, 0.78) !important;
+}
+
+#centralGlobalMapStory .central-map-step span,
+.central-map-story .central-map-step span,
+[data-b87-central-story="true"] .central-map-step span,
+#centralGlobalMapStory [data-global-state] span,
+.central-map-story [data-global-state] span,
+[data-b87-central-story="true"] [data-global-state] span {
+  color: #55A3B5 !important;
+}
+
+/* Undo pale pseudo panels. */
+#centralGlobalMapStory .central-map-step::before,
+#centralGlobalMapStory .central-map-step::after,
+.central-map-story .central-map-step::before,
+.central-map-story .central-map-step::after,
+[data-b87-central-story="true"] .central-map-step::before,
+[data-b87-central-story="true"] .central-map-step::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* Keep the central titlebar/legend/source readable on dark map shell. */
+#centralGlobalMapStory .central-map-titlebar,
+.central-map-story .central-map-titlebar,
+[data-b87-central-story="true"] .central-map-titlebar,
+#centralGlobalMapStory .central-map-legend,
+.central-map-story .central-map-legend,
+[data-b87-central-story="true"] .central-map-legend,
+#centralGlobalMapStory .central-map-source,
+.central-map-story .central-map-source,
+[data-b87-central-story="true"] .central-map-source {
+  color: rgba(245, 240, 231, 0.78) !important;
+}
+
+/* Intro text should remain warm-paper dark, not dark card. */
+#centralGlobalMapStory > .section-heading,
+.central-map-story > .section-heading,
+[data-b87-central-story="true"] > .section-heading {
+  background: transparent !important;
+  color: var(--b79-ink, #221D18) !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Mobile fallback. */
+@media (max-width: 900px) {
+  #centralGlobalMapStory .central-map-sticky,
+  .central-map-story .central-map-sticky,
+  [data-b87-central-story="true"] .central-map-sticky {
+    position: relative !important;
+    top: auto !important;
+  }
+}
+/* End B87 central story id restore and class-targeted stage styling */
+
+/* B88 wrap central story step cards */
+
+/*
+  Do not style the whole scrollytelling trigger article as a card.
+  The article controls scroll geometry; only .b88-step-card is the visible panel.
+*/
+#centralGlobalMapStory article[data-global-state],
+.central-map-story article[data-global-state],
+[data-b87-central-story="true"] article[data-global-state],
+#centralGlobalMapStory .central-map-step[data-global-state],
+.central-map-story .central-map-step[data-global-state],
+[data-b87-central-story="true"] .central-map-step[data-global-state] {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  overflow: visible !important;
+  color: inherit !important;
+}
+
+/* Suppress older pseudo-panel styling on the trigger itself. */
+#centralGlobalMapStory article[data-global-state]::before,
+#centralGlobalMapStory article[data-global-state]::after,
+.central-map-story article[data-global-state]::before,
+.central-map-story article[data-global-state]::after,
+[data-b87-central-story="true"] article[data-global-state]::before,
+[data-b87-central-story="true"] article[data-global-state]::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* The actual visible card. */
+#centralGlobalMapStory .b88-step-card,
+.central-map-story .b88-step-card,
+[data-b87-central-story="true"] .b88-step-card {
+  width: min(380px, calc(100vw - 56px)) !important;
+  max-width: min(380px, calc(100vw - 56px)) !important;
+  min-width: 0 !important;
+  padding: clamp(18px, 2.2vw, 26px) !important;
+  background: rgba(9, 18, 15, 0.88) !important;
+  color: #F5F0E7 !important;
+  border: 1px solid rgba(245, 240, 231, 0.16) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.28) !important;
+  backdrop-filter: blur(9px) saturate(0.92) !important;
+  -webkit-backdrop-filter: blur(9px) saturate(0.92) !important;
+  overflow: hidden !important;
+}
+
+/* Text inside actual visible card. */
+#centralGlobalMapStory .b88-step-card span,
+.central-map-story .b88-step-card span,
+[data-b87-central-story="true"] .b88-step-card span {
+  display: inline-block !important;
+  color: #55A3B5 !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.08em !important;
+  margin-bottom: 0.75rem !important;
+}
+
+#centralGlobalMapStory .b88-step-card h3,
+.central-map-story .b88-step-card h3,
+[data-b87-central-story="true"] .b88-step-card h3 {
+  color: #F5F0E7 !important;
+  margin: 0 0 0.65rem !important;
+  line-height: 1.1 !important;
+}
+
+#centralGlobalMapStory .b88-step-card p,
+.central-map-story .b88-step-card p,
+[data-b87-central-story="true"] .b88-step-card p {
+  color: rgba(245, 240, 231, 0.78) !important;
+  margin: 0 !important;
+  line-height: 1.42 !important;
+}
+
+#centralGlobalMapStory .b88-step-card *,
+.central-map-story .b88-step-card *,
+[data-b87-central-story="true"] .b88-step-card * {
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+  word-break: normal !important;
+  hyphens: auto !important;
+}
+
+/* Keep map stage above the grey field and behind the cards. */
+#centralGlobalMapStory .central-map-sticky,
+.central-map-story .central-map-sticky,
+[data-b87-central-story="true"] .central-map-sticky {
+  z-index: 2 !important;
+}
+
+#centralGlobalMapStory article[data-global-state],
+.central-map-story article[data-global-state],
+[data-b87-central-story="true"] article[data-global-state] {
+  z-index: 5 !important;
+}
+
+/* Mobile fallback. */
+@media (max-width: 900px) {
+  #centralGlobalMapStory .b88-step-card,
+  .central-map-story .b88-step-card,
+  [data-b87-central-story="true"] .b88-step-card {
+    width: calc(100vw - 32px) !important;
+    max-width: calc(100vw - 32px) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
+/* End B88 wrap central story step cards */
+
+/* B89 force uniform central step card state */
+
+/*
+  Old scrollytelling rules still distinguish active/inactive steps using opacity,
+  filters, blend modes or alternate backgrounds. That is why step 01 appears dark
+  immediately while later steps look grey until they reach an activation threshold.
+
+  For the German presentation version the step card should not change material
+  while scrolling. State changes happen in the map, not in the card surface.
+*/
+
+/* Scroll trigger/article: keep geometry, remove visual active/inactive treatment. */
+#centralGlobalMapStory article[data-global-state],
+.central-map-story article[data-global-state],
+[data-b87-central-story="true"] article[data-global-state],
+#centralGlobalMapStory .central-map-step[data-global-state],
+.central-map-story .central-map-step[data-global-state],
+[data-b87-central-story="true"] .central-map-step[data-global-state] {
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  transition-property: transform !important;
+}
+
+/* Override common active/inactive/current/past/future classes on trigger level. */
+#centralGlobalMapStory article[data-global-state].is-active,
+#centralGlobalMapStory article[data-global-state].active,
+#centralGlobalMapStory article[data-global-state].is-current,
+#centralGlobalMapStory article[data-global-state].current,
+#centralGlobalMapStory article[data-global-state].is-inactive,
+#centralGlobalMapStory article[data-global-state].inactive,
+#centralGlobalMapStory article[data-global-state].past,
+#centralGlobalMapStory article[data-global-state].future,
+.central-map-story article[data-global-state].is-active,
+.central-map-story article[data-global-state].active,
+.central-map-story article[data-global-state].is-current,
+.central-map-story article[data-global-state].current,
+.central-map-story article[data-global-state].is-inactive,
+.central-map-story article[data-global-state].inactive,
+.central-map-story article[data-global-state].past,
+.central-map-story article[data-global-state].future,
+[data-b87-central-story="true"] article[data-global-state].is-active,
+[data-b87-central-story="true"] article[data-global-state].active,
+[data-b87-central-story="true"] article[data-global-state].is-current,
+[data-b87-central-story="true"] article[data-global-state].current,
+[data-b87-central-story="true"] article[data-global-state].is-inactive,
+[data-b87-central-story="true"] article[data-global-state].inactive,
+[data-b87-central-story="true"] article[data-global-state].past,
+[data-b87-central-story="true"] article[data-global-state].future {
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  background: transparent !important;
+}
+
+/* Actual card: one material for all steps, independent of active state. */
+#centralGlobalMapStory .b88-step-card,
+.central-map-story .b88-step-card,
+[data-b87-central-story="true"] .b88-step-card {
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  background: rgba(9, 18, 15, 0.90) !important;
+  color: #F5F0E7 !important;
+  border: 1px solid rgba(245, 240, 231, 0.17) !important;
+  box-shadow: 0 18px 54px rgba(0, 0, 0, 0.30) !important;
+  transition-property: transform, box-shadow !important;
+}
+
+/* Same material even when old scripts add active/inactive classes to the card itself. */
+#centralGlobalMapStory .b88-step-card.is-active,
+#centralGlobalMapStory .b88-step-card.active,
+#centralGlobalMapStory .b88-step-card.is-current,
+#centralGlobalMapStory .b88-step-card.current,
+#centralGlobalMapStory .b88-step-card.is-inactive,
+#centralGlobalMapStory .b88-step-card.inactive,
+#centralGlobalMapStory .b88-step-card.past,
+#centralGlobalMapStory .b88-step-card.future,
+.central-map-story .b88-step-card.is-active,
+.central-map-story .b88-step-card.active,
+.central-map-story .b88-step-card.is-current,
+.central-map-story .b88-step-card.current,
+.central-map-story .b88-step-card.is-inactive,
+.central-map-story .b88-step-card.inactive,
+.central-map-story .b88-step-card.past,
+.central-map-story .b88-step-card.future,
+[data-b87-central-story="true"] .b88-step-card.is-active,
+[data-b87-central-story="true"] .b88-step-card.active,
+[data-b87-central-story="true"] .b88-step-card.is-current,
+[data-b87-central-story="true"] .b88-step-card.current,
+[data-b87-central-story="true"] .b88-step-card.is-inactive,
+[data-b87-central-story="true"] .b88-step-card.inactive,
+[data-b87-central-story="true"] .b88-step-card.past,
+[data-b87-central-story="true"] .b88-step-card.future {
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+  background: rgba(9, 18, 15, 0.90) !important;
+  color: #F5F0E7 !important;
+  border-color: rgba(245, 240, 231, 0.17) !important;
+}
+
+/* Text should not fade or grey out by state. */
+#centralGlobalMapStory .b88-step-card *,
+.central-map-story .b88-step-card *,
+[data-b87-central-story="true"] .b88-step-card * {
+  opacity: 1 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+#centralGlobalMapStory .b88-step-card h3,
+.central-map-story .b88-step-card h3,
+[data-b87-central-story="true"] .b88-step-card h3 {
+  color: #F5F0E7 !important;
+}
+
+#centralGlobalMapStory .b88-step-card p,
+.central-map-story .b88-step-card p,
+[data-b87-central-story="true"] .b88-step-card p {
+  color: rgba(245, 240, 231, 0.80) !important;
+}
+
+#centralGlobalMapStory .b88-step-card span,
+.central-map-story .b88-step-card span,
+[data-b87-central-story="true"] .b88-step-card span {
+  color: #55A3B5 !important;
+}
+
+/* If legacy CSS uses aria-current or data-active attributes, neutralise material changes there as well. */
+#centralGlobalMapStory article[data-global-state][aria-current],
+#centralGlobalMapStory article[data-global-state][data-active],
+#centralGlobalMapStory article[data-global-state][data-current],
+.central-map-story article[data-global-state][aria-current],
+.central-map-story article[data-global-state][data-active],
+.central-map-story article[data-global-state][data-current],
+[data-b87-central-story="true"] article[data-global-state][aria-current],
+[data-b87-central-story="true"] article[data-global-state][data-active],
+[data-b87-central-story="true"] article[data-global-state][data-current] {
+  opacity: 1 !important;
+  filter: none !important;
+  background: transparent !important;
+}
+
+#centralGlobalMapStory article[data-global-state][aria-current] .b88-step-card,
+#centralGlobalMapStory article[data-global-state][data-active] .b88-step-card,
+#centralGlobalMapStory article[data-global-state][data-current] .b88-step-card,
+.central-map-story article[data-global-state][aria-current] .b88-step-card,
+.central-map-story article[data-global-state][data-active] .b88-step-card,
+.central-map-story article[data-global-state][data-current] .b88-step-card,
+[data-b87-central-story="true"] article[data-global-state][aria-current] .b88-step-card,
+[data-b87-central-story="true"] article[data-global-state][data-active] .b88-step-card,
+[data-b87-central-story="true"] article[data-global-state][data-current] .b88-step-card {
+  background: rgba(9, 18, 15, 0.90) !important;
+  opacity: 1 !important;
+  filter: none !important;
+}
+/* End B89 force uniform central step card state */

@@ -1,0 +1,11 @@
+B84 textContent patch inventory - 2026-06-23
+
+Changed files:
+
+Patch notes:
+- none
+
+Remaining raw document.querySelector(...).textContent patterns after B84:
+- none
+
+Literal backslash-n occurrences removed from index.html: 0
