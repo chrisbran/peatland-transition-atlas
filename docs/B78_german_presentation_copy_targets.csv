@@ -1,0 +1,26 @@
+area,selector_or_context,current_problem,target_de,priority,implementation_note
+hero,hero eyebrow / kicker,Portfolio-/Prototype-Sprache; Englisch; selbstreferenziell,Moore · Klimaschutz · regionale Umsetzung,high,"Visible hero text ersetzen. Keine Erwähnung von Atlas, Prototype, MVP oder Portfolio."
+hero,main h1,Peatland Transition Atlas als Produkt-/Tooltitel,Moorschutz braucht räumliche Orientierung,high,"H1 als Aussage setzen, nicht als Produktname."
+hero,lead paragraph,Englisch; abstrakt; Tool-Perspektive,"Wiedervernässung ist nicht nur eine ökologische Maßnahme. Sie verändert Nutzung, Betriebe, Wertschöpfung und Planung.",high,Kurz und pointiert. Keine Datenbehauptungen ohne Quelle im Hero.
+navigation,top nav links,Story / Evidence Map / Pathways / Data = Englisch und Meta-Sprache,Problem | Kartenfolge | Umsetzung | Pfade | Methode,high,Navigation an sichtbare deutsche Kurzfassung anpassen.
+transition logic,section kicker,Atlas framing = Meta-Sprache,Kernargument,high,Nur falls Section sichtbar bleibt. Alternativ mit Hero/Argumentblock verschmelzen.
+transition logic,section h2,From peatland extent to transition priorities = Englisch; Priorität methodisch riskant,Aus Moorbodenkontext wird eine Umsetzungsfrage,high,Keine Prioritätsbehauptung. Fokus auf Umsetzung.
+transition logic,section lead,Prototype/atlas/workflow-Sprache,"Moorschutz wird erst dann planbar, wenn räumliche Kulissen, regionale Nutzung, betriebliche Betroffenheit und mögliche Wertschöpfungsketten gemeinsam betrachtet werden.",high,Als kurze argumentative Brücke.
+central map story,section kicker,Main atlas story / central story = Tool-Sprache,Kartenfolge,high,Kartenfolge statt Atlas/Story.
+central map story,section h2,Englischer oder meta-orientierter Titel,Von globaler Relevanz zur regionalen Umsetzung,high,Soll die Funktion der gesamten Sequenz erklären.
+central map story,section lead,Zu lang / Englisch / Tool-Sprache,Die Kartenfolge verdichtet den Maßstab: von der weltweiten Moorverbreitung über Emissionsdruck und nationale Umsetzungskulissen bis zum Boden- und Feuchtgebietskontext in Baden-Württemberg.,high,Kurz halten. Keine methodisch nicht gedeckte Priorisierung.
+central step,state extent,Englisch,Wo liegen die Moore?,high,Step h3 ersetzen. Step p kurz erklären.
+central step,state total,Englisch / pressure abstrakt,Wo konzentriert sich der Emissionsdruck?,high,Druck/Emission auf Deutsch fassen.
+central step,state density,Englisch / pressure abstrakt,Wo ist der Druck besonders hoch?,medium,"Nur verwenden, wenn total/density getrennt sichtbar bleiben."
+central step,state compare,Englisch,Größe und Intensität unterscheiden sich.,medium,Kurz statt poetisch. Keine Übererklärung.
+central step,state europe-borders,Englisch,Europa wird zur Umsetzungsebene.,medium,Sachlicher als 'übersetzt Druck in Politik'.
+central step,state europe-peat,Englisch,Moorvorkommen überschreiten Grenzen.,medium,Kurz und sachlich.
+central step,state germany-context,Englisch,Deutschland ist eine Umsetzungsebene.,high,Gute Brücke zur nationalen Kulisse.
+central step,state germany-thuenen-extent,Englisch,Die Thünen-Kulisse konkretisiert organische Böden.,medium,"Fachlich prüfen, ob organische Böden/Thünen exakt benannt werden."
+central step,state germany-thuenen-types,Englisch,Bodenkontext prägt mögliche Nutzungspfade.,medium,Keine Eignungsbehauptung.
+central step,state bw-context,Englisch,Baden-Württemberg wird konkret.,high,Als Übergang zur regionalen Ebene.
+central step,state bw-bk50-extent,Englisch / wetland soil Kontext ggf. unscharf,BK50 zeigt Moor- und Feuchtbodenkontext.,high,"Immer mit Boundary: keine Eignung, keine Priorität."
+regional implementation,new or existing lower section,SOLAMO/LUBW noch nicht sichtbar strukturiert,Oberschwaben zeigt die praktische Herausforderung,high,Als kurze Brücke nach zentraler Karte; keine tiefe neue Datenlogik.
+regional implementation cards,three cards,Evidence/Explorer-Sprache,Planungskulisse | Betriebliche Betroffenheit | Wertschöpfung,high,"LUBW/SOLAMO als fachliche Verankerung, nicht als Projektwerbung."
+pathways,pathway section,Pathways Englisch / zu explorativ,Nicht jede Fläche braucht dieselbe Lösung,high,"Drei Pfade: schützen, wiedervernässen, Nutzung neu organisieren."
+method,method boundary,Prototype appendix / Data-Sprache,Einordnung statt Eignungskarte,high,Muss sichtbar bleiben. Schützt vor Überbehauptung.

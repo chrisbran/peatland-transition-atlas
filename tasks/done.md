@@ -164,3 +164,11 @@
 - Created `docs/B77_design_dummy_review.md`.
 - Created `docs/B77_target_design_spec.md`.
 - Did not modify production website files, maps, scripts, data or CSS.
+
+## B78 - German presentation implementation plan (2026-06-23)
+
+- Created `docs/B78_german_presentation_implementation_plan.md`.
+- Created `docs/B78_german_presentation_copy_targets.csv`.
+- Created `docs/B78_patch_strategy.md`.
+- Defined safe B79 production implementation strategy.
+- Did not modify production website files, CSS, scripts, maps or data.
