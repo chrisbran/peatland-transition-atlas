@@ -140,3 +140,12 @@
 - Created `docs/B74_german_rewrite_targets.md`.
 - Flagged English text, meta/tool language, long text and method-boundary risks.
 - Did not modify application files, maps, scripts, data or styling.
+
+## B75 - Design concept matrix (2026-06-23)
+
+- Defined three controlled design directions for the German presentation version.
+- Recommended hybrid direction: fachlich hell, narrativ geführt, kartografisch diszipliniert.
+- Created `docs/B75_design_concept_matrix.md`.
+- Created `docs/B75_design_decision_scorecard.csv`.
+- Created `docs/B75_visual_language_principles.md`.
+- Did not modify application files, maps, scripts, data or CSS.

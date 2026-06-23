@@ -1,0 +1,11 @@
+criterion,weight,A_fachlich_hell,B_editorial_natur,C_kartografisch_analytisch,comment
+Story-Verständlichkeit,5,5,4,3,"Die erste Vorzeigefassung muss führen, nicht explorativ überfordern."
+Seriosität für Praxis/Fachverwaltung,5,5,3,4,"A wirkt am anschlussfähigsten an Projekt-, Förder- und Verwaltungskontexte."
+Narrative Vermittlung,4,3,5,2,"B liefert Rhythmus, Atmosphäre und Einstieg; sollte dosiert in A integriert werden."
+Kartenwirkung,5,4,3,5,"C ist bei Label-, Quellen- und Legendenlogik stark; als Disziplin übernehmen."
+Lesbarkeit deutscher Fachsprache,5,5,4,3,Längere deutsche Komposita und Fachbegriffe brauchen ruhige helle Typografie.
+Reduktion visuellen Rauschens,4,5,3,5,A und C entsprechen Tufte/Schweizer Raster stärker als eine zu atmosphärische Variante.
+Präsentationstauglichkeit,4,5,4,3,"A funktioniert am robustesten in Jour fixe, Beamer, PDF-Screenshot und Gespräch."
+Eigenständigkeit / Wiedererkennung,3,3,5,3,"B ist stärker als Marke, aber darf die Sachautorität nicht schwächen."
+,,,,,
+Weighted total,,156,133,124,"Scores are decision aids, not final design proof."
