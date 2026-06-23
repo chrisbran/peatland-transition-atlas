@@ -149,3 +149,18 @@
 - Created `docs/B75_design_decision_scorecard.csv`.
 - Created `docs/B75_visual_language_principles.md`.
 - Did not modify application files, maps, scripts, data or CSS.
+## B76 - Static design dummies (2026-06-23)
+
+- Created three static HTML design dummies under `design_dummies/`.
+- Used the same German core copy in all variants.
+- Created `docs/B76_static_design_dummies.md`.
+- Did not modify production `index.html`, CSS, scripts, maps or data.
+
+## B77 - Design dummy review (2026-06-23)
+
+- Reviewed B76 dummy variants.
+- Selected B76_B_editorial_natur as the preferred direction.
+- Defined target direction: Editorial Natur + fachliche Ruhe + kartografische Disziplin.
+- Created `docs/B77_design_dummy_review.md`.
+- Created `docs/B77_target_design_spec.md`.
+- Did not modify production website files, maps, scripts, data or CSS.
