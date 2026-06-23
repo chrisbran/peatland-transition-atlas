@@ -275,3 +275,15 @@
 - Created `tasks/B93_prepare_oberschwaben_map_workflow.md`.
 - Shifted next development from visual polish to a regional implementation module.
 - Did not modify production HTML, CSS, JavaScript, maps or data.
+
+## B93 - Prepare Oberschwaben map workflow (2026-06-23)
+
+- Created `public/maps/oberschwaben/README.md`.
+- Created `docs/B93_prepare_oberschwaben_map_workflow.md`.
+- Created `docs/B93_oberschwaben_arcgis_qgis_workflow.md`.
+- Created `docs/B93_oberschwaben_expected_outputs.csv`.
+- Created `docs/B93_oberschwaben_data_decision_matrix.csv`.
+- Created `docs/B93_oberschwaben_cartographic_rules.md`.
+- Created `tasks/B94_build_oberschwaben_map_assets.md`.
+- Prepared map workflow for Oberschwaben implementation module.
+- Did not modify production HTML, CSS, JavaScript, maps or data.
