@@ -122,3 +122,12 @@
 - Checked BW PNGs, central 11-step map states, retired legacy sections and lower evidence grouping.
 - Did not change application behavior, CSS, scripts, data files, images or map assets.
 - Result: FAIL.
+
+## B73 - German presentation version brief (2026-06-23)
+
+- Defined target audience: scientifically informed practitioners.
+- Defined tone: narrative and explanatory.
+- Defined scope: short and pointed first German presentation version.
+- Created `docs/B73_deutsche_vorzeigefassung_brief.md`.
+- Created `docs/B73_design_directions_brief.md`.
+- Did not modify application files, maps, scripts, data or styling.
