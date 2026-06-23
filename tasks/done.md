@@ -257,3 +257,11 @@
 - Checked German presentation structure, central states, map assets, app selector guard and method boundary.
 - Treated missing `#guidedStory` as acceptable when German presentation mode is active.
 - Did not modify application files, CSS, JavaScript, maps or data.
+
+## B91 - German copy polish and presentation brief (2026-06-23)
+
+- Created `docs/B91_german_copy_polish_review.md`.
+- Created `docs/B91_jour_fixe_presentation_brief.md`.
+- Created `docs/B91_copy_polish_todo.csv`.
+- Prepared a short German project-presentation narrative.
+- Did not modify production HTML, CSS, JavaScript, maps or data.

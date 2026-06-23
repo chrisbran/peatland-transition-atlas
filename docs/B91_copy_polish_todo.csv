@@ -1,0 +1,6 @@
+priority,area,issue,recommendation,status
+high,whole main flow,check for visible residual English/meta terms,Remove or translate only if actually visible; do not change hidden/debug/script text unnecessarily.,open
+high,BK50 step,method boundary must remain clear,"Keep 'Kontext, nicht Eignung/Priorisierung' wording.",keep
+medium,regional implementation,SOLAMO and LUBW can be linked more precisely,Add factual details only after source-checking and only if they serve the argument.,later
+medium,central map step titles,some titles may be slightly long for live presentation,Shorten only after confirming no layout regression.,later
+low,method/source area,source line may need formal citation style,Add a concise source note once final source wording is decided.,later
