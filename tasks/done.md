@@ -265,3 +265,13 @@
 - Created `docs/B91_copy_polish_todo.csv`.
 - Prepared a short German project-presentation narrative.
 - Did not modify production HTML, CSS, JavaScript, maps or data.
+
+## B92 - Oberschwaben implementation story concept (2026-06-23)
+
+- Created `docs/B92_oberschwaben_implementation_story_concept.md`.
+- Created `docs/B92_oberschwaben_storyboard.md`.
+- Created `docs/B92_oberschwaben_layer_spec.csv`.
+- Created `docs/B92_oberschwaben_indicator_spec.csv`.
+- Created `tasks/B93_prepare_oberschwaben_map_workflow.md`.
+- Shifted next development from visual polish to a regional implementation module.
+- Did not modify production HTML, CSS, JavaScript, maps or data.
