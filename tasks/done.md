@@ -131,3 +131,12 @@
 - Created `docs/B73_deutsche_vorzeigefassung_brief.md`.
 - Created `docs/B73_design_directions_brief.md`.
 - Did not modify application files, maps, scripts, data or styling.
+
+## B74 - Visible text audit DE (2026-06-23)
+
+- Extracted visible non-retired text from `index.html`.
+- Created `docs/B74_visible_text_audit_de.md`.
+- Created `docs/B74_visible_text_inventory.csv`.
+- Created `docs/B74_german_rewrite_targets.md`.
+- Flagged English text, meta/tool language, long text and method-boundary risks.
+- Did not modify application files, maps, scripts, data or styling.

@@ -1,0 +1,188 @@
+section_id,section_role,tag,priority,flags,flag_terms,suggested_action,current_text,rewrite_de,comment,source_hint
+,,p,high,meta_tool_language,prototype; mvp,rewrite_to_subject_matter,Portfolio prototype · Literature-driven MVP,,,class=eyebrow
+,,h1,high,meta_tool_language,atlas,rewrite_to_subject_matter,Peatland Transition Atlas,,,
+,,p,medium,probably_english,,translate_and_tighten,Mapping the space between drainage-based agriculture and rewetting-compatible land use.,,,class=lead
+,,a,high,meta_tool_language,story,rewrite_to_subject_matter,Story,,,
+,,a,high,,,review,Hotspots,,,
+,,a,high,,,review,Evidence Map,,,
+,,a,high,,,review,Pathways,,,
+,,a,high,,,review,South Germany Fit,,,
+,,a,high,,,review,Method,,,
+,,a,high,,,review,Data,,,
+,,h2,high,probably_english,,translate_and_tighten,The climate problem is spatial. The transition problem is systemic.,,,
+,,p,high,probably_english; meta_tool_language; too_long,atlas; prototype,rewrite_to_subject_matter,"This prototype turns a curated peatland rewetting literature review into an exploratory atlas: where international evidence comes from, what transition pathways it supports, and which options might be relevant for South German dairy, forage and biogas regions.",,,
+,,span,low,,,review,—,,,class=metric
+,,span,low,,,review,papers,,,class=label
+,,span,low,,,review,transition pathways,,,class=label
+,,span,low,,,review,evidence regions,,,class=label
+transitionLogic,conceptual-frame,p,high,meta_tool_language,atlas,rewrite_to_subject_matter,Atlas framing,,,class=section-kicker
+transitionLogic,conceptual-frame,h2,high,probably_english,,translate_and_tighten,From peatland extent to transition priorities,,,
+transitionLogic,conceptual-frame,p,high,probably_english; meta_tool_language; method_boundary_check,atlas; prototype; priority,rewrite_to_subject_matter,"This prototype is not a general peatland-awareness atlas. It tests how spatial peatland extent, drained organic-soil emissions, national implementation layers and literature evidence can be linked into a transition-priority workflow.",,,class=transition-logic-lede
+transitionLogic,conceptual-frame,span,low,,,review,01,,,class=chain-step
+transitionLogic,conceptual-frame,h3,high,,,review,Extent,,,
+transitionLogic,conceptual-frame,p,medium,probably_english,,translate_and_tighten,Global Peatland Map 2.0 shows where peat-dominated and peat-in-soil-mosaic areas occur.,,,
+transitionLogic,conceptual-frame,small,low,,,review,Context layer,,,
+transitionLogic,conceptual-frame,span,low,,,review,02,,,class=chain-step
+transitionLogic,conceptual-frame,h3,high,,,review,Pressure,,,
+transitionLogic,conceptual-frame,p,medium,,,review,Country hotspot data show where drained organic-soil emissions are concentrated.,,,
+transitionLogic,conceptual-frame,small,low,,,review,Emissions layer,,,
+transitionLogic,conceptual-frame,span,low,,,review,03,,,class=chain-step
+transitionLogic,conceptual-frame,h3,high,,,review,Implementation,,,
+transitionLogic,conceptual-frame,p,medium,probably_english,,translate_and_tighten,Germany and Baden-Württemberg layers show how global evidence becomes spatially constrained.,,,
+transitionLogic,conceptual-frame,small,low,,,review,Planning boundary,,,
+transitionLogic,conceptual-frame,span,low,,,review,04,,,class=chain-step
+transitionLogic,conceptual-frame,h3,high,,,review,Pathways,,,
+transitionLogic,conceptual-frame,p,medium,probably_english,,translate_and_tighten,"Literature evidence links spatial context to wet use, paludiculture, grazing, biomass and governance options.",,,
+transitionLogic,conceptual-frame,small,low,probably_english,,translate_and_tighten,Transition evidence,,,
+transitionLogic,conceptual-frame,h3,high,meta_tool_language,atlas,rewrite_to_subject_matter,What this atlas is,,,
+transitionLogic,conceptual-frame,p,high,probably_english; meta_tool_language,prototype,rewrite_to_subject_matter,"A data-visualization and decision-support prototype that connects spatial layers, emissions hotspots, regional implementation constraints and evidence-based transition pathways.",,,
+transitionLogic,conceptual-frame,h3,high,meta_tool_language,atlas,rewrite_to_subject_matter,What this atlas is not,,,
+transitionLogic,conceptual-frame,p,high,meta_tool_language; method_boundary_check,atlas; suitability,rewrite_to_subject_matter,"It is not a parcel-level rewetting suitability map, not a substitute for hydrological planning, and not a general educational Mooratlas replica.",,,
+layerProvenance,layer-reading-note,p,medium,,,review,Layer logic,,,class=section-kicker
+layerProvenance,layer-reading-note,h2,high,,,review,Each map layer answers a different question,,,
+layerProvenance,layer-reading-note,span,low,,,review,Context,,,
+layerProvenance,layer-reading-note,h3,high,,,review,Where are peatlands?,,,
+layerProvenance,layer-reading-note,p,medium,probably_english,,translate_and_tighten,GPM 2.0 global and Europe images provide spatial context only.,,,
+layerProvenance,layer-reading-note,span,low,,,review,Pressure,,,
+layerProvenance,layer-reading-note,h3,high,,,review,Where are emissions concentrated?,,,
+layerProvenance,layer-reading-note,p,medium,,,review,Country-level drained organic-soil emissions identify hotspot countries.,,,
+layerProvenance,layer-reading-note,span,low,,,review,Implementation,,,
+layerProvenance,layer-reading-note,h3,high,,,review,Where do constraints become concrete?,,,
+layerProvenance,layer-reading-note,p,medium,probably_english,,translate_and_tighten,Germany and Baden-Württemberg layers bridge from global evidence to regional planning boundaries.,,,
+layerProvenance,layer-reading-note,span,low,,,review,Evidence,,,
+layerProvenance,layer-reading-note,h3,high,probably_english,,translate_and_tighten,What transition pathways are plausible?,,,
+layerProvenance,layer-reading-note,p,high,method_boundary_check,land-use,check_claim_boundary,Literature-derived pathways translate spatial pressure into possible land-use transitions.,,,
+mvpStoryline,narrative-lock,p,high,meta_tool_language,atlas; story; main atlas,rewrite_to_subject_matter,Main atlas story,,,class=eyebrow
+mvpStoryline,narrative-lock,h2,high,probably_english,,translate_and_tighten,The map below is the core narrative.,,,
+mvpStoryline,narrative-lock,p,medium,probably_english,,translate_and_tighten,"It moves from global peatland extent and pressure to Germany, Baden-Wuerttemberg and pathway interpretation.",,,
+mvpStoryline,narrative-lock,span,low,,,review,Extent,,,
+mvpStoryline,narrative-lock,span,low,,,review,Pressure,,,
+mvpStoryline,narrative-lock,span,low,,,review,Implementation,,,
+mvpStoryline,narrative-lock,span,low,,,review,Pathways,,,
+mvpStoryline,narrative-lock,p,high,probably_english; meta_tool_language,supporting evidence,rewrite_to_subject_matter,Everything after the map is supporting evidence and exploratory interpretation.,,,class=story-lock-note
+centralGlobalMapStory,main-atlas-story,span,low,probably_english,,translate_and_tighten,Global peatland context,,,
+centralGlobalMapStory,main-atlas-story,strong,low,,,review,Peatlands are spatially concentrated.,,,
+centralGlobalMapStory,main-atlas-story,span,low,,,review,Peatland context,,,
+centralGlobalMapStory,main-atlas-story,p,medium,probably_english,,translate_and_tighten,Layer stack: Global Peatland Map 2.0 context and country hotspot layers. All images exported from the same ArcGIS global map frame.,,,class=central-map-source
+centralGlobalMapStory,main-atlas-story,span,low,,,review,01 · Extent,,,
+centralGlobalMapStory,main-atlas-story,h3,high,probably_english,,translate_and_tighten,Where are the world’s peatlands?,,,
+centralGlobalMapStory,main-atlas-story,p,medium,probably_english,,translate_and_tighten,Start with the spatial base layer: peatland extent. This is the area where transition questions can arise.,,,
+centralGlobalMapStory,main-atlas-story,span,low,,,review,02 · Pressure,,,
+centralGlobalMapStory,main-atlas-story,h3,high,probably_english,,translate_and_tighten,Where does peatland pressure accumulate?,,,
+centralGlobalMapStory,main-atlas-story,p,medium,,,review,Total emissions highlight countries where peatland drainage creates large absolute climate pressure.,,,
+centralGlobalMapStory,main-atlas-story,span,low,,,review,03 · Intensity,,,
+centralGlobalMapStory,main-atlas-story,h3,high,probably_english,,translate_and_tighten,Where is pressure most concentrated?,,,
+centralGlobalMapStory,main-atlas-story,p,medium,probably_english,,translate_and_tighten,Emission density shifts the view from large countries to places where pressure is intense relative to area.,,,
+centralGlobalMapStory,main-atlas-story,span,low,,,review,04 · Reading hotspots,,,
+centralGlobalMapStory,main-atlas-story,h3,high,,,review,Total and density tell different stories.,,,
+centralGlobalMapStory,main-atlas-story,p,high,meta_tool_language,atlas,rewrite_to_subject_matter,"A hotspot can matter because it is large, intense, or both. The atlas keeps both readings visible.",,,
+centralGlobalMapStory,main-atlas-story,span,low,,,review,05 · Europe,,,
+centralGlobalMapStory,main-atlas-story,h3,high,probably_english,,translate_and_tighten,Europe turns global pressure into policy context.,,,
+centralGlobalMapStory,main-atlas-story,p,medium,probably_english,,translate_and_tighten,"The European frame links peatland transition to regulation, agricultural land use and implementation capacity.",,,
+centralGlobalMapStory,main-atlas-story,span,low,,,review,06 · European extent,,,
+centralGlobalMapStory,main-atlas-story,h3,high,,,review,Peatland patterns continue across borders.,,,
+centralGlobalMapStory,main-atlas-story,p,medium,probably_english,,translate_and_tighten,"European peatlands form a shared transition space, but implementation still depends on national and regional settings.",,,
+centralGlobalMapStory,main-atlas-story,span,low,,,review,07 · Germany,,,
+centralGlobalMapStory,main-atlas-story,h3,high,,,review,Germany is an implementation scale.,,,
+centralGlobalMapStory,main-atlas-story,p,medium,probably_english,,translate_and_tighten,"The national frame connects peatland transition to agricultural policy, planning responsibilities and data availability.",,,
+centralGlobalMapStory,main-atlas-story,span,low,,,review,08 · Thuenen Kulisse,,,
+centralGlobalMapStory,main-atlas-story,h3,high,probably_english,,translate_and_tighten,The national transition area becomes concrete.,,,
+centralGlobalMapStory,main-atlas-story,p,medium,probably_english,,translate_and_tighten,The Thuenen Kulisse translates broad peatland context into mapped organic-soil and moor-related implementation areas.,,,
+centralGlobalMapStory,main-atlas-story,span,low,,,review,09 · Soil context,,,
+centralGlobalMapStory,main-atlas-story,h3,high,,,review,Different soil contexts imply different pathways.,,,
+centralGlobalMapStory,main-atlas-story,p,medium,probably_english,,translate_and_tighten,"Moor and soil categories help distinguish where rewetting, wet use, grazing or other transition options may be plausible.",,,
+centralGlobalMapStory,main-atlas-story,span,low,,,review,10 · Baden-Wuerttemberg,,,
+centralGlobalMapStory,main-atlas-story,h3,high,probably_english; meta_tool_language,story,rewrite_to_subject_matter,The story reaches regional planning scale.,,,
+centralGlobalMapStory,main-atlas-story,p,high,probably_english; method_boundary_check,land-use,translate_and_tighten,Baden-Wuerttemberg narrows the national frame to a region where land-use conflicts and practical implementation can be discussed.,,,
+centralGlobalMapStory,main-atlas-story,span,high,method_boundary_check,bk50,check_claim_boundary,11 · BK50 context,,,
+centralGlobalMapStory,main-atlas-story,h3,high,probably_english; method_boundary_check,bk50; wetland soil,translate_and_tighten,BK50 shows the regional peat and wetland soil context.,,,
+centralGlobalMapStory,main-atlas-story,p,high,method_boundary_check,suitability; priority,check_claim_boundary,"This layer shows where relevant soil contexts occur. It does not yet classify land use, suitability or priority.",,,
+supportingEvidenceIntro,supporting-evidence-intro,p,medium,,,review,After the main map,,,class=eyebrow
+supportingEvidenceIntro,supporting-evidence-intro,h2,high,probably_english; meta_tool_language,evidence explorer,rewrite_to_subject_matter,The rest of the page is an evidence explorer.,,,
+supportingEvidenceIntro,supporting-evidence-intro,p,high,probably_english; meta_tool_language,atlas; prototype; module; story; main atlas,rewrite_to_subject_matter,"Use the following modules as interpretation and prototype support for the main atlas story, not as a second linear narrative.",,,
+interpretationIntro,lower-evidence-group,p,medium,,,review,Interpretation,,,class=eyebrow
+interpretationIntro,lower-evidence-group,h2,high,probably_english,,translate_and_tighten,What do the spatial patterns imply for transition pathways?,,,
+interpretationIntro,lower-evidence-group,p,high,probably_english; meta_tool_language,module; story; map story,rewrite_to_subject_matter,"These modules translate the map story into pathway hypotheses: which forms of wet use, management change or policy support may fit different contexts.",,,
+pathwayEvidenceMatrix,pathway-evidence,p,medium,probably_english,,translate_and_tighten,Transition pathway bridge,,,class=section-kicker
+pathwayEvidenceMatrix,pathway-evidence,h2,high,,,review,Spatial pressure only becomes useful when linked to feasible pathways,,,
+pathwayEvidenceMatrix,pathway-evidence,p,high,probably_english; meta_tool_language; too_long,atlas; prototype,rewrite_to_subject_matter,"The atlas now separates context, pressure and implementation layers. This section connects those layers to evidence-informed transition pathways. The matrix is not a prescription; it is a prototype logic for asking which pathways are worth testing where.",,,class=pathway-matrix-lede
+pathwayEvidenceMatrix,pathway-evidence,span,low,,,review,Wet grazing,,,class=pathway-tag
+pathwayEvidenceMatrix,pathway-evidence,strong,low,,,review,Best fit,,,
+pathwayEvidenceMatrix,pathway-evidence,h3,high,,,review,Wet grassland use under raised water tables,,,
+pathwayEvidenceMatrix,pathway-evidence,span,low,,,review,Paludiculture biomass,,,class=pathway-tag
+pathwayEvidenceMatrix,pathway-evidence,strong,low,,,review,Market dependent,,,
+pathwayEvidenceMatrix,pathway-evidence,h3,high,,,review,Biomass production on rewetted peat soils,,,
+pathwayEvidenceMatrix,pathway-evidence,span,low,,,review,Water management,,,class=pathway-tag
+pathwayEvidenceMatrix,pathway-evidence,strong,low,,,review,Hydrology first,,,
+pathwayEvidenceMatrix,pathway-evidence,h3,high,,,review,"Raised water table, controlled drainage and partial rewetting",,,
+pathwayEvidenceMatrix,pathway-evidence,span,low,,,review,Governance & adoption,,,class=pathway-tag
+pathwayEvidenceMatrix,pathway-evidence,strong,low,,,review,Implementation risk,,,
+pathwayEvidenceMatrix,pathway-evidence,h3,high,probably_english,,translate_and_tighten,"Payments, cooperation models and transition governance",,,
+pathwayEvidenceMatrix,pathway-evidence,strong,high,meta_tool_language,prototype,rewrite_to_subject_matter,Prototype rule:,,,
+supportingEvidenceGroupIntro,lower-evidence-group,p,high,probably_english; meta_tool_language,supporting evidence,rewrite_to_subject_matter,Supporting evidence,,,class=eyebrow
+supportingEvidenceGroupIntro,lower-evidence-group,h2,high,meta_tool_language,atlas; story,rewrite_to_subject_matter,Additional signals help test the atlas story.,,,
+supportingEvidenceGroupIntro,lower-evidence-group,p,high,probably_english; meta_tool_language,storyline; story,rewrite_to_subject_matter,"Country hotspots, regional evidence and South Germany fit scores are exploratory checks. They support interpretation, but they are not the main storyline.",,,
+hotspots,evidence-explorer,p,medium,,,review,Phase B hotspot layer,,,class=eyebrow
+hotspots,evidence-explorer,h2,high,probably_english; meta_tool_language,evidence explorer,rewrite_to_subject_matter,Evidence explorer: where are drained organic soil emissions concentrated?,,,
+hotspots,evidence-explorer,p,medium,probably_english,,translate_and_tighten,A first country-level hotspot layer based on FAO/FAOSTAT-derived drained organic soils data. The layer ranks countries by total CO₂ + N₂O AR5 CO₂-equivalent emissions and by emissions density.,,,
+hotspots,evidence-explorer,span,low,,,review,—,,,class=metric
+hotspots,evidence-explorer,span,low,,,review,countries with complete data,,,class=label
+hotspots,evidence-explorer,span,low,,,review,selected year,,,class=label
+hotspots,evidence-explorer,span,low,,,review,total emissions in complete records,,,class=label
+hotspots,evidence-explorer,p,medium,,,review,Map layer,,,class=eyebrow
+hotspots,evidence-explorer,h3,high,,,review,Country-level hotspot map,,,
+hotspots,evidence-explorer,button,high,,,review,Total emissions,,,class=hotspot-toggle-btn active
+hotspots,evidence-explorer,button,high,,,review,Emissions density,,,class=hotspot-toggle-btn
+hotspots,evidence-explorer,p,medium,,,review,"Hover or click a country to inspect total emissions, emissions density and drained organic soils area.",,,class=hotspot-map-details
+hotspots,evidence-explorer,p,medium,,,review,Ranking 1,,,class=eyebrow
+hotspots,evidence-explorer,h3,high,,,review,Top countries by total emissions,,,
+hotspots,evidence-explorer,p,medium,,,review,Ranking 2,,,class=eyebrow
+hotspots,evidence-explorer,h3,high,,,review,Top countries by emissions density,,,
+hotspots,evidence-explorer,strong,low,,,review,Interpretation:,,,
+map,regional-evidence,p,medium,,,review,International evidence map,,,class=eyebrow
+map,regional-evidence,h2,high,probably_english; meta_tool_language,evidence explorer,rewrite_to_subject_matter,Evidence explorer: cases and transition evidence,,,
+map,regional-evidence,p,medium,,,review,"Points are approximate visual anchors for study regions, policy nodes and review clusters. They are not exact field-site coordinates.",,,
+map,regional-evidence,button,high,,,review,All,,,class=active
+map,regional-evidence,button,high,,,review,Hydrology,,,
+map,regional-evidence,button,high,,,review,Economics,,,
+map,regional-evidence,button,high,,,review,Biomass,,,
+map,regional-evidence,button,high,,,review,Adoption,,,
+map,regional-evidence,button,high,,,review,Value chains,,,
+map,regional-evidence,button,high,,,review,Policy,,,
+map,regional-evidence,p,medium,,,review,Selected region,,,class=eyebrow
+map,regional-evidence,h3,high,,,review,Click an evidence node,,,
+map,regional-evidence,p,medium,probably_english,,translate_and_tighten,"Region cards show key message, supporting papers and South Germany transfer relevance.",,,
+pathways,pathway-interpretation,p,medium,,,review,Transition space,,,class=eyebrow
+pathways,pathway-interpretation,h2,high,probably_english,,translate_and_tighten,Transition pathways between drained farming and full restoration,,,
+fit,south-germany-fit,p,medium,,,review,Transfer view,,,class=eyebrow
+fit,south-germany-fit,h2,high,,,review,South Germany fit: which pathways remain plausible?,,,
+fit,south-germany-fit,p,medium,,,review,Qualitative scores translate literature evidence into a first transfer hypothesis. They are not statistical estimates.,,,
+fit,south-germany-fit,strong,low,,,review,X-axis:,,,
+fit,south-germany-fit,strong,low,,,review,Y-axis:,,,
+fit,south-germany-fit,strong,low,,,review,Bubble size:,,,
+fit,south-germany-fit,strong,low,,,review,Colour:,,,
+prototypeAppendixIntro,lower-evidence-group,p,high,meta_tool_language,prototype; appendix,rewrite_to_subject_matter,Prototype appendix,,,class=eyebrow
+prototypeAppendixIntro,lower-evidence-group,h2,high,,,review,"Method, data and experimental layers.",,,
+prototypeAppendixIntro,lower-evidence-group,p,high,probably_english; meta_tool_language,prototype; tool,rewrite_to_subject_matter,"This part documents the prototype status, source limitations and remaining experimental components. It is supporting material, not a finished decision tool.",,,
+methodology,method-and-limits,p,medium,,,review,Method and uncertainty,,,class=eyebrow
+methodology,method-and-limits,h2,high,probably_english; meta_tool_language,prototype,rewrite_to_subject_matter,How to read this prototype,,,
+methodology,method-and-limits,p,high,probably_english; meta_tool_language,atlas; prototype,rewrite_to_subject_matter,"This Atlas is a literature-driven prototype. It is designed to make evidence, assumptions and transition hypotheses visible, not to replace local hydrological-economic modelling.",,,
+methodology,method-and-limits,h3,high,,,review,Qualitative scores,,,
+methodology,method-and-limits,p,medium,,,review,"Scores are literature-informed expert codings, not statistical estimates. The scale is deliberately simple:",,,
+methodology,method-and-limits,strong,low,,,review,1 = low,,,
+methodology,method-and-limits,strong,low,,,review,2 = medium,,,
+methodology,method-and-limits,strong,low,,,review,3 = high,,,
+methodology,method-and-limits,h3,high,,,review,Evidence-map points,,,
+methodology,method-and-limits,p,medium,,,review,"Map points are approximate visual anchors for study regions, national model studies, review clusters and policy nodes. They are not exact field-site coordinates.",,,
+methodology,method-and-limits,h3,high,,,review,South Germany fit,,,
+methodology,method-and-limits,p,medium,,,review,"South Germany fit is a transfer hypothesis based on international literature. It is not a validated regional model result and must be checked against local hydrology, farm structure, machinery access and markets.",,,
+methodology,method-and-limits,h3,high,,,review,Publication boundary,,,
+methodology,method-and-limits,p,medium,probably_english,,translate_and_tighten,"The public repository should contain code, derived metadata and own coding tables. It should not contain copyrighted PDFs, confidential project data, licence-unclear raw rasters or unpublished partner data.",,,
+data,prototype-data,p,medium,,,review,Data model,,,class=eyebrow
+data,prototype-data,h2,high,meta_tool_language,prototype,rewrite_to_subject_matter,Current prototype datasets,,,
+data,prototype-data,a,high,,,review,country_hotspots.csv,,,
+data,prototype-data,a,high,,,review,papers.csv,,,
+data,prototype-data,a,high,,,review,transition_pathways.csv,,,
+data,prototype-data,a,high,,,review,region_case_studies.geojson,,,
+data,prototype-data,a,high,meta_tool_language,atlas; story,rewrite_to_subject_matter,atlas_story_sections.json,,,
+,,p,high,probably_english; meta_tool_language,prototype,rewrite_to_subject_matter,"Prototype based on curated literature coding. Scores are qualitative and evidence-map points are approximate visual anchors. Hotspot layers from FAO/FAOSTAT, Global Peatland Map, Natural Earth and Eurostat GISCO are planned for Phase B.",,,
