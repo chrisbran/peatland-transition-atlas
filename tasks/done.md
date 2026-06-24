@@ -360,3 +360,76 @@
 - Added a CSS override block that restores stable semi-transparent Oberschwaben text-card backgrounds.
 - Preserved stable active/inactive behavior from B97d while making the map visible through/around the cards again.
 - Added `docs/B97e_restore_oberschwaben_translucent_step_cards.md`.
+
+## B97f - Editorial cleanup / public-readiness (2026-06-24)
+
+- Applied targeted editorial cleanup to `index.html`.
+- Fixed visible typo variants for `Methodische Grenze` if present.
+- Neutralized visible prototype/build notes where exact patterns were found.
+- Reduced selected German/English mixing in prominent page copy.
+- Added `docs/B97f_editorial_cleanup_public_readiness.md`.
+- Added `docs/B97f_public_readiness_red_flag_scan.txt`.
+
+## B97g - Clean remaining public copy red flags (2026-06-24)
+
+- Applied a second conservative editorial cleanup to visible public copy in `index.html`.
+- Generated a classified residual red-flag scan distinguishing visible-review, hidden-retired and script false-positive hits.
+- Left hidden retired prototype appendix sections untouched.
+- Added `docs/B97g_clean_remaining_public_copy_red_flags.md`.
+- Added `docs/B97g_public_readiness_red_flag_scan_classified.txt`.
+
+## B98a - Oberschwaben feature class inventory (2026-06-24)
+
+- Added ArcGIS feature-class inventory to diagnose missing county feature class for B98.
+- Created `docs/B98a_oberschwaben_feature_class_inventory.md`.
+- Created `docs/B98a_oberschwaben_feature_class_inventory.csv`.
+
+## B98b - Prepare Oberschwaben counties from GISCO (2026-06-24)
+
+- Created missing `oberschwaben_counties_25832` feature class in the Oberschwaben working geodatabase.
+- Selected GISCO NUTS 2024 level-3 IDs DE146, DE147, DE148, DE149.
+- Created `docs/B98b_prepare_oberschwaben_counties_from_gisco.md`.
+- Created `docs/B98b_oberschwaben_counties_inventory.csv`.
+
+## B98 - Oberschwaben intersection area and classification QA (2026-06-24)
+
+- Quantified FIONA 2024 agriculture × BK50 Moor-/Feuchtbodenkontext intersection by Landkreis and land-use group.
+- Created `docs/B98_oberschwaben_intersection_area_qa.md`.
+- Created `docs/B98_oberschwaben_county_landuse_area_summary.csv`.
+- Created `docs/B98_oberschwaben_landuse_classification_qa.csv`.
+- Created `docs/B98_oberschwaben_analysis_manifest.csv`.
+- Created `tasks/B99_reposition_transformations_after_oberschwaben.md`.
+
+## B98c - Oberschwaben intersection classification review (2026-06-24)
+
+- Reviewed actual Oberschwaben intersection by original FIONA class.
+- Separated `Aus der Produktion genommene Flächen/Stilllegung` and `ZUWEISUNG FEHLT` from normal Ackerland.
+- Created `docs/B98c_oberschwaben_intersection_classification_review.md`.
+- Created `docs/B98c_oberschwaben_intersection_classification_cleaned.csv`.
+- Created `docs/B98c_oberschwaben_public_safe_summary.csv`.
+- Created `docs/B98c_oberschwaben_flagged_intersection_summary.csv`.
+- Created `docs/B98c_oberschwaben_analysis_manifest.csv`.
+
+## B99 - Reposition Transformationspfade after Oberschwaben (2026-06-24)
+
+- Replaced and moved the `#pathways` section so it follows the Oberschwaben scrolly map.
+- Reframed Transformationspfade as the answer to the spatial intersection rather than a prior abstract module.
+- Added conservative B98c-based qualitative interpretation without publishing exact hectare numbers.
+- Added `docs/B99_reposition_transformations_after_oberschwaben.md`.
+- Added `docs/B99_transformations_public_readiness_audit.txt`.
+
+## B100 - Add moor primer section (2026-06-24)
+
+- Added a compact `Moore verstehen` primer before the Oberschwaben implementation story.
+- Explained the water-level / peat-decomposition / emissions mechanism.
+- Added functional Niedermoor/Hochmoor and use-path context without creating suitability claims.
+- Added `docs/B100_add_moor_primer_section.md`.
+- Added `docs/B100_moor_primer_public_readiness_audit.txt`.
+
+## B100b - Recast moor primer as compact bridge (2026-06-24)
+
+- Replaced the textbook-like B100 primer with a compact editorial bridge.
+- Reduced the visible mechanism to three chips: Nass/Speicher, Entwässert/Quelle, Wiedervernässt/Verhandlung.
+- Moved detailed moor background into an optional disclosure element.
+- Added `docs/B100b_recast_moor_primer_as_compact_bridge.md`.
+- Added `docs/B100b_moor_primer_bridge_audit.txt`.

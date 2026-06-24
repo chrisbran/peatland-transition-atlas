@@ -62,8 +62,8 @@
 
 <!-- B64: guidedProblem retired because centralGlobalMapProblem is now the main narrative spine. Kept in markup for reversible rollback. -->
 <section id="guidedProblem" class="section guided-story is-retired" aria-hidden="true" data-retired="B64" style="display: none !important;" data-story-role="retired-legacy-story">
-  <div class="section-kicker">Guided scrollytelling prototype</div>
-  <h2>From national emission hotspots to real peatland landscapes</h2>
+  <div class="section-kicker">Geführte Kartenstory</div>
+  <h2>Von Emissions-Hotspots zu realen Moorlandschaften</h2>
   <p class="section-lead">
     This guided view is the bridge between the existing explorer layers. It turns the atlas into a
     scroll-driven narrative: country emissions first, then peat/organic-soil extent, and finally the
@@ -152,7 +152,7 @@
           <span class="story-step-number">6</span>
           <h3>Keep the boundary visible</h3>
           <p>
-            A peat/organic-soils map is not a rewetting suitability map. Suitability would require hydrology,
+            Eine Moor-/organische-Böden-Karte ist keine Wiedervernässungs-Eignungskarte. Suitability would require hydrology,
             land use, management, ownership, policy and economic context.
           </p>
           <p class="caveat">This boundary is part of the atlas, not a footnote.</p>
@@ -177,8 +177,8 @@
           <div class="story-layer bw-zoom" data-story-layer="bw"></div>
           <div class="story-layer boundary" data-story-layer="boundary"></div>
           <div class="story-state-label">
-            <strong>Prototype visual state</strong>
-            <span>The next implementation will bind these states to real map layers.</span>
+            <strong>Methodischer Hinweis</strong>
+            <span>Diese Ansicht dient der räumlichen Einordnung und ersetzt keine Eignungs- oder Prioritätskarte.</span>
           </div>
         </div>
 
@@ -373,10 +373,59 @@
   </div>
 </section>
 
+<!-- B100_MOOR_PRIMER_START -->
+<section id="moor-primer" class="section moore-primer-section moore-primer-bridge" aria-labelledby="moor-primer-title">
+  <div class="moore-primer-bridge-inner">
+    <div class="moore-primer-bridge-copy">
+      <p class="eyebrow">Moore verstehen</p>
+      <h2 id="moor-primer-title">Warum die Karte beim Wasser beginnt</h2>
+      <p>
+        Ein Moor ist kein gewöhnlicher Boden. Solange Torf nass bleibt, speichert er
+        Kohlenstoff; wird er entwässert, wird er zur dauerhaften Emissionsquelle.
+        Darum führt die Oberschwaben-Story von Boden und Nutzung direkt zur Frage:
+        Wie lässt sich Wasserstand verändern, ohne Betriebe und Landschaften zu überfordern?
+      </p>
+    </div>
+
+    <div class="moore-primer-bridge-mechanism" aria-label="Moor-Kernmechanismus">
+      <div class="moore-primer-chip">
+        <span>Nass</span>
+        <strong>Speicher</strong>
+      </div>
+      <div class="moore-primer-chip">
+        <span>Entwässert</span>
+        <strong>Quelle</strong>
+      </div>
+      <div class="moore-primer-chip">
+        <span>Wiedervernässt</span>
+        <strong>Verhandlung</strong>
+      </div>
+    </div>
+  </div>
+
+  <details class="moore-primer-details">
+    <summary>Fachlicher Hintergrund in 30 Sekunden</summary>
+    <div class="moore-primer-details-grid">
+      <p>
+        Torf entsteht, wenn Pflanzenreste unter nassen, sauerstoffarmen Bedingungen
+        langsamer abgebaut als aufgebaut werden. Sinkt der Wasserstand, gelangt Sauerstoff
+        in den Torfkörper; Torf mineralisiert und setzt Treibhausgase frei.
+      </p>
+      <p>
+        Für landwirtschaftliche Transformationsfragen sind häufig Niedermoore und
+        Feuchtbodenkomplexe relevant. Ob Nassgrünland, Paludikultur, Renaturierung oder
+        Moor-PV realistisch sind, hängt von Wasserstand, Degradierung, Nährstoffen,
+        Technik und regionaler Koordination ab.
+      </p>
+    </div>
+  </details>
+</section>
+<!-- B100_MOOR_PRIMER_END -->
+
 <section id="b79RegionalImplementation" class="b79-section b79-regional-implementation">
   <div class="b79-section-heading">
     <p class="section-kicker">Regionale Umsetzung</p>
-    <h2>Oberschwaben zeigt die praktische Herausforderung</h2>
+    <h2>Oberschwaben: regionale Ausgangslage</h2>
     <p>In Baden-Württemberg wird Moorschutz zur konkreten Frage: Welche Betriebe sind betroffen, welche Nutzungen bleiben möglich, welche Produkte tragen und welche Förderinstrumente sind nötig?</p>
   </div>
   <div class="b79-card-grid">
@@ -421,7 +470,7 @@
 </section>
 
 <section id="b79MethodeBoundary" class="b79-section b79-method-boundary">
-  <p class="section-kicker">Methodeische Grenze</p>
+  <p class="section-kicker">Methodische Grenze</p>
   <h2>Einordnung statt Eignungskarte</h2>
   <p>Die dargestellten Boden- und Moorinformationen sind eine räumliche Einordnung. Sie ersetzen keine Flächeneignungsprüfung, keine Priorisierung und keine betriebliche Betroffenheitsanalyse.</p>
   <p class="b79-source-line">Datenbasis: Global Peatland Map 2.0, Thünen-Kulisse organischer Böden, BK50 Baden-Württemberg, LUBW/Moorschutzkonzeption, SOLAMO-BW-Projektinformationen.</p>
@@ -435,7 +484,7 @@
       <p class="eyebrow">After the main map</p>
       <h2>The rest of the page is an evidence explorer.</h2>
       <p>
-        Use the following modules as interpretation and prototype support for the main
+        Die folgenden Module ordnen die Hauptkarte ein und ergänzen die Argumentation der Seite
         atlas story, not as a second linear narrative.
       </p>
     </div>
@@ -459,7 +508,7 @@
   <h2>Spatial pressure only becomes useful when linked to feasible pathways</h2>
   <p class="pathway-matrix-lede">
     The atlas now separates context, pressure and implementation layers. This section connects those layers
-    to evidence-informed transition pathways. The matrix is not a prescription; it is a prototype logic for
+    zu evidenzgestützten Transformationspfaden. Die Matrix ist keine Vorgabe; sie ist eine Arbeitslogik für
     asking which pathways are worth testing where.
   </p>
 
@@ -522,7 +571,7 @@
   </div>
 
   <div class="pathway-interpretation-note">
-    <strong>Prototype rule:</strong>
+    <strong>Arbeitsregel:</strong>
     a pathway should only move from “interesting” to “actionable” when spatial fit, hydrological feasibility,
     farm economics and governance conditions can be checked together.
   </div>
@@ -545,7 +594,7 @@
 
 <section id="hotspots" class="section hotspot-section b79-hidden is-retired" data-story-role="evidence-explorer" data-evidence-tier="supporting-evidence" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
       <div class="section-heading">
-        <p class="eyebrow">Phase B hotspot layer</p>
+        <p class="eyebrow">Optionale Hotspot-Vertiefung</p>
         <h2>Evidence explorer: where are drained organic soil emissions concentrated?</h2>
         <p>
           A first country-level hotspot layer based on FAO/FAOSTAT-derived drained organic soils data.
@@ -647,16 +696,7 @@
       </div>
     </section>
 
-    <section id="pathways" class="section b79-hidden is-retired" data-story-role="pathway-interpretation" data-evidence-tier="interpretation" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
-      <div class="section-heading">
-        <p class="eyebrow">Transition space</p>
-        <h2>Transition pathways between drained farming and full restoration</h2>
-      </div>
-      <div id="pathwaySpectrum" class="pathway-spectrum"></div>
-      <div id="pathwayMatrix" class="matrix"></div>
-    </section>
-
-    <section id="fit" class="section b79-hidden is-retired" data-story-role="south-germany-fit" data-evidence-tier="supporting-evidence" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
+<section id="fit" class="section b79-hidden is-retired" data-story-role="south-germany-fit" data-evidence-tier="supporting-evidence" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
       <div class="section-heading">
         <p class="eyebrow">Transfer view</p>
         <h2>South Germany fit: which pathways remain plausible?</h2>
@@ -878,12 +918,94 @@
 </section>
 <!-- B96_OBERSCHWABEN_SCROLLY_END -->
 
+<!-- B99_TRANSFORMATION_PATHWAYS_START -->
+<section id="pathways" class="section moore-pathways-section" aria-labelledby="pathways-title">
+  <div class="section-header moore-pathways-header">
+    <p class="eyebrow">Transformationspfade</p>
+    <h2 id="pathways-title">Von der Schnittmenge zu handhabbaren Transformationspfaden</h2>
+    <p>
+      Die Oberschwaben-Karte zeigt nicht, was auf einer einzelnen Fläche getan werden muss.
+      Sie zeigt, wo unterschiedliche Transformationspfade verhandelt werden müssen:
+      zwischen Wasserstand, Nutzung, Betriebslogik, Förderung und regionaler Kooperation.
+    </p>
+  </div>
+
+  <div class="moore-pathway-principle" aria-label="Kernaussage Transformationspfade">
+    <strong>Arbeitsregel:</strong>
+    Die Schnittmenge ist eine Such- und Gesprächskulisse. Sie ist keine Eignungskarte,
+    keine Priorisierung und keine betriebliche Betroffenheitsanalyse.
+  </div>
+
+  <div class="moore-pathway-grid">
+    <article class="moore-pathway-card">
+      <p class="moore-pathway-label">Pfad 1 · Grünlandnah</p>
+      <h3>Nassgrünland, angepasste Mahd und extensive Beweidung</h3>
+      <p>
+        Ein großer Teil der Oberschwaben-Schnittmenge liegt im Grünlandkontext.
+        Fachlich spricht das für Pfade, die an bestehende Nutzungen anschließen:
+        Nassgrünland, angepasste Schnittregime, extensive Beweidung oder robuste
+        Weidesysteme. Entscheidend ist nicht nur der Wasserstand, sondern auch,
+        ob Futter, Arbeit und Verwertung in die Betriebslogik passen.
+      </p>
+    </article>
+
+    <article class="moore-pathway-card">
+      <p class="moore-pathway-label">Pfad 2 · Ackerbaulich sensibel</p>
+      <h3>Nutzungswechsel, Paludikultur oder Flächentausch</h3>
+      <p>
+        Ackerland in Moor- oder Feuchtbodenkontexten ist meist der stärkere
+        Transformationsfall. Hier geht es nicht um eine einfache Extensivierung,
+        sondern um Nutzungswechsel, neue Kultur- und Produktpfade, Flächentausch
+        oder langfristige Einkommens- und Investitionssicherheit.
+      </p>
+    </article>
+
+    <article class="moore-pathway-card">
+      <p class="moore-pathway-label">Pfad 3 · Sonder- und Dauerkultur</p>
+      <h3>Prüffeld statt Standardschema</h3>
+      <p>
+        Dauerkulturen und spezialisierte Nutzungen sind kleinräumig und betriebsnah
+        zu interpretieren. Sie eignen sich nicht für pauschale Aussagen. In solchen
+        Räumen muss zuerst geklärt werden, ob der Moor-/Feuchtbodenkontext überhaupt
+        mit realistischen Wasserstands- und Nutzungspfaden zusammengebracht werden kann.
+      </p>
+    </article>
+
+    <article class="moore-pathway-card">
+      <p class="moore-pathway-label">Pfad 4 · Kooperation</p>
+      <h3>Wasser ist selten eine Einzelflächen-Entscheidung</h3>
+      <p>
+        Wiedervernässung und nasse Nutzung hängen an Gräben, Stauregimen,
+        Nachbarschaft, Infrastruktur und Zuständigkeiten. Deshalb wird aus einer
+        Flächenfrage schnell eine Governance-Frage: Landwirtschaft, Kommunen,
+        Wasserwirtschaft, Naturschutz und Förderung müssen gemeinsam handlungsfähig werden.
+      </p>
+    </article>
+  </div>
+
+  <div class="moore-pathway-note">
+    <h3>Was die B98c-QA nahelegt</h3>
+    <p>
+      Die interne Flächen-QA stützt die qualitative Erzählung: Die Schnittmenge ist
+      überwiegend ein Grünlandthema. Ackerbauliche Anteile sind kleiner, aber fachlich
+      sensibler. Stilllegung und unklare FIONA-Zuweisungen sollten getrennt von normalem
+      Ackerland gelesen werden.
+    </p>
+    <p class="moore-source-line">
+      Datenbasis: FIONA 2024, BK50 Moor-/Feuchtbodenkontext, GISCO NUTS 2024;
+      eigene räumliche Verschneidung und Klassifikations-QA. Zahlen dienen hier
+      der internen Plausibilisierung, nicht als flächenscharfe Planungsaussage.
+    </p>
+  </div>
+</section>
+<!-- B99_TRANSFORMATION_PATHWAYS_END -->
+
 </main>
 
   <footer>
     <p>
-      Prototype based on curated literature coding. Scores are qualitative and evidence-map points are approximate visual anchors.
-      Hotspot layers from FAO/FAOSTAT, Global Peatland Map, Natural Earth and Eurostat GISCO are planned for Phase B.
+      Arbeitsstand auf Basis kuratierter Literaturcodierung. Die Bewertungen sind qualitativ; Evidenzpunkte sind ungefähre visuelle Anker.
+      Weitere räumliche Auswertungen werden nur nach gesonderter Datenprüfung ergänzt.
     </p>
   </footer>
 

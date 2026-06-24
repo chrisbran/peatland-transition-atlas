@@ -1,0 +1,25 @@
+# B97f Public-Readiness Red-Flag Scan
+
+Scope: `index.html`
+
+This scan is intentionally conservative. Hits are not automatically failures; they are prompts for manual review.
+
+## Hits
+
+- L66: pattern `From national emission hotspots` :: <h2>From national emission hotspots to real peatland landscapes</h2>
+- L155: pattern `rewetting suitability map` :: A peat/organic-soils map is not a rewetting suitability map. Suitability would require hydrology,
+- L438: pattern `prototype` :: Use the following modules as interpretation and prototype support for the main
+- L462: pattern `prototype` :: to evidence-informed transition pathways. The matrix is not a prescription; it is a prototype logic for
+- L525: pattern `prototype` :: <strong>Prototype rule:</strong>
+- L548: pattern `Phase B` :: <p class="eyebrow">Phase B hotspot layer</p>
+- L679: pattern `prototype` :: <!-- B71 prototype appendix intro -->
+- L680: pattern `prototype` :: <section id="prototypeAppendixIntro" class="section lower-evidence-group lower-evidence-prototype b79-hidden is-retired" data-story-role="lower-evidence-group" data-evidence-tier="prototype-appendix" hidden aria-hidde...
+- L682: pattern `prototype` :: <p class="eyebrow">Prototype appendix</p>
+- L685: pattern `prototype` :: This part documents the prototype status, source limitations and remaining
+- L691: pattern `prototype` :: <section id="methodology" class="section methodology-panel b79-hidden is-retired" data-story-role="method-and-limits" data-evidence-tier="prototype-appendix" hidden aria-hidden="true" data-retired="B79" style="display...
+- L694: pattern `prototype` :: <h2>How to read this prototype</h2>
+- L696: pattern `prototype` :: This Atlas is a literature-driven prototype. It is designed to make evidence, assumptions and transition hypotheses visible,
+- L733: pattern `prototype` :: <section id="data" class="section b79-hidden is-retired" data-story-role="prototype-data" data-evidence-tier="prototype-appendix" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
+- L736: pattern `prototype` :: <h2>Current prototype datasets</h2>
+- L885: pattern `prototype` :: Prototype based on curated literature coding. Scores are qualitative and evidence-map points are approximate visual anchors.
+- L914: pattern `prototype` :: var steps = Array.prototype.slice.call(section.querySelectorAll('[data-ob-step]'));

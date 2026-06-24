@@ -1,0 +1,31 @@
+# B97g Public-Readiness Red-Flag Scan Classified
+
+Scope: `index.html`
+
+Hits are classified so public-facing issues can be separated from hidden retired appendix content and JavaScript false positives.
+
+## Counts
+
+- visible-review: 1
+- hidden-retired: 8
+- script-false-positive: 1
+- total: 10
+
+## visible-review
+
+- L685: pattern `prototype` :: This part documents the prototype status, source limitations and remaining
+
+## hidden-retired
+
+- L679: pattern `prototype` :: <!-- B71 prototype appendix intro -->
+- L680: pattern `prototype` :: <section id="prototypeAppendixIntro" class="section lower-evidence-group lower-evidence-prototype b79-hidden is-retired" data-story-role="lower-evidence-group" data-evidence-tier="prototype-appendix" hidden aria-hidde...
+- L682: pattern `prototype` :: <p class="eyebrow">Prototype appendix</p>
+- L691: pattern `prototype` :: <section id="methodology" class="section methodology-panel b79-hidden is-retired" data-story-role="method-and-limits" data-evidence-tier="prototype-appendix" hidden aria-hidden="true" data-retired="B79" style="display...
+- L694: pattern `prototype` :: <h2>How to read this prototype</h2>
+- L696: pattern `prototype` :: This Atlas is a literature-driven prototype. It is designed to make evidence, assumptions and transition hypotheses visible,
+- L733: pattern `prototype` :: <section id="data" class="section b79-hidden is-retired" data-story-role="prototype-data" data-evidence-tier="prototype-appendix" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
+- L736: pattern `prototype` :: <h2>Current prototype datasets</h2>
+
+## script-false-positive
+
+- L914: pattern `prototype` :: var steps = Array.prototype.slice.call(section.querySelectorAll('[data-ob-step]'));

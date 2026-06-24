@@ -1,0 +1,21 @@
+# B100b moor primer bridge audit
+
+## Checks
+
+- B100 marker start: OK
+- compact bridge class: OK
+- details disclosure: OK
+- old step-card class removed: OK
+- old grid card class removed: OK
+- chip mechanism: OK
+- Nass -> Speicher: OK
+- Entwässert -> Quelle: OK
+- Wiedervernässt -> Verhandlung: OK
+
+## Manual visual review
+
+- Primer should read as a transition, not as a textbook section.
+- Main copy should be readable in one glance.
+- The three chips should carry the mechanism visually.
+- Details should remain optional and closed by default.
+- Section should not break the flow into Oberschwaben.

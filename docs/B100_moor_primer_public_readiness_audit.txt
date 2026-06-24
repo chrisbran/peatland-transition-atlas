@@ -1,0 +1,18 @@
+# B100 moor primer public-readiness audit
+
+## Checks
+
+- B100 marker start: OK
+- B100 marker end: OK
+- moor-primer id: OK
+- Wasserstand: OK
+- Torfabbau: OK
+- keine standortbezogene: OK
+- Oberschwaben appears after primer: OK
+
+## Manual visual review
+
+- Primer should appear before the Oberschwaben regional implementation story.
+- Section should be compact and not interrupt the scale-sequence too heavily.
+- Mechanism cards should not feel like a technical textbook.
+- Mobile layout should stack cleanly.
