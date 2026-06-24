@@ -317,3 +317,46 @@
 - Created `docs/B95h_oberschwaben_layer_stack_manifest.csv`.
 - Created `tasks/B96_bind_oberschwaben_scrolly_layer_stack.md`.
 - Updated the Oberschwaben implementation direction from static composite map to scrollable layer stack.
+
+## B96 - Bind Oberschwaben scrolly layer stack (2026-06-24)
+
+- Added Oberschwaben scrollable layer-stack section to `index.html`.
+- Added B96-specific CSS for sticky stage, PNG layer opacity states and story cards.
+- Added a small self-contained IntersectionObserver script in `index.html`.
+- Used B95h layer assets:
+  - `public/maps/oberschwaben/oberschwaben_admin_context.png`
+  - `public/maps/oberschwaben/oberschwaben_agriculture.png`
+  - `public/maps/oberschwaben/oberschwaben_moor_context.png`
+  - `public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png`
+
+## B97 - Align Oberschwaben stage with central story (2026-06-24)
+
+- Replaced the B96 Oberschwaben CSS block with a larger, darker central-story-aligned map stage.
+- Preserved the B96 HTML, JS and validated layer assets.
+- Added `docs/B97_align_oberschwaben_stage_with_central_story.md`.
+
+## B97b - Lighten Oberschwaben stage (2026-06-24)
+
+- Replaced the dark B97 Oberschwaben CSS treatment with a lighter warm editorial stage.
+- Kept the large central-story scale introduced by B97.
+- Preserved B96 HTML/JS and the validated B95h layer assets.
+- Added `docs/B97b_lighten_oberschwaben_stage.md`.
+
+## B97c - Oberschwaben readability and legend fix (2026-06-24)
+
+- Added a CSS override block so Oberschwaben scroll text cards render above the large sticky map stage.
+- Removed the legend's white overlay background and placed the legend below the map.
+- Preserved B96 HTML/JS and B97b light-stage treatment.
+- Added `docs/B97c_oberschwaben_readability_and_legend_fix.md`.
+
+## B97d - Stabilize Oberschwaben step card opacity (2026-06-24)
+
+- Added a CSS override block to keep Oberschwaben text-card opacity/background stable while scrolling.
+- Preserved B96 HTML/JS, B97b light-stage treatment and B97c legend/z-index fixes.
+- Added `docs/B97d_stabilize_oberschwaben_step_card_opacity.md`.
+
+## B97e - Restore Oberschwaben translucent step cards (2026-06-24)
+
+- Added a CSS override block that restores stable semi-transparent Oberschwaben text-card backgrounds.
+- Preserved stable active/inactive behavior from B97d while making the map visible through/around the cards again.
+- Added `docs/B97e_restore_oberschwaben_translucent_step_cards.md`.

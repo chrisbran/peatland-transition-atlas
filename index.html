@@ -794,6 +794,90 @@
   </div>
 </section>
 
+<!-- B96_OBERSCHWABEN_SCROLLY_START -->
+<section id="oberschwaben-layer-story" class="moore-ob-section" data-oberschwaben-state="region" aria-labelledby="oberschwaben-layer-title">
+  <div class="moore-ob-heading">
+    <p class="moore-ob-kicker">Regionale Umsetzung</p>
+    <h2 id="oberschwaben-layer-title">Oberschwaben: Wo Moorschutz zur landwirtschaftlichen Umsetzungsfrage wird</h2>
+    <p class="moore-ob-lead">
+      Die regionale Karte zerlegt den Zusammenhang in einzelne Ebenen: Verwaltungsraum,
+      landwirtschaftliche Nutzung, Moor-/Feuchtbodenkontext und ihre räumliche Überschneidung.
+    </p>
+  </div>
+
+  <div class="moore-ob-grid">
+    <div class="moore-ob-stage-column" aria-label="Oberschwaben Layerkarte">
+      <figure class="moore-ob-stage">
+        <img class="moore-ob-layer moore-ob-layer--agriculture" data-ob-layer="agriculture" src="public/maps/oberschwaben/oberschwaben_agriculture.png" alt="Landwirtschaftliche Nutzung in Oberschwaben mit Ackerland, Grünland und Dauerkultur">
+        <img class="moore-ob-layer moore-ob-layer--moor" data-ob-layer="moor" src="public/maps/oberschwaben/oberschwaben_moor_context.png" alt="BK50 Moor- und Feuchtbodenkontext in Oberschwaben">
+        <img class="moore-ob-layer moore-ob-layer--intersection" data-ob-layer="intersection" src="public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png" alt="Schnittmenge aus landwirtschaftlicher Nutzung und Moor- beziehungsweise Feuchtbodenkontext">
+        <img class="moore-ob-layer moore-ob-layer--admin" data-ob-layer="admin" src="public/maps/oberschwaben/oberschwaben_admin_context.png" alt="Landkreisgrenzen und Landkreisnamen: Biberach, Ravensburg, Sigmaringen und Bodenseekreis">
+      </figure>
+
+      <div class="moore-ob-legend" aria-label="Legende Oberschwaben">
+        <span class="moore-ob-legend-item"><i class="moore-ob-swatch moore-ob-swatch--acker"></i>Ackerland</span>
+        <span class="moore-ob-legend-item"><i class="moore-ob-swatch moore-ob-swatch--gruenland"></i>Grünland</span>
+        <span class="moore-ob-legend-item"><i class="moore-ob-swatch moore-ob-swatch--dauerkultur"></i>Dauerkultur</span>
+        <span class="moore-ob-legend-item"><i class="moore-ob-swatch moore-ob-swatch--moor"></i>Moor-/Feuchtbodenkontext</span>
+        <span class="moore-ob-legend-item"><i class="moore-ob-swatch moore-ob-swatch--intersection"></i>Schnittmenge</span>
+      </div>
+    </div>
+
+    <div class="moore-ob-steps" aria-label="Scrollschritte Oberschwaben">
+      <article class="moore-ob-step is-active" data-ob-step data-state="region">
+        <p class="moore-ob-step-label">1 / Region</p>
+        <h3>Ein regionaler Umsetzungsraum</h3>
+        <p>
+          Der Blick richtet sich auf vier Landkreise in Oberschwaben: Biberach, Ravensburg,
+          Sigmaringen und den Bodenseekreis. Die Karte beginnt bewusst mit Orientierung,
+          nicht mit Bewertung.
+        </p>
+      </article>
+
+      <article class="moore-ob-step" data-ob-step data-state="agriculture">
+        <p class="moore-ob-step-label">2 / Nutzung</p>
+        <h3>Landwirtschaftliche Nutzung ist räumlich differenziert</h3>
+        <p>
+          Ackerland, Grünland und Dauerkulturen bilden unterschiedliche Produktionsräume.
+          Für regionale Moorschutzstrategien ist diese Nutzungskulisse ein Ausgangspunkt,
+          aber noch keine Aussage über Eignung oder Priorität.
+        </p>
+      </article>
+
+      <article class="moore-ob-step" data-ob-step data-state="moor-context">
+        <p class="moore-ob-step-label">3 / Bodenkontext</p>
+        <h3>Der Moor-/Feuchtbodenkontext liegt quer zur Nutzung</h3>
+        <p>
+          Die BK50-basierte Ebene ordnet Moor- und Feuchtbodenkontexte räumlich ein.
+          Sie zeigt, wo bodenkundliche Ausgangsbedingungen mit bestehenden Nutzungsräumen
+          zusammenfallen können.
+        </p>
+      </article>
+
+      <article class="moore-ob-step" data-ob-step data-state="intersection">
+        <p class="moore-ob-step-label">4 / Schnittmenge</p>
+        <h3>Hier wird Moorschutz zur Umsetzungsfrage</h3>
+        <p>
+          Die Schnittmenge aus landwirtschaftlicher Nutzung und Moor-/Feuchtbodenkontext
+          markiert Räume, in denen Transformationsfragen konkret werden: Bewirtschaftung,
+          Wasserstand, Betriebslogik, Förderung und regionale Abstimmung.
+        </p>
+      </article>
+
+      <article class="moore-ob-step moore-ob-step--boundary" data-ob-step data-state="method-boundary">
+        <p class="moore-ob-step-label">5 / Grenze der Aussage</p>
+        <h3>Einordnung, nicht Priorisierung</h3>
+        <p>
+          Die Karte zeigt eine räumliche Einordnung der Überschneidung von landwirtschaftlicher
+          Nutzung und Moor-/Feuchtbodenkontext. Sie ersetzt keine Flächeneignungsprüfung,
+          keine Priorisierung und keine betriebliche Betroffenheitsanalyse.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- B96_OBERSCHWABEN_SCROLLY_END -->
+
 </main>
 
   <footer>
@@ -811,5 +895,58 @@
   <script src="src/central_layer_state_hardener.js"></script>
   <script src="src/central_step_state_bridge.js"></script>
   <script src="src/central_stage_label_fix.js"></script>
+
+<!-- B96_OBERSCHWABEN_SCROLLY_JS_START -->
+<script>
+(function () {
+  var sections = document.querySelectorAll('[data-oberschwaben-state]');
+  if (!sections.length) return;
+
+  function setState(section, state) {
+    if (!state) return;
+    section.setAttribute('data-oberschwaben-state', state);
+    section.querySelectorAll('[data-ob-step]').forEach(function (step) {
+      step.classList.toggle('is-active', step.getAttribute('data-state') === state);
+    });
+  }
+
+  sections.forEach(function (section) {
+    var steps = Array.prototype.slice.call(section.querySelectorAll('[data-ob-step]'));
+    if (!steps.length) return;
+
+    setState(section, steps[0].getAttribute('data-state'));
+
+    if (!('IntersectionObserver' in window)) {
+      steps.forEach(function (step) {
+        step.addEventListener('mouseenter', function () {
+          setState(section, step.getAttribute('data-state'));
+        });
+        step.addEventListener('focusin', function () {
+          setState(section, step.getAttribute('data-state'));
+        });
+      });
+      return;
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          setState(section, entry.target.getAttribute('data-state'));
+        }
+      });
+    }, {
+      root: null,
+      rootMargin: '-34% 0px -48% 0px',
+      threshold: 0.01
+    });
+
+    steps.forEach(function (step) {
+      observer.observe(step);
+    });
+  });
+})();
+</script>
+<!-- B96_OBERSCHWABEN_SCROLLY_JS_END -->
+
 </body>
 </html>
