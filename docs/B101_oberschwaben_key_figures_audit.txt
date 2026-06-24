@@ -1,0 +1,24 @@
+# B101 Oberschwaben key-figures audit
+
+## Checks
+
+- B101 marker start: OK
+- B101 marker end: OK
+- placed after Oberschwaben: OK
+- placed before B99 pathways: OK
+- contains ~19.900 ha: OK
+- contains ~82 %: OK
+- contains ~16 %: OK
+- contains ~2 %: OK
+- method boundary: keine Eignungskarte: OK
+- method boundary: keine Priorisierung: OK
+- method boundary: keine betriebliche Betroffenheitsanalyse: OK
+- source line present: OK
+
+## Manual visual review
+
+- Capsule should sit between Oberschwaben scrolly and Transformationspfade.
+- Numbers should feel like orientation, not a planning result.
+- The boundary note must remain visible but not alarmist.
+- Mobile layout should stack cleanly.
+- Avoid adding exact CSV-like numbers to public copy.

@@ -433,3 +433,19 @@
 - Moved detailed moor background into an optional disclosure element.
 - Added `docs/B100b_recast_moor_primer_as_compact_bridge.md`.
 - Added `docs/B100b_moor_primer_bridge_audit.txt`.
+
+## B101 - Add Oberschwaben key-figures capsule (2026-06-24)
+
+- Added a compact rounded key-figures capsule after the Oberschwaben scrolly map.
+- Used B98c qualitatively and with rounded values: ~19,900 ha, ~82% Grünland, ~16% Ackerland, ~2% separated/reviewed categories.
+- Kept the method boundary explicit: no suitability, no prioritization, no farm-level affectedness.
+- Added `docs/B101_add_oberschwaben_key_figures_capsule.md`.
+- Added `docs/B101_oberschwaben_key_figures_audit.txt`.
+
+## B102 - Add usage-path / value-chain matrix (2026-06-24)
+
+- Added a compact matrix for Nassgrünland, Nassweide, Schilf/Rohrkolben/Seggen, Sphagnum and Moor-PV.
+- Translated transformation pathways into product logic, maturity and bottlenecks.
+- Added the value-chain bottleneck: quantity, secure offtake, quality, standards and competitive products.
+- Added `docs/B102_add_usage_value_chain_matrix.md`.
+- Added `docs/B102_usage_value_chain_matrix_audit.txt`.

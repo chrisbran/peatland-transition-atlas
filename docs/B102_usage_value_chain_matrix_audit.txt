@@ -1,0 +1,23 @@
+# B102 usage/value-chain matrix audit
+
+## Checks
+
+- B102 marker start: OK
+- B102 marker end: OK
+- placed after B99: OK
+- section id value-chain-matrix: OK
+- Nassgrünland: OK
+- Nassweide: OK
+- Schilf / Rohrkolben / Seggen: OK
+- Sphagnum: OK
+- Moor-PV: OK
+- Henne-Ei / Abnahme logic: OK
+- boundary orientation: OK
+
+## Manual visual review
+
+- Matrix should not feel like a dense scientific table.
+- It should sit naturally after Transformationspfade.
+- It should make product/value-chain logic more concrete.
+- It must not imply site suitability or recommendations.
+- Mobile layout should collapse into readable cards.
