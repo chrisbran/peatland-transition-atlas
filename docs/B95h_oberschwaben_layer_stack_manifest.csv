@@ -1,0 +1,7 @@
+file,required,exists,role,expected,size,png_mode,alpha_channel,alpha_recommended,status
+public/maps/oberschwaben/oberschwaben_admin_context.png,yes,yes,admin context,Landkreisgrenzen und Landkreisnamen; should normally be visible above thematic layers.,1600x900,truecolor RGBA,yes,optional,OK
+public/maps/oberschwaben/oberschwaben_agriculture.png,yes,yes,agriculture layer,FIONA 2024 Ackerland / Grünland / Dauerkultur; no admin labels baked in.,1600x900,truecolor RGBA,yes,yes,OK
+public/maps/oberschwaben/oberschwaben_moor_context.png,yes,yes,moor/wetland soil context,BK50 Moor-/Feuchtbodenkontext; no admin labels baked in.,1600x900,truecolor RGBA,yes,yes,OK
+public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png,yes,yes,intersection layer,Schnittmenge: Nutzung × Bodenkontext; no admin labels baked in.,1600x900,truecolor RGBA,yes,yes,OK
+public/maps/oberschwaben/oberschwaben_landuse_classes_on_moor.png,no,no,optional interpretive layer,Schnittmenge nach Ackerland / Grünland / Dauerkultur.,,,,yes,optional missing
+public/maps/oberschwaben/oberschwaben_implementation_context_composite.png,no,no,optional composite fallback,"Static fallback/composite, not required for scrolly layer-stack.",,,,no,optional missing

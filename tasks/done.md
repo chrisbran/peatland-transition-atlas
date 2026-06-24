@@ -309,3 +309,11 @@
 - Created `docs/B95_oberschwaben_manual_export_checklist.md`.
 - Created `tasks/B96_bind_oberschwaben_map_section.md`.
 - Prepared Oberschwaben map asset package and QA without creating fake map images.
+
+## B95h - Validate Oberschwaben scrolly layer-stack assets (2026-06-24)
+
+- Validated Oberschwaben scrolly layer-stack PNG assets.
+- Created `docs/B95h_oberschwaben_layer_stack_qa.md`.
+- Created `docs/B95h_oberschwaben_layer_stack_manifest.csv`.
+- Created `tasks/B96_bind_oberschwaben_scrolly_layer_stack.md`.
+- Updated the Oberschwaben implementation direction from static composite map to scrollable layer stack.
