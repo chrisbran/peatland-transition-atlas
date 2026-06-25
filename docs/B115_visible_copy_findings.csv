@@ -1,0 +1,43 @@
+type;pattern;replacement;count_before;count_after;status
+replacement;Wiedervernässungspotenzialkarte;Schnittmengenkarte;0;0;not_found
+replacement;Wiedervernässungspotenzial;Wiedervernässungsfrage;0;0;not_found
+replacement;geeignete Flächen;zu prüfende Räume;0;0;not_found
+replacement;geeignete Standorte;zu prüfende Standorte;0;0;not_found
+replacement;Prioritätsflächen;Prüfräume;0;0;not_found
+replacement;Maßnahmenkarte;Orientierungskarte;0;0;not_found
+replacement;betroffene Betriebe;betriebliche Kontexte;0;0;not_found
+replacement;hydrologisch machbar;hydrologisch zu prüfen;0;0;not_found
+replacement;rechtlich förderfähige Flächen;förderrechtlich zu prüfende Flächen;0;0;not_found
+replacement;fertige Empfehlungen;Prüf- und Abstimmungsbedarf;0;0;not_found
+risk_pattern_visible;Wiedervernässungspotenzial;;0;0;OK
+risk_pattern_visible;Wiedervernässungspotenzialkarte;;0;0;OK
+risk_pattern_visible;geeignete Flächen;;0;0;OK
+risk_pattern_visible;geeignete Standorte;;0;0;OK
+risk_pattern_visible;Prioritätsflächen;;0;0;OK
+risk_pattern_visible;Maßnahmenkarte;;0;0;OK
+risk_pattern_visible;betroffene Betriebe;;0;0;OK
+risk_pattern_visible;hydrologisch machbar;;0;0;OK
+risk_pattern_visible;rechtlich förderfähige Flächen;;0;0;OK
+risk_pattern_visible;fertige Empfehlungen;;0;0;OK
+risk_pattern_visible;oberschwaben_lgl;;0;0;OK
+risk_pattern_visible;Datenquelle in Umstellung;;0;0;OK
+risk_pattern_visible;B98c;;0;0;OK
+risk_pattern_visible;Flächen-QA;;0;0;OK
+required_safe_pattern_visible;räumliche Orientierung;;3;3;OK
+required_safe_pattern_visible;keine Eignungskarte;;2;2;OK
+required_safe_pattern_visible;keine Priorisierung;;3;3;OK
+required_safe_pattern_visible;keine betriebliche Betroffenheitsanalyse;;3;3;OK
+required_safe_pattern_visible;FIONA 2024;;1;1;OK
+required_safe_pattern_visible;BK50 Moor-/Feuchtbodenkontext und GISCO NUTS 2024;;1;1;OK
+required_safe_pattern_visible;eigene Auswahl, Klassifikation und Verschneidung;;1;1;OK
+required_safe_pattern_visible;~19.900 ha;;1;1;OK
+watch_term_visible;Potenzial;;0;0;OK
+watch_term_visible;geeignet;;0;0;OK
+watch_term_visible;Priorität;;2;2;WATCH
+watch_term_visible;Maßnahme;;2;2;WATCH
+watch_term_visible;Empfehlung;;1;1;WATCH
+watch_term_visible;Betroffenheit;;6;6;WATCH
+watch_term_visible;Machbarkeit;;0;0;OK
+watch_term_visible;Förderfähigkeit;;0;0;OK
+watch_term_visible;sollte;;0;0;OK
+watch_term_visible;muss;;2;2;WATCH

@@ -1,0 +1,21 @@
+# B115 visible copy audit
+
+- Status: OK
+- Targeted replacements applied: 0
+- Risk patterns remaining in visible text: 0
+- Required safe/caveat patterns missing: 0
+- Watch terms present: 5
+
+## Risk or missing findings
+
+No risk or missing findings.
+
+## Watch terms
+
+Watch terms are not automatically errors. They indicate terms to inspect in context.
+
+```powershell
+Import-Csv docs\B115_visible_copy_findings.csv -Delimiter ';' | Where-Object {$_.status -ne 'OK'} | Format-Table -Auto
+python scripts\103b_corrected_visible_text_audit.py
+python scripts\58_visual_qa_and_commit_check.py
+```

@@ -582,3 +582,10 @@
 - Created manual test matrix for Oberschwaben scrolly, key figures, source notes and pathway section.
 - Created public copy/risk review for claims, caveats and parked LGL branch.
 - Did not modify website, CSS, map images or data.
+
+## B115 - Final visible copy pass and no-overclaim audit (2026-06-25)
+
+- Ran a conservative final copy pass for risky public-copy phrases.
+- Created visible-copy audit for overclaiming, required caveats and watch terms.
+- Kept FIONA/BK50/GISCO Oberschwaben public state active.
+- Did not modify maps, CSS, data or LGL parked material.
