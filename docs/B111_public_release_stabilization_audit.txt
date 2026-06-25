@@ -1,0 +1,25 @@
+# B111 audit
+
+- Status: OK
+
+## Required patterns
+- ~19.900 ha: 1
+- FIONA 2024: 1
+- BK50 Moor-/Feuchtbodenkontext: 1
+- GISCO NUTS 2024: 1
+- oberschwaben_agriculture.png: 1
+- oberschwaben_agriculture_moor_intersection.png: 1
+
+## Forbidden/parked patterns
+- Datenquelle in Umstellung: 0
+- oberschwaben_lgl: 0
+- B98c: 0
+- Flächen-QA: 0
+
+## Recommended next commands
+
+```powershell
+python scripts\103b_corrected_visible_text_audit.py
+python scripts\58_visual_qa_and_commit_check.py
+python -m http.server 8000
+```

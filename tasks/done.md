@@ -544,3 +544,15 @@
 - Removed B105 source-swap CSS and `source_swap_status` metadata when present.
 - Parked LGL replacement work from B106-B108b without deleting it.
 - Did not modify raw/working data folders or public map PNGs.
+
+## B110 - External source register
+
+- Created source register for map data, project sources, literature groups and tested alternatives.
+- Did not modify website, map PNGs or data folders.
+
+## B111 - Public release stabilization (2026-06-25)
+
+- Stabilized restored FIONA-based Oberschwaben public story.
+- Consolidated source and interpretation notes.
+- Confirmed LGL/source-swap leftovers are not active in `index.html`.
+- Did not modify map data, map PNGs or LGL parked material.
