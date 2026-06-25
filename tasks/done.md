@@ -589,3 +589,10 @@
 - Created visible-copy audit for overclaiming, required caveats and watch terms.
 - Kept FIONA/BK50/GISCO Oberschwaben public state active.
 - Did not modify maps, CSS, data or LGL parked material.
+
+## B116 - Release candidate state and deployment check (2026-06-25)
+
+- Created release-candidate state report for the restored FIONA/BK50/GISCO public demo.
+- Created deployment checklist for local QA, commit, push and post-deployment checks.
+- Audited required source/caveat patterns, forbidden LGL/source-swap remnants and worktree safety.
+- Did not modify website, CSS, maps or data.
