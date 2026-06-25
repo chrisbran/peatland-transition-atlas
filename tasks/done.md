@@ -568,3 +568,10 @@
 - Added local `.git/info/exclude` rules for backup bundles, raw/working data, parked LGL/FIONA probe material and generated audit extracts.
 - Did not modify public page files, maps, raw data or `.gitignore`.
 - Kept the hygiene rules local to this working copy.
+
+## B113 - Public release notes and method documentation (2026-06-25)
+
+- Created public release notes for the restored FIONA-based atlas state.
+- Created method documentation for map sources, derived layers, interpretation rules and caveats.
+- Created release checklist for source, method, caveat and visual QA.
+- Did not modify website, CSS, maps or data.

@@ -1,0 +1,32 @@
+# B113 public release audit
+
+Status: **OK**
+
+Date: 2026-06-25
+
+## Required public-state patterns
+
+- ~19.900 ha: 1
+- FIONA 2024: 1
+- BK50 Moor-/Feuchtbodenkontext und GISCO NUTS 2024: 1
+- eigene Auswahl, Klassifikation und Verschneidung: 1
+- oberschwaben_agriculture.png: 1
+- oberschwaben_agriculture_moor_intersection.png: 1
+
+## Forbidden / parked public-state patterns
+
+- Datenquelle in Umstellung: 0
+- oberschwaben_lgl: 0
+- B98c: 0
+- Flächen-QA: 0
+
+## Source register files
+
+- docs/B110_external_source_register.md: OK
+- docs/B110_external_source_register.csv: OK
+
+## B113 outputs
+
+- docs/B113_public_release_notes.md
+- docs/B113_method_documentation.md
+- docs/B113_release_checklist.md
