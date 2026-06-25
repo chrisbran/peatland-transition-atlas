@@ -1,0 +1,9 @@
+test_id;viewport;section;test;expected;result;notes
+VQA-001;1440x900 desktop;Full page;Scroll from top to bottom at normal reading speed;"No clipped headings; map stage transitions are stable; Oberschwaben section remains readable.";;
+VQA-002;1280x800 laptop;Central sticky story;Check global/europe/germany map stages;"Sticky map does not flicker; text cards remain within viewport; source notes do not dominate.";;
+VQA-003;1280x800 laptop;Oberschwaben;Check sequence: admin → agriculture → BK50 → intersection;"Each step has one clear visual change; no LGL test map appears; final intersection supports key figures.";;
+VQA-004;1024x768 tablet-ish;Oberschwaben;Check sticky stage height and step-card overlap;"No card blocks essential map area; headings and cards are readable.";;
+VQA-005;390x844 mobile;Full page;Check mobile fallback;"No horizontal overflow; maps scale down; text remains readable; sticky behaviour degrades gracefully.";;
+VQA-006;1440x900 desktop;Key figures;Check Oberschwaben key figures and source note;~19.900 ha, FIONA 2024/BK50/GISCO source line and caveat visible but not visually dominant.;;
+VQA-007;1440x900 desktop;Pathways/value chain;Check that pathway cards read as Prüfpfade, not recommendations;No wording implies direct site-level suitability or priority.;;
+VQA-008;Any;Sources/caveats;Search visible page for forbidden terms;"No active LGL/source-swap remnants; no internal QA labels like B98c or Flächen-QA.";;

@@ -575,3 +575,10 @@
 - Created method documentation for map sources, derived layers, interpretation rules and caveats.
 - Created release checklist for source, method, caveat and visual QA.
 - Did not modify website, CSS, maps or data.
+
+## B114 - Responsive visual QA and public copy review (2026-06-25)
+
+- Created responsive visual QA plan for desktop, laptop, tablet-like and mobile viewports.
+- Created manual test matrix for Oberschwaben scrolly, key figures, source notes and pathway section.
+- Created public copy/risk review for claims, caveats and parked LGL branch.
+- Did not modify website, CSS, map images or data.

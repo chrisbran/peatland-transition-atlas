@@ -1,0 +1,46 @@
+# B114 release readiness audit
+
+Date: 2026-06-25
+
+Status: **OK**
+
+## Required index patterns
+
+- ~19.900 ha: 1
+- FIONA 2024: 1
+- BK50 Moor-/Feuchtbodenkontext und GISCO NUTS 2024: 1
+- eigene Auswahl, Klassifikation und Verschneidung: 1
+- oberschwaben_agriculture.png: 1
+- oberschwaben_moor_context.png: 1
+- oberschwaben_agriculture_moor_intersection.png: 1
+
+## Forbidden / parked index patterns
+
+- Datenquelle in Umstellung: 0
+- oberschwaben_lgl: 0
+- B98c: 0
+- Flächen-QA: 0
+- Eignungspotenzial: 0
+- Wiedervernässungspotenzialkarte: 0
+
+## Basic responsive infrastructure
+
+- viewport meta present: YES
+- CSS media queries present: YES
+
+## Desired documentation files
+
+- docs/B110_external_source_register.md: OK
+- docs/B113_public_release_notes.md: OK
+- docs/B113_method_documentation.md: OK
+- docs/B113_release_checklist.md: OK
+
+## B114 outputs
+
+- docs/B114_responsive_visual_qa_plan.md
+- docs/B114_manual_test_matrix.csv
+- docs/B114_public_copy_and_risk_review.md
+
+## Interpretation
+
+This audit checks structure and source-state patterns only. It does not replace manual browser scrolling and video review.
