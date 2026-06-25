@@ -1,0 +1,24 @@
+# B111b audit
+
+- Status: OK
+
+## Counts after patch
+
+- Old source lead: 0
+- Old method phrase: 0
+- New source lead: 1
+- New method phrase: 1
+
+## Forbidden/parked patterns
+- Datenquelle in Umstellung: 0
+- oberschwaben_lgl: 0
+- B98c: 0
+- Flächen-QA: 0
+
+## Recommended checks
+
+```powershell
+Select-String -Path index.html -Pattern "FIONA 2024","eigene Auswahl","Datenquelle in Umstellung","oberschwaben_lgl"
+python scripts\103b_corrected_visible_text_audit.py
+python scripts\58_visual_qa_and_commit_check.py
+```

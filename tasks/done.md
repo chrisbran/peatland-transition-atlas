@@ -556,3 +556,9 @@
 - Consolidated source and interpretation notes.
 - Confirmed LGL/source-swap leftovers are not active in `index.html`.
 - Did not modify map data, map PNGs or LGL parked material.
+
+## B111b - Oberschwaben source-note fix (2026-06-25)
+
+- Applied targeted source-note wording correction in the Oberschwaben key-figure capsule.
+- Kept FIONA/BK50/GISCO public story state.
+- Did not modify map paths, map images, CSS or data.
