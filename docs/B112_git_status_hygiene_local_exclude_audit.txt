@@ -1,8 +1,8 @@
 # B112 audit
 
-- Mode: appended B112 block
-- Git status lines before: 138
-- Git status lines after: 66
+- Mode: updated existing B112 block
+- Git status lines before: 65
+- Git status lines after: 65
 - Raw/working-like lines after: 0
 - Parked LGL/FIONA-probe lines after: 1
 
@@ -35,7 +35,6 @@
 ?? scripts/103_public_text_audit_only.py
 ?? scripts/103b_corrected_visible_text_audit.py
 ?? scripts/10_link_rankings_and_map.py
-?? scripts/112_git_status_hygiene_local_exclude.py
 ?? scripts/16_create_peat_soils_source_inventory.py
 ?? scripts/17_prepare_bk50_moor_layer_workflow.py
 ?? scripts/18_build_bk50_moor_web_layer_from_geojson.py

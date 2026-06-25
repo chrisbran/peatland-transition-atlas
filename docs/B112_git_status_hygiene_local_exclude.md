@@ -4,7 +4,7 @@ Date: 2026-06-25
 
 ## Result
 
-B112 appended B112 block in `.git/info/exclude`.
+B112 updated existing B112 block in `.git/info/exclude`.
 
 This is local hygiene only. No website files, map files, data files or `.gitignore` were changed.
 
@@ -16,13 +16,13 @@ The working tree contained many parked raw/working/probe files. Keeping them vis
 
 | Category | Before | After |
 |---|---:|---:|
-| total | 138 | 66 |
-| backup_handoff | 3 | 0 |
-| raw_working_data | 5 | 0 |
-| parked_lgl_or_fiona_probe | 52 | 1 |
-| generated_audit_extracts | 11 | 1 |
-| source_register_or_release_docs | 1 | 1 |
-| other | 66 | 63 |
+| total | 65 | 65 |
+| backup_handoff | 0 | 0 |
+| raw_working_data | 0 | 0 |
+| parked_lgl_or_fiona_probe | 1 | 1 |
+| generated_audit_extracts | 1 | 1 |
+| source_register_or_release_docs | 0 | 0 |
+| other | 63 | 63 |
 
 ## Local exclude block
 
