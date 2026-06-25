@@ -562,3 +562,9 @@
 - Applied targeted source-note wording correction in the Oberschwaben key-figure capsule.
 - Kept FIONA/BK50/GISCO public story state.
 - Did not modify map paths, map images, CSS or data.
+
+## B112 - Git status hygiene via local exclude (2026-06-25)
+
+- Added local `.git/info/exclude` rules for backup bundles, raw/working data, parked LGL/FIONA probe material and generated audit extracts.
+- Did not modify public page files, maps, raw data or `.gitignore`.
+- Kept the hygiene rules local to this working copy.
