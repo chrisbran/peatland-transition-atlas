@@ -449,3 +449,98 @@
 - Added the value-chain bottleneck: quantity, secure offtake, quality, standards and competitive products.
 - Added `docs/B102_add_usage_value_chain_matrix.md`.
 - Added `docs/B102_usage_value_chain_matrix_audit.txt`.
+
+## B103 - Public text QA audit only (2026-06-24)
+
+- Ran a non-destructive public text audit on `index.html`.
+- Created visible text extract, findings CSV and wording frequency CSV.
+- Did not modify public HTML/CSS/JS.
+
+## B103b - Corrected visible text audit (2026-06-24)
+
+- Reran public text audit with proper inherited hidden/retired-state handling.
+- Separated actual visible text from hidden/retired archive text.
+- Created corrected visible extract, hidden extract, visible findings and hidden findings.
+- Did not modify public HTML/CSS/JS.
+
+## B104 - Visible wording polish (2026-06-24)
+
+- Fixed visible typo `Nasseverträgliche` -> `nässeverträgliche`.
+- Translated visible English peatland-context labels.
+- Reduced repeated `Umsetzung`, `wird zu/zur`, and `übersetzen` phrasing.
+- Replaced public internal QA wording (`Flächen-QA`, `B98c`, `Klassifikations-QA`) with reader-facing wording.
+- Did not intentionally remove hidden/retired prototype/archive sections.
+
+## B104b - Second visible wording polish and Oberschwaben density (2026-06-24)
+
+- Removed remaining self-referential wording and reduced colon-heavy headings.
+- Removed `30 Sekunden` from the moor-primer detail label.
+- Kept the method boundary but compressed its wording.
+- Removed redundant public B98c/pathway QA note.
+- Added CSS override to make Oberschwaben step cards smaller and more spaced.
+
+## B105 - Source-swap plan and FIONA public safety mode (2026-06-25)
+
+- Put public Oberschwaben land-use section into source-swap safety mode.
+- Replaced public FIONA key figures with a source-in-transition capsule.
+- Prevented public HTML from referencing FIONA-derived Oberschwaben agriculture/intersection map rasters.
+- Documented candidate replacement sources: LGL/ATKIS first, BKG LBM-DE second, Copernicus/ESA fallback.
+- Did not delete raw/working GIS data or hidden/retired archive sections.
+
+## B106 - Candidate source probe (2026-06-25)
+
+- Probed candidate open-data sources for replacing FIONA-derived Oberschwaben land-use evidence.
+- Checked LGL Landnutzung WFS, LGL Basis-DLM WFS, BKG LBM-DE metadata and Copernicus/ESA fallback metadata.
+- Created source-probe CSV, feature-type extracts and raw snippets.
+- Did not modify public HTML/CSS/JS or GIS data.
+
+## B107 - LGL Landnutzung schema and Oberschwaben sample (2026-06-25)
+
+- Probed `nora:v_ln_landnutzung` schema via DescribeFeatureType.
+- Queried a small Oberschwaben EPSG:25832 bbox sample via WFS GetFeature.
+- Created field inventory, candidate value counts, sample examples and trial classification.
+- Did not modify public HTML/CSS/JS, map PNGs or GIS/raw data folders.
+
+## B107b - LGL Landnutzung grid class-universe probe (2026-06-25)
+
+- Sampled the LGL Landnutzung WFS across an Oberschwaben bbox grid.
+- Aggregated class/value combinations without saving raw GeoJSON or geometry.
+- Created candidate agricultural rows and objectart mapping trial tables.
+- Did not modify public HTML/CSS/JS, map PNGs or GIS/raw data folders.
+
+## B107c - LGL Landnutzung mapping review (2026-06-25)
+
+- Converted B107b candidate agricultural class rows into a conservative draft mapping.
+- Mapped explicit Ackerland, Grünland and Sonder-/Dauerkultur classes.
+- Flagged `1300 Betriebsfläche Landwirtschaft` for separate handling.
+- Did not modify public HTML/CSS/JS, map PNGs or GIS/raw data folders.
+
+## B108 - LGL Landnutzung controlled production test (2026-06-25)
+
+- Built staged LGL Landnutzung replacement maps for Oberschwaben.
+- Filtered Landwirtschaft (`objektart=223100`) and applied B107c mapping.
+- Intersected mapped LGL land use with BK50 Moor-/Feuchtbodenkontext.
+- Reported `Betriebsfläche Landwirtschaft` separately.
+- Did not modify public HTML/CSS/JS or overwrite existing Oberschwaben PNGs.
+
+## B109a - ArcGIS restyle brief for LGL Oberschwaben maps (2026-06-25)
+
+- Prepared ArcGIS Pro restyle instructions for LGL-based Oberschwaben maps.
+- Defined layer manifest, symbology, four-map export logic and QA checklist.
+- Kept earlier FIONA map language only as visual reference.
+- Did not modify public HTML/CSS/JS, map PNGs or GIS/raw data folders.
+
+## B108b - LGL dissolve cartographic layers (2026-06-25)
+
+- Created dissolved cartographic GPKG layers for LGL agriculture and LGL x BK50 intersection.
+- Reduced raw LGL feature fragmentation for ArcGIS map export.
+- Preserved internal `Landwirtschaft_unspezifisch` but documented public label replacement.
+- Did not modify public HTML/CSS/JS or overwrite public PNGs.
+
+## B105r - Restore FIONA public story state (2026-06-25)
+
+- Reverted the public-page safety mode introduced by B105.
+- Restored FIONA-based Oberschwaben map/story wording and key figures.
+- Removed B105 source-swap CSS and `source_swap_status` metadata when present.
+- Parked LGL replacement work from B106-B108b without deleting it.
+- Did not modify raw/working data folders or public map PNGs.

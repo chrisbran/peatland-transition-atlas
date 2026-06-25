@@ -5286,3 +5286,83 @@ body > pre:first-child {
   }
 }
 /* B102_USAGE_VALUE_CHAIN_MATRIX_END */
+
+/* B104B_VISIBLE_WORDING_AND_OBERSCHWABEN_DENSITY_START */
+/*
+  B104b density and behaviour pass for Oberschwaben:
+  - cards are smaller relative to their text,
+  - cards are spaced farther apart,
+  - the first card no longer sits immediately beside/over the map at section start,
+  - desktop layout gives the map slightly more room,
+  - active state is visible without making inactive cards feel like dead content.
+*/
+
+@media (min-width: 1101px) {
+  .moore-ob-grid {
+    grid-template-columns: minmax(760px, 2.08fr) minmax(280px, 0.54fr) !important;
+    gap: clamp(2.4rem, 4.5vw, 5.6rem) !important;
+  }
+
+  .moore-ob-stage-column {
+    top: clamp(0.85rem, 6vh, 3.8rem) !important;
+  }
+
+  .moore-ob-steps {
+    padding-top: clamp(8rem, 22vh, 15rem) !important;
+    padding-bottom: clamp(14rem, 30vh, 24rem) !important;
+    gap: clamp(5.5rem, 15vh, 10rem) !important;
+  }
+
+  .moore-ob-step {
+    min-height: auto !important;
+    padding: clamp(0.9rem, 1.55vw, 1.18rem) !important;
+    border-radius: 0.85rem !important;
+    max-width: 360px !important;
+    background: rgba(255, 252, 244, 0.66) !important;
+  }
+
+  .moore-ob-step.is-active {
+    background: rgba(255, 252, 244, 0.76) !important;
+    border-color: rgba(48, 58, 51, 0.22) !important;
+  }
+
+  .moore-ob-step h3 {
+    font-size: clamp(1.02rem, 1.32vw, 1.28rem) !important;
+    line-height: 1.14 !important;
+  }
+
+  .moore-ob-step p:not(.moore-ob-step-label) {
+    margin-top: 0.62rem !important;
+    font-size: clamp(0.86rem, 0.92vw, 0.95rem) !important;
+    line-height: 1.45 !important;
+  }
+
+  .moore-ob-step-label {
+    margin-bottom: 0.42rem !important;
+    font-size: 0.66rem !important;
+    letter-spacing: 0.09em !important;
+  }
+}
+
+@media (max-width: 1100px) {
+  .moore-ob-steps {
+    gap: clamp(2.2rem, 8vh, 4rem) !important;
+  }
+
+  .moore-ob-step {
+    min-height: auto !important;
+    padding: clamp(1rem, 3vw, 1.35rem) !important;
+  }
+}
+
+/* Keep the method note compact where the surrounding theme has made it too large. */
+.method-card,
+.moore-method-card {
+  padding-block: clamp(1rem, 2vw, 1.4rem) !important;
+}
+
+.method-card p,
+.moore-method-card p {
+  max-width: 860px !important;
+}
+/* B104B_VISIBLE_WORDING_AND_OBERSCHWABEN_DENSITY_END */
