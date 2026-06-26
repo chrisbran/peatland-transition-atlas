@@ -53,9 +53,12 @@ Date: 2026-06-26
 - `?? _backup_before_b118_utf8_encoding_guard/`
 - `?? _backup_before_b119_fachliche_klammer/`
 - `?? _backup_before_b120_final_public_readiness_cleanup/`
+- `?? _backup_before_b121_raster_caption_cleanup/`
 - `?? docs/B103_public_text_audit_only.md`
-- `?? docs/B120_final_public_readiness_audit.txt`
-- `?? docs/B120_final_public_readiness_cleanup.md`
+- `?? docs/B121_final_wording_audit.txt`
+- `?? docs/B121_raster_caption_and_final_wording_cleanup.md`
+- `?? docs/B121_raster_caption_review.csv`
+- `?? docs/B121_raster_caption_review.html`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -80,7 +83,7 @@ Date: 2026-06-26
 - `?? scripts/103_public_text_audit_only.py`
 - `?? scripts/103b_corrected_visible_text_audit.py`
 - `?? scripts/10_link_rankings_and_map.py`
-- `?? scripts/120_final_public_readiness_cleanup.py`
+- `?? scripts/121_raster_caption_and_final_wording_cleanup.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`

@@ -649,3 +649,10 @@
 - Harmonized older "Moore verstehen" wording with the B119 water-table/GHG mechanism.
 - Audited visible public text for prototype remnants, overclaims and encoding artefacts.
 - Did not modify maps, CSS, map colours or data.
+
+## B121 - Raster caption and final wording cleanup (2026-06-26)
+
+- Cleaned remaining HTML-visible English/internal map-caption remnants.
+- Harmonized final wording in Moore-verstehen, the transformation matrix and the final method note.
+- Created a raster-caption review page because embedded PNG text cannot be found by HTML audits.
+- Did not modify maps, map colours, CSS or data.
