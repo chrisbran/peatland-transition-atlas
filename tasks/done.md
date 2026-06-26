@@ -641,3 +641,11 @@
 - Reframed transformation pathways as land-use-context-specific Prüfpfade.
 - Added compact public source links to IPCC, UBA, BMUV, LUBW, LAZBW, MLR BW and SOLAMO-BW.
 - Did not modify maps, map data, map colours or raw data.
+
+## B120 - Final public readiness cleanup (2026-06-26)
+
+- Removed/translated remaining public English structure labels.
+- Finalized Oberschwaben area-balance labels and method note.
+- Harmonized older "Moore verstehen" wording with the B119 water-table/GHG mechanism.
+- Audited visible public text for prototype remnants, overclaims and encoding artefacts.
+- Did not modify maps, CSS, map colours or data.

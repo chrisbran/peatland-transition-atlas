@@ -1,0 +1,80 @@
+# B120 final public readiness audit
+
+- Status: OK
+- Risk findings: 0
+- Missing required findings: 0
+- English watch hits: 1
+
+## Risk patterns
+
+| Pattern | Count |
+|---|---:|
+| `This guided view` | 0 |
+| `Evidence explorer` | 0 |
+| `Prototype appendix` | 0 |
+| `Current prototype datasets` | 0 |
+| `Loading country hotspot map` | 0 |
+| `Click an evidence node` | 0 |
+| `Suitability would require` | 0 |
+| `Layer logic` | 0 |
+| `The map below is the core narrative` | 0 |
+| `The rest of the page is an evidence explorer` | 0 |
+| `Scrollytelling structure` | 0 |
+| `Six-part story` | 0 |
+| `Six part story` | 0 |
+| `GLOBAL_FRAME_V1` | 0 |
+| `source swap` | 0 |
+| `oberschwaben_lgl` | 0 |
+| `B98c` | 0 |
+| `Flächen-QA` | 0 |
+| `Klassifikations-QA` | 0 |
+| `Datenquelle in Umstellung` | 0 |
+| `berechnetes Treibhausgasminderungspotenzial` | 0 |
+| `THG-Minderungspotenzial der gezeigten Flächen` | 0 |
+| `Eignung für Wiedervernässung` | 0 |
+| `priorisierte Flächen` | 0 |
+| `müssen wiedervernässt werden` | 0 |
+| `Diese Flächen sollen wiedervernässt werden` | 0 |
+| `Welche Betriebe sind betroffen` | 0 |
+| `Ã` | 0 |
+| `�` | 0 |
+
+## Required patterns
+
+| Pattern | Count |
+|---|---:|
+| `Moorschutz braucht räumliche Orientierung` | 2 |
+| `Warum Wasserstand über Klimawirkung entscheidet` | 1 |
+| `Diese Seite berechnet deshalb keine Treibhausgasminderung` | 1 |
+| `Warum Oberschwaben?` | 1 |
+| `Oberschwaben ist für Baden-Württemberg ein zentraler Fokusraum` | 1 |
+| `~19.900 ha` | 1 |
+| `~82 % Grünland` | 1 |
+| `~16 % Ackerland` | 1 |
+| `~2 % Stilllegung / unklare FIONA-Zuweisung` | 1 |
+| `Ackerland ohne separat geführte Stilllegung und unklare Zuordnungen. Werte gerundet.` | 1 |
+| `FIONA 2024, BK50 Moor-/Feuchtbodenkontext und GISCO NUTS 2024` | 1 |
+| `keine Eignungskarte` | 2 |
+| `keine Priorisierung` | 3 |
+| `keine betriebliche Betroffenheitsanalyse` | 3 |
+| `Welche Prüfpfade folgen aus unterschiedlichen Nutzungskontexten?` | 1 |
+
+## English watch patterns
+
+| Pattern | Count |
+|---|---:|
+| `structure` | 0 |
+| `story` | 1 |
+| `Loading` | 0 |
+| `Click` | 0 |
+| `prototype` | 0 |
+| `explorer` | 0 |
+| `layer:` | 0 |
+| `frame:` | 0 |
+
+## Acceptable English/source terms
+
+- `Global Peatland Map`
+- `IPCC Wetlands Supplement`
+- `FAOSTAT`
+- `Sphagnum`
