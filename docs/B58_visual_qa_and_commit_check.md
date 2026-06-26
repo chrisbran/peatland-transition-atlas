@@ -46,8 +46,9 @@ Date: 2026-06-26
 ### Current changed/untracked files
 
 - ` M docs/B103b_corrected_visible_text_audit.md`
-- ` M index.html`
+- ` M docs/B58_visual_qa_and_commit_check.md`
 - `?? _backup_before_b116_public_page_hardening/`
+- `?? _backup_before_b117_cartographic_hardening/`
 - `?? docs/B103_public_text_audit_only.md`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
