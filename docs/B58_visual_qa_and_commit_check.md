@@ -1,6 +1,6 @@
 # B58 - Visual QA and Commit Check
 
-Date: 2026-06-25
+Date: 2026-06-26
 
 ## 1. Required map PNGs
 
@@ -45,12 +45,10 @@ Date: 2026-06-25
 
 ### Current changed/untracked files
 
+- ` M docs/B103b_corrected_visible_text_audit.md`
 - ` M docs/B58_visual_qa_and_commit_check.md`
-- ` M tasks/done.md`
+- `?? _backup_before_b116_public_page_hardening/`
 - `?? docs/B103_public_text_audit_only.md`
-- `?? docs/B116_deployment_checklist.md`
-- `?? docs/B116_release_candidate_audit.txt`
-- `?? docs/B116_release_candidate_state.md`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -75,7 +73,6 @@ Date: 2026-06-25
 - `?? scripts/103_public_text_audit_only.py`
 - `?? scripts/103b_corrected_visible_text_audit.py`
 - `?? scripts/10_link_rankings_and_map.py`
-- `?? scripts/116_release_candidate_state_and_deployment_check.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`
