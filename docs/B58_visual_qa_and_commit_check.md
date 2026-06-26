@@ -46,10 +46,26 @@ Date: 2026-06-26
 ### Current changed/untracked files
 
 - ` M docs/B103b_corrected_visible_text_audit.md`
+- ` M docs/B117b_oberschwaben_html_css_color_scan.csv`
+- ` M docs/B117b_oberschwaben_png_color_summary.csv`
+- ` M docs/B117b_oberschwaben_png_palette_probe.md`
+- ` M docs/B117b_oberschwaben_png_top_colors.csv`
 - ` M docs/B58_visual_qa_and_commit_check.md`
+- ` M index.html`
+- ` M public/maps/oberschwaben/oberschwaben_agriculture.png`
+- ` M public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png`
+- ` M public/maps/oberschwaben/oberschwaben_moor_context.png`
+- ` M src/styles.css`
+- ` M tasks/done.md`
 - `?? _backup_before_b116_public_page_hardening/`
 - `?? _backup_before_b117_cartographic_hardening/`
+- `?? _backup_before_b117c_oberschwaben_palette_restyle/`
+- `?? _backup_before_b118_utf8_encoding_guard/`
 - `?? docs/B103_public_text_audit_only.md`
+- `?? docs/B117c_oberschwaben_map_palette_audit.txt`
+- `?? docs/B117c_oberschwaben_map_palette_restyle.md`
+- `?? docs/B117c_oberschwaben_recolor_counts.csv`
+- `?? docs/B118_public_utf8_encoding_audit.txt`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -74,6 +90,8 @@ Date: 2026-06-26
 - `?? scripts/103_public_text_audit_only.py`
 - `?? scripts/103b_corrected_visible_text_audit.py`
 - `?? scripts/10_link_rankings_and_map.py`
+- `?? scripts/117c_oberschwaben_map_palette_restyle.py`
+- `?? scripts/118_public_utf8_encoding_guard.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`
