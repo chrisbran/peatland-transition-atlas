@@ -604,3 +604,11 @@
 - De-risked wording around farm affectedness, suitability, priority, GHG mitigation and Moor-PV cashflow.
 - Simplified the Oberschwaben area-balance labels.
 - Did not modify CSS, map images or data.
+
+## B117 - Cartographic caption and legend hardening (2026-06-26)
+
+- Replaced public-facing technical map-caption remnants where exact text matches were found.
+- Fixed Thuenen/Thünen and several English/GIS-internal caption phrases.
+- Audited cartographic risk terms, required source terms and Oberschwaben legend labels.
+- Created a colour specification for the next Oberschwaben map/legend export.
+- Did not modify CSS, map images or data.

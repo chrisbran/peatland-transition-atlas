@@ -1,0 +1,22 @@
+# B117 cartographic caption audit
+
+- Status: REVIEW REQUIRED
+- Risk terms remaining: 0
+- Required terms missing: 1
+- Legend labels missing: 1
+- English/caption watch count: 0
+
+## REVIEW / MISSING rows
+
+| Type | Term | Count |
+|---|---|---:|
+| required_term_visible | `Thünen` | 0 |
+| legend_label_visible | `Grünland` | 0 |
+
+## Recommended checks
+
+```powershell
+Select-String -Path index.html -Pattern "Thuenen","ArcGIS","GLOBAL_FRAME_V1","rendered as","emissions_total_kt_co2e","TOTAL EMISSIONS","Dichtekarten","FIONA 2024","~19.900"
+python scripts\103b_corrected_visible_text_audit.py
+python scripts\58_visual_qa_and_commit_check.py
+```

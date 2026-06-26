@@ -1,0 +1,62 @@
+type;term;replacement;count_before;count_after;status
+replacement;Thuenen;Thünen;0;0;not_found
+replacement;Thuenen Kulisse;Thünen-Kulisse;0;0;not_found
+replacement;Thünen Kulisse;Thünen-Kulisse;0;0;not_found
+replacement;organic-soils Kulisse;Kulisse organischer Böden;0;0;not_found
+replacement;organic-soils target area;Kulisse organischer Böden;0;0;not_found
+replacement;Federal-state context;Bund-Länder-Kontext;0;0;not_found
+replacement;Peatland context · Peat in soil mosaic;Moor-/Feuchtbodenkontext · räumliche Einordnung;0;0;not_found
+replacement;BK50 peat / wetland soil context · Regional frame;BK50 Moor-/Feuchtbodenkontext · regionale Einordnung;0;0;not_found
+replacement;"BK50 BW layer: peat and wetland soil context shown as a single extent layer; no land-use or suitability classification is implied.";"BK50 Baden-Württemberg: Moor- und Feuchtbodenkontext als räumliche Einordnung; keine Landnutzungs- oder Eignungsklassifikation.";0;0;not_found
+replacement;BW frame: regional context exported from the same 16:9 ArcGIS map frame.;Baden-Württemberg: regionale Einordnung im einheitlichen Kartenrahmen.;0;0;not_found
+replacement;GPM context underneath – same ArcGIS frame.;Globaler Moorbodenkontext im einheitlichen Kartenrahmen.;0;0;not_found
+replacement;GPM context underneath - same ArcGIS frame.;Globaler Moorbodenkontext im einheitlichen Kartenrahmen.;0;0;not_found
+replacement;exported from eigene kartografische Aufbereitung.;eigene kartografische Aufbereitung.;0;0;not_found
+replacement;exported from GLOBAL_FRAME_V1.;eigene kartografische Aufbereitung.;0;0;not_found
+replacement;GLOBAL_FRAME_V1;eigene kartografische Aufbereitung;0;0;not_found
+replacement;same ArcGIS frame;einheitlicher Kartenrahmen;0;0;not_found
+replacement;ArcGIS map frame;Kartenrahmen;0;0;not_found
+replacement;rendered as a one-colour extent layer;als einfarbige räumliche Kulisse dargestellt;0;0;not_found
+replacement;national peat and organic-soils target area;nationale Kulisse organischer Böden;0;0;not_found
+replacement;emissions_total_kt_co2e;Gesamtemissionen in kt CO₂e;0;0;not_found
+replacement;TOTAL EMISSIONS;GESAMTEMISSIONEN;0;0;not_found
+replacement;Higher total emissions;Höhere Gesamtemissionen;0;0;not_found
+replacement;Dichtekarten zeigen, wo Belastung räumlich besonders konzentriert ist.;Hotspotkarten zeigen, wo Belastung räumlich besonders deutlich wird.;0;0;not_found
+replacement;Größe und Intensität unterscheiden sich.;Gesamtmenge und räumliche Konzentration müssen getrennt gelesen werden.;0;0;not_found
+replacement;Baden-Württemberg wird konkret;Baden-Württemberg ordnet den regionalen Kontext ein;0;0;not_found
+replacement;macht die Frage räumlich konkret;führt zur regionalen Planungsfrage;0;0;not_found
+risk_term_visible;Thuenen;;0;0;OK
+risk_term_visible;GLOBAL_FRAME_V1;;0;0;OK
+risk_term_visible;ArcGIS;;0;0;OK
+risk_term_visible;exported from;;0;0;OK
+risk_term_visible;rendered as;;0;0;OK
+risk_term_visible;same ArcGIS frame;;0;0;OK
+risk_term_visible;one-colour extent layer;;0;0;OK
+risk_term_visible;target area rendered;;0;0;OK
+risk_term_visible;emissions_total_kt_co2e;;0;0;OK
+risk_term_visible;TOTAL EMISSIONS;;0;0;OK
+risk_term_visible;Higher total emissions;;0;0;OK
+risk_term_visible;Federal-state context;;0;0;OK
+risk_term_visible;organic-soils target area;;0;0;OK
+risk_term_visible;BK50 peat / wetland soil context;;0;0;OK
+risk_term_visible;BW frame:;;0;0;OK
+risk_term_visible;GPM context underneath;;0;0;OK
+risk_term_visible;Dichtekarten zeigen;;0;0;OK
+risk_term_visible;leere Umrisslinie;;0;0;OK
+risk_term_visible;oberschwaben_lgl;;0;0;OK
+risk_term_visible;Datenquelle in Umstellung;;0;0;OK
+risk_term_visible;B98c;;0;0;OK
+risk_term_visible;Flächen-QA;;0;0;OK
+required_term_visible;Thünen;;0;0;MISSING
+required_term_visible;FIONA 2024;;1;1;OK
+required_term_visible;BK50 Moor-/Feuchtbodenkontext;;1;1;OK
+required_term_visible;GISCO NUTS 2024;;1;1;OK
+required_term_visible;~19.900 ha;;1;1;OK
+required_term_visible;keine Eignungskarte;;2;2;OK
+required_term_visible;keine Priorisierung;;3;3;OK
+required_term_visible;keine betriebliche Betroffenheitsanalyse;;3;3;OK
+legend_label_visible;Ackerland;;4;4;OK
+legend_label_visible;Grünland;;0;0;MISSING
+legend_label_visible;Dauerkultur;;4;4;OK
+legend_label_visible;Moor-/Feuchtbodenkontext;;9;9;OK
+legend_label_visible;Schnittmenge;;7;7;OK
