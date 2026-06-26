@@ -5375,3 +5375,70 @@ body > pre:first-child {
 .moore-ob-swatch--intersection { background: #043B36 !important; }
 .moore-ob-swatch--moor,
 .moore-ob-swatch--intersection { box-shadow: 0 0 0 1px rgba(255,255,255,.42), 0 0 0 2px rgba(29,36,31,.22); }
+
+/* B119 Fachliche Klammer */
+.b119-fachblock {
+  width: min(980px, calc(100% - 2rem));
+  margin: clamp(3.5rem, 7vw, 6rem) auto;
+  padding: clamp(1.35rem, 3vw, 2.3rem);
+  border: 1px solid rgba(30, 42, 34, 0.14);
+  border-radius: 1.25rem;
+  background: rgba(255, 253, 246, 0.88);
+  box-shadow: 0 18px 48px rgba(31, 38, 33, 0.08);
+}
+
+.b119-fachblock--compact {
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.b119-kicker {
+  margin: 0 0 .45rem;
+  color: #657c38;
+  font-size: .78rem;
+  font-weight: 760;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.b119-fachblock h2 {
+  margin: 0 0 .85rem;
+  max-width: 760px;
+  font-size: clamp(1.45rem, 3vw, 2.35rem);
+  line-height: 1.05;
+}
+
+.b119-fachblock p {
+  max-width: 850px;
+  margin: .75rem 0 0;
+  line-height: 1.58;
+}
+
+.b119-source-note {
+  font-size: .9rem;
+  color: rgba(37, 47, 39, .72);
+}
+
+.b119-source-note a {
+  color: inherit;
+  text-decoration-color: rgba(101, 124, 56, .5);
+  text-underline-offset: .18em;
+}
+
+.b119-transform-intro {
+  max-width: 920px;
+  margin: 1.2rem auto 1.8rem;
+  padding: 1.15rem 1.25rem;
+  border-left: 4px solid #657c38;
+  border-radius: .9rem;
+  background: rgba(255, 253, 246, .74);
+}
+
+.b119-transform-intro p {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.b119-transform-intro p + p {
+  margin-top: .7rem;
+}

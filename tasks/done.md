@@ -633,3 +633,11 @@
 - Removed duplicate charset meta tags.
 - Repaired common mojibake sequences for German umlauts, CO₂ and punctuation if present.
 - Did not modify maps, CSS or data.
+
+## B119 - Fachliche Klammer (2026-06-26)
+
+- Added a concise GHG/water-table mechanism block.
+- Added a focused Oberschwaben rationale without turning the page into a SOLAMO project brochure.
+- Reframed transformation pathways as land-use-context-specific Prüfpfade.
+- Added compact public source links to IPCC, UBA, BMUV, LUBW, LAZBW, MLR BW and SOLAMO-BW.
+- Did not modify maps, map data, map colours or raw data.

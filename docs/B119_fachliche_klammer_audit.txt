@@ -1,0 +1,56 @@
+# B119 fachliche Klammer audit
+
+- Status: OK
+- Risk findings: 0
+- Missing required findings: 0
+
+## Actions
+
+| Action | Status |
+|---|---|
+| `replace transformation heading` | `changed:Welche Nutzungen bei hohen Wasserständen tragfähig werden können` |
+| `insert climate mechanism block before centralGlobalMapStory` | `inserted` |
+| `insert Warum Oberschwaben block before Oberschwaben focus section` | `inserted` |
+| `insert land-use-context transformation intro` | `inserted` |
+| `append B119 CSS` | `inserted` |
+
+## Risk patterns
+
+| Pattern | Count |
+|---|---:|
+| `berechnetes Treibhausgasminderungspotenzial` | 0 |
+| `THG-Minderungspotenzial der gezeigten Flächen` | 0 |
+| `Eignung für Wiedervernässung` | 0 |
+| `priorisierte Flächen` | 0 |
+| `müssen wiedervernässt werden` | 0 |
+| `Diese Flächen sollen wiedervernässt werden` | 0 |
+| `Welche Betriebe sind betroffen` | 0 |
+| `This guided view` | 0 |
+| `Evidence explorer` | 0 |
+| `Prototype appendix` | 0 |
+| `Ã` | 0 |
+| `�` | 0 |
+
+## Required patterns
+
+| Pattern | Count |
+|---|---:|
+| `Warum Wasserstand über Klimawirkung entscheidet` | 1 |
+| `Diese Seite berechnet deshalb keine Treibhausgasminderung` | 1 |
+| `Warum Oberschwaben?` | 1 |
+| `Oberschwaben ist für Baden-Württemberg ein zentraler Fokusraum` | 1 |
+| `Welche Prüfpfade folgen aus unterschiedlichen Nutzungskontexten?` | 1 |
+| `Transformationspfade entstehen nicht allein aus dem Bodenkontext` | 1 |
+| `IPCC Wetlands Supplement` | 1 |
+| `Umweltbundesamt` | 1 |
+| `LUBW` | 2 |
+| `LAZBW Moorbodenbewirtschaftung` | 1 |
+| `SOLAMO-BW` | 4 |
+
+## Recommended checks
+
+```powershell
+Select-String -Encoding UTF8 -Path index.html -Pattern "Warum Wasserstand","berechnet deshalb keine Treibhausgasminderung","Warum Oberschwaben","Prüfpfade","IPCC","Umweltbundesamt","LAZBW","SOLAMO-BW","Ã","�"
+python scripts\103b_corrected_visible_text_audit.py
+python scripts\58_visual_qa_and_commit_check.py
+```
