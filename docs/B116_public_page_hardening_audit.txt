@@ -1,0 +1,23 @@
+# B116 public page hardening audit
+
+- Status: REVIEW REQUIRED
+- Risk/prototype visible patterns remaining: 1
+- Required public patterns missing: 2
+- English/prototype watch count: 0
+
+## REVIEW / MISSING rows
+
+| Type | Pattern | Count |
+|---|---|---:|
+| risk_visible | `betriebliche Betroffenheit` | 4 |
+| required_visible | `Die Karte berechnet jedoch keine Treibhausgasminderung` | 0 |
+| required_visible | `~2 % Stilllegung / unklare FIONA-Zuweisung` | 0 |
+
+## Next checks
+
+```powershell
+Select-String -Path index.html -Pattern "This guided view","Evidence explorer","Prototype appendix","Loading country","B98c","Flächen-QA","betriebliche Betroffenheit","FIONA 2024","~19.900"
+python scripts\103b_corrected_visible_text_audit.py
+python scripts\58_visual_qa_and_commit_check.py
+python -m http.server 8000
+```

@@ -56,196 +56,12 @@
 <section id="transitionLogic" class="transition-logic-block" data-story-role="conceptual-frame">
 <p class="section-kicker">Kernargument</p>
  <h2>Moorbodenkontext braucht konkrete Planung</h2>
- <p class="transition-logic-lede">Planbar wird Moorschutz erst, wenn Bodenkulissen, Nutzung, betriebliche Betroffenheit und mögliche Wertschöpfungsketten zusammen betrachtet werden.</p>
+ <p class="transition-logic-lede">Planbar wird Moorschutz erst, wenn Bodenkulissen, Nutzungskontexte, Wasserstand, betriebliche Fragen und mögliche Wertschöpfungsketten zusammen betrachtet werden.</p>
 </section>
 
 
 <!-- B64: guidedProblem retired because centralGlobalMapProblem is now the main narrative spine. Kept in markup for reversible rollback. -->
-<section id="guidedProblem" class="section guided-story is-retired" aria-hidden="true" data-retired="B64" style="display: none !important;" data-story-role="retired-legacy-story">
- <div class="section-kicker">Geführte Kartenstory</div>
- <h2>Von Emissions-Hotspots zu realen Moorlandschaften</h2>
- <p class="section-lead">
- This guided view is the bridge between the existing explorer layers. It turns the atlas into a
- scroll-driven narrative: country emissions first, then peat/organic-soil extent, and finally the
- regional Baden-Württemberg layer.
- </p>
 
- <div class="scrolly-layout">
- <div class="story-steps">
- <article class="story-step"
- data-state="world-emissions"
- data-visual-title="Country-level emissions hotspot view"
- data-visual-text="National drained-organic-soils emissions identify where the accounting hotspots are.">
- <div class="story-step-card">
- <span class="story-step-number">1</span>
- <h3>Start with country-level emissions</h3>
- <p>
- The first map answers a screening question: which countries report large drained-organic-soils emissions?
- </p>
- <p class="caveat">This is a national accounting layer, not a local peatland map.</p>
- <div class="story-links"><a class="button ghost" href="#hotspots">Open hotspot explorer</a></div>
- </div>
- </article>
-
- <article class="story-step"
- data-state="global-peat"
- data-visual-title="Peat and organic soils become the spatial context"
- data-visual-text="The story then shifts from countries to the underlying land: where peat and organic soils occur.">
- <div class="story-step-card">
- <span class="story-step-number">2</span>
- <h3>Then reveal the actual peat/organic-soil context</h3>
- <p>
- Emissions are reported nationally, but transition happens in real landscapes. A peat/organic-soils layer
- makes that spatial context visible.
- </p>
- </div>
- </article>
-
- <article class="story-step"
- data-state="europe"
- data-visual-title="Zoom to Europe"
- data-visual-text="The European step should connect global peatland patterns with continental policy and land-use contexts.">
- <div class="story-step-card">
- <span class="story-step-number">3</span>
- <h3>Zoom to Europe</h3>
- <p>
- Europe is the bridge scale: detailed enough for policy and land-use comparison, but still broad enough
- to show cross-country contrasts.
- </p>
- </div>
- </article>
-
- <article class="story-step"
- data-state="germany"
- data-visual-title="Germany as the national bridge layer"
- data-visual-text="Germany links the country hotspot layer to national organic-soils spatial data.">
- <div class="story-step-card">
- <span class="story-step-number">4</span>
- <h3>Translate the hotspot view to Germany</h3>
- <p>
- Germany can become the national bridge layer: from total drained-organic-soils emissions toward the
- actual organic-soil distribution.
- </p>
- </div>
- </article>
-
- <article class="story-step"
- data-state="bw"
- data-visual-title="Baden-Württemberg: regional soil context"
- data-visual-text="The BK50-Moor layer is the first concrete regional endpoint of the zoom story.">
- <div class="story-step-card">
- <span class="story-step-number">5</span>
- <h3>End at Baden-Württemberg</h3>
- <p>
- The regional BK50-Moor layer shows where moor, moor-like and humus-rich groundwater soils occur.
- This is the scale where transition questions start to become concrete.
- </p>
- <div class="story-links"><a class="button ghost" href="#bwPeatLayer">Open BW layer</a></div>
- </div>
- </article>
-
- <article class="story-step"
- data-state="boundary"
- data-visual-title="The interpretation boundary"
- data-visual-text="Peat/organic-soil extent is necessary context, but not sufficient for rewetting suitability.">
- <div class="story-step-card">
- <span class="story-step-number">6</span>
- <h3>Keep the boundary visible</h3>
- <p>
- Eine Moor-/organische-Böden-Karte ist keine Wiedervernässungs-Eignungskarte. Suitability would require hydrology,
- land use, management, ownership, policy and economic context.
- </p>
- <p class="caveat">This boundary is part of the atlas, not a footnote.</p>
- </div>
- </article>
- </div>
-
- <div class="story-visual-wrap">
- <div id="storyVisual" class="story-visual" data-state="world-emissions">
- <div class="story-visual-header">
- <p class="eyebrow">Scroll-driven map states</p>
- <h3 id="storyVisualTitle">Country-level emissions hotspot view</h3>
- <p id="storyVisualText">National drained-organic-soils emissions identify where the accounting hotspots are.</p>
- </div>
-
- <div id="storyStage" class="story-stage" data-state="world-emissions">
- <div class="story-map-bg"></div>
- <div class="story-layer world-emissions active" data-story-layer="world-emissions"></div>
- <div class="story-layer global-peat" data-story-layer="global-peat"></div>
- <div class="story-layer europe-zoom" data-story-layer="europe"></div>
- <div class="story-layer germany-zoom" data-story-layer="germany"></div>
- <div class="story-layer bw-zoom" data-story-layer="bw"></div>
- <div class="story-layer boundary" data-story-layer="boundary"></div>
- <div class="story-state-label">
- <strong>Methodischer Hinweis</strong>
- <span>Diese Ansicht dient der räumlichen Einordnung und ersetzt keine Eignungs- oder Prioritätskarte.</span>
- </div>
- </div>
-
- <div class="story-layer-list">
- <span class="story-layer-pill active" data-story-layer="world-emissions">World emissions</span>
- <span class="story-layer-pill" data-story-layer="global-peat">Peat/organic soils</span>
- <span class="story-layer-pill" data-story-layer="europe">Europe</span>
- <span class="story-layer-pill" data-story-layer="germany">Germany</span>
- <span class="story-layer-pill" data-story-layer="bw">Baden-Württemberg</span>
- <span class="story-layer-pill" data-story-layer="boundary">Caveat</span>
- </div>
- </div>
- </div>
- </div>
-</section>
-
-
-<section id="layerProvenance" class="layer-provenance-block b79-hidden is-retired" data-story-role="layer-reading-note" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <p class="section-kicker">Layer logic</p>
- <h2>Each map layer answers a different question</h2>
-
- <div class="layer-provenance-grid">
- <article>
- <span>Context</span>
- <h3>Where are peatlands?</h3>
- <p>GPM 2.0 global and Europe images provide spatial context only.</p>
- </article>
- <article>
- <span>Pressure</span>
- <h3>Where are emissions concentrated?</h3>
- <p>Country-level drained organic-soil emissions identify hotspot countries.</p>
- </article>
- <article>
- <span>Implementation</span>
- <h3>Where do constraints become concrete?</h3>
- <p>Germany and Baden-Württemberg layers bridge from global evidence to regional planning boundaries.</p>
- </article>
- <article>
- <span>Evidence</span>
- <h3>What transition pathways are plausible?</h3>
- <p>Literature-derived pathways translate spatial pressure into possible land-use transitions.</p>
- </article>
- </div>
-</section>
-
- <!-- B68b compact MVP storyline bridge -->
- <section id="mvpProblemline" class="section mvp-storyline-lock mvp-storyline-bridge b79-hidden is-retired" data-story-role="narrative-lock" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <div class="section-heading">
- <p class="eyebrow">Main atlas story</p>
- <h2>The map below is the core narrative.</h2>
- <p>
- It moves from global peatland extent and pressure to Germany,
- Baden-Wuerttemberg and pathway interpretation.
- </p>
- </div>
-
- <div class="story-lock-chain compact" aria-label="Moorschutz braucht räumliche Orientierung storyline">
- <span>Extent</span>
- <span>Pressure</span>
- <span>Implementation</span>
- <span>Pathways</span>
- </div>
-
- <p class="story-lock-note">
- Everything after the map is supporting evidence and exploratory interpretation.
- </p>
- </section>
 
 <section id="centralGlobalMapStory" class="central-map-story" data-state="extent" data-story-role="main-atlas-story" data-b87-central-story="true">
  <div class="central-map-sticky" aria-live="polite">
@@ -276,7 +92,7 @@
  </div>
 
  <p id="centralMapSource" class="central-map-source">
- Layerfolge: Global Peatland Map 2.0 als Kontext und Länder-Hotspot-Layer. Alle Bilder wurden aus demselben ArcGIS-Kartenrahmen exportiert.
+ Datenbasis: Global Peatland Map 2.0 und FAOSTAT-Emissionsdaten zu drainierten organischen Böden; eigene kartografische Aufbereitung.
  </p>
  </div>
  </div>
@@ -302,7 +118,7 @@
  <div class="b88-step-card">
 <span>03</span>
  <h3>Wo ist der Druck besonders hoch?</h3>
- <p>Dichtekarten zeigen, wo Belastung räumlich besonders konzentriert ist.</p>
+ <p>Hotspotkarten zeigen, wo Belastung räumlich besonders deutlich wird.</p>
  </div>
  </article>
 
@@ -426,7 +242,7 @@
  <div class="b79-section-heading">
  <p class="section-kicker">Regionale Planung</p>
  <h2>Oberschwaben als Ausgangspunkt</h2>
- <p>In Baden-Württemberg wird Moorschutz zur konkreten Frage: Welche Betriebe sind betroffen, welche Nutzungen bleiben möglich, welche Produkte tragen und welche Förderinstrumente sind nötig?</p>
+ <p>In Baden-Württemberg wird Moorschutz zur konkreten Planungsfrage: Welche Nutzungskontexte sind berührt, welche betrieblichen Fragen entstehen, welche Produkte können tragfähig werden und welche Förderinstrumente wären nötig?</p>
  </div>
  <div class="b79-card-grid">
  <article>
@@ -435,11 +251,11 @@
  </article>
  <article>
  <h3>Betriebliche Betroffenheit</h3>
- <p>SOLAMO-BW untersucht regionale Betriebsmuster und die praktische Tragfähigkeit von Nutzungskonzepten auf wiedervernässten Moorflächen.</p>
+ <p>SOLAMO-BW untersucht regionale Betriebsperspektiven und die praktische Tragfähigkeit von Nutzungskonzepten auf wiedervernässten landwirtschaftlichen Moorflächen.</p>
  </article>
  <article>
  <h3>Wertschöpfung</h3>
- <p>nässeverträgliche Kulturen, robuste Weidesysteme und stoffliche oder energetische Nutzung benötigen tragfähige Märkte.</p>
+ <p>Nässeverträgliche Kulturen, robuste Weidesysteme sowie stoffliche oder energetische Nutzung benötigen tragfähige Märkte.</p>
  </article>
  </div>
 </section>
@@ -479,362 +295,8 @@
 
 
  <!-- B68b / B71 compact supporting evidence bridge -->
- <section id="supportingEvidenceIntro" class="section evidence-explorer-intro evidence-explorer-bridge b79-hidden is-retired" data-story-role="supporting-evidence-intro" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <div class="section-heading">
- <p class="eyebrow">After the main map</p>
- <h2>The rest of the page is an evidence explorer.</h2>
- <p>
- Die folgenden Module ordnen die Hauptkarte ein und ergänzen die Argumentation der Seite
- atlas story, not as a second linear narrative.
- </p>
- </div>
- </section>
-
-
- <!-- B71 interpretation intro -->
- <section id="interpretationIntro" class="section lower-evidence-group lower-evidence-interpretation b79-hidden is-retired" data-story-role="lower-evidence-group" data-evidence-tier="interpretation" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <div class="section-heading">
- <p class="eyebrow">Interpretation</p>
- <h2>What do the spatial patterns imply for transition pathways?</h2>
- <p>
- These modules translate the map story into pathway hypotheses: which forms of
- wet use, management change or policy support may fit different contexts.
- </p>
- </div>
- </section>
-
-<section id="pathwayEvidenceMatrix" class="pathway-matrix-block b79-hidden is-retired" data-story-role="pathway-evidence" data-evidence-tier="interpretation" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <p class="section-kicker">Transition pathway bridge</p>
- <h2>Spatial pressure only becomes useful when linked to feasible pathways</h2>
- <p class="pathway-matrix-lede">
- The atlas now separates context, pressure and implementation layers. This section connects those layers
- zu evidenzgestützten Transformationspfaden. Die Matrix ist keine Vorgabe; sie ist eine Arbeitslogik für
- asking which pathways are worth testing where.
- </p>
-
- <div class="pathway-matrix">
- <article class="pathway-card">
- <div class="pathway-card-head">
- <span class="pathway-tag">Wet grazing</span>
- <strong>Best fit</strong>
- </div>
- <h3>Wet grassland use under raised water tables</h3>
- <dl>
- <div><dt>Spatial signal</dt><dd>Regional organic-soil and BK50-Moor layers where agricultural use remains relevant.</dd></div>
- <div><dt>Evidence role</dt><dd>Links climate mitigation to continued extensive land use and biodiversity co-benefits.</dd></div>
- <div><dt>Constraint</dt><dd>Water-level control, animal management, fodder quality and farm acceptance.</dd></div>
- <div><dt>Data gap</dt><dd>Local hydrology, trafficability, stocking systems and farm economics.</dd></div>
- </dl>
- </article>
-
- <article class="pathway-card">
- <div class="pathway-card-head">
- <span class="pathway-tag">Paludiculture biomass</span>
- <strong>Market dependent</strong>
- </div>
- <h3>Biomass production on rewetted peat soils</h3>
- <dl>
- <div><dt>Spatial signal</dt><dd>Large organic-soil clusters where harvesting logistics and land aggregation may be feasible.</dd></div>
- <div><dt>Evidence role</dt><dd>Connects rewetting to productive use via reed, cattail, sedges or other wet biomass chains.</dd></div>
- <div><dt>Constraint</dt><dd>Processing markets, machinery, contracts, subsidies and reliable water regimes.</dd></div>
- <div><dt>Data gap</dt><dd>Crop suitability, biomass yields, transport distances and buyer infrastructure.</dd></div>
- </dl>
- </article>
-
- <article class="pathway-card">
- <div class="pathway-card-head">
- <span class="pathway-tag">Water management</span>
- <strong>Hydrology first</strong>
- </div>
- <h3>Raised water table, controlled drainage and partial rewetting</h3>
- <dl>
- <div><dt>Spatial signal</dt><dd>Hotspot countries and national organic-soil layers identify where hydrological transition matters most.</dd></div>
- <div><dt>Evidence role</dt><dd>Frames the core mechanism behind emissions reduction: reducing aerobic peat decomposition.</dd></div>
- <div><dt>Constraint</dt><dd>Neighbouring land, drainage infrastructure, flood risk, legal rights and water availability.</dd></div>
- <div><dt>Data gap</dt><dd>Water-table depth, drainage networks, catchment boundaries and climate-water balance.</dd></div>
- </dl>
- </article>
-
- <article class="pathway-card">
- <div class="pathway-card-head">
- <span class="pathway-tag">Governance & adoption</span>
- <strong>Implementation risk</strong>
- </div>
- <h3>Payments, cooperation models and transition governance</h3>
- <dl>
- <div><dt>Spatial signal</dt><dd>Where emissions pressure overlaps with dense land-use claims and fragmented ownership.</dd></div>
- <div><dt>Evidence role</dt><dd>Explains why technically plausible rewetting can fail without incentives and coordination.</dd></div>
- <div><dt>Constraint</dt><dd>Income risk, policy uncertainty, institutional capacity and social acceptance.</dd></div>
- <div><dt>Data gap</dt><dd>Ownership, farm typology, opportunity costs, programme uptake and advisory structures.</dd></div>
- </dl>
- </article>
- </div>
-
- <div class="pathway-interpretation-note">
- <strong>Arbeitsregel:</strong>
- a pathway should only move from “interesting” to “actionable” when spatial fit, hydrological feasibility,
- farm economics and governance conditions can be checked together.
- </div>
-</section>
-
-
-
-
- <!-- B71 supporting evidence group intro -->
- <section id="supportingEvidenceGroupIntro" class="section lower-evidence-group lower-evidence-supporting b79-hidden is-retired" data-story-role="lower-evidence-group" data-evidence-tier="supporting-evidence" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <div class="section-heading">
- <p class="eyebrow">Supporting evidence</p>
- <h2>Additional signals help test the atlas story.</h2>
- <p>
- Country hotspots, regional evidence and South Germany fit scores are exploratory
- checks. They support interpretation, but they are not the main storyline.
- </p>
- </div>
- </section>
-
-<section id="hotspots" class="section hotspot-section b79-hidden is-retired" data-story-role="evidence-explorer" data-evidence-tier="supporting-evidence" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <div class="section-heading">
- <p class="eyebrow">Optionale Hotspot-Vertiefung</p>
- <h2>Evidence explorer: where are drained organic soil emissions concentrated?</h2>
- <p>
- A first country-level hotspot layer based on FAO/FAOSTAT-derived drained organic soils data.
- The layer ranks countries by total CO₂ + N₂O AR5 CO₂-equivalent emissions and by emissions density.
- </p>
- </div>
-
- <div id="hotspotLayer" class="hotspot-layer loading">
- <div class="hotspot-metrics">
- <div class="hotspot-metric">
- <span id="hotspotMetricCountries" class="metric">—</span>
- <span class="label">countries with complete data</span>
- </div>
- <div class="hotspot-metric">
- <span id="hotspotMetricYear" class="metric">—</span>
- <span class="label">selected year</span>
- </div>
- <div class="hotspot-metric">
- <span id="hotspotMetricEmissions" class="metric">—</span>
- <span class="label">total emissions in complete records</span>
- </div>
- </div>
-
- <div class="hotspot-grid">
-
- <article class="detail-card hotspot-map-card">
- <p class="eyebrow">Map layer</p>
- <h3>Country-level hotspot map</h3>
-
- <div id="hotspotMapToggle" class="hotspot-toggle" role="group" aria-label="Map metric">
- <button type="button" class="hotspot-toggle-btn active" data-map-metric="emissions_total_kt_co2e">
- Total emissions
- </button>
- <button type="button" class="hotspot-toggle-btn" data-map-metric="emissions_density_t_co2e_per_ha">
- Emissions density
- </button>
- </div>
-
- <div id="hotspotMap" class="hotspot-map" aria-label="Country-level hotspot choropleth map">
- <div class="map-loading">Loading country hotspot map…</div>
- </div>
- <div id="hotspotMapLegend" class="hotspot-map-legend"></div>
- <p id="hotspotMapDetails" class="hotspot-map-details">
- Hover or click a country to inspect total emissions, emissions density and drained organic soils area.
- </p>
- </article>
-
- <article class="detail-card">
- <p class="eyebrow">Ranking 1</p>
- <h3>Top countries by total emissions</h3>
- <div id="hotspotRankingTotal" class="hotspot-ranking"></div>
- </article>
-
- <article class="detail-card">
- <p class="eyebrow">Ranking 2</p>
- <h3>Top countries by emissions density</h3>
- <div id="hotspotRankingDensity" class="hotspot-ranking"></div>
- </article>
- </div>
-
- <div class="hotspot-caveat">
- <strong>Interpretation:</strong>
- This is a country-level hotspot layer, not a local suitability map.
- It uses complete records only; missing CO₂ or N₂O CO₂e records are excluded from rankings.
- Hotspot classes are exploratory and will be replaced by a geographic choropleth in the next step.
- </div>
- </div>
- </section>
-
-
- <section id="map" class="section b79-hidden is-retired" data-story-role="regional-evidence" data-evidence-tier="supporting-evidence" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <div class="section-heading">
- <p class="eyebrow">International evidence map</p>
- <h2>Evidence explorer: cases and transition evidence</h2>
- <p>
- Points are approximate visual anchors for study regions, policy nodes and review clusters.
- They are not exact field-site coordinates.
- </p>
- </div>
-
- <div class="map-layout">
- <div class="map-panel">
- <div class="map-toolbar">
- <button data-filter="all" class="active">All</button>
- <button data-filter="hydrology_grassland">Hydrology</button>
- <button data-filter="economics_policy">Economics</button>
- <button data-filter="biomass_lca">Biomass</button>
- <button data-filter="adoption">Adoption</button>
- <button data-filter="value_chain">Value chains</button>
- <button data-filter="policy">Policy</button>
- </div>
- <div id="evidenceMap" class="evidence-map" aria-label="Approximate evidence map"></div>
- </div>
- <aside id="regionCard" class="detail-card">
- <p class="eyebrow">Selected region</p>
- <h3>Click an evidence node</h3>
- <p>Region cards show key message, supporting papers and South Germany transfer relevance.</p>
- </aside>
- </div>
- </section>
-
-<section id="fit" class="section b79-hidden is-retired" data-story-role="south-germany-fit" data-evidence-tier="supporting-evidence" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <div class="section-heading">
- <p class="eyebrow">Transfer view</p>
- <h2>South Germany fit: which pathways remain plausible?</h2>
- <p>
- Qualitative scores translate literature evidence into a first transfer hypothesis.
- They are not statistical estimates.
- </p>
- </div>
- <div class="legend-box">
- <span><strong>X-axis:</strong> water-table / wetness requirement</span>
- <span><strong>Y-axis:</strong> compatibility with existing South German dairy and forage systems</span>
- <span><strong>Bubble size:</strong> qualitative GHG mitigation potential</span>
- <span><strong>Colour:</strong> adoption / market barrier</span>
- </div>
- <div id="fitChart" class="fit-chart"></div>
- </section>
-
-
  
- <!-- B71 prototype appendix intro -->
- <section id="prototypeAppendixIntro" class="section lower-evidence-group lower-evidence-prototype b79-hidden is-retired" data-story-role="lower-evidence-group" data-evidence-tier="prototype-appendix" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <div class="section-heading">
- <p class="eyebrow">Prototype appendix</p>
- <h2>Methode, data and experimental layers.</h2>
- <p>
- This part documents the prototype status, source limitations and remaining
- experimental components. It is supporting material, not a finished decision tool.
- </p>
- </div>
- </section>
 
-<section id="methodology" class="section methodology-panel b79-hidden is-retired" data-story-role="method-and-limits" data-evidence-tier="prototype-appendix" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <div class="section-heading">
- <p class="eyebrow">Methode and uncertainty</p>
- <h2>How to read this prototype</h2>
- <p>
- This Atlas is a literature-driven prototype. It is designed to make evidence, assumptions and transition hypotheses visible,
- not to replace local hydrological-economic modelling.
- </p>
- </div>
-
- <div class="method-grid">
- <article class="method-card">
- <h3>Qualitative scores</h3>
- <p>
- Scores are literature-informed expert codings, not statistical estimates. The scale is deliberately simple:
- <strong>1 = low</strong>, <strong>2 = medium</strong>, <strong>3 = high</strong>.
- </p>
- </article>
- <article class="method-card">
- <h3>Evidence-map points</h3>
- <p>
- Map points are approximate visual anchors for study regions, national model studies, review clusters and policy nodes.
- They are not exact field-site coordinates.
- </p>
- </article>
- <article class="method-card">
- <h3>South Germany fit</h3>
- <p>
- South Germany fit is a transfer hypothesis based on international literature. It is not a validated regional model result
- and must be checked against local hydrology, farm structure, machinery access and markets.
- </p>
- </article>
- <article class="method-card">
- <h3>Publication boundary</h3>
- <p>
- The public repository should contain code, derived metadata and own coding tables. It should not contain copyrighted PDFs,
- confidential project data, licence-unclear raw rasters or unpublished partner data.
- </p>
- </article>
- </div>
- </section>
-
- <section id="data" class="section b79-hidden is-retired" data-story-role="prototype-data" data-evidence-tier="prototype-appendix" hidden aria-hidden="true" data-retired="B79" style="display: none !important;">
- <div class="section-heading">
- <p class="eyebrow">Data model</p>
- <h2>Current prototype datasets</h2>
- </div>
- <div class="data-list">
- <a href="public/data/country_hotspots.csv">country_hotspots.csv</a>
- <a href="public/data/papers.csv">papers.csv</a>
- <a href="public/data/transition_pathways.csv">transition_pathways.csv</a>
- <a href="public/data/region_case_studies.geojson">region_case_studies.geojson</a>
- <a href="public/data/atlas_story_sections.json">atlas_story_sections.json</a>
- </div>
- </section>
- 
-<section id="bwPeatLayer" class="section bw-moor-section is-retired" data-story-role="retired-experimental-regional-layer" data-evidence-tier="retired-experimental-layer" hidden aria-hidden="true" data-retired="B71" style="display: none !important;">
- <div class="section-kicker">Regional peat/organic-soils layer</div>
- <h2>Baden-Württemberg: where the peat and organic-soil context becomes spatial</h2>
- <p class="section-lead">
- The country hotspot map shows national emissions. The regional layer below shifts the question:
- where are moor, moor-like and humus-rich groundwater soils actually located within Baden-Württemberg?
- </p>
-
- <div class="metric-row">
- <div class="metric-card">
- <span class="metric-label">BK50-Moor features</span>
- <strong id="bwMoorFeatureCount">—</strong>
- </div>
- <div class="metric-card">
- <span class="metric-label">Classes</span>
- <strong id="bwMoorClassCount">—</strong>
- </div>
- <div class="metric-card">
- <span class="metric-label">Source area sum</span>
- <strong id="bwMoorArea">—</strong>
- </div>
- </div>
-
- <div class="bw-moor-grid">
- <div class="bw-moor-map-card">
- <div id="bwMoorMap" class="bw-moor-map">
- <div class="map-loading">Loading Baden-Württemberg BK50-Moor layer…</div>
- </div>
- </div>
-
- <aside class="bw-moor-side">
- <div class="detail-card">
- <p class="eyebrow">Why this layer matters</p>
- <h3>From national hotspots to real landscapes</h3>
- <p>
- This regional layer is a first spatial bridge from national drained-organic-soils emissions
- to the actual distribution of moor and organic-soil contexts in Baden-Württemberg.
- </p>
- <p class="caveat">
- Interpretation boundary: this is a medium-scale soil-context layer, not a local rewetting
- suitability map or parcel-level planning instrument.
- </p>
- </div>
-
- <div id="bwMoorLegend" class="map-legend"></div>
- <div id="bwMoorDetails" class="bw-moor-detail"></div>
- </aside>
- </div>
-</section>
-
-<!-- B96_OBERSCHWABEN_SCROLLY_START -->
 <section id="oberschwaben-layer-story" class="moore-ob-section" data-oberschwaben-state="region" aria-labelledby="oberschwaben-layer-title">
  <div class="moore-ob-heading">
  <p class="moore-ob-kicker">Regionale Planung</p>
@@ -1038,7 +500,7 @@
 <section id="value-chain-matrix" class="section moore-value-section" aria-labelledby="value-chain-title">
  <div class="section-header moore-value-header">
  <p class="eyebrow">Nutzung und Wertschöpfung</p>
- <h2 id="value-chain-title">Welche Nutzung nasse Flächen tragen könnten</h2>
+ <h2 id="value-chain-title">Welche Nutzungen bei hohen Wasserständen tragfähig werden können</h2>
  <p>
  Die Pfade werden erst tragfähig, wenn für Biomasse, Pflege,
  Energie oder Flächenorganisation verlässliche Abnahme und Erlöse entstehen.
@@ -1101,7 +563,7 @@
  <strong>Moor-PV</strong>
  </div>
  <div role="cell">Energieerlös bei hohem Wasserstand und extensiver Pflege</div>
- <div role="cell">potenziell planbare Cashflows, aber hohe Qualitätsanforderungen</div>
+ <div role="cell">mögliche Erlöse, aber hohe Prüf- und Qualitätsanforderungen</div>
  <div role="cell">Wasserstandsnachweis, Bodeneingriffe, Biodiversität, Landschaftsbild</div>
  </article>
  </div>

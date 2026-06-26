@@ -1,0 +1,78 @@
+type;pattern;replacement;count_before;count_after;status
+range_removal;Geführte Kartenstory -> Globale Moorverbreitung;;51135;43476;removed_range_2544_10205
+range_removal;After the main map -> Oberschwaben, wo Moorschutz auf Landwirtschaft trifft;;43476;27591;removed_range_12009_27896
+section_removal;This guided view is the bridge between the existing explorer layers;;0;0;not_found_or_not_section:marker_not_found
+section_removal;Each map layer answers a different question;;0;0;not_found_or_not_section:marker_not_found
+section_removal;The map below is the core narrative;;0;0;not_found_or_not_section:marker_not_found
+section_removal;The rest of the page is an evidence explorer;;0;0;not_found_or_not_section:marker_not_found
+section_removal;Evidence explorer: where are drained organic soil emissions concentrated;;0;0;not_found_or_not_section:marker_not_found
+section_removal;Evidence explorer: cases and transition evidence;;0;0;not_found_or_not_section:marker_not_found
+section_removal;South Germany fit: which pathways remain plausible;;0;0;not_found_or_not_section:marker_not_found
+section_removal;Prototype appendix;;0;0;not_found_or_not_section:marker_not_found
+section_removal;How to read this prototype;;0;0;not_found_or_not_section:marker_not_found
+section_removal;Current prototype datasets;;0;0;not_found_or_not_section:marker_not_found
+section_removal;Baden-Württemberg: where the peat and organic-soil context becomes spatial;;0;0;not_found_or_not_section:marker_not_found
+section_removal;Loading country hotspot map;;0;0;not_found_or_not_section:marker_not_found
+section_removal;Loading Baden-Württemberg BK50-Moor layer;;0;0;not_found_or_not_section:marker_not_found
+replacement;Planbar wird Moorschutz erst, wenn Bodenkulissen, Nutzung, betriebliche Betroffenheit und mögliche Wertschöpfungsketten zusammen betrachtet werden.;Planbar wird Moorschutz erst, wenn Bodenkulissen, Nutzungskontexte, Wasserstand, betriebliche Fragen und mögliche Wertschöpfungsketten zusammen betrachtet werden.;1;0;changed
+replacement;Dichtekarten zeigen, wo Belastung räumlich besonders konzentriert ist.;Hotspotkarten zeigen, wo Belastung räumlich besonders deutlich wird.;1;0;changed
+replacement;Layerfolge: Global Peatland Map 2.0 als Kontext und Länder-Hotspot-Layer. Alle Bilder wurden aus demselben ArcGIS-Kartenrahmen exportiert.;"Datenbasis: Global Peatland Map 2.0 und FAOSTAT-Emissionsdaten zu drainierten organischen Böden; eigene kartografische Aufbereitung.";1;0;changed
+replacement;"Ein Moor ist kein gewöhnlicher Boden. Solange Torf nass bleibt, speichert er Kohlenstoff; wird er entwässert, wird er zur dauerhaften Emissionsquelle. Darum führt die Oberschwaben-Story von Boden und Nutzung direkt zur Frage: Wie lässt sich Wasserstand verändern, ohne Betriebe und Landschaften zu überfordern?";"Moore sind Kohlenstoffspeicher, solange der Torf nass bleibt. Wird ein Moorboden entwässert, gelangt Sauerstoff in den Torfkörper; Torf wird abgebaut und es entstehen Treibhausgasemissionen. Darum führt die Oberschwaben-Story von Boden und Nutzung direkt zur Frage: Wo können höhere Wasserstände, angepasste Nutzung und regionale Wertschöpfung gemeinsam geprüft werden?";0;0;not_found
+replacement;"Torf entsteht, wenn Pflanzenreste unter nassen, sauerstoffarmen Bedingungen langsamer abgebaut als aufgebaut werden. Sinkt der Wasserstand, gelangt Sauerstoff in den Torfkörper; Torf mineralisiert und setzt Treibhausgase frei.";"Torf entsteht, wenn Pflanzenreste unter nassen, sauerstoffarmen Bedingungen langsamer abgebaut als aufgebaut werden. Sinkt der Wasserstand, gelangt Sauerstoff in den Torfkörper; Torf mineralisiert und setzt vor allem CO₂ sowie weitere klimawirksame Gase frei. Höhere Wasserstände können den Torfabbau bremsen. Die Karte berechnet jedoch keine Treibhausgasminderung, sondern zeigt die räumliche Ausgangskulisse, in der Minderung durch Wasserstandsmanagement und angepasste Nutzung fachlich geprüft werden kann.";0;0;not_found
+replacement;In Baden-Württemberg wird Moorschutz zur konkreten Frage: Welche Betriebe sind betroffen, welche Nutzungen bleiben möglich, welche Produkte tragen und welche Förderinstrumente sind nötig?;In Baden-Württemberg wird Moorschutz zur konkreten Planungsfrage: Welche Nutzungskontexte sind berührt, welche betrieblichen Fragen entstehen, welche Produkte können tragfähig werden und welche Förderinstrumente wären nötig?;1;0;changed
+replacement;### Betriebliche Betroffenheit;### Betriebliche Fragen;0;0;not_found
+replacement;SOLAMO-BW untersucht regionale Betriebsmuster und die praktische Tragfähigkeit von Nutzungskonzepten auf wiedervernässten Moorflächen.;SOLAMO-BW untersucht regionale Betriebsperspektiven und die praktische Tragfähigkeit von Nutzungskonzepten auf wiedervernässten landwirtschaftlichen Moorflächen.;1;0;changed
+replacement;nässeverträgliche Kulturen, robuste Weidesysteme und stoffliche oder energetische Nutzung benötigen tragfähige Märkte.;Nässeverträgliche Kulturen, robuste Weidesysteme sowie stoffliche oder energetische Nutzung benötigen tragfähige Märkte.;1;0;changed
+replacement;~19.900 ha landwirtschaftliche Nutzung im Moor-/Feuchtbodenkontext ~82 % Grünland ~16 % Ackerland ohne Stilllegung und unklare Zuordnung ~2 % Stilllegung oder unklare Zuordnung separat geführt;~19.900 ha landwirtschaftliche Nutzung im Moor-/Feuchtbodenkontext ~82 % Grünland ~16 % Ackerland ~2 % Stilllegung / unklare FIONA-Zuweisung;0;0;not_found
+replacement;Lesart: Diese Werte geben räumliche Orientierung. Sie sind keine Eignungskarte, keine Priorisierung und keine betriebliche Betroffenheitsanalyse.;Lesart: Die Werte geben räumliche Orientierung. Sie sind keine Eignungskarte, keine Priorisierung und keine betriebliche Betroffenheitsanalyse. Ackerland ist ohne separat geführte Stilllegung und unklare Zuordnungen dargestellt.;0;0;not_found
+replacement;Welche Nutzung nasse Flächen tragen könnten;Welche Nutzungen bei hohen Wasserständen tragfähig werden können;1;0;changed
+replacement;Die Pfade werden erst tragfähig, wenn für Biomasse, Pflege, Energie oder Flächenorganisation verlässliche Abnahme und Erlöse entstehen. Die Matrix zeigt keine Empfehlung pro Standort, sondern typische Kombinationen aus Nutzung, Nutzung / Produkt und Engpass.;Die Prüfpfade werden erst tragfähig, wenn für Biomasse, Pflege, Energie oder Flächenorganisation verlässliche Abnahme und Erlöse entstehen. Die Matrix zeigt keine Empfehlung pro Standort, sondern typische Kombinationen aus Nutzungskontext, Produktlogik und Engpass.;0;0;not_found
+replacement;potenziell planbare Cashflows, aber hohe Qualitätsanforderungen;mögliche Erlöse, aber hohe Prüf- und Qualitätsanforderungen;1;0;changed
+replacement;"Grundlage: kuratierte Literatur- und Projektauswertung zu Paludikultur, Nassgrünland, Nassweide, Sphagnum, Moor-PV und SOLAMO-BW-Wertschöpfungsketten; diese Matrix ist eine Orientierung, keine Standortempfehlung.";Grundlage: kuratierte Literatur- und Projektauswertung zu Paludikultur, Nassgrünland, Nassweide, Sphagnum, Moor-PV und SOLAMO-BW-Wertschöpfungsketten. Die Matrix ist eine Orientierung für Prüfpfade, keine Standortempfehlung.;0;0;not_found
+replacement;Thuenen;Thünen;0;0;not_found
+replacement;Baden-Wuerttemberg;Baden-Württemberg;0;0;not_found
+replacement;GLOBAL_FRAME_V1;eigene kartografische Aufbereitung;0;0;not_found
+replacement;same ArcGIS frame;einheitlicher Kartenrahmen;0;0;not_found
+risk_visible;This guided view;;0;0;OK
+risk_visible;Start with country-level emissions;;0;0;OK
+risk_visible;Then reveal the actual peat/organic-soil context;;0;0;OK
+risk_visible;Zoom to Europe;;0;0;OK
+risk_visible;Translate the hotspot view to Germany;;0;0;OK
+risk_visible;End at Baden-Württemberg;;0;0;OK
+risk_visible;Keep the boundary visible;;0;0;OK
+risk_visible;Suitability would require;;0;0;OK
+risk_visible;Each map layer answers a different question;;0;0;OK
+risk_visible;The map below is the core narrative;;0;0;OK
+risk_visible;The rest of the page is an evidence explorer;;0;0;OK
+risk_visible;Evidence explorer;;0;0;OK
+risk_visible;Prototype appendix;;0;0;OK
+risk_visible;How to read this prototype;;0;0;OK
+risk_visible;Current prototype datasets;;0;0;OK
+risk_visible;Loading country hotspot map;;0;0;OK
+risk_visible;Loading Baden-Württemberg BK50-Moor layer;;0;0;OK
+risk_visible;Click an evidence node;;0;0;OK
+risk_visible;South Germany fit;;0;0;OK
+risk_visible;asking which pathways;;0;0;OK
+risk_visible;source swap;;0;0;OK
+risk_visible;oberschwaben_lgl;;0;0;OK
+risk_visible;Datenquelle in Umstellung;;0;0;OK
+risk_visible;B98c;;0;0;OK
+risk_visible;Flächen-QA;;0;0;OK
+risk_visible;Klassifikations-QA;;0;0;OK
+risk_visible;betriebliche Betroffenheit;;4;4;REVIEW
+risk_visible;Welche Betriebe sind betroffen;;0;0;OK
+risk_visible;potenziell planbare Cashflows;;0;0;OK
+required_visible;Moorschutz braucht räumliche Orientierung;;2;2;OK
+required_visible;Moorbodenkontext braucht konkrete Planung;;1;1;OK
+required_visible;Die Karte berechnet jedoch keine Treibhausgasminderung;;0;0;MISSING
+required_visible;Oberschwaben als Ausgangspunkt;;1;1;OK
+required_visible;Oberschwaben, wo Moorschutz auf Landwirtschaft trifft;;1;1;OK
+required_visible;~19.900 ha;;1;1;OK
+required_visible;~82 % Grünland;;1;1;OK
+required_visible;~16 % Ackerland;;1;1;OK
+required_visible;~2 % Stilllegung / unklare FIONA-Zuweisung;;0;0;MISSING
+required_visible;FIONA 2024, BK50 Moor-/Feuchtbodenkontext und GISCO NUTS 2024;;1;1;OK
+required_visible;keine Eignungskarte;;2;2;OK
+required_visible;keine Priorisierung;;3;3;OK
+required_visible;keine betriebliche Betroffenheitsanalyse;;3;3;OK
+required_visible;Welche Nutzungen bei hohen Wasserständen tragfähig werden können;;1;1;OK

@@ -596,3 +596,11 @@
 - Created deployment checklist for local QA, commit, push and post-deployment checks.
 - Audited required source/caveat patterns, forbidden LGL/source-swap remnants and worktree safety.
 - Did not modify website, CSS, maps or data.
+
+## B116 - Public page hardening (2026-06-26)
+
+- Removed old English prototype/explorer sections from the public page when matching markers were present.
+- Strengthened the GHG mechanism and Oberschwaben planning rationale.
+- De-risked wording around farm affectedness, suitability, priority, GHG mitigation and Moor-PV cashflow.
+- Simplified the Oberschwaben area-balance labels.
+- Did not modify CSS, map images or data.
