@@ -612,3 +612,10 @@
 - Audited cartographic risk terms, required source terms and Oberschwaben legend labels.
 - Created a colour specification for the next Oberschwaben map/legend export.
 - Did not modify CSS, map images or data.
+
+## B117b - Oberschwaben PNG palette probe (2026-06-26)
+
+- Analysed current Oberschwaben PNG files with a stdlib-only PNG reader.
+- Exported dominant exact, quantized and saturated candidate colours.
+- Scanned index.html and src/styles.css for HEX colours near the B117 target palette.
+- Did not modify maps, CSS, index.html or data.

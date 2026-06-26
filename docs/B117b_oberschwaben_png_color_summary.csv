@@ -1,0 +1,5 @@
+file;width;height;color_type;bit_depth;total_pixels;opaque_pixels;unique_exact_rgb;unique_quantized_rgb;saturated_candidate_pixels;unique_saturated_quantized_rgb
+oberschwaben_admin_context.png;1600;900;6;8;1440000;16164;177;12;0;0
+oberschwaben_agriculture.png;1600;900;6;8;1440000;336309;45;27;336067;26
+oberschwaben_moor_context.png;1600;900;6;8;1440000;53711;4;2;53711;2
+oberschwaben_agriculture_moor_intersection.png;1600;900;6;8;1440000;33680;4;2;33680;2
