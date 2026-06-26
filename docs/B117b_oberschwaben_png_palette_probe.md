@@ -13,9 +13,9 @@ B117b prüft die aktuellen Oberschwaben-PNGs, bevor Farben oder Legenden veränd
 | Datei | Breite | Höhe | Farbtyp | Opaque Pixel | Exakte RGB-Farben | Sättigungs-Kandidaten |
 |---|---:|---:|---:|---:|---:|---:|
 | `oberschwaben_admin_context.png` | 1600 | 900 | 6 | 16164 | 177 | 0 |
-| `oberschwaben_agriculture.png` | 1600 | 900 | 6 | 336309 | 45 | 26 |
-| `oberschwaben_moor_context.png` | 1600 | 900 | 6 | 53711 | 4 | 2 |
-| `oberschwaben_agriculture_moor_intersection.png` | 1600 | 900 | 6 | 33680 | 4 | 2 |
+| `oberschwaben_agriculture.png` | 1600 | 900 | 6 | 336309 | 3 | 3 |
+| `oberschwaben_moor_context.png` | 1600 | 900 | 6 | 53711 | 1 | 1 |
+| `oberschwaben_agriculture_moor_intersection.png` | 1600 | 900 | 6 | 33680 | 1 | 1 |
 
 ## Zielpalette aus B117
 

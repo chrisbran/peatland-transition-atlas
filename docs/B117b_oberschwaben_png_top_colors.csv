@@ -31,92 +31,18 @@ oberschwaben_admin_context.png;quantized_top;9;#C0C0C0;192;192;192;125;0.7733;Da
 oberschwaben_admin_context.png;quantized_top;10;#A0A0A0;160;160;160;114;0.7053;Dauerkultur / Sondernutzung;72.83
 oberschwaben_admin_context.png;quantized_top;11;#909090;144;144;144;107;0.662;Dauerkultur / Sondernutzung;55.93
 oberschwaben_admin_context.png;quantized_top;12;#B0B0B0;176;176;176;84;0.5197;Dauerkultur / Sondernutzung;94.95
-oberschwaben_agriculture.png;exact_top;1;#732500;115;37;0;78420;23.3178;Schnittmenge;125.38
-oberschwaben_agriculture.png;exact_top;2;#00734D;0;115;77;56190;16.7078;Schnittmenge;60.67
-oberschwaben_agriculture.png;exact_top;3;#00724C;0;114;76;24561;7.3031;Schnittmenge;59.37
-oberschwaben_agriculture.png;exact_top;4;#00714F;0;113;79;24300;7.2255;Schnittmenge;59.64
-oberschwaben_agriculture.png;exact_top;5;#007451;0;116;81;21701;6.4527;Schnittmenge;63.2
-oberschwaben_agriculture.png;exact_top;6;#722600;114;38;0;21118;6.2793;Schnittmenge;124.33
-oberschwaben_agriculture.png;exact_top;7;#394D28;57;77;40;17073;5.0766;Schnittmenge;57.7
-oberschwaben_agriculture.png;exact_top;8;#712800;113;40;0;16288;4.8432;Schnittmenge;123.12
-oberschwaben_agriculture.png;exact_top;9;#563914;86;57;20;13764;4.0927;Schnittmenge;88.79
-oberschwaben_agriculture.png;exact_top;10;#742300;116;35;0;11507;3.4216;Schnittmenge;126.63
-oberschwaben_agriculture.png;exact_top;11;#1D5F39;29;95;57;11453;3.4055;Schnittmenge;43.93
-oberschwaben_agriculture.png;exact_top;12;#4C411B;76;65;27;8303;2.4689;Schnittmenge;77.13
-oberschwaben_agriculture.png;exact_top;13;#265835;38;88;53;7256;2.1575;Schnittmenge;44.7
-oberschwaben_agriculture.png;exact_top;14;#394A28;57;74;40;6045;1.7975;Schnittmenge;56.83
-oberschwaben_agriculture.png;exact_top;15;#A90084;169;0;132;4940;1.4689;Dauerkultur / Sondernutzung;98.07
-oberschwaben_agriculture.png;exact_top;16;#A70085;167;0;133;2039;0.6063;Dauerkultur / Sondernutzung;97.23
-oberschwaben_agriculture.png;exact_top;17;#AA0082;170;0;130;1740;0.5174;Dauerkultur / Sondernutzung;98.91
-oberschwaben_agriculture.png;exact_top;18;#AE008B;174;0;139;1433;0.4261;Dauerkultur / Sondernutzung;98.07
-oberschwaben_agriculture.png;exact_top;19;#8F1442;143;20;66;943;0.2804;Ackerland;106.04
-oberschwaben_agriculture.png;exact_top;20;#9B0964;155;9;100;929;0.2762;Dauerkultur / Sondernutzung;100.75
-oberschwaben_agriculture.png;quantized_top;1;#702000;112;32;0;127333;37.8619;Schnittmenge;123.73
-oberschwaben_agriculture.png;quantized_top;2;#007050;0;112;80;126752;37.6891;Schnittmenge;59.17
-oberschwaben_agriculture.png;quantized_top;3;#405020;64;80;32;23118;6.874;Schnittmenge;67.27
-oberschwaben_agriculture.png;quantized_top;4;#504010;80;64;16;13765;4.093;Schnittmenge;85.12
-oberschwaben_agriculture.png;quantized_top;5;#206040;32;96;64;11454;3.4058;Schnittmenge;47.47
-oberschwaben_agriculture.png;quantized_top;6;#504020;80;64;32;8303;2.4689;Schnittmenge;79.28
-oberschwaben_agriculture.png;quantized_top;7;#206030;32;96;48;7258;2.1581;Schnittmenge;46.79
-oberschwaben_agriculture.png;quantized_top;8;#B00080;176;0;128;6680;1.9863;Dauerkultur / Sondernutzung;101.47
-oberschwaben_agriculture.png;quantized_top;9;#A00080;160;0;128;2039;0.6063;Dauerkultur / Sondernutzung;96.95
-oberschwaben_agriculture.png;quantized_top;10;#A01060;160;16;96;1468;0.4365;Dauerkultur / Sondernutzung;98.59
-oberschwaben_agriculture.png;quantized_top;11;#B00090;176;0;144;1433;0.4261;Dauerkultur / Sondernutzung;97.94
-oberschwaben_agriculture.png;quantized_top;12;#901040;144;16;64;1411;0.4196;Ackerland;108.91
-oberschwaben_agriculture.png;quantized_top;13;#802020;128;32;32;729;0.2168;Ackerland;109.94
-oberschwaben_agriculture.png;quantized_top;14;#802070;128;32;112;690;0.2052;Dauerkultur / Sondernutzung;74.99
-oberschwaben_agriculture.png;quantized_top;15;#504070;80;64;112;666;0.198;Dauerkultur / Sondernutzung;79.95
-oberschwaben_agriculture.png;quantized_top;16;#305060;48;80;96;570;0.1695;Schnittmenge;64.35
-oberschwaben_agriculture.png;quantized_top;17;#802030;128;32;48;501;0.149;Ackerland;106.54
-oberschwaben_agriculture.png;quantized_top;18;#702070;112;32;112;434;0.129;Dauerkultur / Sondernutzung;79.15
-oberschwaben_agriculture.png;quantized_top;19;#405060;64;80;96;405;0.1204;Grünland;73.58
-oberschwaben_agriculture.png;quantized_top;20;#504060;80;64;96;400;0.1189;Grünland;83.37
-oberschwaben_agriculture.png;quantized_top;21;#404040;64;64;64;242;0.072;Schnittmenge;61.03
-oberschwaben_agriculture.png;quantized_top;22;#702050;112;32;80;232;0.069;Dauerkultur / Sondernutzung;101.15
-oberschwaben_agriculture.png;quantized_top;23;#603030;96;48;48;226;0.0672;Schnittmenge;92.85
-oberschwaben_agriculture.png;quantized_top;24;#603040;96;48;64;195;0.058;Schnittmenge;93.19
-oberschwaben_agriculture.png;quantized_top;25;#305030;48;80;48;3;0.0009;Schnittmenge;49.12
-oberschwaben_agriculture.png;quantized_top;26;#404020;64;64;32;1;0.0003;Schnittmenge;64.1
-oberschwaben_agriculture.png;quantized_top;27;#603010;96;48;16;1;0.0003;Schnittmenge;100.14
-oberschwaben_agriculture.png;saturated_candidate_quantized;1;#702000;112;32;0;127333;37.8619;Schnittmenge;123.73
-oberschwaben_agriculture.png;saturated_candidate_quantized;2;#007050;0;112;80;126752;37.6891;Schnittmenge;59.17
-oberschwaben_agriculture.png;saturated_candidate_quantized;3;#405020;64;80;32;23118;6.874;Schnittmenge;67.27
-oberschwaben_agriculture.png;saturated_candidate_quantized;4;#504010;80;64;16;13765;4.093;Schnittmenge;85.12
-oberschwaben_agriculture.png;saturated_candidate_quantized;5;#206040;32;96;64;11454;3.4058;Schnittmenge;47.47
-oberschwaben_agriculture.png;saturated_candidate_quantized;6;#504020;80;64;32;8303;2.4689;Schnittmenge;79.28
-oberschwaben_agriculture.png;saturated_candidate_quantized;7;#206030;32;96;48;7258;2.1581;Schnittmenge;46.79
-oberschwaben_agriculture.png;saturated_candidate_quantized;8;#B00080;176;0;128;6680;1.9863;Dauerkultur / Sondernutzung;101.47
-oberschwaben_agriculture.png;saturated_candidate_quantized;9;#A00080;160;0;128;2039;0.6063;Dauerkultur / Sondernutzung;96.95
-oberschwaben_agriculture.png;saturated_candidate_quantized;10;#A01060;160;16;96;1468;0.4365;Dauerkultur / Sondernutzung;98.59
-oberschwaben_agriculture.png;saturated_candidate_quantized;11;#B00090;176;0;144;1433;0.4261;Dauerkultur / Sondernutzung;97.94
-oberschwaben_agriculture.png;saturated_candidate_quantized;12;#901040;144;16;64;1411;0.4196;Ackerland;108.91
-oberschwaben_agriculture.png;saturated_candidate_quantized;13;#802020;128;32;32;729;0.2168;Ackerland;109.94
-oberschwaben_agriculture.png;saturated_candidate_quantized;14;#802070;128;32;112;690;0.2052;Dauerkultur / Sondernutzung;74.99
-oberschwaben_agriculture.png;saturated_candidate_quantized;15;#504070;80;64;112;666;0.198;Dauerkultur / Sondernutzung;79.95
-oberschwaben_agriculture.png;saturated_candidate_quantized;16;#305060;48;80;96;570;0.1695;Schnittmenge;64.35
-oberschwaben_agriculture.png;saturated_candidate_quantized;17;#802030;128;32;48;501;0.149;Ackerland;106.54
-oberschwaben_agriculture.png;saturated_candidate_quantized;18;#702070;112;32;112;434;0.129;Dauerkultur / Sondernutzung;79.15
-oberschwaben_agriculture.png;saturated_candidate_quantized;19;#405060;64;80;96;405;0.1204;Grünland;73.58
-oberschwaben_agriculture.png;saturated_candidate_quantized;20;#504060;80;64;96;400;0.1189;Grünland;83.37
-oberschwaben_agriculture.png;saturated_candidate_quantized;21;#702050;112;32;80;232;0.069;Dauerkultur / Sondernutzung;101.15
-oberschwaben_agriculture.png;saturated_candidate_quantized;22;#603030;96;48;48;226;0.0672;Schnittmenge;92.85
-oberschwaben_agriculture.png;saturated_candidate_quantized;23;#603040;96;48;64;195;0.058;Schnittmenge;93.19
-oberschwaben_agriculture.png;saturated_candidate_quantized;24;#305030;48;80;48;3;0.0009;Schnittmenge;49.12
-oberschwaben_agriculture.png;saturated_candidate_quantized;25;#404020;64;64;32;1;0.0003;Schnittmenge;64.1
-oberschwaben_agriculture.png;saturated_candidate_quantized;26;#603010;96;48;16;1;0.0003;Schnittmenge;100.14
-oberschwaben_moor_context.png;exact_top;1;#062A3E;6;42;62;29826;55.5305;Schnittmenge;18.89
-oberschwaben_moor_context.png;exact_top;2;#082C40;8;44;64;9393;17.488;Schnittmenge;18.47
-oberschwaben_moor_context.png;exact_top;3;#082840;8;40;64;8344;15.535;Schnittmenge;21.84
-oberschwaben_moor_context.png;exact_top;4;#052B3D;5;43;61;6148;11.4464;Schnittmenge;17.49
-oberschwaben_moor_context.png;quantized_top;1;#003040;0;48;64;45367;84.465;Schnittmenge;15.39
-oberschwaben_moor_context.png;quantized_top;2;#002040;0;32;64;8344;15.535;Schnittmenge;29.07
-oberschwaben_moor_context.png;saturated_candidate_quantized;1;#003040;0;48;64;45367;84.465;Schnittmenge;15.39
-oberschwaben_moor_context.png;saturated_candidate_quantized;2;#002040;0;32;64;8344;15.535;Schnittmenge;29.07
-oberschwaben_agriculture_moor_intersection.png;exact_top;1;#17303D;23;48;61;10387;30.8403;Schnittmenge;23.04
-oberschwaben_agriculture_moor_intersection.png;exact_top;2;#19323C;25;50;60;8827;26.2084;Schnittmenge;23.62
-oberschwaben_agriculture_moor_intersection.png;exact_top;3;#17303F;23;48;63;8346;24.7803;Schnittmenge;23.73
-oberschwaben_agriculture_moor_intersection.png;exact_top;4;#17303E;23;48;62;6120;18.171;Schnittmenge;23.37
-oberschwaben_agriculture_moor_intersection.png;quantized_top;1;#103040;16;48;64;24853;73.7916;Schnittmenge;19.1
-oberschwaben_agriculture_moor_intersection.png;quantized_top;2;#203040;32;48;64;8827;26.2084;Schnittmenge;31.7
-oberschwaben_agriculture_moor_intersection.png;saturated_candidate_quantized;1;#103040;16;48;64;24853;73.7916;Schnittmenge;19.1
-oberschwaben_agriculture_moor_intersection.png;saturated_candidate_quantized;2;#203040;32;48;64;8827;26.2084;Schnittmenge;31.7
+oberschwaben_agriculture.png;exact_top;1;#5F8F4A;95;143;74;169398;50.3697;Grünland;0.0
+oberschwaben_agriculture.png;exact_top;2;#C76E3F;199;110;63;151053;44.9149;Ackerland;0.0
+oberschwaben_agriculture.png;exact_top;3;#8C5A9E;140;90;158;15858;4.7153;Dauerkultur / Sondernutzung;0.0
+oberschwaben_agriculture.png;quantized_top;1;#609050;96;144;80;169398;50.3697;Grünland;6.16
+oberschwaben_agriculture.png;quantized_top;2;#C07040;192;112;64;151053;44.9149;Ackerland;7.35
+oberschwaben_agriculture.png;quantized_top;3;#9060A0;144;96;160;15858;4.7153;Dauerkultur / Sondernutzung;7.48
+oberschwaben_agriculture.png;saturated_candidate_quantized;1;#609050;96;144;80;169398;50.3697;Grünland;6.16
+oberschwaben_agriculture.png;saturated_candidate_quantized;2;#C07040;192;112;64;151053;44.9149;Ackerland;7.35
+oberschwaben_agriculture.png;saturated_candidate_quantized;3;#9060A0;144;96;160;15858;4.7153;Dauerkultur / Sondernutzung;7.48
+oberschwaben_moor_context.png;exact_top;1;#4E7FA6;78;127;166;53711;100.0;Moor-/Feuchtbodenkontext;0.0
+oberschwaben_moor_context.png;quantized_top;1;#5080A0;80;128;160;53711;100.0;Moor-/Feuchtbodenkontext;6.4
+oberschwaben_moor_context.png;saturated_candidate_quantized;1;#5080A0;80;128;160;53711;100.0;Moor-/Feuchtbodenkontext;6.4
+oberschwaben_agriculture_moor_intersection.png;exact_top;1;#043B36;4;59;54;33680;100.0;Schnittmenge;0.0
+oberschwaben_agriculture_moor_intersection.png;quantized_top;1;#004030;0;64;48;33680;100.0;Schnittmenge;8.77
+oberschwaben_agriculture_moor_intersection.png;saturated_candidate_quantized;1;#004030;0;64;48;33680;100.0;Schnittmenge;8.77

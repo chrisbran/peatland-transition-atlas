@@ -1,0 +1,46 @@
+# B118 public UTF-8 encoding audit
+
+- Status: REVIEW REQUIRED
+- index.html changed: NO
+- charset meta tags removed before insertion: 1
+- charset meta inserted: True
+
+## Mojibake replacements applied
+
+| Sequence | Replacement count |
+|---|---:|
+| none | 0 |
+
+## Remaining risk patterns in visible text
+
+| Pattern | Count |
+|---|---:|
+| `\xc3` | 0 |
+| `\xc2` | 0 |
+| `\xe2\u20ac` | 0 |
+| `\xe2\u20ac\u201c` | 0 |
+| `\xe2\u20ac\u201d` | 0 |
+| `\xe2\u20ac\xa6` | 0 |
+| `\xe2\u201a` | 0 |
+| `\ufffd` | 0 |
+
+## Required patterns
+
+| Pattern | Count |
+|---|---:|
+| `<meta charset="utf-8">` | 1 |
+| `Baden-W\xfcrttemberg` | 4 |
+| `r\xe4umliche Orientierung` | 3 |
+| `Moor-/Feuchtbodenkontext` | 9 |
+| `Treibhausgasminderung` | 0 |
+| `Oberschwaben` | 7 |
+
+## Review commands
+
+```powershell
+Get-Content index.html -TotalCount 15
+Select-String -Path index.html -Pattern "Ã","Â","â€","â€“","â‚","�","charset","Baden-Württemberg","räumliche Orientierung","CO₂"
+python scripts\103b_corrected_visible_text_audit.py
+python scripts\58_visual_qa_and_commit_check.py
+python -m http.server 8000
+```

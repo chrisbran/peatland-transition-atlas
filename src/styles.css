@@ -4459,11 +4459,11 @@ body > pre:first-child {
   box-shadow: 0 0 0 1px rgba(255,255,255,0.32);
 }
 
-.moore-ob-swatch--acker { background: #c4a188; }
-.moore-ob-swatch--gruenland { background: #8bc2ad; }
-.moore-ob-swatch--dauerkultur { background: #d99ad2; }
-.moore-ob-swatch--moor { background: #7f9aa2; }
-.moore-ob-swatch--intersection { background: #214f53; }
+.moore-ob-swatch--acker { background: #C76E3F; }
+.moore-ob-swatch--gruenland { background: #5F8F4A; }
+.moore-ob-swatch--dauerkultur { background: #8C5A9E; }
+.moore-ob-swatch--moor { background: #4E7FA6; }
+.moore-ob-swatch--intersection { background: #043B36; }
 
 .moore-ob-steps {
   display: grid;
@@ -5366,3 +5366,12 @@ body > pre:first-child {
   max-width: 860px !important;
 }
 /* B104B_VISIBLE_WORDING_AND_OBERSCHWABEN_DENSITY_END */
+
+/* B117c Oberschwaben palette synchronization */
+.moore-ob-swatch--acker { background: #C76E3F !important; }
+.moore-ob-swatch--gruenland { background: #5F8F4A !important; }
+.moore-ob-swatch--dauerkultur { background: #8C5A9E !important; }
+.moore-ob-swatch--moor { background: #4E7FA6 !important; }
+.moore-ob-swatch--intersection { background: #043B36 !important; }
+.moore-ob-swatch--moor,
+.moore-ob-swatch--intersection { box-shadow: 0 0 0 1px rgba(255,255,255,.42), 0 0 0 2px rgba(29,36,31,.22); }

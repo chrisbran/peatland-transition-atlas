@@ -1,0 +1,15 @@
+# B117c Oberschwaben palette audit
+
+- Status: OK
+- Errors: 0
+- Recolor count rows: 8
+- CSS changed: 1
+
+## Recommended checks
+
+```powershell
+Get-Content docs\B117c_oberschwaben_map_palette_audit.txt
+Import-Csv docs\B117c_oberschwaben_recolor_counts.csv -Delimiter ';' | Format-Table -Auto
+python scripts\117b_oberschwaben_png_palette_probe.py
+python scripts\58_visual_qa_and_commit_check.py
+```

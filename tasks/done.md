@@ -619,3 +619,17 @@
 - Exported dominant exact, quantized and saturated candidate colours.
 - Scanned index.html and src/styles.css for HEX colours near the B117 target palette.
 - Did not modify maps, CSS, index.html or data.
+
+## B117c - Oberschwaben map palette restyle (2026-06-26)
+
+- Restyled already-derived Oberschwaben PNG layers to a clearer publication palette.
+- Synchronized CSS legend swatches with the restyled PNG palette.
+- Preserved geometry, alpha masks, source layers, FIONA/BK50/GISCO story logic and area values.
+- Did not modify raw data or run GIS processing.
+
+## B118 - Public UTF-8 encoding guard (2026-06-26)
+
+- Ensured `<meta charset="utf-8">` is present at the top of the HTML head.
+- Removed duplicate charset meta tags.
+- Repaired common mojibake sequences for German umlauts, CO₂ and punctuation if present.
+- Did not modify maps, CSS or data.
