@@ -41,9 +41,7 @@ REQUIRED_SCRIPT_FILES = [
 ]
 
 REQUIRED_STATES = [
-    "europe-borders",
     "europe-peat",
-    "germany-context",
     "germany-thuenen-extent",
     "germany-thuenen-types",
 ]

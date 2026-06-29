@@ -1,0 +1,67 @@
+# B127 publication frame and sequence tightening audit
+
+- Status: OK
+- Missing required entries: 0
+- Visible risk findings: 0
+- Raw risk findings: 3
+- Footer count: 1
+- CSS marker count: 1
+
+## Counters
+
+| Counter | Count |
+|---|---:|
+| `branding_hits` | 3 |
+| `removed_boundary_steps` | 2 |
+| `retitled_html_steps` | 4 |
+| `retitled_js_titles` | 2 |
+| `details_label_hits` | 1 |
+| `footer_hits` | 1 |
+| `css_hits` | 1 |
+
+## Required patterns
+
+| Pattern | Count |
+|---|---:|
+| `Moorbodenschutz` | 5 |
+| `Details öffnen` | 1 |
+| `Europa zeigt den größeren Bezugsraum.` | 3 |
+| `Moorbodenschutz ist eine regionale Aufgabe` | 1 |
+| `Deutschland grenzt den Prüfbedarf ein.` | 3 |
+| `Die nationale Kulisse zeigt, wo organische Böden in größerem Zusammenhang auftreten` | 1 |
+| `Stand: Juni 2026 · Fachlicher Demonstrator` | 1 |
+| `Erstellt im Kontext von SOLAMO-BW / Universität Hohenheim.` | 1 |
+| `Diese Seite bietet räumliche Orientierung und ersetzt keine Standortprüfung.` | 1 |
+| `Impressum · Datenschutz` | 1 |
+
+## Visible risk patterns
+
+| Pattern | Count |
+|---|---:|
+| `kompakt öffnen` | 0 |
+| `Europa zeigt den politischen Maßstab.` | 0 |
+| `Politische und administrative Grenzen bestimmen` | 0 |
+| `Deutschland zeigt, wo Planung und Förderung ansetzen.` | 0 |
+| `Nationale Karten zeigen, wo Förderprogramme` | 0 |
+| `data-global-state="europe-borders"` | 0 |
+| `data-global-state="germany-context"` | 0 |
+| `GLOBAL_FRAME_V1` | 0 |
+| `Thuenen` | 0 |
+| `Ã` | 0 |
+| `�` | 0 |
+
+## Raw risk patterns
+
+| Pattern | Count |
+|---|---:|
+| `kompakt öffnen` | 0 |
+| `Europa zeigt den politischen Maßstab.` | 0 |
+| `Politische und administrative Grenzen bestimmen` | 0 |
+| `Deutschland zeigt, wo Planung und Förderung ansetzen.` | 0 |
+| `Nationale Karten zeigen, wo Förderprogramme` | 0 |
+| `data-global-state="europe-borders"` | 1 |
+| `data-global-state="germany-context"` | 1 |
+| `GLOBAL_FRAME_V1` | 0 |
+| `Thuenen` | 3 |
+| `Ã` | 0 |
+| `�` | 0 |

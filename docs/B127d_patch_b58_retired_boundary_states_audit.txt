@@ -1,0 +1,26 @@
+# B127d patch B58 retired boundary states audit
+
+- Status: OK
+- Constant count: 1
+- State message count: 1
+- Loop filter count: 0
+
+## Counters
+
+| Counter | Value |
+|---|---:|
+| `inserted_constant` | `1` |
+| `patched_loop` | `0` |
+| `loop_status` | `for_state_loop_not_found` |
+| `removed_expected_list_lines` | `2` |
+
+## Retired literal counts in B58
+
+| State | Count |
+|---|---:|
+| `europe-borders` | 1 |
+| `germany-context` | 1 |
+| `bw-context` | 1 |
+## B127e resolution note
+
+B58 passes after removing the retired boundary-only states from the expected state list. `Loop filter count: 0` is acceptable here because the current B58 implementation uses explicit expected-state entries rather than the generic loop pattern anticipated by B127d.

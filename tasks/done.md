@@ -670,3 +670,79 @@
 - Consolidated the two Germany/Thünen steps onto one readable Thünen extent map.
 - Reworded the second Germany/Thünen text step as an interpretation step instead of a second map.
 - Did not modify maps, CSS or data.
+
+## B125 - Source and method register (2026-06-29)
+
+- Added a consolidated source and method register after the central scrolly rebuild.
+- Grouped attribution into climate/moor protection, cartographic foundations and transformation pathways.
+- Added a method note clarifying that the page is orientation, not suitability mapping, prioritization, hydrological modelling or farm-level affectedness analysis.
+- Did not add sender/contact/institutional framing.
+- Did not modify maps, map state logic or data.
+
+## B125b - Data rights and attribution register (2026-06-29)
+
+- Added explicit rights, licence and attribution notes for project data sources.
+- Covered GPM 2.0, FAOSTAT, Thünen, GISCO, FIONA, LGRB/BK50, LGL and own derived outputs.
+- Clarified that own map exports do not relicense the underlying datasets.
+- Did not modify maps, data or scrolly logic.
+
+## B125c - Compact source method rights (2026-06-29)
+
+- Consolidated B125 and B125b into one fully collapsible source, method and rights block.
+- Replaced separate long source and rights sections with a compact professional disclosure.
+- Moved method notes into the same disclosure and removed duplicate method-note wording.
+- Did not modify maps, data or scrolly logic.
+
+## B126 - Publication wording polish (2026-06-29)
+
+- Updated header navigation to `Problem · Karten · Oberschwaben · Prüfpfade · Quellen`.
+- Replaced internal wording such as `Fachliche Klammer` and avoided `Lesart`.
+- Standardized short prefixes to `Datenbasis:`, `Grundlagen:` and `Hinweis:`.
+- Rewrote central map steps 05–11 around planning relevance and Prüfbedarf instead of map-type explanations.
+- Shortened Oberschwaben region and soil-context step cards.
+- Removed duplicate `Werte gerundet` wording in the Oberschwaben area balance.
+- Did not modify maps, data, CSS or scrolly mechanics.
+
+## B127 - Publication frame and sequence tightening (2026-06-29)
+
+- Sharpened public framing from generic `Moorschutz` to `Moorbodenschutz`.
+- Removed central scrolly steps that only showed Europe/Germany boundary frames.
+- Retitled the substantive Europe and Germany layers as scale transitions.
+- Changed `kompakt öffnen` to `Details öffnen`.
+- Added a provisional publication footer with status, context, method boundary and Impressum/Datenschutz line.
+- Did not modify map images, data or layer mechanics.
+
+## B127b - Remove BW boundary-only step (2026-06-29)
+
+- Removed the boundary-only Baden-Württemberg step from the central map sequence.
+- Reused the thematic BW Moor-/Feuchtbodenkontext step as the regional transition.
+- Kept the BW map image, layer mechanics and data unchanged.
+- Made the BW sequence consistent with the tightened Europe and Germany transitions from B127.
+
+## B127c - Unwire removed boundary states (2026-06-29)
+
+- Removed retired boundary-only states from the central map controller.
+- Cleaned script-side state wiring for `europe-borders`, `germany-context` and `bw-context`.
+- Kept thematic Europe, Germany and Baden-Württemberg states.
+- Fixes B58 `State not fully wired` failures after sequence tightening.
+
+## B127d - Patch B58 retired boundary states (2026-06-29)
+
+- Updated B58 visual QA to ignore retired boundary-only central map states.
+- Retired states: `europe-borders`, `germany-context`, `bw-context`.
+- Keeps thematic states and layer names intact.
+- Fixes expected `State not fully wired` failures after B127/B127b sequence tightening.
+
+## B127e - Finalize B58 retired-state QA documentation (2026-06-29)
+
+- Cleaned the unused B127d retired-state constant from B58.
+- Reran B58 and confirmed `RESULT: PASS`.
+- Updated B127d documentation to explain why the earlier wrapper audit was too strict.
+- Did not modify public page content, maps, CSS, data or scrolly logic.
+
+## B127f - Final microcopy cleanup (2026-06-29)
+
+- Replaced `Methodische Lesart` with `Methodische Hinweise`.
+- Removed the redundant standalone `Werte gerundet.` line after the Oberschwaben FIONA/BK50/GISCO data-basis note.
+- Kept the earlier explicit note: `Hinweis: Stilllegung und unklare Zuweisungen sind separat ausgewiesen; Werte gerundet.`
+- Did not modify maps, CSS, data or scrolly logic.

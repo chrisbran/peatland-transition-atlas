@@ -1,0 +1,54 @@
+# B127b remove BW boundary-only step audit
+
+- Status: OK
+- Missing required entries: 0
+- Visible risk findings: 0
+- Raw risk findings: 0
+
+## Counters
+
+| Counter | Count |
+|---|---:|
+| `removed_bw_boundary_step` | 1 |
+| `retitled_html_step` | 2 |
+| `retitled_js_state` | 1 |
+
+## Required patterns
+
+| Pattern | Count |
+|---|---:|
+| `data-global-state="bw-bk50-extent"` | 1 |
+| `Baden-Württemberg macht die Frage regional konkret.` | 3 |
+| `Hier wird sichtbar, wo Moor- und Feuchtbodenkontexte auf Nutzung, Zuständigkeiten und regionale Planung treffen.` | 1 |
+| `Datenbasis:` | 12 |
+| `Moorbodenschutz` | 5 |
+
+## Visible risk patterns
+
+| Pattern | Count |
+|---|---:|
+| `data-global-state="bw-context"` | 0 |
+| `Baden-Württemberg macht die Frage räumlich konkret.` | 0 |
+| `Auf regionaler Ebene zeigt sich` | 0 |
+| `Der Bodenkontext zeigt, wo Prüfung beginnt.` | 0 |
+| `Moor- und Feuchtbodenbereiche markieren Räume, in denen Wasserstand, Nutzung und Standortbedingungen gemeinsam bewertet werden müssen.` | 0 |
+| `BW frame:` | 0 |
+| `GLOBAL_FRAME_V1` | 0 |
+| `Thuenen` | 0 |
+| `Ã` | 0 |
+| `�` | 0 |
+
+## Raw risk patterns
+
+| Pattern | Count |
+|---|---:|
+| `data-global-state="bw-context"` | 0 |
+| `Baden-Württemberg macht die Frage räumlich konkret.` | 0 |
+| `Auf regionaler Ebene zeigt sich` | 0 |
+| `Der Bodenkontext zeigt, wo Prüfung beginnt.` | 0 |
+| `Moor- und Feuchtbodenbereiche markieren Räume, in denen Wasserstand, Nutzung und Standortbedingungen gemeinsam bewertet werden müssen.` | 0 |
+| `BW frame:` | 0 |
+| `GLOBAL_FRAME_V1` | 0 |
+| `Thuenen` | 0 |
+| `Ã` | 0 |
+| `�` | 0 |

@@ -28,77 +28,56 @@
       mode: "Globale Moorverbreitung",
       title: "Moore sind räumlich stark konzentriert.",
       legend: '<span><i class="legend-peat"></i>Moorkontext</span>',
-      source: "Daten: Global Peatland Map 2.0; eigene kartografische Aufbereitung.",
+      source: "Datenbasis: Global Peatland Map 2.0; eigene kartografische Aufbereitung.",
       layers: { "layer-gpm": 0.96, "layer-borders": 0.62 }
     },
     "total": {
       mode: "Emissionsdruck",
       title: "Gesamtemissionen zeigen, wo die größten bilanziellen Hotspots liegen.",
       legend: '<span><i class="legend-total"></i>höhere Gesamtemissionen</span><span><i class="legend-peat"></i>Moorkontext</span>',
-      source: "Daten: FAOSTAT, Gesamtemissionen aus drainierten organischen Böden; Global Peatland Map 2.0 als Kontext; eigene kartografische Aufbereitung.",
+      source: "Datenbasis: FAOSTAT, Gesamtemissionen aus drainierten organischen Böden; Global Peatland Map 2.0 als Kontext; eigene kartografische Aufbereitung.",
       layers: { "layer-gpm": 0.48, "layer-total": 0.92, "layer-borders": 0.84 }
     },
     "density": {
       mode: "Emissionsdichte",
       title: "Emissionsdichte zeigt, wo der Druck relativ zur Fläche besonders hoch ist.",
       legend: '<span><i class="legend-density"></i>höhere Emissionsdichte</span><span><i class="legend-peat"></i>Moorkontext</span>',
-      source: "Daten: FAOSTAT, flächenbezogene Emissionsdichte aus drainierten organischen Böden; Global Peatland Map 2.0 als Kontext; eigene kartografische Aufbereitung.",
+      source: "Datenbasis: FAOSTAT, flächenbezogene Emissionsdichte aus drainierten organischen Böden; Global Peatland Map 2.0 als Kontext; eigene kartografische Aufbereitung.",
       layers: { "layer-gpm": 0.48, "layer-density": 0.92, "layer-borders": 0.86 }
     },
     "compare": {
-      mode: "Lesart",
+      mode: "Einordnung",
       title: "Größe und Intensität müssen getrennt gelesen werden.",
       legend: '<span><i class="legend-density"></i>Emissionsdichte</span><span><i class="legend-border"></i>Ländergrenzen</span>',
-      source: "Lesart: Gesamtmenge und Emissionsdichte beantworten unterschiedliche Fragen und dürfen nicht vermischt werden.",
+      source: "Hinweis: Gesamtmenge und Emissionsdichte beantworten unterschiedliche Fragen und dürfen nicht vermischt werden.",
       layers: { "layer-gpm": 0.56, "layer-density": 0.88, "layer-borders": 0.90 }
-    },
-    "europe-borders": {
-      mode: "Europa",
-      title: "Politische Grenzen bestimmen Planung und Förderung.",
-      legend: '<span><i class="legend-border"></i>Europäische Ländergrenzen</span>',
-      source: "Daten: GISCO-Ländergrenzen; eigene kartografische Aufbereitung.",
-      layers: { "layer-europe-borders": 0.98 }
     },
     "europe-peat": {
       mode: "Europäischer Moorkontext",
-      title: "Moorvorkommen überschreiten Verwaltungsgrenzen.",
+      title: "Europa zeigt den größeren Bezugsraum.",
       legend: '<span><i class="legend-peat"></i>Moorkontext</span><span><i class="legend-border"></i>Europäische Ländergrenzen</span>',
-      source: "Daten: Global Peatland Map 2.0; Darstellung im europäischen Kartenrahmen.",
+      source: "Datenbasis: Global Peatland Map 2.0; Darstellung im europäischen Kartenrahmen.",
       layers: { "layer-europe-peat": 0.98, "layer-europe-borders": 0.88 }
-    },
-    "germany-context": {
-      mode: "Deutschland",
-      title: "Deutschland zeigt, wo Planung und Förderung ansetzen.",
-      legend: '<span><i class="legend-border"></i>Bundesländer-Kontext</span>',
-      source: "Daten: GISCO NUTS 1 / Bundesländer; eigene kartografische Aufbereitung.",
-      layers: { "layer-germany-admin": 0.98 }
     },
     "germany-thuenen-extent": {
       mode: "Organische Böden",
-      title: "Die Thünen-Kulisse zeigt organische Böden.",
+      title: "Deutschland grenzt den Prüfbedarf ein.",
       legend: '<span><i class="legend-peat"></i>Thünen-Kulisse organischer Böden</span><span><i class="legend-border"></i>Bundesländer-Kontext</span>',
-      source: "Daten: Thünen-Kulisse organischer Böden; eigene kartografische Aufbereitung.",
+      source: "Datenbasis: Thünen-Kulisse organischer Böden; eigene kartografische Aufbereitung.",
       layers: { "layer-germany-thuenen-extent": 0.98, "layer-germany-admin": 0.86 }
     },
     "germany-thuenen-types": {
-      mode: "Lesart der Thünen-Kulisse",
-      title: "Für den Deutschland-Maßstab reicht eine Thünen-Karte.",
+      mode: "Einordnung der nationalen Kulisse",
+      title: "Die nationale Kulisse ersetzt keine Standortprüfung.",
       legend: '<span><i class="legend-peat"></i>Thünen-Kulisse organischer Böden</span><span><i class="legend-border"></i>Bundesländer-Kontext</span>',
-      source: "Daten: Thünen-Kulisse organischer Böden; eigene kartografische Aufbereitung.",
+      source: "Datenbasis: Thünen-Kulisse organischer Böden; eigene kartografische Aufbereitung.",
       layers: { "layer-germany-thuenen-extent": 0.98, "layer-germany-admin": 0.86 }
-    },
-    "bw-context": {
-      mode: "Baden-Württemberg",
-      title: "Baden-Württemberg macht die Frage räumlich konkret.",
-      legend: '<span><i class="legend-border"></i>Regionaler Kartenrahmen</span>',
-      source: "Baden-Württemberg: regionaler Kartenrahmen; eigene kartografische Aufbereitung.",
-      layers: { "layer-bw-admin": 0.98 }
     },
     "bw-bk50-extent": {
       mode: "BK50",
-      title: "Die BK50 ordnet Moor- und Feuchtbodenkontexte ein.",
+      title: "Baden-Württemberg macht die Frage regional konkret.",
       legend: '<span><i class="legend-peat"></i>BK50 Moor-/Feuchtbodenkontext</span><span><i class="legend-border"></i>Regionaler Kartenrahmen</span>',
-      source: "Daten: BK50 Moor-/Feuchtbodenkontext; eigene Auswahl und kartografische Aufbereitung.",
+      source: "Datenbasis: BK50 Moor-/Feuchtbodenkontext; eigene Auswahl und kartografische Aufbereitung.",
       layers: { "layer-bw-bk50-extent": 0.98, "layer-bw-admin": 0.86 }
     }
   };

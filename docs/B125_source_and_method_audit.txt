@@ -1,0 +1,62 @@
+# B125 source and method audit
+
+- Status: OK
+- Visible risk findings: 0
+- Missing required entries: 0
+- Source section count: 1
+- CSS marker count: 1
+- href count in page: 29
+
+## Risk patterns
+
+| Pattern | Count |
+|---|---:|
+| `GLOBAL_FRAME_V1` | 0 |
+| `EUROPE_FRAME_V1` | 0 |
+| `Country hotspot layer:` | 0 |
+| `GPM context underneath` | 0 |
+| `same ArcGIS frame` | 0 |
+| `Europe frame:` | 0 |
+| `Germany frame:` | 0 |
+| `BW frame:` | 0 |
+| `Thuenen` | 0 |
+| `ArcGIS` | 0 |
+| `Peatland context` | 0 |
+| `Peat in soil mosaic` | 0 |
+| `Higher total emissions` | 0 |
+| `Higher emission density` | 0 |
+| `TOTAL EMISSIONS` | 0 |
+| `EMISSION DENSITY` | 0 |
+| `INTERPRETATION` | 0 |
+| `Ã` | 0 |
+| `�` | 0 |
+
+## Required patterns
+
+| Pattern | Count |
+|---|---:|
+| `Quellen und Methodik` | 1 |
+| `Datenbasis, fachliche Grundlagen und Lesart` | 1 |
+| `Klimawirkung und Moorbodenschutz` | 1 |
+| `Kartengrundlagen` | 1 |
+| `Nutzungspfade und Transformation` | 1 |
+| `Methodischer Hinweis` | 2 |
+| `IPCC Wetlands Supplement` | 2 |
+| `Umweltbundesamt` | 2 |
+| `BMUV` | 2 |
+| `LUBW` | 3 |
+| `Global Peatland Map 2.0` | 3 |
+| `FAOSTAT` | 2 |
+| `Thünen-Kulisse organischer Böden` | 2 |
+| `Bodenkarte 1 : 50 000` | 1 |
+| `FIONA Baden-Württemberg` | 1 |
+| `Eurostat GISCO NUTS` | 1 |
+| `MLR Baden-Württemberg` | 1 |
+| `LAZBW` | 2 |
+| `LTZ Augustenberg` | 1 |
+| `Moorwissen / Paludi-PROGRESS` | 1 |
+| `SOLAMO-BW` | 5 |
+| `keine Eignungskarte` | 3 |
+| `keine Priorisierung` | 4 |
+| `keine hydrologische Modellierung` | 1 |
+| `keine betriebliche Betroffenheitsanalyse` | 4 |

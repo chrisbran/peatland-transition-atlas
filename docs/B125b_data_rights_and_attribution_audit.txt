@@ -1,0 +1,41 @@
+# B125b data rights and attribution audit
+
+- Status: OK
+- Missing required entries: 0
+- Visible risk findings: 0
+- Rights section count: 1
+- CSS marker count: 1
+
+## Required patterns
+
+| Pattern | Count |
+|---|---:|
+| `Nutzungsrechte und Datenlizenzen` | 1 |
+| `Global Peatland Map 2.0 / Global Peatland Database` | 2 |
+| `frei herunterladbare globale Moorbodenkarte` | 1 |
+| `FAO Statistical Database Terms of Use` | 1 |
+| `CC BY 4.0` | 4 |
+| `Thünen-Atlas-Metadaten` | 1 |
+| `Eurostat GISCO NUTS` | 3 |
+| `© EuroGeographics bezüglich der Verwaltungsgrenzen` | 1 |
+| `FIONA Baden-Württemberg` | 2 |
+| `Datenlizenz Deutschland – Namensnennung – Version 2.0` | 4 |
+| `MLR Baden-Württemberg / FIONA 2024` | 1 |
+| `Regierungspräsidium Freiburg – LGRB` | 2 |
+| `Datenquelle: LGL, www.lgl-bw.de, dl-de/by-2-0` | 2 |
+| `Eigene Auswertungen und Kartenexporte` | 1 |
+| `keine Weiterlizenzierung der Ausgangsdaten` | 1 |
+
+## Risk patterns
+
+| Pattern | Count |
+|---|---:|
+| `GLOBAL_FRAME_V1` | 0 |
+| `EUROPE_FRAME_V1` | 0 |
+| `Country hotspot layer:` | 0 |
+| `Thuenen` | 0 |
+| `ArcGIS` | 0 |
+| `Peatland context` | 0 |
+| `TOTAL EMISSIONS` | 0 |
+| `Ã` | 0 |
+| `�` | 0 |

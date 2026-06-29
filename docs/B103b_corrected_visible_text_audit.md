@@ -27,7 +27,7 @@ B103b separates actual visible text from hidden/retired archive text.
 |---|---:|
 | Umsetzung* | 0 |
 | Transform* | 8 |
-| Wertschöpfung* | 9 |
+| Wertschöpfung* | 11 |
 | wird zu/zur/zum/eine | 0 |
 | übersetz* | 0 |
 | Suchkulisse/Gesprächskulisse | 0 |

@@ -1,0 +1,54 @@
+# B125c compact source method rights audit
+
+- Status: OK
+- Removed duplicate method-note fragments: 1
+- Missing required entries: 0
+- Visible risk findings: 0
+- Source section count: 1
+- Old rights section count: 0
+- CSS marker count: 1
+- Outer details count: 1
+- Open attribute count: 0
+
+## Required patterns
+
+| Pattern | Count |
+|---|---:|
+| `Quellen, Methodik und Nutzungsrechte` | 1 |
+| `Datenbasis, fachliche Grundlagen und Rechtehinweise` | 1 |
+| `Fachliche Grundlagen` | 1 |
+| `Methodische Lesart` | 1 |
+| `Datengrundlagen, Rechte und Quellenvermerke` | 1 |
+| `IPCC Wetlands Supplement` | 2 |
+| `FAOSTAT` | 3 |
+| `CC BY 4.0` | 3 |
+| `Thünen-Kulisse organischer Böden` | 2 |
+| `Eurostat GISCO NUTS` | 2 |
+| `© EuroGeographics` | 2 |
+| `FIONA Baden-Württemberg` | 1 |
+| `Datenlizenz Deutschland – Namensnennung – Version 2.0` | 1 |
+| `Regierungspräsidium Freiburg – LGRB` | 1 |
+| `Datenquelle: LGL, www.lgl-bw.de, dl-de/by-2-0` | 1 |
+| `keine Eignungskarte` | 3 |
+| `keine Priorisierung` | 4 |
+| `keine hydrologische Modellierung` | 1 |
+| `keine betriebliche Betroffenheitsanalyse` | 4 |
+| `keine Weiterlizenzierung der Ausgangsdaten` | 1 |
+
+## Risk patterns
+
+| Pattern | Count |
+|---|---:|
+| `Nutzungsrechte und Datenlizenzen` | 0 |
+| `Klimawirkung und Moorbodenschutz` | 0 |
+| `Kartengrundlagen` | 0 |
+| `Methodischer Hinweis:` | 0 |
+| `GLOBAL_FRAME_V1` | 0 |
+| `EUROPE_FRAME_V1` | 0 |
+| `Country hotspot layer:` | 0 |
+| `Thuenen` | 0 |
+| `ArcGIS` | 0 |
+| `Peatland context` | 0 |
+| `TOTAL EMISSIONS` | 0 |
+| `Ã` | 0 |
+| `�` | 0 |

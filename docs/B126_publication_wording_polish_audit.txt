@@ -1,0 +1,110 @@
+# B126 publication wording polish audit
+
+- Status: REVIEW REQUIRED
+- Navigation OK: True
+- Missing required entries: 0
+- Visible risk findings: 1
+- Raw risk findings: 1
+
+## Replacement counters
+
+| Counter | Count |
+|---|---:|
+| `nav_hits` | 1 |
+| `generic_html_hits` | 8 |
+| `generic_js_hits` | 11 |
+| `central_index_step_hits` | 14 |
+| `oberschwaben_step_hits` | 4 |
+| `central_js_title_hits` | 7 |
+| `flaechen_hits` | 1 |
+
+## Required patterns
+
+| Pattern | Count |
+|---|---:|
+| `Karten` | 12 |
+| `Prüfpfade` | 3 |
+| `Quellen` | 5 |
+| `Warum Wasserstand entscheidend ist` | 1 |
+| `Datenbasis:` | 12 |
+| `Hinweis:` | 3 |
+| `Europa zeigt den größeren Bezugsraum.` | 2 |
+| `Planung muss Landschaftsräume mitdenken.` | 2 |
+| `Deutschland grenzt den Prüfbedarf ein.` | 2 |
+| `Organische Böden markieren potenzielle Konflikträume.` | 2 |
+| `Die nationale Kulisse ersetzt keine Standortprüfung.` | 2 |
+| `Baden-Württemberg macht die Frage regional konkret.` | 2 |
+| `Der Bodenkontext zeigt, wo Prüfung beginnt.` | 2 |
+| `Vier Landkreise als Fokusraum` | 1 |
+| `Biberach, Ravensburg, Sigmaringen und Bodenseekreis.` | 1 |
+| `Moor-/Feuchtbodenkontexte liegen quer zur Nutzung` | 1 |
+| `Sie markieren Räume, in denen Boden, Wasserstand und heutige Bewirtschaftung gemeinsam geprüft werden müssen.` | 1 |
+| `Hinweis: Stilllegung und unklare Zuweisungen sind separat ausgewiesen; Werte gerundet.` | 1 |
+
+## Visible risk patterns
+
+| Pattern | Count |
+|---|---:|
+| `Fachliche Klammer` | 0 |
+| `Fachliche Grundlage:` | 0 |
+| `Fachliche Einordnung:` | 0 |
+| `Lesart` | 1 |
+| `Daten: ` | 0 |
+| `Grundlage:` | 0 |
+| `Europa zeigt den politischen Maßstab.` | 0 |
+| `Politische und administrative Grenzen bestimmen` | 0 |
+| `Moorvorkommen überschreiten Grenzen.` | 0 |
+| `Moorlandschaften folgen Landschaft und Hydrologie` | 0 |
+| `Deutschland zeigt, wo Planung und Förderung ansetzen.` | 0 |
+| `Nationale Karten zeigen, wo Förderprogramme` | 0 |
+| `Die Thünen-Kulisse zeigt organische Böden.` | 0 |
+| `Sie zeigt, wo Moor- und organische Böden in der Bundesplanung eine Rolle spielen.` | 0 |
+| `Die Thünen-Kulisse bleibt die relevante Deutschlandkarte.` | 0 |
+| `Für diese Maßstabsebene wird keine zweite kaum unterscheidbare Bodentyp-Karte gezeigt.` | 0 |
+| `Baden-Württemberg macht die Frage räumlich konkret.` | 0 |
+| `Auf regionaler Ebene zeigt sich` | 0 |
+| `BK50 ordnet den Bodenkontext ein.` | 0 |
+| `Sie zeigt Moor- und Feuchtbodenbereiche, ersetzt aber keine Eignungsprüfung.` | 0 |
+| `Vier Landkreise als Planungsraum` | 0 |
+| `Die Karte beginnt bewusst mit Orientierung` | 0 |
+| `Die BK50-basierte Ebene` | 0 |
+| `Werte gerundet. Werte gerundet.` | 0 |
+| `Ackerland ohne separat geführte Stilllegung und unklare Zuordnungen.` | 0 |
+| `GLOBAL_FRAME_V1` | 0 |
+| `Thuenen` | 0 |
+| `Ã` | 0 |
+| `�` | 0 |
+
+## Raw risk patterns
+
+| Pattern | Count |
+|---|---:|
+| `Fachliche Klammer` | 0 |
+| `Fachliche Grundlage:` | 0 |
+| `Fachliche Einordnung:` | 0 |
+| `Lesart` | 1 |
+| `Daten: ` | 0 |
+| `Grundlage:` | 0 |
+| `Europa zeigt den politischen Maßstab.` | 0 |
+| `Politische und administrative Grenzen bestimmen` | 0 |
+| `Moorvorkommen überschreiten Grenzen.` | 0 |
+| `Moorlandschaften folgen Landschaft und Hydrologie` | 0 |
+| `Deutschland zeigt, wo Planung und Förderung ansetzen.` | 0 |
+| `Nationale Karten zeigen, wo Förderprogramme` | 0 |
+| `Die Thünen-Kulisse zeigt organische Böden.` | 0 |
+| `Sie zeigt, wo Moor- und organische Böden in der Bundesplanung eine Rolle spielen.` | 0 |
+| `Die Thünen-Kulisse bleibt die relevante Deutschlandkarte.` | 0 |
+| `Für diese Maßstabsebene wird keine zweite kaum unterscheidbare Bodentyp-Karte gezeigt.` | 0 |
+| `Baden-Württemberg macht die Frage räumlich konkret.` | 0 |
+| `Auf regionaler Ebene zeigt sich` | 0 |
+| `BK50 ordnet den Bodenkontext ein.` | 0 |
+| `Sie zeigt Moor- und Feuchtbodenbereiche, ersetzt aber keine Eignungsprüfung.` | 0 |
+| `Vier Landkreise als Planungsraum` | 0 |
+| `Die Karte beginnt bewusst mit Orientierung` | 0 |
+| `Die BK50-basierte Ebene` | 0 |
+| `Werte gerundet. Werte gerundet.` | 0 |
+| `Ackerland ohne separat geführte Stilllegung und unklare Zuordnungen.` | 0 |
+| `GLOBAL_FRAME_V1` | 0 |
+| `Thuenen` | 0 |
+| `Ã` | 0 |
+| `�` | 0 |
