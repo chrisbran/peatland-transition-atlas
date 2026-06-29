@@ -1,0 +1,78 @@
+# B124 central scrolly single-source audit
+
+- Status: OK
+- Risk findings: 0
+- Missing states: 0
+- Missing public strings: 0
+- Active helper observer/data-state hits: 0
+
+## Risk counts
+
+| Pattern | Count |
+|---|---:|
+| `GLOBAL_FRAME_V1` | 0 |
+| `EUROPE_FRAME_V1` | 0 |
+| `Country hotspot layer:` | 0 |
+| `GPM context underneath` | 0 |
+| `same ArcGIS frame` | 0 |
+| `Europe frame:` | 0 |
+| `Germany frame:` | 0 |
+| `BW frame:` | 0 |
+| `Baden-Wuerttemberg` | 0 |
+| `ArcGIS` | 0 |
+| `Peatland context` | 0 |
+| `Peat in soil mosaic` | 0 |
+| `Higher total emissions` | 0 |
+| `Higher emission density` | 0 |
+| `Emission density view` | 0 |
+| `European country borders` | 0 |
+| `Federal-state context` | 0 |
+| `Thuenen` | 0 |
+| `TOTAL EMISSIONS` | 0 |
+| `EMISSION DENSITY` | 0 |
+| `INTERPRETATION` | 0 |
+| `Ã` | 0 |
+| `�` | 0 |
+
+## State counts
+
+| State | Count |
+|---|---:|
+| `extent` | 9 |
+| `total` | 4 |
+| `density` | 6 |
+| `compare` | 1 |
+| `europe-borders` | 4 |
+| `europe-peat` | 3 |
+| `germany-context` | 1 |
+| `germany-thuenen-extent` | 3 |
+| `germany-thuenen-types` | 3 |
+| `bw-context` | 1 |
+| `bw-bk50-extent` | 3 |
+
+## Public string counts
+
+| String | Count |
+|---|---:|
+| `Daten: Global Peatland Map 2.0` | 2 |
+| `Daten: FAOSTAT, Gesamtemissionen` | 1 |
+| `Daten: FAOSTAT, flächenbezogene Emissionsdichte` | 1 |
+| `Daten: GISCO-Ländergrenzen` | 1 |
+| `Daten: GISCO NUTS 1 / Bundesländer` | 1 |
+| `Daten: Thünen-Kulisse organischer Böden` | 2 |
+| `Baden-Württemberg: regionaler Kartenrahmen` | 1 |
+| `Daten: BK50 Moor-/Feuchtbodenkontext` | 1 |
+
+## Retired helper counts
+
+| Check | Count |
+|---|---:|
+| `src/central_layer_state_hardener.js:IntersectionObserver` | 0 |
+| `src/central_layer_state_hardener.js:MutationObserver` | 0 |
+| `src/central_layer_state_hardener.js:data-state` | 0 |
+| `src/central_step_state_bridge.js:IntersectionObserver` | 0 |
+| `src/central_step_state_bridge.js:MutationObserver` | 0 |
+| `src/central_step_state_bridge.js:data-state` | 0 |
+| `src/central_stage_label_fix.js:IntersectionObserver` | 0 |
+| `src/central_stage_label_fix.js:MutationObserver` | 0 |
+| `src/central_stage_label_fix.js:data-state` | 0 |

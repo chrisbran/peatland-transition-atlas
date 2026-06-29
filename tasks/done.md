@@ -656,3 +656,17 @@
 - Harmonized final wording in Moore-verstehen, the transformation matrix and the final method note.
 - Created a raster-caption review page because embedded PNG text cannot be found by HTML audits.
 - Did not modify maps, map colours, CSS or data.
+
+## B124 - Rebuild central scrolly single source (2026-06-29)
+
+- Rebuilt `src/central_global_map_story.js` as the only active controller for the central scrolly map sequence.
+- Retired `central_layer_state_hardener.js`, `central_step_state_bridge.js` and `central_stage_label_fix.js` as no-op files.
+- Centralized step-to-layer, title, legend and source text in one state table.
+- Did not modify maps, data, HTML structure or CSS.
+
+## B124b - Consolidate Germany Thünen map (2026-06-29)
+
+- Kept the central scrolly sequence stable after B124.
+- Consolidated the two Germany/Thünen steps onto one readable Thünen extent map.
+- Reworded the second Germany/Thünen text step as an interpretation step instead of a second map.
+- Did not modify maps, CSS or data.

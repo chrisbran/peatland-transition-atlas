@@ -1,0 +1,17 @@
+# B124b consolidate Germany Thünen map audit
+
+- Status: OK
+- JS state replacement hits: 1
+- HTML step text replacement hits: 2
+
+| Check | Count |
+|---|---:|
+| `state_present` | 1 |
+| `types_layer_in_state` | 0 |
+| `extent_layer_in_types_state` | 2 |
+| `kat_lang_in_types_state` | 0 |
+| `new_step_title` | 1 |
+| `new_step_text` | 1 |
+| `germany_thuenen_types_step` | 1 |
+| `risk_thuenen_ascii` | 0 |
+| `risk_mojibake` | 0 |

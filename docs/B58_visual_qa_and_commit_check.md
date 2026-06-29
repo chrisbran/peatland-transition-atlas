@@ -1,6 +1,6 @@
 # B58 - Visual QA and Commit Check
 
-Date: 2026-06-26
+Date: 2026-06-29
 
 ## 1. Required map PNGs
 
@@ -45,7 +45,13 @@ Date: 2026-06-26
 
 ### Current changed/untracked files
 
+- ` M docs/B103b_corrected_visible_text_audit.md`
+- ` M docs/B58_visual_qa_and_commit_check.md`
 - ` M index.html`
+- ` M src/central_global_map_story.js`
+- ` M src/central_layer_state_hardener.js`
+- ` M src/central_stage_label_fix.js`
+- ` M src/central_step_state_bridge.js`
 - ` M tasks/done.md`
 - `?? _backup_before_b116_public_page_hardening/`
 - `?? _backup_before_b117_cartographic_hardening/`
@@ -54,11 +60,29 @@ Date: 2026-06-26
 - `?? _backup_before_b119_fachliche_klammer/`
 - `?? _backup_before_b120_final_public_readiness_cleanup/`
 - `?? _backup_before_b121_raster_caption_cleanup/`
+- `?? _backup_before_b122_source_and_method_register/`
+- `?? _backup_before_b123a_central_scrolly_caption_cleanup/`
+- `?? _backup_before_b123b_runtime_caption_cleanup/`
+- `?? _backup_before_b123c_central_scrolly_single_controller/`
+- `?? _backup_before_b124_central_scrolly_single_source/`
+- `?? _backup_before_b124b_consolidate_germany_thuenen_map/`
 - `?? docs/B103_public_text_audit_only.md`
-- `?? docs/B121_final_wording_audit.txt`
-- `?? docs/B121_raster_caption_and_final_wording_cleanup.md`
-- `?? docs/B121_raster_caption_review.csv`
-- `?? docs/B121_raster_caption_review.html`
+- `?? docs/B122_source_and_method_audit.txt`
+- `?? docs/B122_source_and_method_register.md`
+- `?? docs/B123a_central_scrolly_caption_audit.txt`
+- `?? docs/B123a_central_scrolly_caption_cleanup.md`
+- `?? docs/B123a_central_scrolly_map_text_findings.csv`
+- `?? docs/B123a_central_scrolly_state_inventory.csv`
+- `?? docs/B123b_runtime_caption_cleanup_audit.txt`
+- `?? docs/B123b_runtime_caption_source_findings.csv`
+- `?? docs/B123b_scrolly_state_probe.csv`
+- `?? docs/B123c_central_controller_audit.csv`
+- `?? docs/B123c_central_scrolly_single_controller.md`
+- `?? docs/B123c_central_scrolly_single_controller_audit.txt`
+- `?? docs/B124_central_scrolly_single_source_audit.txt`
+- `?? docs/B124_rebuild_central_scrolly_single_source.md`
+- `?? docs/B124b_consolidate_germany_thuenen_map.md`
+- `?? docs/B124b_consolidate_germany_thuenen_map_audit.txt`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -83,7 +107,12 @@ Date: 2026-06-26
 - `?? scripts/103_public_text_audit_only.py`
 - `?? scripts/103b_corrected_visible_text_audit.py`
 - `?? scripts/10_link_rankings_and_map.py`
-- `?? scripts/121_raster_caption_and_final_wording_cleanup.py`
+- `?? scripts/122_source_and_method_register.py`
+- `?? scripts/123a_central_scrolly_caption_cleanup_and_state_audit.py`
+- `?? scripts/123b_runtime_caption_source_cleanup_and_scrolly_state_probe.py`
+- `?? scripts/123c_central_scrolly_single_controller_stabilization.py`
+- `?? scripts/124_rebuild_central_scrolly_single_source.py`
+- `?? scripts/124b_consolidate_germany_thuenen_map.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`
