@@ -45,14 +45,6 @@ Date: 2026-06-29
 
 ### Current changed/untracked files
 
-- ` M docs/B103b_corrected_visible_text_audit.md`
-- ` M docs/B58_visual_qa_and_commit_check.md`
-- ` M index.html`
-- ` M src/central_global_map_story.js`
-- ` M src/central_layer_state_hardener.js`
-- ` M src/central_stage_label_fix.js`
-- ` M src/central_step_state_bridge.js`
-- ` M tasks/done.md`
 - `?? _backup_before_b116_public_page_hardening/`
 - `?? _backup_before_b117_cartographic_hardening/`
 - `?? _backup_before_b117c_oberschwaben_palette_restyle/`
@@ -79,10 +71,6 @@ Date: 2026-06-29
 - `?? docs/B123c_central_controller_audit.csv`
 - `?? docs/B123c_central_scrolly_single_controller.md`
 - `?? docs/B123c_central_scrolly_single_controller_audit.txt`
-- `?? docs/B124_central_scrolly_single_source_audit.txt`
-- `?? docs/B124_rebuild_central_scrolly_single_source.md`
-- `?? docs/B124b_consolidate_germany_thuenen_map.md`
-- `?? docs/B124b_consolidate_germany_thuenen_map_audit.txt`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -111,8 +99,6 @@ Date: 2026-06-29
 - `?? scripts/123a_central_scrolly_caption_cleanup_and_state_audit.py`
 - `?? scripts/123b_runtime_caption_source_cleanup_and_scrolly_state_probe.py`
 - `?? scripts/123c_central_scrolly_single_controller_stabilization.py`
-- `?? scripts/124_rebuild_central_scrolly_single_source.py`
-- `?? scripts/124b_consolidate_germany_thuenen_map.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`
