@@ -1,0 +1,10 @@
+# B135 value-chain navigation anchor audit
+
+Date: 2026-06-30
+
+B134 responsive matrix markers still present before B135: False
+OK found target section by class: b130-engpass-climax
+OK added id to target section: wertschoepfung
+OK navigation label already present: Wertschöpfung
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

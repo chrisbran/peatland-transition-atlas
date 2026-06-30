@@ -43,8 +43,9 @@ Date: 2026-06-30
 
 ### Current changed/untracked files
 
+- ` M docs/B103b_corrected_visible_text_audit.md`
+- ` M docs/B58_visual_qa_and_commit_check.md`
 - ` M index.html`
-- ` M src/styles.css`
 - ` M tasks/done.md`
 - `?? _backup_before_b116_public_page_hardening/`
 - `?? _backup_before_b117_cartographic_hardening/`
@@ -90,8 +91,10 @@ Date: 2026-06-30
 - `?? docs/B131_scope_box_and_positioning_audit.txt`
 - `?? docs/B131b_scope_box_soften.md`
 - `?? docs/B131b_scope_box_soften_audit.txt`
-- `?? docs/B133_method_in_brief.md`
-- `?? docs/B133_method_in_brief_audit.txt`
+- `?? docs/B135_value_chain_navigation_anchor.md`
+- `?? docs/B135_value_chain_navigation_anchor_audit.txt`
+- `?? docs/B135b_fix_value_chain_nav_link.md`
+- `?? docs/B135b_fix_value_chain_nav_link_audit.txt`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -124,7 +127,8 @@ Date: 2026-06-30
 - `?? scripts/130b_option_a_replace_engpass.py`
 - `?? scripts/131_scope_box_and_positioning.py`
 - `?? scripts/131b_scope_box_soften.py`
-- `?? scripts/133_method_in_brief.py`
+- `?? scripts/135_value_chain_navigation_anchor.py`
+- `?? scripts/135b_fix_value_chain_nav_link.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`

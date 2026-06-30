@@ -754,3 +754,5 @@
 - B131c scope note contrast: strengthened contrast and subtle separation for the compact scope note (2026-06-30).
 - B132 statement titles: converted selected section and graphic headings from topic labels to claim-based titles (2026-06-30).
 - B133 method in brief: added a compact method transparency block and clarified footer positioning (2026-06-30).
+- B135 value-chain navigation anchor: added a navigation target for the value-chain/Engpass section (2026-06-30).
+- B135b fix value-chain nav link: inserted the missing Wertschöpfung navigation link using nav-only detection (2026-06-30).
