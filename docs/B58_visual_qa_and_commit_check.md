@@ -88,8 +88,12 @@ Date: 2026-06-30
 - `?? docs/B130_engpass_climax_graphic_audit.txt`
 - `?? docs/B130b_option_a_replace_engpass.md`
 - `?? docs/B130b_option_a_replace_engpass_audit.txt`
-- `?? docs/B130c_central_value_chain_sources.md`
-- `?? docs/B130c_central_value_chain_sources_audit.txt`
+- `?? docs/B131_scope_box_and_positioning.md`
+- `?? docs/B131_scope_box_and_positioning_audit.txt`
+- `?? docs/B131b_scope_box_soften.md`
+- `?? docs/B131b_scope_box_soften_audit.txt`
+- `?? docs/B131c_scope_note_contrast.md`
+- `?? docs/B131c_scope_note_contrast_audit.txt`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -120,7 +124,9 @@ Date: 2026-06-30
 - `?? scripts/123c_central_scrolly_single_controller_stabilization.py`
 - `?? scripts/130_engpass_climax_graphic.py`
 - `?? scripts/130b_option_a_replace_engpass.py`
-- `?? scripts/130c_central_value_chain_sources.py`
+- `?? scripts/131_scope_box_and_positioning.py`
+- `?? scripts/131b_scope_box_soften.py`
+- `?? scripts/131c_scope_note_contrast.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`

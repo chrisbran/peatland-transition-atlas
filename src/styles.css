@@ -5598,3 +5598,254 @@ body > pre:first-child {
 .b127-footer-links {
   color: rgba(31, 42, 34, .58);
 }
+
+/* B130_ENGPASS_CLIMAX_START */
+.b130-engpass-climax {
+  background: #161616;
+  color: #f6f2e8;
+}
+
+.b130-engpass-climax .section-inner {
+  width: min(100% - 2rem, 74rem);
+}
+
+.b130-engpass-climax .eyebrow {
+  color: rgba(246, 242, 232, 0.72);
+}
+
+.b130-engpass-climax h2 {
+  max-width: 18ch;
+  margin-bottom: 0.85rem;
+}
+
+.b130-engpass-climax .section-lead {
+  max-width: 48rem;
+  color: rgba(246, 242, 232, 0.84);
+}
+
+.b130-scorecard {
+  margin-top: 2rem;
+}
+
+.b130-scorecard__grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.b130-cell {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 0.85rem;
+  min-height: 14.5rem;
+}
+
+.b130-cell__status {
+  height: 7.5rem;
+  border-radius: 0.85rem;
+  margin-bottom: 0.85rem;
+}
+
+.b130-cell h3 {
+  margin: 0 0 0.28rem;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.b130-cell__meta {
+  margin: 0 0 0.5rem;
+  font-size: 0.92rem;
+  font-weight: 650;
+  color: rgba(246, 242, 232, 0.92);
+}
+
+.b130-cell__note {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: rgba(246, 242, 232, 0.74);
+}
+
+.b130-cell--good .b130-cell__status,
+.b130-legend__swatch--good {
+  background: #9bbf59;
+}
+
+.b130-cell--build .b130-cell__status,
+.b130-legend__swatch--build {
+  background: #f3b23a;
+}
+
+.b130-cell--gap .b130-cell__status,
+.b130-legend__swatch--gap {
+  background: #ef544b;
+}
+
+.b130-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+  align-items: center;
+  margin-top: 1.35rem;
+}
+
+.b130-legend__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: rgba(246, 242, 232, 0.92);
+  font-size: 0.98rem;
+}
+
+.b130-legend__swatch {
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 0.22rem;
+  display: inline-block;
+}
+
+.b130-engpass-note {
+  max-width: 48rem;
+  margin-top: 1rem;
+  color: rgba(246, 242, 232, 0.72);
+  font-size: 0.96rem;
+}
+
+.b130-source-box {
+  margin-top: 1.5rem;
+  max-width: 56rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  padding-top: 1rem;
+  color: rgba(246, 242, 232, 0.84);
+}
+
+.b130-source-box h3 {
+  margin: 0 0 0.7rem;
+  font-size: 1.02rem;
+}
+
+.b130-source-box ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.b130-source-box li {
+  margin-bottom: 0.55rem;
+  line-height: 1.5;
+}
+
+.b130-source-box p {
+  margin: 0.65rem 0 0;
+  color: rgba(246, 242, 232, 0.72);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 1180px) {
+  .b130-scorecard__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 820px) {
+  .b130-engpass-climax h2 {
+    max-width: none;
+  }
+
+  .b130-scorecard__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .b130-cell {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .b130-scorecard__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .b130-cell__status {
+    height: 5rem;
+  }
+
+  .b130-legend {
+    gap: 0.8rem 1rem;
+  }
+}
+/* B130_ENGPASS_CLIMAX_END */
+
+/* B131_SCOPE_BOX_START */
+.b131-scope-section {
+  padding-block: clamp(0.65rem, 2vw, 1.25rem);
+}
+
+.b131-scope-note {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+  max-width: 54rem;
+  border-left: 3px solid rgba(89, 123, 82, 0.8);
+  background: rgba(255, 255, 255, 0.36);
+  border-radius: 0.7rem;
+  padding: 0.7rem 0.9rem 0.75rem 0.95rem;
+  color: #203229;
+}
+
+.b131-scope-note__label {
+  margin: 0.18rem 0 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5f735e;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.b131-scope-note__body h2 {
+  margin: 0 0 0.25rem;
+  font-size: clamp(1rem, 1.7vw, 1.22rem);
+  line-height: 1.25;
+  color: #203229;
+}
+
+.b131-scope-note__body p {
+  margin: 0;
+  max-width: 46rem;
+  color: #4e6258;
+  font-size: 0.96rem;
+  line-height: 1.58;
+}
+
+.b131-scope-note__details {
+  margin-top: 0.5rem;
+}
+
+.b131-scope-note__details summary {
+  cursor: pointer;
+  color: #2b3f35;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.b131-scope-note__details p {
+  margin-top: 0.4rem;
+  max-width: 44rem;
+  color: #55685d;
+}
+
+@media (max-width: 720px) {
+  .b131-scope-note {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+    padding-left: 0.85rem;
+  }
+
+  .b131-scope-note__label {
+    white-space: normal;
+  }
+}
+/* B131_SCOPE_BOX_END */

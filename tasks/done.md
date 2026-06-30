@@ -749,3 +749,6 @@
 - B130 engpass climax graphic: added a responsive V2 bottleneck graphic ahead of the value-chain reference block (2026-06-30).
 - B130b option A replacement: replaced the earlier engpass graphic with a more cautious schematic scorecard and explicit source box (2026-06-30).
 - B130c central value-chain sources: added IPCC, VIP and Brandenburg value-chain references to the central source table (2026-06-30).
+- B131 scope box and positioning: added a concise V2 scope box near the page top (2026-06-30).
+- B131b scope box soften: replaced the dominant scope box with a compact inline scope note (2026-06-30).
+- B131c scope note contrast: strengthened contrast and subtle separation for the compact scope note (2026-06-30).
