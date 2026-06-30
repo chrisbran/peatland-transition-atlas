@@ -1,6 +1,6 @@
 # B103b - Corrected Visible Text Audit
 
-Date: 2026-06-29
+Date: 2026-06-30
 
 ## Result
 
@@ -25,20 +25,20 @@ B103b separates actual visible text from hidden/retired archive text.
 
 | Pattern group | Count |
 |---|---:|
-| Umsetzung* | 0 |
+| Umsetzung* | 1 |
 | Transform* | 8 |
-| Wertschöpfung* | 11 |
+| Wertschöpfung* | 14 |
 | wird zu/zur/zum/eine | 0 |
 | übersetz* | 0 |
 | Suchkulisse/Gesprächskulisse | 0 |
 | prototype/explorer | 0 |
-| English cue words | 0 |
+| English cue words | 2 |
 
 ## Visible findings summary
 
 | Category | Severity | Count |
 |---|---|---:|
-| none | none | 0 |
+| wording | review | 1 |
 
 ## Hidden/retired findings summary
 
@@ -54,7 +54,12 @@ B103b separates actual visible text from hidden/retired archive text.
 
 ## First visible review candidates
 
-No findings.
+### 1. wording / review: `Umsetzung`
+
+Context: etabliert. Verwendung erhöhter Entwicklungsbedarf Kleinere Mengen, fehlende Skalierung oder unsichere Absatzwege begrenzen die Umsetzung. anschlussfähig im Aufbau erhöhter Entwicklungsbedarf Qualitative Einordnung, keine Präzisionszahlen und keine formale Bewertun
+
+Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
+
 
 ## First hidden/retired review candidates
 

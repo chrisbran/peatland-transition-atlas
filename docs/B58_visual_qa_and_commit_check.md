@@ -1,6 +1,6 @@
 # B58 - Visual QA and Commit Check
 
-Date: 2026-06-29
+Date: 2026-06-30
 
 ## 1. Required map PNGs
 
@@ -46,8 +46,6 @@ Date: 2026-06-29
 - ` M docs/B103b_corrected_visible_text_audit.md`
 - ` M docs/B58_visual_qa_and_commit_check.md`
 - ` M index.html`
-- ` M scripts/58_visual_qa_and_commit_check.py`
-- ` M src/central_global_map_story.js`
 - ` M src/styles.css`
 - ` M tasks/done.md`
 - `?? _backup_before_b116_public_page_hardening/`
@@ -86,26 +84,12 @@ Date: 2026-06-29
 - `?? docs/B123c_central_controller_audit.csv`
 - `?? docs/B123c_central_scrolly_single_controller.md`
 - `?? docs/B123c_central_scrolly_single_controller_audit.txt`
-- `?? docs/B125_source_and_method_audit.txt`
-- `?? docs/B125_source_and_method_register.md`
-- `?? docs/B125b_data_rights_and_attribution_audit.txt`
-- `?? docs/B125b_data_rights_and_attribution_register.md`
-- `?? docs/B125c_compact_source_method_rights.md`
-- `?? docs/B125c_compact_source_method_rights_audit.txt`
-- `?? docs/B126_publication_wording_polish.md`
-- `?? docs/B126_publication_wording_polish_audit.txt`
-- `?? docs/B127_publication_frame_and_sequence_tightening.md`
-- `?? docs/B127_publication_frame_and_sequence_tightening_audit.txt`
-- `?? docs/B127b_remove_bw_boundary_only_step.md`
-- `?? docs/B127b_remove_bw_boundary_only_step_audit.txt`
-- `?? docs/B127c_unwire_removed_boundary_states.md`
-- `?? docs/B127c_unwire_removed_boundary_states_audit.txt`
-- `?? docs/B127d_patch_b58_retired_boundary_states.md`
-- `?? docs/B127d_patch_b58_retired_boundary_states_audit.txt`
-- `?? docs/B127e_finalize_b58_retired_state_audit.md`
-- `?? docs/B127e_finalize_b58_retired_state_audit.txt`
-- `?? docs/B127f_final_microcopy_cleanup.md`
-- `?? docs/B127f_final_microcopy_cleanup_audit.txt`
+- `?? docs/B130_engpass_climax_graphic.md`
+- `?? docs/B130_engpass_climax_graphic_audit.txt`
+- `?? docs/B130b_option_a_replace_engpass.md`
+- `?? docs/B130b_option_a_replace_engpass_audit.txt`
+- `?? docs/B130c_central_value_chain_sources.md`
+- `?? docs/B130c_central_value_chain_sources_audit.txt`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -134,16 +118,9 @@ Date: 2026-06-29
 - `?? scripts/123a_central_scrolly_caption_cleanup_and_state_audit.py`
 - `?? scripts/123b_runtime_caption_source_cleanup_and_scrolly_state_probe.py`
 - `?? scripts/123c_central_scrolly_single_controller_stabilization.py`
-- `?? scripts/125_source_and_method_register.py`
-- `?? scripts/125b_data_rights_and_attribution_register.py`
-- `?? scripts/125c_compact_source_method_rights.py`
-- `?? scripts/126_publication_wording_polish.py`
-- `?? scripts/127_publication_frame_and_sequence_tightening.py`
-- `?? scripts/127b_remove_bw_boundary_only_step.py`
-- `?? scripts/127c_unwire_removed_boundary_states.py`
-- `?? scripts/127d_patch_b58_retired_boundary_states.py`
-- `?? scripts/127e_finalize_b58_retired_state_audit.py`
-- `?? scripts/127f_final_microcopy_cleanup.py`
+- `?? scripts/130_engpass_climax_graphic.py`
+- `?? scripts/130b_option_a_replace_engpass.py`
+- `?? scripts/130c_central_value_chain_sources.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`

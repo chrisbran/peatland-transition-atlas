@@ -746,3 +746,6 @@
 - Removed the redundant standalone `Werte gerundet.` line after the Oberschwaben FIONA/BK50/GISCO data-basis note.
 - Kept the earlier explicit note: `Hinweis: Stilllegung und unklare Zuweisungen sind separat ausgewiesen; Werte gerundet.`
 - Did not modify maps, CSS, data or scrolly logic.
+- B130 engpass climax graphic: added a responsive V2 bottleneck graphic ahead of the value-chain reference block (2026-06-30).
+- B130b option A replacement: replaced the earlier engpass graphic with a more cautious schematic scorecard and explicit source box (2026-06-30).
+- B130c central value-chain sources: added IPCC, VIP and Brandenburg value-chain references to the central source table (2026-06-30).
