@@ -5849,3 +5849,25 @@ body > pre:first-child {
   }
 }
 /* B131_SCOPE_BOX_END */
+
+/* B133_METHOD_IN_BRIEF_START */
+.b133-method-in-brief {
+  margin: 1.15rem 0 1.5rem;
+  padding: clamp(0.9rem, 2vw, 1.15rem);
+  border-radius: 1rem;
+  border: 1px solid rgba(26, 48, 38, 0.14);
+  background: rgba(255, 255, 255, 0.54);
+}
+
+.b133-method-in-brief h3 {
+  margin-top: 0;
+}
+
+.b133-method-in-brief p {
+  max-width: 62rem;
+}
+
+.b133-method-in-brief p:last-child {
+  margin-bottom: 0;
+}
+/* B133_METHOD_IN_BRIEF_END */
