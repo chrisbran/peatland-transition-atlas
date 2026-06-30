@@ -1,0 +1,32 @@
+B145 Felt Embed Candidate Template
+Date: 2026-06-30
+
+Do not paste this into index.html yet.
+Use this file only to document the candidate Felt pilot.
+
+Felt map title:
+<insert title>
+
+Felt share URL:
+<insert URL>
+
+Felt iframe embed code:
+<insert iframe code>
+
+Visibility setting:
+<public / anyone with link / other>
+
+License / plan check:
+<notes>
+
+Privacy / external embed check:
+<notes>
+
+Desktop QA:
+<notes>
+
+Mobile QA:
+<notes>
+
+Decision:
+<keep testing / integrate later / export static image / reject>
