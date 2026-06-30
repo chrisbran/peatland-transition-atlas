@@ -1,0 +1,9 @@
+# B138 soil-context precision note audit
+
+Date: 2026-06-30
+
+Old B138 HTML block present before patch: False
+Old B138 CSS block present before patch: False
+OK inserted B138 soil-context note after first paragraph in section containing anchor: Oberschwaben, wo Moorschutz auf Landwirtschaft trifft
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

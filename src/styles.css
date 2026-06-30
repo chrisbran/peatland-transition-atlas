@@ -6033,3 +6033,33 @@ body > pre:first-child {
   }
 }
 /* B137_CONSEQUENCE_KICKER_END */
+
+/* B138_SOIL_CONTEXT_PRECISION_START */
+.b138-soil-context-note {
+  max-width: 46rem;
+  margin: 1rem 0 1.25rem;
+  padding: 0.85rem 0.95rem;
+  border-left: 3px solid rgba(89, 123, 82, 0.72);
+  background: rgba(255, 255, 255, 0.45);
+  border-radius: 0.75rem;
+}
+
+.b138-soil-context-note__label {
+  margin: 0 0 0.25rem;
+  color: #5f735e;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.b138-soil-context-note p:last-child {
+  margin-bottom: 0;
+}
+
+.b138-soil-context-note p:not(.b138-soil-context-note__label) {
+  color: var(--muted, #637266);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+/* B138_SOIL_CONTEXT_PRECISION_END */
