@@ -1,0 +1,8 @@
+# B136b frame bridge alignment audit
+
+Date: 2026-06-30
+
+Existing B136 CSS block present before patch: True
+OK replaced B136 CSS with centered section-inner and centered inner wrapper
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.
