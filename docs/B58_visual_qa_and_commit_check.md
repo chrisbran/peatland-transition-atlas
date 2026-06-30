@@ -43,7 +43,7 @@ Date: 2026-06-30
 
 ### Current changed/untracked files
 
-- ` M docs/B103b_corrected_visible_text_audit.md`
+- ` M docs/B58_visual_qa_and_commit_check.md`
 - ` M index.html`
 - ` M src/styles.css`
 - ` M tasks/done.md`
@@ -91,8 +91,10 @@ Date: 2026-06-30
 - `?? docs/B131_scope_box_and_positioning_audit.txt`
 - `?? docs/B131b_scope_box_soften.md`
 - `?? docs/B131b_scope_box_soften_audit.txt`
-- `?? docs/B139_water_governance_block.md`
-- `?? docs/B139_water_governance_block_audit.txt`
+- `?? docs/B140_unified_source_lines.md`
+- `?? docs/B140_unified_source_lines_audit.txt`
+- `?? docs/B140b_source_lines_reduce_noise.md`
+- `?? docs/B140b_source_lines_reduce_noise_audit.txt`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -125,7 +127,8 @@ Date: 2026-06-30
 - `?? scripts/130b_option_a_replace_engpass.py`
 - `?? scripts/131_scope_box_and_positioning.py`
 - `?? scripts/131b_scope_box_soften.py`
-- `?? scripts/139_water_governance_block.py`
+- `?? scripts/140_unified_source_lines.py`
+- `?? scripts/140b_source_lines_reduce_noise.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`

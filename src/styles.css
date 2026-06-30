@@ -6162,3 +6162,39 @@ body > pre:first-child {
   }
 }
 /* B139_WATER_GOVERNANCE_END */
+
+/* B140_UNIFIED_SOURCE_LINES_START */
+.b140-source-line {
+  width: min(100%, 54rem);
+  margin: 0.7rem auto 0;
+  color: var(--muted, #637266);
+  font-size: 0.82rem;
+  line-height: 1.42;
+  opacity: 0.82;
+}
+
+.b140-source-line::before {
+  content: "Quelle/Methode: ";
+  font-weight: 700;
+}
+
+.b140-source-line a,
+.b130-source-box a {
+  color: inherit;
+  font-weight: 700;
+  text-underline-offset: 0.16em;
+  text-decoration-thickness: 0.08em;
+}
+
+.b130-source-box a {
+  color: rgba(246, 242, 232, 0.9);
+}
+
+@media (max-width: 720px) {
+  .b140-source-line {
+    width: min(100% - 1.25rem, 54rem);
+    margin-top: 0.55rem;
+    font-size: 0.78rem;
+  }
+}
+/* B140_UNIFIED_SOURCE_LINES_END */

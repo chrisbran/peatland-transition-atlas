@@ -761,3 +761,5 @@
 - B137 consequence kicker: added a concise end-of-story consequence block before sources (2026-06-30).
 - B138 soil-context precision note: clarified that the regional BK50 layer is a Moor-/Feuchtbodenkontext, not a parcel-level peat-soil proof or suitability map (2026-06-30).
 - B139 water governance block: added a planning-level section on parcels, farms and hydrological units (2026-06-30).
+- B140 unified source lines: added compact source/method lines and method links for key V2 narrative and map blocks (2026-06-30).
+- B140b source lines reduce noise: removed source lines from editorial narrative blocks and softened remaining map source lines (2026-06-30).
