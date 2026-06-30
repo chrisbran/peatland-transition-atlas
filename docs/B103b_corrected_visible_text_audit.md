@@ -25,9 +25,9 @@ B103b separates actual visible text from hidden/retired archive text.
 
 | Pattern group | Count |
 |---|---:|
-| Umsetzung* | 3 |
+| Umsetzung* | 4 |
 | Transform* | 9 |
-| Wertschöpfung* | 18 |
+| Wertschöpfung* | 19 |
 | wird zu/zur/zum/eine | 0 |
 | übersetz* | 0 |
 | Suchkulisse/Gesprächskulisse | 0 |
@@ -38,7 +38,7 @@ B103b separates actual visible text from hidden/retired archive text.
 
 | Category | Severity | Count |
 |---|---|---:|
-| wording | review | 3 |
+| wording | review | 4 |
 
 ## Hidden/retired findings summary
 
@@ -69,6 +69,12 @@ Recommendation: Keep where needed, but reduce repetition and vary with Planung/P
 ### 3. wording / review: `Umsetzung`
 
 Context: etabliert. Verwendung erhöhter Entwicklungsbedarf Kleinere Mengen, fehlende Skalierung oder unsichere Absatzwege begrenzen die Umsetzung. anschlussfähig im Aufbau erhöhter Entwicklungsbedarf Qualitative Einordnung, keine Präzisionszahlen und keine formale Bewertun
+
+Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
+
+### 4. wording / review: `Umsetzung`
+
+Context: dortempfehlung. Konsequenz Der Hebel verschiebt sich von der Fläche zur Kette Wiedervernässung bleibt der ökologische Kern. Für Umsetzung reicht die Flächenperspektive aber nicht aus: Entscheidend wird, ob Wasser, Nutzung, Verarbeitung und Nachfrage als zusammenhänge
 
 Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
 

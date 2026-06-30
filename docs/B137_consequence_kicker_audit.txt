@@ -1,0 +1,9 @@
+# B137 consequence kicker audit
+
+Date: 2026-06-30
+
+Old B137 HTML block present before patch: False
+Old B137 CSS block present before patch: False
+OK inserted B137 before section containing anchor: Quellen, Methodik und Nutzungsrechte
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

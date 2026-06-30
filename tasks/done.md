@@ -758,3 +758,4 @@
 - B135b fix value-chain nav link: inserted the missing Wertschöpfung navigation link using nav-only detection (2026-06-30).
 - B136 frame mismatch bridge: added a compact narrative bridge from climate framing to local implementation (2026-06-30).
 - B136b frame bridge alignment: centered the frame-mismatch bridge and added safe horizontal gutters (2026-06-30).
+- B137 consequence kicker: added a concise end-of-story consequence block before sources (2026-06-30).
