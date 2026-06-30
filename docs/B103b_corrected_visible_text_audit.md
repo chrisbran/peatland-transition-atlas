@@ -25,7 +25,7 @@ B103b separates actual visible text from hidden/retired archive text.
 
 | Pattern group | Count |
 |---|---:|
-| Umsetzung* | 4 |
+| Umsetzung* | 6 |
 | Transform* | 9 |
 | Wertschöpfung* | 19 |
 | wird zu/zur/zum/eine | 0 |
@@ -38,7 +38,7 @@ B103b separates actual visible text from hidden/retired archive text.
 
 | Category | Severity | Count |
 |---|---|---:|
-| wording | review | 4 |
+| wording | review | 6 |
 
 ## Hidden/retired findings summary
 
@@ -74,7 +74,19 @@ Recommendation: Keep where needed, but reduce repetition and vary with Planung/P
 
 ### 4. wording / review: `Umsetzung`
 
-Context: dortempfehlung. Konsequenz Der Hebel verschiebt sich von der Fläche zur Kette Wiedervernässung bleibt der ökologische Kern. Für Umsetzung reicht die Flächenperspektive aber nicht aus: Entscheidend wird, ob Wasser, Nutzung, Verarbeitung und Nachfrage als zusammenhänge
+Context: nzelnen Fläche entschieden. Der Wasserstand verbindet Parzellen, Betriebe, Gräben, Vorfluter und Nachbarschaften. Deshalb beginnt Umsetzung oft dort, wo Zuständigkeiten nicht deckungsgleich sind. 01 Parzelle zeigt Nutzung, Eigentum und Bewirtschaftung – aber nur eine
+
+Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
+
+### 5. wording / review: `Umsetzung`
+
+Context: Wasserstände gemeinsam steuerbar sind – und wer dafür zusammen planen muss. Konsequenz: Karten können Prüfbedarf sichtbar machen. Umsetzung braucht zusätzlich lokale Wasserkenntnis, Abstimmung zwischen Eigentümern und Betrieben sowie tragfähige Bewirtschaftungs- und Ve
+
+Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
+
+### 6. wording / review: `Umsetzung`
+
+Context: rwertungspfade. Konsequenz Der Hebel verschiebt sich von der Fläche zur Kette Wiedervernässung bleibt der ökologische Kern. Für Umsetzung reicht die Flächenperspektive aber nicht aus: Entscheidend wird, ob Wasser, Nutzung, Verarbeitung und Nachfrage als zusammenhänge
 
 Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
 

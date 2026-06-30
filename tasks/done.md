@@ -760,3 +760,4 @@
 - B136b frame bridge alignment: centered the frame-mismatch bridge and added safe horizontal gutters (2026-06-30).
 - B137 consequence kicker: added a concise end-of-story consequence block before sources (2026-06-30).
 - B138 soil-context precision note: clarified that the regional BK50 layer is a Moor-/Feuchtbodenkontext, not a parcel-level peat-soil proof or suitability map (2026-06-30).
+- B139 water governance block: added a planning-level section on parcels, farms and hydrological units (2026-06-30).
