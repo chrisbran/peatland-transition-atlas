@@ -1,0 +1,19 @@
+# B132 statement titles audit
+
+Date: 2026-06-30
+
+Total replacements applied: 11
+
+OK replaced 1x: Warum Wasserstand entscheidend ist -> Der Wasserstand entscheidet, ob Moorboden speichert oder emittiert
+OK replaced 1x: Moorbodenkontext braucht konkrete Planung -> Moorbodenschutz wird erst mit Boden, Nutzung und Wasserstand planbar
+OK replaced 1x: Globale Moorverbreitung -> Moore sind räumlich konzentriert und klimatisch wirksam
+OK replaced 1x: Warum die Karte beim Wasser beginnt -> Der Wasserstand macht aus Moorboden Speicher oder Quelle
+OK replaced 1x: Oberschwaben als Ausgangspunkt -> In Oberschwaben wird Moorbodenschutz zur konkreten Nutzungsfrage
+OK replaced 1x: Nicht jede Fläche braucht dieselbe Lösung -> Unterschiedliche Flächen brauchen unterschiedliche Transformationspfade
+OK replaced 1x: Was die Karten nicht leisten -> Die Karten zeigen Prüfbedarf, aber keine Flächeneignung
+OK replaced 1x: Was die Schnittmenge in Oberschwaben zeigt -> Die Schnittmenge macht den Prüfbedarf sichtbar, nicht die Lösung
+OK replaced 1x: Was aus der Schnittmenge folgt -> Aus der Schnittmenge folgt Verhandlung, keine Einheitslösung
+OK replaced 1x: Welche Prüfpfade folgen aus unterschiedlichen Nutzungskontexten? -> Nutzungskontexte entscheiden, welche Wertschöpfungspfade plausibel sind
+OK replaced 1x: Die eigentliche Engstelle liegt selten im Anbau allein -> Die Engstelle liegt häufig bei Menge, Verarbeitung und Abnahme
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

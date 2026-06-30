@@ -752,3 +752,4 @@
 - B131 scope box and positioning: added a concise V2 scope box near the page top (2026-06-30).
 - B131b scope box soften: replaced the dominant scope box with a compact inline scope note (2026-06-30).
 - B131c scope note contrast: strengthened contrast and subtle separation for the compact scope note (2026-06-30).
+- B132 statement titles: converted selected section and graphic headings from topic labels to claim-based titles (2026-06-30).

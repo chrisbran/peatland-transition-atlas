@@ -44,9 +44,7 @@ Date: 2026-06-30
 ### Current changed/untracked files
 
 - ` M docs/B103b_corrected_visible_text_audit.md`
-- ` M docs/B58_visual_qa_and_commit_check.md`
 - ` M index.html`
-- ` M src/styles.css`
 - ` M tasks/done.md`
 - `?? _backup_before_b116_public_page_hardening/`
 - `?? _backup_before_b117_cartographic_hardening/`
@@ -92,8 +90,8 @@ Date: 2026-06-30
 - `?? docs/B131_scope_box_and_positioning_audit.txt`
 - `?? docs/B131b_scope_box_soften.md`
 - `?? docs/B131b_scope_box_soften_audit.txt`
-- `?? docs/B131c_scope_note_contrast.md`
-- `?? docs/B131c_scope_note_contrast_audit.txt`
+- `?? docs/B132_statement_titles.md`
+- `?? docs/B132_statement_titles_audit.txt`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -126,7 +124,7 @@ Date: 2026-06-30
 - `?? scripts/130b_option_a_replace_engpass.py`
 - `?? scripts/131_scope_box_and_positioning.py`
 - `?? scripts/131b_scope_box_soften.py`
-- `?? scripts/131c_scope_note_contrast.py`
+- `?? scripts/132_statement_titles.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`
