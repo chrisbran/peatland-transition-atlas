@@ -763,3 +763,5 @@
 - B139 water governance block: added a planning-level section on parcels, farms and hydrological units (2026-06-30).
 - B140 unified source lines: added compact source/method lines and method links for key V2 narrative and map blocks (2026-06-30).
 - B140b source lines reduce noise: removed source lines from editorial narrative blocks and softened remaining map source lines (2026-06-30).
+- B141 cartographic annotation audit: inventoried candidate sections for map/graphic annotation follow-up (2026-06-30).
+- B143 map upgrade decision: documented a separate Oberschwaben map-quality pilot instead of replacing the current map stack immediately (2026-06-30).

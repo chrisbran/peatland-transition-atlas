@@ -1,0 +1,18 @@
+# B143 map upgrade decision and pilot plan audit
+
+Date: 2026-06-30
+
+Result: DOCUMENTATION ONLY. No public page files changed.
+
+Created/updated:
+
+- docs/B143_map_upgrade_decision_and_pilot_plan.md
+- docs/B143_oberschwaben_felt_pilot_checklist.md
+- docs/B143_map_upgrade_decision_and_pilot_plan_audit.txt
+- tasks/done.md
+
+Decision:
+
+- Do not replace the full map stack immediately.
+- Prepare a separate Oberschwaben pilot using ArcGIS -> GeoJSON -> mapshaper -> Felt.
+- Keep the current PNG/sticky map stack stable as fallback.
