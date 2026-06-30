@@ -43,7 +43,6 @@ Date: 2026-06-30
 
 ### Current changed/untracked files
 
-- ` M docs/B58_visual_qa_and_commit_check.md`
 - ` M tasks/done.md`
 - `?? _backup_before_b116_public_page_hardening/`
 - `?? _backup_before_b117_cartographic_hardening/`
@@ -92,9 +91,10 @@ Date: 2026-06-30
 - `?? docs/B141_cartographic_annotation_audit.md`
 - `?? docs/B141_cartographic_annotation_audit.txt`
 - `?? docs/B141_cartographic_annotation_candidates.csv`
-- `?? docs/B143_map_upgrade_decision_and_pilot_plan.md`
-- `?? docs/B143_map_upgrade_decision_and_pilot_plan_audit.txt`
-- `?? docs/B143_oberschwaben_felt_pilot_checklist.md`
+- `?? docs/B144_oberschwaben_felt_pilot_export_manifest.csv`
+- `?? docs/B144_oberschwaben_map_export_manifest.md`
+- `?? docs/B144_oberschwaben_map_export_manifest_audit.txt`
+- `?? docs/B144_oberschwaben_map_export_readme.md`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -128,7 +128,7 @@ Date: 2026-06-30
 - `?? scripts/131_scope_box_and_positioning.py`
 - `?? scripts/131b_scope_box_soften.py`
 - `?? scripts/141_cartographic_annotation_audit.py`
-- `?? scripts/143_map_upgrade_decision_and_pilot_plan.py`
+- `?? scripts/144_oberschwaben_map_export_manifest.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`
