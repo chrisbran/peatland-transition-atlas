@@ -770,3 +770,4 @@
 - B146 Felt pilot candidate documentation: documented the successful Felt pilot, embed availability, mobile check and integration gates (2026-07-01).
 - B147 Felt embed isolated prototype: created a docs-only iframe prototype for local desktop/mobile testing before touching the public page (2026-07-01).
 - B148 Felt integration strategy and responsive gate: documented desktop-embed/mobile-fallback strategy before any live integration (2026-07-01).
+- B149 Felt desktop embed/mobile fallback prototype: added a reversible page-level prototype with desktop iframe and mobile external-link fallback (2026-07-01).

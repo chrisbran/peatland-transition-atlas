@@ -1,0 +1,12 @@
+# B149 Felt desktop embed/mobile fallback prototype audit
+
+Date: 2026-07-01
+
+Felt iframe detected in B146 candidate: True
+Felt share URL detected in B146 candidate: True
+Felt share URL: https://felt.com/map/Oberschwaben-Moor-Feuchtbodenkontext-Pilot-VaKZdOYFRw9B2SzH1sdk39AD?share=1&loc=47.9524,9.489,10z
+Old B149 HTML block present before patch: False
+Old B149 CSS block present before patch: False
+OK insertion after section containing anchor: Oberschwaben, wo Moorschutz auf Landwirtschaft trifft
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.
