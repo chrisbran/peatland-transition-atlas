@@ -792,3 +792,4 @@
 - B166 full layer inventory and sticky state matrix: inventoried map assets and documented the complete target state matrix, including density map and regional boundary-pairing issues (2026-07-01).
 - B167 sticky zoom state repair: repaired the isolated sticky-zoom prototype by splitting total/density pressure states and using a matching regional boundary overlay (2026-07-01).
 - B167b restore BW layer to sticky zoom: added a dedicated Baden-Württemberg layer between Germany and Oberschwaben in the isolated sticky-zoom prototype (2026-07-01).
+- B168 sticky zoom integration plan: planned how to integrate the repaired B167b sticky-zoom logic into the existing dark central map story without replacing the stable main page structure (2026-07-01).

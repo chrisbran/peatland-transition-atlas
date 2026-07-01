@@ -1,0 +1,32 @@
+# B168 sticky zoom integration plan audit
+
+Date: 2026-07-01
+
+Result: PLAN ONLY. No public page files changed.
+
+Inputs:
+- index.html exists: True
+- B167b/B165 prototype exists: True
+
+Central story indicators:
+- central_global_map_story: True
+- src/central_global_map_story.js: True
+- central_layer_state_hardener: True
+- central_step_state_bridge: True
+- central_stage_label_fix: True
+- data-state_count: 11
+
+Target states:
+- total: 8
+- present in B167b prototype: 8
+- present in index/aliases: 5
+- target assets all present: True
+
+Created/updated:
+- docs/B168_sticky_zoom_integration_plan.md
+- docs/B168_live_sticky_zoom_state_plan.csv
+- docs/B168_b169_implementation_brief.md
+- docs/B168_sticky_zoom_integration_plan_audit.txt
+- tasks/done.md
+
+Recommended next patch: B169 Live Sticky Zoom Integration Prototype
