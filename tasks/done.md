@@ -774,3 +774,4 @@
 - B150 Felt block polish and source register: polished public wording for the Felt map block and added a central source-register note (2026-07-01).
 - B151 Felt external-service notice: added a compact third-party map-service notice below the Felt map block (2026-07-01).
 - B152 Oberschwaben/Felt integration consolidation: reframed the Felt block as an interactive deepening of the static Oberschwaben map and reduced redundancy (2026-07-01).
+- B153 map role and redundancy audit: inventoried map/graphic roles after Felt integration and documented static-vs-interactive Oberschwaben roles (2026-07-01).
