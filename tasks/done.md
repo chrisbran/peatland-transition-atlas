@@ -793,3 +793,7 @@
 - B167 sticky zoom state repair: repaired the isolated sticky-zoom prototype by splitting total/density pressure states and using a matching regional boundary overlay (2026-07-01).
 - B167b restore BW layer to sticky zoom: added a dedicated Baden-Württemberg layer between Germany and Oberschwaben in the isolated sticky-zoom prototype (2026-07-01).
 - B168 sticky zoom integration plan: planned how to integrate the repaired B167b sticky-zoom logic into the existing dark central map story without replacing the stable main page structure (2026-07-01).
+- B169 live sticky zoom integration prototype: integrated the repaired eight-step sticky-zoom state matrix into the live page using the existing dark map-story direction (2026-07-01).
+- B169c live sticky zoom text and artifact fix: removed the separate map annotation rail, eliminated lateral step jumps, and disabled the Oberschwaben admin overlay that made county labels look like artifacts (2026-07-01).
+- B169d Oberschwaben subtle boundary overlay: restored a subdued regional boundary overlay in the live sticky zoom to keep orientation without making Landkreis labels dominate (2026-07-01).
+- B169e replace Oberschwaben zoom map: replaced the live sticky zoom Oberschwaben handoff map with the new no-label Landkreis + Moor-/Feuchtbodenkontext asset and removed overlay hacks (2026-07-01).

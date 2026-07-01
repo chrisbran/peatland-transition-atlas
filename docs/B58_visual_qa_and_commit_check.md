@@ -27,9 +27,9 @@ Date: 2026-07-01
 
 ## 4. Central story states
 
-- OK `europe-peat`
-- OK `germany-thuenen-extent`
-- OK `germany-thuenen-types`
+- FAIL `europe-peat` — index=False, scripts=True
+- FAIL `germany-thuenen-extent` — index=False, scripts=True
+- FAIL `germany-thuenen-types` — index=False, scripts=True
 
 ## 5. Unwanted reference check
 
@@ -44,6 +44,9 @@ Date: 2026-07-01
 ### Current changed/untracked files
 
 - ` M docs/B145_felt_embed_candidate_template.txt`
+- ` M docs/B58_visual_qa_and_commit_check.md`
+- ` M index.html`
+- ` M src/styles.css`
 - ` M tasks/done.md`
 - `?? _backup_before_b116_public_page_hardening/`
 - `?? _backup_before_b117_cartographic_hardening/`
@@ -104,10 +107,18 @@ Date: 2026-07-01
 - `?? docs/B165_flagship_sticky_zoom_prototype_inventory.csv`
 - `?? docs/B165b_flagship_sticky_zoom_boundary_overlays.md`
 - `?? docs/B165b_flagship_sticky_zoom_boundary_overlays_audit.txt`
-- `?? docs/B168_b169_implementation_brief.md`
-- `?? docs/B168_live_sticky_zoom_state_plan.csv`
-- `?? docs/B168_sticky_zoom_integration_plan.md`
-- `?? docs/B168_sticky_zoom_integration_plan_audit.txt`
+- `?? docs/B169_live_sticky_zoom_integration_prototype.md`
+- `?? docs/B169_live_sticky_zoom_integration_prototype_audit.txt`
+- `?? docs/B169_live_sticky_zoom_state_matrix.csv`
+- `?? docs/B169c_live_sticky_zoom_state_matrix.csv`
+- `?? docs/B169c_live_sticky_zoom_text_and_artifact_fix.md`
+- `?? docs/B169c_live_sticky_zoom_text_and_artifact_fix_audit.txt`
+- `?? docs/B169d_oberschwaben_boundary_candidates.csv`
+- `?? docs/B169d_oberschwaben_subtle_boundary_overlay.md`
+- `?? docs/B169d_oberschwaben_subtle_boundary_overlay_audit.txt`
+- `?? docs/B169e_live_sticky_zoom_state_matrix.csv`
+- `?? docs/B169e_replace_oberschwaben_zoom_map.md`
+- `?? docs/B169e_replace_oberschwaben_zoom_map_audit.txt`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -129,6 +140,7 @@ Date: 2026-07-01
 - `?? docs/prototypes/B162_value_chain_climax_wireframe.svg`
 - `?? public/maps/bw/README.md`
 - `?? public/maps/europe/README.md`
+- `?? public/maps/oberschwaben/oberschwaben_landkreise_moor_nolabel.png`
 - `?? scripts/04_add_hotspot_ranking_layer.py`
 - `?? scripts/103_public_text_audit_only.py`
 - `?? scripts/103b_corrected_visible_text_audit.py`
@@ -146,7 +158,11 @@ Date: 2026-07-01
 - `?? scripts/162_value_chain_visual_climax_redesign.py`
 - `?? scripts/165_flagship_sticky_zoom_prototype.py`
 - `?? scripts/165b_flagship_sticky_zoom_boundary_overlays.py`
-- `?? scripts/168_sticky_zoom_integration_plan.py`
+- `?? scripts/169_live_sticky_zoom_integration_prototype.py`
+- `?? scripts/169b_live_sticky_zoom_annotation_and_spacing_fix.py`
+- `?? scripts/169c_live_sticky_zoom_text_and_artifact_fix.py`
+- `?? scripts/169d_oberschwaben_subtle_boundary_overlay.py`
+- `?? scripts/169e_replace_oberschwaben_zoom_map.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`
@@ -172,6 +188,7 @@ Date: 2026-07-01
 - `?? scripts/98b_prepare_oberschwaben_counties_from_gisco.py`
 - `?? scripts/98c_oberschwaben_intersection_classification_review.py`
 - `?? scripts/99_reposition_transformations_after_oberschwaben.py`
+- `?? src/b169_live_sticky_zoom.js`
 - `?? src/emissions_metric_scrolly.js`
 - `?? tasks/B11_build_first_peat_soils_layer.md`
 - `?? tasks/B11b_process_bk50_moor_web_layer.md`
@@ -219,4 +236,8 @@ Date: 2026-07-01
 
 ## Result
 
-PASS — no blocking QA issues detected.
+FAIL — fix the issues below before committing.
+
+- State not fully wired: europe-peat (index=False, scripts=True)
+- State not fully wired: germany-thuenen-extent (index=False, scripts=True)
+- State not fully wired: germany-thuenen-types (index=False, scripts=True)

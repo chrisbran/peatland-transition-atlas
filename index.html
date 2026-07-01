@@ -148,108 +148,83 @@
 </section>
 <!-- /B136_FRAME_MISMATCH_BRIDGE_END -->
 
-<section id="centralGlobalMapStory" class="central-map-story" data-state="extent" data-story-role="main-atlas-story" data-b87-central-story="true">
- <div class="central-map-sticky" aria-live="polite">
- <div class="central-map-shell" role="img" aria-label="Scroll-driven global peatland and emissions map">
- <div class="central-map-titlebar">
- <span id="centralMapMode">Moore sind räumlich konzentriert und klimatisch wirksam</span>
- <strong id="centralMapTitle">Moore sind räumlich stark konzentriert.</strong>
- </div>
+<!-- B169_LIVE_STICKY_ZOOM_START -->
+<section id="karten" class="b169-live-sticky-zoom" data-b169-live-sticky-zoom aria-label="Kartenfolge vom globalen Moorvorkommen bis Oberschwaben">
+  <div class="b169-intro">
+    <p class="b169-eyebrow">Kartenfolge</p>
+    <h2>Der Maßstab entscheidet</h2>
+    <p>Globale Karten zeigen, warum Moore relevant sind. Regional wird sichtbar, wo Planung beginnt.</p>
+  </div>
 
- <div class="central-map-layer-stack">
- <img class="central-map-layer layer-gpm" src="public/maps/global/global_gpm2_peat_extent.png" alt="">
- <img class="central-map-layer layer-total" src="public/maps/global/global_hotspots_total.png" alt="">
- <img class="central-map-layer layer-density" src="public/maps/global/global_hotspots_density.png" alt="">
- <img class="central-map-layer layer-borders" src="public/maps/global/global_country_borders.png" alt="">
- 
- <img class="central-map-layer layer-europe-peat" src="public/maps/europe/europe_gpm2_peat_extent.png" alt="">
- <img class="central-map-layer layer-europe-borders" src="public/maps/europe/europe_country_borders.png" alt="">
+  <div class="b169-mobile-note" role="note">
+    Auf kleinen Bildschirmen wird die Kartenfolge als vertikale Sequenz gelesen. Die Aussage bleibt dieselbe: vom globalen Kontext zur regionalen Nutzungsfrage.
+  </div>
 
- <img class="central-map-layer layer-germany-admin" src="public/maps/germany/germany_admin_context.png" alt="">
- <img class="central-map-layer layer-germany-thuenen-extent" src="public/maps/germany/germany_thuenen_moor_extent.png" alt="">
- <img class="central-map-layer layer-germany-thuenen-types" src="public/maps/germany/germany_thuenen_moor_types.png" alt="">
- <img class="central-map-layer layer-bw-bk50-extent" src="public/maps/bw/bw_bk50_moor_extent.png" alt="">
- <img class="central-map-layer layer-bw-admin" src="public/maps/bw/bw_admin_context.png" alt="">
-</div>
+  <div class="b169-layout">
+    <div class="b169-steps" aria-label="Scroll-Schritte der Kartenfolge">
+      
+          <article class="b169-step is-active" data-b169-step data-state="global-peat" tabindex="0">
+            <p class="b169-step-kicker">01 / Welt</p>
+            <h3>Kleine Fläche, große Wirkung</h3>
+            <p>Moore nehmen global wenig Raum ein. Für Klima, Wasser und Biodiversität sind sie trotzdem entscheidend.</p>
+          </article>
+          <article class="b169-step" data-b169-step data-state="global-pressure-total" tabindex="0">
+            <p class="b169-step-kicker">02 / Gesamt</p>
+            <h3>Wo ist der gesamte Emissionsdruck hoch?</h3>
+            <p>Die absolute Menge zeigt, wo drainierte organische Böden global besonders stark zur Emissionsbilanz beitragen.</p>
+          </article>
+          <article class="b169-step" data-b169-step data-state="global-pressure-density" tabindex="0">
+            <p class="b169-step-kicker">03 / Intensität</p>
+            <h3>Wo ist der Druck pro Fläche besonders hoch?</h3>
+            <p>Die Intensitätskarte erzählt eine andere Geschichte: Nicht nur die Gesamtmenge zählt, sondern der Druck pro Fläche.</p>
+          </article>
+          <article class="b169-step" data-b169-step data-state="europe-bridge" tabindex="0">
+            <p class="b169-step-kicker">04 / Europa</p>
+            <h3>Aus Relevanz wird Planung</h3>
+            <p>Der Maßstab wechselt: Klimafragen werden zu politischen und regionalen Planungskulissen.</p>
+          </article>
+          <article class="b169-step" data-b169-step data-state="germany-extent" tabindex="0">
+            <p class="b169-step-kicker">05 / Deutschland</p>
+            <h3>Die nationale Karte zeigt, wo genauer hingesehen werden muss</h3>
+            <p>Organische Böden bilden eine Planungskulisse. Welche Nutzung tragfähig ist, entscheidet sich aber erst darunter.</p>
+          </article>
+          <article class="b169-step" data-b169-step data-state="germany-types" tabindex="0">
+            <p class="b169-step-kicker">06 / Bodenkontext</p>
+            <h3>Nicht jeder Moorboden stellt dieselbe Frage</h3>
+            <p>Typen, Nutzung und Wasserstand unterscheiden sich. Deshalb braucht Moorbodenschutz mehr als eine Flächenkarte.</p>
+          </article>
+          <article class="b169-step" data-b169-step data-state="baden-wuerttemberg" tabindex="0">
+            <p class="b169-step-kicker">07 / Baden-Württemberg</p>
+            <h3>Jetzt wird die Frage regional</h3>
+            <p>In Baden-Württemberg wird sichtbar, wo Moor- und Feuchtbodenkontexte auf Zuständigkeiten und regionale Planung treffen.</p>
+          </article>
+          <article class="b169-step" data-b169-step data-state="oberschwaben-handoff" tabindex="0">
+            <p class="b169-step-kicker">08 / Oberschwaben</p>
+            <h3>Die Region wird lesbar, die Nutzungsfrage folgt</h3>
+            <p>Oberschwaben zeigt, wo Moor- und Feuchtbodenkontexte regional gebündelt auftreten. Im nächsten Schritt wird sichtbar, wo diese Räume auf heutige landwirtschaftliche Nutzung treffen.</p>
+          </article>
+    </div>
 
- <div id="centralMapLegend" class="central-map-legend">
- <span><i class="legend-peat"></i>Moorkontext</span>
- </div>
+    <div class="b169-stage-wrap">
+      <figure class="b169-stage" aria-label="Kartenbühne">
+        <div class="b169-stage-label" data-b169-label>Globale Moorverbreitung</div>
+        <img src="public/maps/global/global_gpm2_peat_extent.png" alt="Globale Moorverbreitung" data-b169-base="global-peat" class="is-active" loading="lazy"><img src="public/maps/global/global_hotspots_total.png" alt="Gesamt-Emissionsdruck" data-b169-base="global-pressure-total" class="" loading="lazy"><img src="public/maps/global/global_hotspots_density.png" alt="Emissionsintensität pro Fläche" data-b169-base="global-pressure-density" class="" loading="lazy"><img src="public/maps/europe/europe_gpm2_peat_extent.png" alt="Europäischer Bezugsraum" data-b169-base="europe-bridge" class="" loading="lazy"><img src="public/maps/germany/germany_thuenen_moor_extent.png" alt="Organische Böden in Deutschland" data-b169-base="germany-extent" class="" loading="lazy"><img src="public/maps/germany/germany_thuenen_moor_types.png" alt="Typen organischer Böden" data-b169-base="germany-types" class="" loading="lazy"><img src="public/maps/bw/bw_bk50_moor_extent.png" alt="Baden-Württemberg: Moor-/Feuchtbodenkontext" data-b169-base="baden-wuerttemberg" class="" loading="lazy"><img src="public/maps/oberschwaben/oberschwaben_landkreise_moor_nolabel.png" alt="Oberschwaben: Moor-/Feuchtbodenkontext" data-b169-base="oberschwaben-handoff" class="" loading="lazy">
+        <img src="public/maps/global/global_country_borders.png" alt="Grenzen / Orientierung für Globale Moorverbreitung" data-b169-overlay="global-peat" class="is-active" loading="lazy"><img src="public/maps/global/global_country_borders.png" alt="Grenzen / Orientierung für Gesamt-Emissionsdruck" data-b169-overlay="global-pressure-total" class="" loading="lazy"><img src="public/maps/global/global_country_borders.png" alt="Grenzen / Orientierung für Emissionsintensität pro Fläche" data-b169-overlay="global-pressure-density" class="" loading="lazy"><img src="public/maps/europe/europe_country_borders.png" alt="Grenzen / Orientierung für Europäischer Bezugsraum" data-b169-overlay="europe-bridge" class="" loading="lazy"><img src="public/maps/germany/germany_admin_context.png" alt="Grenzen / Orientierung für Organische Böden in Deutschland" data-b169-overlay="germany-extent" class="" loading="lazy"><img src="public/maps/germany/germany_admin_context.png" alt="Grenzen / Orientierung für Typen organischer Böden" data-b169-overlay="germany-types" class="" loading="lazy"><img src="public/maps/bw/bw_admin_context.png" alt="Grenzen / Orientierung für Baden-Württemberg: Moor-/Feuchtbodenkontext" data-b169-overlay="baden-wuerttemberg" class="" loading="lazy">
+      </figure>
+    </div>
+  </div>
 
- <p id="centralMapSource" class="central-map-source">
- Datenbasis: Global Peatland Map 2.0 und FAOSTAT-Emissionsdaten zu drainierten organischen Böden; eigene kartografische Aufbereitung.
- </p>
- </div>
- </div>
-
- <div class="central-map-steps">
- <article class="central-map-step is-active" data-global-state="extent">
- <div class="b88-step-card">
-<span>01</span>
- <h3>Wo liegen die Moore?</h3>
- <p>Die räumliche Kulisse zeigt, wo Moorschutzfragen entstehen.</p>
- </div>
- </article>
-
- <article class="central-map-step" data-global-state="total">
- <div class="b88-step-card">
-<span>02</span>
- <h3>Wo konzentriert sich der Emissionsdruck?</h3>
- <p>Entwässerung und Nutzung verändern Moore von Speichern zu Quellen.</p>
- </div>
- </article>
-
- <article class="central-map-step" data-global-state="density">
- <div class="b88-step-card">
-<span>03</span>
- <h3>Wo ist der Druck besonders hoch?</h3>
- <p>Hotspotkarten zeigen, wo Belastung räumlich besonders deutlich wird.</p>
- </div>
- </article>
-
- <article class="central-map-step" data-global-state="compare">
- <div class="b88-step-card">
-<span>04</span>
- <h3>Größe und Intensität unterscheiden sich.</h3>
- <p>Flächengröße und Emissionsintensität führen nicht immer zur selben räumlichen Aussage.</p>
- </div>
- </article>
-<article class="central-map-step" data-global-state="europe-peat">
- <div class="b88-step-card">
-<span>06</span>
- <h3>Europa zeigt den größeren Bezugsraum.</h3>
- <p>Moorbodenschutz ist eine regionale Aufgabe, steht aber in einem europäischen Zusammenhang von Nutzung, Entwässerung und Klimazielen.</p>
- </div>
- </article>
-<article class="central-map-step" data-global-state="germany-thuenen-extent">
- <div class="b88-step-card">
-<span>08</span>
- <h3>Deutschland grenzt den Prüfbedarf ein.</h3>
- <p>Die nationale Kulisse zeigt, wo organische Böden in größerem Zusammenhang auftreten und wo Länder und Regionen genauer hinsehen müssen.</p>
- </div>
- </article>
-
- <article class="central-map-step" data-global-state="germany-thuenen-types">
- <div class="b88-step-card">
-<span>09</span>
- <h3>Die nationale Kulisse ersetzt keine Standortprüfung.</h3>
- <p>Sie zeigt, wo genauer hingesehen werden muss. Welche Nutzungspfade tragfähig sind, entscheidet sich erst mit Wasserstand, Nutzung, Eigentum und regionaler Koordination.</p>
- </div>
- </article>
-<article class="central-map-step" data-global-state="bw-bk50-extent">
- <div class="b88-step-card">
-<span>11</span>
- <h3>Baden-Württemberg macht die Frage regional konkret.</h3>
- <p>Hier wird sichtbar, wo Moor- und Feuchtbodenkontexte auf Nutzung, Zuständigkeiten und regionale Planung treffen.</p>
- </div>
- </article>
-
-
- </div>
-<!-- B140_SOURCE_NOTE_GLOBAL_CONTEXT_START -->
-<p class="b140-source-line">Kartografische Orientierung auf Basis der im zentralen Quellenverzeichnis genannten globalen Moor- und Referenzdaten; generalisierte Darstellung. <a href="#methode-in-kuerze">Methode in Kürze</a>.</p>
-<!-- /B140_SOURCE_NOTE_GLOBAL_CONTEXT_END -->
+  <p class="b169-source-line">
+    Datenbasis: Global Peatland Map 2.0, FAOSTAT, Thünen-Kulisse organischer Böden, BK50 Baden-Württemberg und eigene kartografische Aufbereitung.
+    <a href="#methode-in-kuerze">Methode in Kürze</a>.
+  </p>
 </section>
+<!-- /B169_LIVE_STICKY_ZOOM_END -->
+
+
+
+
+
 
 <!-- B100_MOOR_PRIMER_START -->
 <section id="moor-primer" class="section moore-primer-section moore-primer-bridge" aria-labelledby="moor-primer-title">
@@ -1149,6 +1124,7 @@
 </footer>
 <!-- /B127_PUBLICATION_FOOTER -->
 
+  <script src="src/b169_live_sticky_zoom.js" defer></script>
 </body>
 </html>
 
