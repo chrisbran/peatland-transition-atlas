@@ -782,3 +782,4 @@
 - B158 reduce notice density: reduced visible warning/notice clutter by removing the Felt Lesart box, shortening the external-service notice and collapsing the area-balance method note (2026-07-01).
 - B159 editorial elevation audit: compared the current V2 page against premium editorial/data-feature standards and created a cut/rebuild plan (2026-07-01).
 - B160 narrative cut plan: created a five-act cut matrix and main-flow outline for premium editorial pacing (2026-07-01).
+- B161 flagship sticky zoom concept: designed the premium one-earned-sticky map zoom concept from global relevance to Oberschwaben proof point (2026-07-01).

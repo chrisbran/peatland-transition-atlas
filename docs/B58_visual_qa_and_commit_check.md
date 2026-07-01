@@ -94,10 +94,11 @@ Date: 2026-07-01
 - `?? docs/B141_cartographic_annotation_candidates.csv`
 - `?? docs/B157_area_balance_method_note_hardening.md`
 - `?? docs/B157_area_balance_method_note_hardening_audit.txt`
-- `?? docs/B160_main_flow_outline.md`
-- `?? docs/B160_narrative_cut_plan.md`
-- `?? docs/B160_narrative_cut_plan_audit.txt`
-- `?? docs/B160_section_cut_matrix.csv`
+- `?? docs/B161_flagship_sticky_zoom_asset_inventory.csv`
+- `?? docs/B161_flagship_sticky_zoom_concept.md`
+- `?? docs/B161_flagship_sticky_zoom_concept_audit.txt`
+- `?? docs/B161_flagship_sticky_zoom_implementation_brief.md`
+- `?? docs/B161_flagship_sticky_zoom_storyboard.md`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -132,7 +133,7 @@ Date: 2026-07-01
 - `?? scripts/131b_scope_box_soften.py`
 - `?? scripts/141_cartographic_annotation_audit.py`
 - `?? scripts/157_area_balance_method_note_hardening.py`
-- `?? scripts/160_narrative_cut_plan.py`
+- `?? scripts/161_flagship_sticky_zoom_concept.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`
