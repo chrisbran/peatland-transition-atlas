@@ -1,0 +1,27 @@
+# B167 sticky zoom state repair audit
+
+Date: 2026-07-01
+
+Old prototype existed: True
+Old prototype already contained density map: False
+Old prototype had regional Germany overlay pattern: True
+
+Step audit:
+- global-peat: base exists=True; overlay exists=True
+- global-pressure-total: base exists=True; overlay exists=True
+- global-pressure-density: base exists=True; overlay exists=True
+- europe-bridge: base exists=True; overlay exists=True
+- germany-extent: base exists=True; overlay exists=True
+- germany-types: base exists=True; overlay exists=True
+- oberschwaben-handoff: selected regional base=public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png
+- oberschwaben-handoff: selected regional overlay=public/maps/oberschwaben/oberschwaben_admin_context.png
+
+Post-patch checks:
+- density map in prototype: True
+- global-pressure-total state in prototype: True
+- global-pressure-density state in prototype: True
+- oberschwaben-handoff state in prototype: True
+- regional-handoff state removed: True
+- Germany overlay tied to oberschwaben-handoff: True
+
+Result: PROTOTYPE PATCH WRITTEN. No public page files changed.
