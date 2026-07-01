@@ -6635,3 +6635,26 @@ body > pre:first-child {
   }
 }
 /* B162C_KEEP_AND_POLISH_VALUE_CHAIN_SCORECARD_END */
+
+/* B164_PREMIUM_PACING_POLISH_START */
+/* Small pacing polish: improve heading rhythm without changing layout structure. */
+@supports (text-wrap: balance) {
+  h1,
+  h2,
+  h3,
+  .hero-title {
+    text-wrap: balance;
+  }
+}
+
+@supports (text-wrap: pretty) {
+  p,
+  li {
+    text-wrap: pretty;
+  }
+}
+
+.b164-pacing-marker {
+  display: none;
+}
+/* B164_PREMIUM_PACING_POLISH_END */

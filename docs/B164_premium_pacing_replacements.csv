@@ -1,0 +1,18 @@
+id,replacements,replacement,reason
+hero_subtitle,1,"Wiedervernässung verändert mehr als Wasserstände. Sie verändert Nutzung, Betriebe, Wertschöpfung und Planung.",sharpens the opening promise without adding detail
+hero_card_3_title,1,Nasse Flächen brauchen Pfade,more concrete and image-led than abstract transformation language
+hero_card_3_body,1,"Schutz, Nutzung und Förderung müssen zusammen gedacht werden.",shorter hero-card copy
+core_argument_heading,1,"Planbar wird Moorbodenschutz erst mit Boden, Nutzung und Wasser",turns the headline into a more memorable sentence
+core_argument_body,1,"Moorschutz wird planbar, wenn Boden, Nutzung, Wasserstand, Betriebe und Wertschöpfung zusammen betrachtet werden.",removes stacked nouns in the early thesis paragraph
+regional_heading,1,In Oberschwaben wird Moorbodenschutz konkret,shorter regional section title
+regional_intro,1,"In Baden-Württemberg wird Moorschutz zur Planungsfrage: Welche Nutzungen sind berührt, welche betrieblichen Fragen entstehen und welche Produkte könnten tragfähig werden?",reduces a long question chain
+paths_heading,1,Nicht jede Fläche braucht denselben Pfad,more editorial and less administrative
+paths_lead,1,"Entscheidend ist die passende Kombination aus Wasserstand, Nutzung, Betriebsperspektive und Förderung.",shortens an explanatory lead
+oberschwaben_heading_punctuation,1,Oberschwaben: wo Moorschutz auf Landwirtschaft trifft,clearer title rhythm
+felt_heading,1,Erst die Lage. Dann die Details.,turns a functional label into an editorial transition
+felt_lead,1,Die statische Karte ordnet ein. Die interaktive Version vertieft: Sie zeigt dieselbe Schnittmenge als scharfe Vektorkarte mit Landkreisorientierung.,removes explanatory meta-language around the Felt block
+felt_to_balance_transition,1,"Nach der Karte folgt die Bilanz: Wie groß ist die Schnittmenge, und welche Nutzung dominiert?",shorter transition after Felt
+area_balance_heading,1,Die Schnittmenge zeigt die Größenordnung,reduces caveat framing and improves section rhythm
+area_balance_body,1,"Die Verschneidung zeigt, dass die Überschneidung von landwirtschaftlicher Nutzung und Moor-/Feuchtbodenkontext auch in der Bilanz relevant wird.",turns two defensive sentences into one active sentence
+negotiation_heading,1,Aus der Schnittmenge folgt Verhandlung,removes a repeated negative clause
+value_context_heading,1,"Nutzung entscheidet, welche Wertschöpfung plausibel wird",shorter and more active value-chain matrix heading

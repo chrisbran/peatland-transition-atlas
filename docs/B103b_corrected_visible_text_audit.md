@@ -26,7 +26,7 @@ B103b separates actual visible text from hidden/retired archive text.
 | Pattern group | Count |
 |---|---:|
 | Umsetzung* | 0 |
-| Transform* | 9 |
+| Transform* | 7 |
 | Wertschöpfung* | 18 |
 | wird zu/zur/zum/eine | 0 |
 | übersetz* | 0 |
