@@ -778,3 +778,5 @@
 - B154 Oberschwaben flow spacing polish: added a quiet transition and spacing polish between static map, Felt deepening and area balance (2026-07-01).
 - B155 publication gate register: documented remaining publication gates for Felt, legal notices, source/method status and project disclaimer (2026-07-01).
 - B156 visible Umsetzung wording polish: reduced repeated visible uses of Umsetzung with more specific wording (2026-07-01).
+- B157 area-balance method-note hardening: clarified that the ~19,900 ha balance comes from the original GIS intersection, not the simplified Felt geometry (2026-07-01).
+- B158 reduce notice density: reduced visible warning/notice clutter by removing the Felt Lesart box, shortening the external-service notice and collapsing the area-balance method note (2026-07-01).

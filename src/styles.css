@@ -6488,3 +6488,91 @@ body > pre:first-child {
   }
 }
 /* B154_OBERSCHWABEN_FLOW_SPACING_POLISH_END */
+
+/* B157_AREA_BALANCE_METHOD_NOTE_START */
+.b157-area-method-note {
+  max-width: 58rem;
+  margin: 0.7rem 0 0;
+  padding: 0.72rem 0.85rem;
+  border-left: 3px solid rgba(8, 127, 122, 0.52);
+  border-radius: 0.72rem;
+  background: rgba(255, 255, 255, 0.46);
+  color: var(--muted, #637266);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 760px) {
+  .b157-area-method-note {
+    font-size: 0.79rem;
+    padding: 0.68rem 0.78rem;
+  }
+}
+/* B157_AREA_BALANCE_METHOD_NOTE_END */
+
+/* B158_REDUCE_NOTICE_DENSITY_START */
+/* B158 notice-density reduction: keep caveats available, but remove repeated visual boxes. */
+.b152-felt-integration .b152-felt-bridge {
+  display: none;
+}
+
+.b151-felt-external-notice {
+  max-width: 56rem;
+  margin: 0.42rem 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted, #637266);
+  font-size: 0.76rem;
+  line-height: 1.42;
+}
+
+.b157-area-method-note {
+  max-width: 58rem;
+  margin: 0.58rem 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted, #637266);
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.b157-area-method-note summary {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--muted, #637266);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.b157-area-method-note summary:hover {
+  color: #24352c;
+}
+
+.b157-area-method-note p {
+  max-width: 54rem;
+  margin: 0.45rem 0 0;
+  padding: 0.65rem 0.78rem;
+  border-left: 3px solid rgba(8, 127, 122, 0.42);
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.42);
+}
+
+@media (max-width: 760px) {
+  .b151-felt-external-notice,
+  .b157-area-method-note {
+    font-size: 0.75rem;
+  }
+
+  .b157-area-method-note p {
+    padding: 0.62rem 0.72rem;
+  }
+}
+/* B158_REDUCE_NOTICE_DENSITY_END */

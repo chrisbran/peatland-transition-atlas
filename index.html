@@ -476,15 +476,7 @@
         als scharfe Vektorkarte, mit Landkreisorientierung und Klick-Information zur
         Gesamtfläche der Schnittmenge.
       </p>
-
-      <div class="b152-felt-bridge" role="note" aria-label="Einordnung der interaktiven Karte">
-        <strong>Lesart:</strong>
-        Die türkis markierten Bereiche zeigen Prüfbedarf, nicht automatisch Eignung.
-        Für konkrete Maßnahmen bleiben Wasserstand, Betriebssituation, Eigentum,
-        Förderung und Wertschöpfung entscheidend.
-      </div>
-
-      <div class="b149-felt-pilot__desktop" aria-label="Interaktive Felt-Karte für Oberschwaben">
+<div class="b149-felt-pilot__desktop" aria-label="Interaktive Felt-Karte für Oberschwaben">
         <div class="b149-felt-pilot__frame">
           <iframe allowfullscreen loading="lazy" class="b149-felt-iframe" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Oberschwaben-Moor-Feuchtbodenkontext-Pilot-VaKZdOYFRw9B2SzH1sdk39AD?loc=47.9524%2C9.489%2C10z&legend=1&cooperativeGestures=1&link=1&geolocation=0&zoomControls=1&scaleBar=1" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
@@ -510,10 +502,7 @@
       </p>
       <!-- B151_FELT_EXTERNAL_SERVICE_NOTICE_START -->
 <p class="b151-felt-external-notice">
-  Drittanbieter-Hinweis: Die interaktive Karte wird über Felt geladen und nutzt
-  Hintergrunddaten von OpenStreetMap. Beim Öffnen oder Laden der Karte können
-  Verbindungsdaten an externe Kartendienste übertragen werden. Die statische
-  Kartenfassung im Abschnitt bleibt als Fallback erhalten.
+  Externer Kartendienst: Felt/OpenStreetMap. Details stehen im Quellen- und Methodenbereich.
 </p>
 <!-- /B151_FELT_EXTERNAL_SERVICE_NOTICE_END -->
     </div>
@@ -578,7 +567,18 @@
  
 
 
- <p class="moore-ob-method-note">Hinweis: Stilllegung und unklare Zuweisungen sind separat ausgewiesen; Werte gerundet.</p>
+ <p class="moore-ob-method-note">Hinweis: Stilllegung und unklare Zuweisungen sind separat ausgewiesen; Werte gerundet.
+<!-- B157_AREA_BALANCE_METHOD_NOTE_START -->
+<details class="b157-area-method-note">
+  <summary>Berechnungsgrundlage der Hektarbilanz</summary>
+  <p>
+    Die Hektarbilanz basiert auf der ursprünglichen GIS-Verschneidung von FIONA 2024,
+    BK50-Moor-/Feuchtbodenkontext und GISCO NUTS 2024. Die für Felt/mapshaper
+    vereinfachte Web-Geometrie wurde nicht für die Flächenberechnung verwendet.
+  </p>
+</details>
+<!-- /B157_AREA_BALANCE_METHOD_NOTE_END -->
+</p>
 <p class="moore-source-line moore-ob-keyfigures-source">
  Datenbasis: FIONA 2024, BK50 Moor-/Feuchtbodenkontext und GISCO NUTS 2024;
  eigene Auswahl, Klassifikation und Verschneidung.
