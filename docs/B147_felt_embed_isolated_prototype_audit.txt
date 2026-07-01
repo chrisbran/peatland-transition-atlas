@@ -1,0 +1,26 @@
+# B147 Felt embed isolated prototype audit
+
+Date: 2026-07-01
+
+Result: PROTOTYPE ONLY. No public page files changed.
+
+Read:
+
+- docs/B146_felt_embed_candidate.md exists: True
+
+Extracted:
+
+- iframe present: True
+- share URL present: True
+- share URL: https://felt.com/map/Oberschwaben-Moor-Feuchtbodenkontext-Pilot-VaKZdOYFRw9B2SzH1sdk39AD?share=1&loc=47.9524,9.489,10z
+
+Created/updated:
+
+- docs/prototypes/oberschwaben_felt_embed_test.html
+- docs/B147_felt_embed_isolated_prototype.md
+- docs/B147_felt_embed_isolated_prototype_audit.txt
+- tasks/done.md
+
+No iframe was added to index.html.
+No CSS was changed.
+No local GeoJSON/Shapefile/GPKG files were staged or referenced for commit.

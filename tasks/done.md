@@ -768,3 +768,4 @@
 - B144 Oberschwaben map export manifest: documented local export files, QA gates and no-commit rules for the Felt pilot (2026-06-30).
 - B145 Felt pilot build sheet: documented the manual Felt styling, annotation, tooltip and embed-candidate workflow for the Oberschwaben map pilot (2026-06-30).
 - B146 Felt pilot candidate documentation: documented the successful Felt pilot, embed availability, mobile check and integration gates (2026-07-01).
+- B147 Felt embed isolated prototype: created a docs-only iframe prototype for local desktop/mobile testing before touching the public page (2026-07-01).
