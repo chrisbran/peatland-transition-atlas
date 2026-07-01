@@ -790,3 +790,5 @@
 - B165 flagship sticky zoom prototype: created an isolated prototype for the global-to-regional sticky zoom using existing map assets (2026-07-01).
 - B165b flagship sticky zoom boundary overlays: added political-boundary overlays to the isolated sticky-zoom prototype (2026-07-01).
 - B166 full layer inventory and sticky state matrix: inventoried map assets and documented the complete target state matrix, including density map and regional boundary-pairing issues (2026-07-01).
+- B167 sticky zoom state repair: repaired the isolated sticky-zoom prototype by splitting total/density pressure states and using a matching regional boundary overlay (2026-07-01).
+- B167b restore BW layer to sticky zoom: added a dedicated Baden-Württemberg layer between Germany and Oberschwaben in the isolated sticky-zoom prototype (2026-07-01).

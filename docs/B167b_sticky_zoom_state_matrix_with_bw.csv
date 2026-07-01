@@ -1,0 +1,9 @@
+order,state,base,base_exists,overlay,overlay_exists,title,stage_label
+1,global-peat,public/maps/global/global_gpm2_peat_extent.png,True,public/maps/global/global_country_borders.png,True,"Kleine Fläche, große Wirkung",Globale Moorverbreitung
+2,global-pressure-total,public/maps/global/global_hotspots_total.png,True,public/maps/global/global_country_borders.png,True,Wo ist der gesamte Emissionsdruck hoch?,Gesamt-Emissionsdruck
+3,global-pressure-density,public/maps/global/global_hotspots_density.png,True,public/maps/global/global_country_borders.png,True,Wo ist der Druck pro Fläche besonders hoch?,Emissionsintensität pro Fläche
+4,europe-bridge,public/maps/europe/europe_gpm2_peat_extent.png,True,public/maps/europe/europe_country_borders.png,True,Aus Relevanz wird Planung,Europäischer Bezugsraum
+5,germany-extent,public/maps/germany/germany_thuenen_moor_extent.png,True,public/maps/germany/germany_admin_context.png,True,"Die nationale Karte zeigt, wo genauer hingesehen werden muss",Organische Böden in Deutschland
+6,germany-types,public/maps/germany/germany_thuenen_moor_types.png,True,public/maps/germany/germany_admin_context.png,True,Nicht jeder Moorboden stellt dieselbe Frage,Typen organischer Böden
+7,baden-wuerttemberg,public/maps/bw/bw_bk50_moor_extent.png,True,public/maps/bw/bw_admin_context.png,True,Jetzt wird die Frage regional,Baden-Württemberg: Moor-/Feuchtbodenkontext
+8,oberschwaben-handoff,public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png,True,public/maps/oberschwaben/oberschwaben_admin_context.png,True,Hier trifft Moorschutz auf Landwirtschaft,Oberschwaben: Nutzung × Bodenkontext

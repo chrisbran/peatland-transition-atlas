@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>B167b Sticky Zoom Prototype with BW Layer</title>
+  <style>
+    :root {
+      --bg: #f7f2e8;
+      --ink: #192720;
+      --muted: #637266;
+      --panel: rgba(255,255,255,0.72);
+      --dark: #101511;
+      --accent: #087f7a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    .b165-page { min-height: 100vh; }
+
+    .b165-hero {
+      width: min(100% - 2rem, 76rem);
+      margin: 0 auto;
+      padding: 4rem 0 2.5rem;
+    }
+
+    .b165-eyebrow {
+      margin: 0 0 0.8rem;
+      color: #6b7f51;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 13ch;
+      margin: 0;
+      font-size: clamp(2.6rem, 7vw, 6.2rem);
+      line-height: 0.94;
+      letter-spacing: -0.06em;
+      text-wrap: balance;
+    }
+
+    .b165-hero p:not(.b165-eyebrow) {
+      max-width: 48rem;
+      margin: 1.2rem 0 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+      line-height: 1.45;
+    }
+
+    .b165-sticky {
+      width: min(100% - 2rem, 82rem);
+      margin: 0 auto;
+      padding: 1rem 0 5rem;
+      display: grid;
+      grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr);
+      gap: clamp(1.4rem, 3vw, 3rem);
+      align-items: start;
+    }
+
+    .b165-steps { padding: 18vh 0 28vh; }
+
+    .b165-step {
+      min-height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 0.42;
+      transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .b165-step.is-active {
+      opacity: 1;
+      transform: translateX(0.35rem);
+    }
+
+    .b165-kicker {
+      margin: 0 0 0.5rem;
+      color: #6b7f51;
+      font-size: 0.74rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .b165-step h3 {
+      margin: 0;
+      max-width: 13em;
+      font-size: clamp(1.5rem, 2.8vw, 2.35rem);
+      line-height: 1.02;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+    }
+
+    .b165-step p:last-child {
+      max-width: 24rem;
+      margin: 0.85rem 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.5;
+      text-wrap: pretty;
+    }
+
+    .b165-stage-wrap {
+      position: sticky;
+      top: 2rem;
+      height: calc(100vh - 4rem);
+      min-height: 34rem;
+      display: grid;
+      place-items: center;
+    }
+
+    .b165-stage {
+      position: relative;
+      width: 100%;
+      height: min(78vh, 46rem);
+      min-height: 31rem;
+      overflow: hidden;
+      border-radius: 1.15rem;
+      background: var(--dark);
+      border: 1px solid rgba(25, 39, 32, 0.18);
+      box-shadow: 0 28px 86px rgba(25, 39, 32, 0.25);
+    }
+
+    .b165-stage img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transform: scale(1.018);
+      transition: opacity 360ms ease, transform 560ms ease;
+    }
+
+    .b165-stage img.is-active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .b165-stage img[data-b165-img] { z-index: 1; }
+
+    .b165-stage img[data-b165-boundary] {
+      z-index: 2;
+      object-fit: cover;
+      mix-blend-mode: screen;
+      opacity: 0;
+      filter: contrast(1.08) brightness(1.16);
+      pointer-events: none;
+      transform: scale(1.018);
+    }
+
+    .b165-stage img[data-b165-boundary].is-active {
+      opacity: 0.62;
+      transform: scale(1);
+    }
+
+    .b165-stage-label {
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+      z-index: 4;
+      max-width: min(28rem, calc(100% - 2rem));
+      padding: 0.72rem 0.86rem;
+      border-radius: 0.75rem;
+      background: rgba(13, 20, 16, 0.76);
+      color: rgba(248, 245, 236, 0.94);
+      font-weight: 850;
+      letter-spacing: -0.02em;
+      backdrop-filter: blur(10px);
+    }
+
+    .b165-annotation {
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 4;
+      max-width: min(30rem, calc(100% - 2rem));
+      padding: 0.8rem 0.9rem;
+      border-left: 3px solid rgba(8, 127, 122, 0.85);
+      border-radius: 0.75rem;
+      background: rgba(248, 245, 236, 0.88);
+      color: #24352c;
+      font-size: 0.92rem;
+      line-height: 1.42;
+      box-shadow: 0 16px 42px rgba(0,0,0,0.18);
+    }
+
+    .b165-source {
+      width: min(100% - 2rem, 76rem);
+      margin: -2.5rem auto 4rem;
+      color: var(--muted);
+      font-size: 0.84rem;
+      line-height: 1.45;
+    }
+
+    .b165-mobile-note {
+      display: none;
+      width: min(100% - 2rem, 76rem);
+      margin: 0 auto 2rem;
+      padding: 0.9rem 1rem;
+      border-radius: 0.85rem;
+      background: var(--panel);
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 800px) {
+      .b165-hero { padding-top: 2.5rem; }
+      .b165-sticky {
+        display: block;
+        width: min(100% - 1.25rem, 82rem);
+        padding-bottom: 2rem;
+      }
+      .b165-mobile-note { display: block; }
+      .b165-steps { padding: 0; }
+      .b165-step {
+        min-height: auto;
+        padding: 1.5rem 0 0.75rem;
+        opacity: 1;
+        transform: none;
+      }
+      .b165-stage-wrap {
+        position: static;
+        height: auto;
+        min-height: 0;
+      }
+      .b165-stage {
+        height: auto;
+        min-height: 0;
+        aspect-ratio: 16 / 10;
+      }
+      .b165-stage img[data-b165-boundary].is-active { opacity: 0.72; }
+      .b165-annotation {
+        position: static;
+        max-width: none;
+        margin: 0.75rem 0 0;
+        border-radius: 0.75rem;
+      }
+      .b165-stage-label { font-size: 0.86rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="b165-page">
+    <header class="b165-hero">
+      <p class="b165-eyebrow">B167b · Prototyp mit BW-Layer</p>
+      <h1>Der Maßstab entscheidet</h1>
+      <p>Globale Karten zeigen, warum Moore relevant sind. Regional wird sichtbar, wo Planung beginnt.</p>
+    </header>
+
+    <p class="b165-mobile-note">
+      Mobile Prototyp-Logik: Der spätere Seitenumbau sollte auf kleinen Bildschirmen eine vereinfachte
+      vertikale Kartenfolge nutzen, statt einen schweren Sticky-Zoom zu erzwingen.
+    </p>
+
+    <section class="b165-sticky" aria-label="Flagship Sticky Zoom Prototype">
+      <div class="b165-steps">
+        
+          <article class="b165-step is-active" data-b165-step data-state="global-peat" tabindex="0">
+            <p class="b165-kicker">01 / Welt</p>
+            <h3>Kleine Fläche, große Wirkung</h3>
+            <p>Moore nehmen global wenig Raum ein. Für Klima, Wasser und Biodiversität sind sie trotzdem entscheidend.</p>
+          </article>
+          <article class="b165-step" data-b165-step data-state="global-pressure-total" tabindex="0">
+            <p class="b165-kicker">02 / Gesamt</p>
+            <h3>Wo ist der gesamte Emissionsdruck hoch?</h3>
+            <p>Die absolute Menge zeigt, wo drainierte organische Böden global besonders stark zur Emissionsbilanz beitragen.</p>
+          </article>
+          <article class="b165-step" data-b165-step data-state="global-pressure-density" tabindex="0">
+            <p class="b165-kicker">03 / Intensität</p>
+            <h3>Wo ist der Druck pro Fläche besonders hoch?</h3>
+            <p>Die Intensitätskarte erzählt eine andere Geschichte: Nicht nur die Gesamtmenge zählt, sondern der Druck pro Fläche.</p>
+          </article>
+          <article class="b165-step" data-b165-step data-state="europe-bridge" tabindex="0">
+            <p class="b165-kicker">04 / Europa</p>
+            <h3>Aus Relevanz wird Planung</h3>
+            <p>Der Maßstab wechselt: Klimafragen werden zu politischen und regionalen Planungskulissen.</p>
+          </article>
+          <article class="b165-step" data-b165-step data-state="germany-extent" tabindex="0">
+            <p class="b165-kicker">05 / Deutschland</p>
+            <h3>Die nationale Karte zeigt, wo genauer hingesehen werden muss</h3>
+            <p>Organische Böden bilden eine Planungskulisse. Welche Nutzung tragfähig ist, entscheidet sich aber erst darunter.</p>
+          </article>
+          <article class="b165-step" data-b165-step data-state="germany-types" tabindex="0">
+            <p class="b165-kicker">06 / Bodenkontext</p>
+            <h3>Nicht jeder Moorboden stellt dieselbe Frage</h3>
+            <p>Typen, Nutzung und Wasserstand unterscheiden sich. Deshalb braucht Moorbodenschutz mehr als eine Flächenkarte.</p>
+          </article>
+          <article class="b165-step" data-b165-step data-state="baden-wuerttemberg" tabindex="0">
+            <p class="b165-kicker">07 / Baden-Württemberg</p>
+            <h3>Jetzt wird die Frage regional</h3>
+            <p>In Baden-Württemberg wird sichtbar, wo Moor- und Feuchtbodenkontexte auf Zuständigkeiten und regionale Planung treffen.</p>
+          </article>
+          <article class="b165-step" data-b165-step data-state="oberschwaben-handoff" tabindex="0">
+            <p class="b165-kicker">08 / Oberschwaben</p>
+            <h3>Hier trifft Moorschutz auf Landwirtschaft</h3>
+            <p>In Oberschwaben überlagern sich Moor-/Feuchtbodenkontext und heutige Nutzung. Aus Klima wird eine regionale Nutzungsfrage.</p>
+          </article>
+      </div>
+
+      <div class="b165-stage-wrap">
+        <figure class="b165-stage" aria-label="Kartenbühne">
+          <div class="b165-stage-label" data-b165-label>Globale Moorverbreitung</div>
+          <img src="../../public/maps/global/global_gpm2_peat_extent.png" alt="Globale Moorverbreitung" data-b165-img="global-peat" class="is-active"><img src="../../public/maps/global/global_hotspots_total.png" alt="Gesamt-Emissionsdruck" data-b165-img="global-pressure-total" class=""><img src="../../public/maps/global/global_hotspots_density.png" alt="Emissionsintensität pro Fläche" data-b165-img="global-pressure-density" class=""><img src="../../public/maps/europe/europe_gpm2_peat_extent.png" alt="Europäischer Bezugsraum" data-b165-img="europe-bridge" class=""><img src="../../public/maps/germany/germany_thuenen_moor_extent.png" alt="Organische Böden in Deutschland" data-b165-img="germany-extent" class=""><img src="../../public/maps/germany/germany_thuenen_moor_types.png" alt="Typen organischer Böden" data-b165-img="germany-types" class=""><img src="../../public/maps/bw/bw_bk50_moor_extent.png" alt="Baden-Württemberg: Moor-/Feuchtbodenkontext" data-b165-img="baden-wuerttemberg" class=""><img src="../../public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png" alt="Oberschwaben: Nutzung × Bodenkontext" data-b165-img="oberschwaben-handoff" class="">
+          <img src="../../public/maps/global/global_country_borders.png" alt="politische Grenzen / Orientierung für global-peat" data-b165-boundary="global-peat" class="is-active"><img src="../../public/maps/global/global_country_borders.png" alt="politische Grenzen / Orientierung für global-pressure-total" data-b165-boundary="global-pressure-total" class=""><img src="../../public/maps/global/global_country_borders.png" alt="politische Grenzen / Orientierung für global-pressure-density" data-b165-boundary="global-pressure-density" class=""><img src="../../public/maps/europe/europe_country_borders.png" alt="politische Grenzen / Orientierung für europe-bridge" data-b165-boundary="europe-bridge" class=""><img src="../../public/maps/germany/germany_admin_context.png" alt="politische Grenzen / Orientierung für germany-extent" data-b165-boundary="germany-extent" class=""><img src="../../public/maps/germany/germany_admin_context.png" alt="politische Grenzen / Orientierung für germany-types" data-b165-boundary="germany-types" class=""><img src="../../public/maps/bw/bw_admin_context.png" alt="politische Grenzen / Orientierung für baden-wuerttemberg" data-b165-boundary="baden-wuerttemberg" class=""><img src="../../public/maps/oberschwaben/oberschwaben_admin_context.png" alt="politische Grenzen / Orientierung für oberschwaben-handoff" data-b165-boundary="oberschwaben-handoff" class="">
+          <figcaption class="b165-annotation" data-b165-annotation>Die Karte zeigt die räumliche Konzentration von Mooren — nicht ihre lokale Nutzbarkeit.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <p class="b165-source">
+      Isolierter Prototyp auf Basis vorhandener Kartenassets. Kein neuer Datenanspruch.
+      B167b stellt den Baden-Württemberg-Layer als eigene Maßstabsebene zwischen Deutschland und Oberschwaben wieder her.
+    </p>
+  </main>
+
+  <script type="application/json" id="b165-data">
+[
+  {
+    "state": "global-peat",
+    "base": "public/maps/global/global_gpm2_peat_extent.png",
+    "overlay": "public/maps/global/global_country_borders.png",
+    "kicker": "01 / Welt",
+    "title": "Kleine Fläche, große Wirkung",
+    "text": "Moore nehmen global wenig Raum ein. Für Klima, Wasser und Biodiversität sind sie trotzdem entscheidend.",
+    "stage_label": "Globale Moorverbreitung",
+    "annotation": "Die Karte zeigt die räumliche Konzentration von Mooren — nicht ihre lokale Nutzbarkeit.",
+    "base_exists": true,
+    "overlay_exists": true,
+    "src": "../../public/maps/global/global_gpm2_peat_extent.png",
+    "overlay_src": "../../public/maps/global/global_country_borders.png"
+  },
+  {
+    "state": "global-pressure-total",
+    "base": "public/maps/global/global_hotspots_total.png",
+    "overlay": "public/maps/global/global_country_borders.png",
+    "kicker": "02 / Gesamt",
+    "title": "Wo ist der gesamte Emissionsdruck hoch?",
+    "text": "Die absolute Menge zeigt, wo drainierte organische Böden global besonders stark zur Emissionsbilanz beitragen.",
+    "stage_label": "Gesamt-Emissionsdruck",
+    "annotation": "Gesamtwerte zeigen große Beiträge — oft dort, wo Fläche, Entwässerung und Nutzung zusammenkommen.",
+    "base_exists": true,
+    "overlay_exists": true,
+    "src": "../../public/maps/global/global_hotspots_total.png",
+    "overlay_src": "../../public/maps/global/global_country_borders.png"
+  },
+  {
+    "state": "global-pressure-density",
+    "base": "public/maps/global/global_hotspots_density.png",
+    "overlay": "public/maps/global/global_country_borders.png",
+    "kicker": "03 / Intensität",
+    "title": "Wo ist der Druck pro Fläche besonders hoch?",
+    "text": "Die Intensitätskarte erzählt eine andere Geschichte: Nicht nur die Gesamtmenge zählt, sondern der Druck pro Fläche.",
+    "stage_label": "Emissionsintensität pro Fläche",
+    "annotation": "Intensität und Gesamtmenge sind unterschiedliche Aussagen. Für Planung müssen beide getrennt gelesen werden.",
+    "base_exists": true,
+    "overlay_exists": true,
+    "src": "../../public/maps/global/global_hotspots_density.png",
+    "overlay_src": "../../public/maps/global/global_country_borders.png"
+  },
+  {
+    "state": "europe-bridge",
+    "base": "public/maps/europe/europe_gpm2_peat_extent.png",
+    "overlay": "public/maps/europe/europe_country_borders.png",
+    "kicker": "04 / Europa",
+    "title": "Aus Relevanz wird Planung",
+    "text": "Der Maßstab wechselt: Klimafragen werden zu politischen und regionalen Planungskulissen.",
+    "stage_label": "Europäischer Bezugsraum",
+    "annotation": "Der regionale Blick wird erst verständlich, wenn der größere Bezugsraum steht.",
+    "base_exists": true,
+    "overlay_exists": true,
+    "src": "../../public/maps/europe/europe_gpm2_peat_extent.png",
+    "overlay_src": "../../public/maps/europe/europe_country_borders.png"
+  },
+  {
+    "state": "germany-extent",
+    "base": "public/maps/germany/germany_thuenen_moor_extent.png",
+    "overlay": "public/maps/germany/germany_admin_context.png",
+    "kicker": "05 / Deutschland",
+    "title": "Die nationale Karte zeigt, wo genauer hingesehen werden muss",
+    "text": "Organische Böden bilden eine Planungskulisse. Welche Nutzung tragfähig ist, entscheidet sich aber erst darunter.",
+    "stage_label": "Organische Böden in Deutschland",
+    "annotation": "Die nationale Kulisse grenzt Prüfbedarf ein — sie ersetzt keine Standortprüfung.",
+    "base_exists": true,
+    "overlay_exists": true,
+    "src": "../../public/maps/germany/germany_thuenen_moor_extent.png",
+    "overlay_src": "../../public/maps/germany/germany_admin_context.png"
+  },
+  {
+    "state": "germany-types",
+    "base": "public/maps/germany/germany_thuenen_moor_types.png",
+    "overlay": "public/maps/germany/germany_admin_context.png",
+    "kicker": "06 / Bodenkontext",
+    "title": "Nicht jeder Moorboden stellt dieselbe Frage",
+    "text": "Typen, Nutzung und Wasserstand unterscheiden sich. Deshalb braucht Moorbodenschutz mehr als eine Flächenkarte.",
+    "stage_label": "Typen organischer Böden",
+    "annotation": "Die Karte bereitet die regionale Frage vor: Welche Nutzung trifft auf welchen Bodenkontext?",
+    "base_exists": true,
+    "overlay_exists": true,
+    "src": "../../public/maps/germany/germany_thuenen_moor_types.png",
+    "overlay_src": "../../public/maps/germany/germany_admin_context.png"
+  },
+  {
+    "state": "baden-wuerttemberg",
+    "base": "public/maps/bw/bw_bk50_moor_extent.png",
+    "overlay": "public/maps/bw/bw_admin_context.png",
+    "kicker": "07 / Baden-Württemberg",
+    "title": "Jetzt wird die Frage regional",
+    "text": "In Baden-Württemberg wird sichtbar, wo Moor- und Feuchtbodenkontexte auf Zuständigkeiten und regionale Planung treffen.",
+    "stage_label": "Baden-Württemberg: Moor-/Feuchtbodenkontext",
+    "annotation": "Der BW-Layer ist die Brücke: nicht mehr Deutschland, noch nicht der Oberschwaben-Zoom.",
+    "base_exists": true,
+    "overlay_exists": true,
+    "src": "../../public/maps/bw/bw_bk50_moor_extent.png",
+    "overlay_src": "../../public/maps/bw/bw_admin_context.png"
+  },
+  {
+    "state": "oberschwaben-handoff",
+    "base": "public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png",
+    "overlay": "public/maps/oberschwaben/oberschwaben_admin_context.png",
+    "kicker": "08 / Oberschwaben",
+    "title": "Hier trifft Moorschutz auf Landwirtschaft",
+    "text": "In Oberschwaben überlagern sich Moor-/Feuchtbodenkontext und heutige Nutzung. Aus Klima wird eine regionale Nutzungsfrage.",
+    "stage_label": "Oberschwaben: Nutzung × Bodenkontext",
+    "annotation": "Der Sticky-Zoom endet dort, wo die regionale Story beginnt: bei der Überschneidung von Nutzung und Bodenkontext.",
+    "base_exists": true,
+    "overlay_exists": true,
+    "src": "../../public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png",
+    "overlay_src": "../../public/maps/oberschwaben/oberschwaben_admin_context.png"
+  }
+]
+  </script>
+  <script>
+    (function () {
+      var dataEl = document.getElementById('b165-data');
+      var data = JSON.parse(dataEl.textContent);
+      var steps = Array.prototype.slice.call(document.querySelectorAll('[data-b165-step]'));
+      var imgs = Array.prototype.slice.call(document.querySelectorAll('[data-b165-img]'));
+      var boundaries = Array.prototype.slice.call(document.querySelectorAll('[data-b165-boundary]'));
+      var label = document.querySelector('[data-b165-label]');
+      var annotation = document.querySelector('[data-b165-annotation]');
+
+      function setState(state) {
+        var item = data.find(function (d) { return d.state === state; }) || data[0];
+
+        steps.forEach(function (step) {
+          step.classList.toggle('is-active', step.getAttribute('data-state') === state);
+        });
+
+        imgs.forEach(function (img) {
+          img.classList.toggle('is-active', img.getAttribute('data-b165-img') === state);
+        });
+
+        boundaries.forEach(function (img) {
+          img.classList.toggle('is-active', img.getAttribute('data-b165-boundary') === state);
+        });
+
+        if (label && item) label.textContent = item.stage_label;
+        if (annotation && item) annotation.textContent = item.annotation;
+      }
+
+      if (!steps.length) return;
+      setState(steps[0].getAttribute('data-state'));
+
+      if (!('IntersectionObserver' in window)) {
+        steps.forEach(function (step) {
+          step.addEventListener('mouseenter', function () { setState(step.getAttribute('data-state')); });
+          step.addEventListener('focusin', function () { setState(step.getAttribute('data-state')); });
+        });
+        return;
+      }
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            setState(entry.target.getAttribute('data-state'));
+          }
+        });
+      }, {
+        root: null,
+        rootMargin: '-38% 0px -42% 0px',
+        threshold: 0.01
+      });
+
+      steps.forEach(function (step) { observer.observe(step); });
+    })();
+  </script>
+</body>
+</html>
