@@ -1,0 +1,10 @@
+# B151 Felt external-service notice audit
+
+Date: 2026-07-01
+
+B149 block present before patch: True
+Old B151 notice present before patch: False
+Old B151 CSS present before patch: False
+OK inserted B151 notice after b149 source line
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.
