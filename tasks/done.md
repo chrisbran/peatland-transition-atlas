@@ -785,3 +785,4 @@
 - B161 flagship sticky zoom concept: designed the premium one-earned-sticky map zoom concept from global relevance to Oberschwaben proof point (2026-07-01).
 - B162 value-chain visual climax redesign: designed the premium visual climax for the bottleneck behind the field and created an SVG wireframe prototype (2026-07-01).
 - B162c keep and polish value-chain scorecard: kept the existing dark scorecard direction, sharpened the title and shortened the lead instead of replacing it with the B162 wireframe (2026-07-01).
+- B163 main-flow caveat reduction: consolidated repeated visible caveats while keeping core scope and method boundaries intact (2026-07-01).

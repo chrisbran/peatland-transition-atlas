@@ -1,0 +1,9 @@
+id,replacements,replacement,reason
+oberschwaben_step_label,1,5 / Einordnung,turns a warning label into a quieter map-reading label
+oberschwaben_step_title,1,Einordnung statt Entscheidung,keeps the limitation but removes repetitive negative phrasing
+oberschwaben_step_body,1,Die Karte ordnet die Überschneidung von landwirtschaftlicher Nutzung und Moor-/Feuchtbodenkontext räumlich ein. Entscheidungen brauchen eine Standortprüfung.,keeps the meaning with one positive sentence and one concise boundary
+felt_source_line,1,"Methodische Grenzen siehe <a href=""#methode-in-kuerze"">Methode in Kürze</a>.",moves repeated caveat wording into the method link
+area_balance_note,1,Diese Werte zeigen Größenordnung und Nutzungsmix. Entscheidungen entstehen erst in der Standortprüfung.,reduces a repeated warning block in the area-balance section
+area_balance_source_line,1,"Eigene Verschneidung und kartografische Generalisierung aus FIONA 2024, BK50-Moor-/Feuchtbodenkontext und GISCO NUTS 2024; gerundete Orientierungswerte.",keeps data/source line but removes repeated no-suitability phrasing
+transform_paths_work_rule,1,"Die Schnittmenge ist Ausgangspunkt für Prüfung und Abstimmung; tragfähig werden Pfade erst mit Wasserstand, Betrieb und Kooperation.",turns another caveat repetition into the section's positive argument
+matrix_footer,1,"diese Matrix ordnet typische Pfade und Engpässe, ersetzt aber keine Standortentscheidung.",keeps the methodological boundary in less repetitive wording
