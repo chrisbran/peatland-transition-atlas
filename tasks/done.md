@@ -776,3 +776,4 @@
 - B152 Oberschwaben/Felt integration consolidation: reframed the Felt block as an interactive deepening of the static Oberschwaben map and reduced redundancy (2026-07-01).
 - B153 map role and redundancy audit: inventoried map/graphic roles after Felt integration and documented static-vs-interactive Oberschwaben roles (2026-07-01).
 - B154 Oberschwaben flow spacing polish: added a quiet transition and spacing polish between static map, Felt deepening and area balance (2026-07-01).
+- B155 publication gate register: documented remaining publication gates for Felt, legal notices, source/method status and project disclaimer (2026-07-01).

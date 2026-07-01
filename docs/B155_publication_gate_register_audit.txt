@@ -1,0 +1,27 @@
+# B155 publication gate register audit
+
+Date: 2026-07-01
+
+Result: DOCUMENTATION ONLY. No public page files changed.
+
+Automatic indicators from index.html:
+
+- scope_box: True
+- no_suitability_language: True
+- method_short: True
+- central_sources: True
+- felt_notice: True
+- felt_source_register: True
+- osm_notice: True
+- fiona_bk50_gisco: True
+- area_19900: True
+- solamo_disclaimer: True
+- impressum_privacy_words: True
+- b152_felt_framing: True
+
+Created/updated:
+
+- docs/B155_publication_gate_register.md
+- docs/B155_publication_gate_register.csv
+- docs/B155_publication_gate_register_audit.txt
+- tasks/done.md

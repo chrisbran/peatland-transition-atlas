@@ -1,0 +1,9 @@
+gate,status,evidence,next_action,commit_relevance
+Scope / Nicht-Eignungskarte,inhaltlich gesetzt,Scope-Box und wiederholte Hinweise auf keine Eignungs-/Priorisierungskarte,Nur noch auf Konsistenz achten; keine neuen decision-tool Formulierungen einführen.,public
+Methode / Quellen,weitgehend gesetzt,"Methode in Kürze, Quellenregister, FIONA/BK50/GISCO-Hinweise",Final gegen Datenherkunft und Rundungslogik lesen.,public
+19.900-ha-Zahl,"sichtbar, methodisch noch final zu bestätigen",~19.900 ha bzw. 19867-ha-Basiswert aus Verschneidung,"Finale Methodennotiz ergänzen: Rundung, Geometrievereinfachung nicht für Flächenbilanz, FIONA/BK50/GISCO-Versionen.",publication
+Felt / Drittanbieter,technisch und textlich vorbereitet,"Felt-Block, Drittanbieter-Hinweis, OpenStreetMap-Hinweis, Quellenregister",Felt-Plan/Lizenz nach Trial und Datenschutztext rechtlich/praktisch klären.,publication
+Mobile / Responsive Felt,gesetzt,Desktop-iframe plus Mobile-Fallback/Link-Strategie,Vor Veröffentlichung einmal 390 px und Tablet prüfen; iframe darf mobil nicht dominieren.,public
+Hohenheim / SOLAMO-BW Kontext,"Hinweis vorhanden, Freigabe offen","Footer: Kontext SOLAMO-BW / Universität Hohenheim; eigenständiger Demonstrator, kein offizielles Produkt",Freigabe/Disclaimer intern klären; ggf. präzisere Formulierung mit Projektleitung abstimmen.,publication
+Impressum / Datenschutz,"Text/Linkwörter vorhanden, Zielseiten prüfen",Impressum · Datenschutz im Footer erkannt,"Prüfen, ob echte Zielseiten/Links vorhanden sind und ob Felt dort erwähnt werden muss.",publication
+Git-/Datenhygiene,laufend,Raw-GIS-Dateien dürfen nicht in Commit; Felt-GeoJSON bleibt außerhalb public/repo,Weiterhin nur explizite Dateien stagen; kein git add .; working/ und raw GIS nicht committen.,process
