@@ -771,3 +771,4 @@
 - B147 Felt embed isolated prototype: created a docs-only iframe prototype for local desktop/mobile testing before touching the public page (2026-07-01).
 - B148 Felt integration strategy and responsive gate: documented desktop-embed/mobile-fallback strategy before any live integration (2026-07-01).
 - B149 Felt desktop embed/mobile fallback prototype: added a reversible page-level prototype with desktop iframe and mobile external-link fallback (2026-07-01).
+- B150 Felt block polish and source register: polished public wording for the Felt map block and added a central source-register note (2026-07-01).

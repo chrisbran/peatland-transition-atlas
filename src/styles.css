@@ -6336,3 +6336,34 @@ body > pre:first-child {
   }
 }
 /* B149_FELT_DESKTOP_EMBED_MOBILE_FALLBACK_END */
+
+/* B150_FELT_BLOCK_POLISH_AND_SOURCE_REGISTER_START */
+.b150-felt-source-register {
+  max-width: 58rem;
+  margin: 1.25rem 0 0;
+  padding: 0.95rem 1rem;
+  border-left: 3px solid rgba(8, 127, 122, 0.68);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.b150-felt-source-register h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #1e2d25;
+}
+
+.b150-felt-source-register p {
+  margin: 0;
+  color: var(--muted, #637266);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  .b150-felt-source-register {
+    padding: 0.85rem 0.9rem;
+  }
+}
+/* B150_FELT_BLOCK_POLISH_AND_SOURCE_REGISTER_END */

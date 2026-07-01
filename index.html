@@ -466,15 +466,16 @@
 </section>
 
 <!-- B149_FELT_DESKTOP_EMBED_MOBILE_FALLBACK_START -->
-<section class="b149-felt-pilot" id="oberschwaben-felt-pilot" aria-labelledby="b149-felt-title" data-publication-state="prototype">
+<section class="b149-felt-pilot" id="oberschwaben-felt-pilot" aria-labelledby="b149-felt-title" data-publication-state="candidate">
   <div class="section-inner">
     <div class="b149-felt-pilot__inner">
-      <p class="eyebrow">Interaktiver Kartenpilot</p>
+      <p class="eyebrow">Interaktive Karte</p>
       <h2 id="b149-felt-title">Die Schnittmenge wird als interaktive Karte lesbar</h2>
       <p class="b149-felt-pilot__lead">
-        Der Felt-Pilot zeigt die Überlagerung aus landwirtschaftlicher Nutzung und
-        Moor-/Feuchtbodenkontext als scharfe Vektorkarte. Er ist ein Integrationskandidat
-        für größere Bildschirme; die bestehende Kartenfassung bleibt als Fallback erhalten.
+        Die Karte zeigt die Überlagerung aus landwirtschaftlicher Nutzung und
+        Moor-/Feuchtbodenkontext als scharfe Vektorkarte. Auf größeren Bildschirmen
+        lassen sich Details per Klick prüfen; auf kleinen Bildschirmen öffnet die
+        Karte in einem eigenen Tab.
       </p>
 
       <div class="b149-felt-pilot__desktop" aria-label="Interaktive Felt-Karte für Oberschwaben">
@@ -484,26 +485,28 @@
       </div>
 
       <div class="b149-felt-pilot__mobile" role="note" aria-label="Mobile Alternative zur interaktiven Karte">
-        <p class="b149-felt-pilot__mobile-title">Mobile Ansicht: interaktive Karte separat öffnen</p>
+        <p class="b149-felt-pilot__mobile-title">Interaktive Karte separat öffnen</p>
         <p>
-          Auf kleinen Bildschirmen verdeckt die externe Kartenoberfläche viel Fläche.
-          Deshalb bleibt die Seite mobil ruhig; die interaktive Felt-Karte öffnet in einem neuen Tab.
+          Auf kleinen Bildschirmen ist die externe Kartenansicht in einem eigenen Tab
+          besser lesbar. Die Kernaussage bleibt: Die Schnittmenge markiert Prüfbedarf,
+          nicht automatisch Eignung.
         </p>
-        <a class="b149-felt-pilot__button" href="https://felt.com/map/Oberschwaben-Moor-Feuchtbodenkontext-Pilot-VaKZdOYFRw9B2SzH1sdk39AD?share=1&amp;loc=47.9524,9.489,10z" target="_blank" rel="noopener noreferrer">
+        <a class="b149-felt-pilot__button" href="https://felt.com/map/Oberschwaben-Moor-Feuchtbodenkontext-Pilot-VaKZdOYFRw9B2SzH1sdk39AD?share=1&amp;amp;loc=47.9524,9.489,10z" target="_blank" rel="noopener noreferrer">
           Interaktive Karte öffnen
         </a>
       </div>
 
       <p class="b149-felt-pilot__source">
-        Kartenpilot mit Felt auf Basis einer lokal vereinfachten GeoJSON-Schnittmenge aus
-        landwirtschaftlicher Nutzung und BK50-Moor-/Feuchtbodenkontext. Schematische Orientierung,
-        keine parzellenscharfe Eignungs- oder Priorisierungskarte.
-        <a href="#methode-in-kuerze">Methode in Kürze</a>.
+        Interaktive Karte: Felt; Basiskarte/Daten: OpenStreetMap. Eigene GIS-Aufbereitung
+        aus landwirtschaftlicher Nutzung und BK50-Moor-/Feuchtbodenkontext, via mapshaper
+        für den Webeinsatz vereinfacht. Orientierung, keine parzellenscharfe Eignungs-
+        oder Priorisierungskarte. <a href="#methode-in-kuerze">Methode in Kürze</a>.
       </p>
     </div>
   </div>
 </section>
 <!-- /B149_FELT_DESKTOP_EMBED_MOBILE_FALLBACK_END -->
+
 
 <!-- B96_OBERSCHWABEN_SCROLLY_END -->
 
@@ -1041,6 +1044,19 @@
       </div>
     </div>
   </details>
+
+<!-- B150_FELT_SOURCE_REGISTER_START -->
+<div class="b150-felt-source-register" role="note" aria-label="Quellenhinweis zur interaktiven Oberschwaben-Karte">
+  <h3>Interaktive Oberschwaben-Karte</h3>
+  <p>
+    Felt-Embed mit Basiskarte und Hintergrunddaten von OpenStreetMap. Eigene GIS-Aufbereitung
+    aus FIONA 2024, BK50-Moor-/Feuchtbodenkontext und GISCO/NUTS-Landkreisgrenzen;
+    vereinfachter GeoJSON-Export via mapshaper. Die Darstellung ist eine Orientierungskarte
+    für Prüfbedarf, keine hydrologische Modellierung und keine parzellenscharfe Eignungs-
+    oder Priorisierungskarte.
+  </p>
+</div>
+<!-- /B150_FELT_SOURCE_REGISTER_END -->
 </section>
 <!-- /B125_SOURCE_AND_METHOD_REGISTER -->
 
