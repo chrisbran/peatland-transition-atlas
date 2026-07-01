@@ -780,3 +780,4 @@
 - B156 visible Umsetzung wording polish: reduced repeated visible uses of Umsetzung with more specific wording (2026-07-01).
 - B157 area-balance method-note hardening: clarified that the ~19,900 ha balance comes from the original GIS intersection, not the simplified Felt geometry (2026-07-01).
 - B158 reduce notice density: reduced visible warning/notice clutter by removing the Felt Lesart box, shortening the external-service notice and collapsing the area-balance method note (2026-07-01).
+- B159 editorial elevation audit: compared the current V2 page against premium editorial/data-feature standards and created a cut/rebuild plan (2026-07-01).
