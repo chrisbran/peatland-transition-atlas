@@ -787,3 +787,6 @@
 - B162c keep and polish value-chain scorecard: kept the existing dark scorecard direction, sharpened the title and shortened the lead instead of replacing it with the B162 wireframe (2026-07-01).
 - B163 main-flow caveat reduction: consolidated repeated visible caveats while keeping core scope and method boundaries intact (2026-07-01).
 - B164 premium pacing polish: tightened section titles, leads and transitions for a more editorial main-flow rhythm (2026-07-01).
+- B165 flagship sticky zoom prototype: created an isolated prototype for the global-to-regional sticky zoom using existing map assets (2026-07-01).
+- B165b flagship sticky zoom boundary overlays: added political-boundary overlays to the isolated sticky-zoom prototype (2026-07-01).
+- B166 full layer inventory and sticky state matrix: inventoried map assets and documented the complete target state matrix, including density map and regional boundary-pairing issues (2026-07-01).

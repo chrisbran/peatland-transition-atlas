@@ -1,0 +1,37 @@
+# B166 full layer inventory and sticky state matrix audit
+
+Date: 2026-07-01
+
+Result: INVENTORY ONLY. No public page files changed.
+
+Inputs:
+- index.html exists: True
+- B165 prototype exists: True
+
+Assets:
+- total inventoried: 17
+- existing: 17
+- missing expected: 0
+
+Matrix status counts:
+- available_unused: 1
+- ok_current: 5
+- wrongly_paired: 1
+
+Regional candidates:
+- base candidates: 6
+- boundary candidates: 2
+
+Detected regional pairing issue:
+- oberschwaben-handoff: current_base=public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png current_overlay=public/maps/germany/germany_admin_context.png
+
+Created/updated:
+
+- docs/B166_full_layer_inventory_and_sticky_state_matrix.md
+- docs/B166_map_asset_inventory.csv
+- docs/B166_sticky_state_matrix.csv
+- docs/B166_sticky_zoom_repair_recommendations.md
+- docs/B166_full_layer_inventory_and_sticky_state_matrix_audit.txt
+- tasks/done.md
+
+Recommended next patch: B167 Sticky Zoom State Repair

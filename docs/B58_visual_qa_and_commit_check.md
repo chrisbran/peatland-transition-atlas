@@ -43,10 +43,7 @@ Date: 2026-07-01
 
 ### Current changed/untracked files
 
-- ` M docs/B103b_corrected_visible_text_audit.md`
 - ` M docs/B145_felt_embed_candidate_template.txt`
-- ` M index.html`
-- ` M src/styles.css`
 - ` M tasks/done.md`
 - `?? _backup_before_b116_public_page_hardening/`
 - `?? _backup_before_b117_cartographic_hardening/`
@@ -102,9 +99,16 @@ Date: 2026-07-01
 - `?? docs/B162_value_chain_visual_climax_redesign.md`
 - `?? docs/B162_value_chain_visual_climax_redesign_audit.txt`
 - `?? docs/B162_value_chain_visual_design_spec.md`
-- `?? docs/B164_premium_pacing_polish.md`
-- `?? docs/B164_premium_pacing_polish_audit.txt`
-- `?? docs/B164_premium_pacing_replacements.csv`
+- `?? docs/B165_flagship_sticky_zoom_prototype.md`
+- `?? docs/B165_flagship_sticky_zoom_prototype_audit.txt`
+- `?? docs/B165_flagship_sticky_zoom_prototype_inventory.csv`
+- `?? docs/B165b_flagship_sticky_zoom_boundary_overlays.md`
+- `?? docs/B165b_flagship_sticky_zoom_boundary_overlays_audit.txt`
+- `?? docs/B166_full_layer_inventory_and_sticky_state_matrix.md`
+- `?? docs/B166_full_layer_inventory_and_sticky_state_matrix_audit.txt`
+- `?? docs/B166_map_asset_inventory.csv`
+- `?? docs/B166_sticky_state_matrix.csv`
+- `?? docs/B166_sticky_zoom_repair_recommendations.md`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -124,6 +128,7 @@ Date: 2026-07-01
 - `?? docs/B99_reposition_transformations_after_oberschwaben.md`
 - `?? docs/B99_transformations_public_readiness_audit.txt`
 - `?? docs/prototypes/B162_value_chain_climax_wireframe.svg`
+- `?? docs/prototypes/B165_flagship_sticky_zoom_prototype.html`
 - `?? public/maps/bw/README.md`
 - `?? public/maps/europe/README.md`
 - `?? scripts/04_add_hotspot_ranking_layer.py`
@@ -141,7 +146,9 @@ Date: 2026-07-01
 - `?? scripts/141_cartographic_annotation_audit.py`
 - `?? scripts/157_area_balance_method_note_hardening.py`
 - `?? scripts/162_value_chain_visual_climax_redesign.py`
-- `?? scripts/164_premium_pacing_polish.py`
+- `?? scripts/165_flagship_sticky_zoom_prototype.py`
+- `?? scripts/165b_flagship_sticky_zoom_boundary_overlays.py`
+- `?? scripts/166_full_layer_inventory_and_sticky_state_matrix.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`

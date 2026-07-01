@@ -1,0 +1,18 @@
+path,exists,size_bytes,scope,role,referenced_in_index,referenced_in_b165_prototype,used_as_b165_base_for_states,used_as_b165_boundary_for_states
+public/maps/bw/bw_admin_context.png,True,25033,bw,political_boundary_or_admin_overlay,True,False,,
+public/maps/bw/bw_bk50_moor_extent.png,True,57977,bw,map_or_image_asset,True,False,,
+public/maps/europe/europe_country_borders.png,True,128069,europe,political_boundary_or_admin_overlay,True,True,,europe-bridge
+public/maps/europe/europe_gpm2_peat_extent.png,True,70319,europe,peat_extent,True,True,europe-bridge,
+public/maps/germany/germany_admin_context.png,True,71220,germany,political_boundary_or_admin_overlay,True,True,,germany-extent; germany-types; regional-handoff
+public/maps/germany/germany_thuenen_moor_extent.png,True,237418,germany,organic_soils_extent,True,True,germany-extent,
+public/maps/germany/germany_thuenen_moor_types.png,True,263038,germany,organic_soil_types,True,True,germany-types,
+public/maps/global/global_country_borders.png,True,97227,global,political_boundary_or_admin_overlay,True,True,,global-peat; global-pressure
+public/maps/global/global_gpm2_peat_extent.png,True,34952,global,peat_extent,True,True,global-peat,
+public/maps/global/global_hotspots_density.png,True,113311,global,emissions_intensity_per_area,True,False,,
+public/maps/global/global_hotspots_total.png,True,115422,global,absolute_emissions_pressure,True,True,global-pressure,
+public/maps/oberschwaben/oberschwaben_admin_context.png,True,47880,oberschwaben,political_boundary_or_admin_overlay,True,False,,
+public/maps/oberschwaben/oberschwaben_agriculture.png,True,234449,oberschwaben,map_or_image_asset,True,False,,
+public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png,True,45290,oberschwaben,regional_intersection,True,True,regional-handoff,
+public/maps/oberschwaben/oberschwaben_moor_context.png,True,49669,oberschwaben,map_or_image_asset,True,False,,
+public/maps/oberschwaben_lgl/oberschwaben_lgl_landuse.png,True,774925,oberschwaben,map_or_image_asset,False,False,,
+public/maps/oberschwaben_lgl/oberschwaben_lgl_landuse_bk50_intersection.png,True,287511,oberschwaben,regional_intersection,False,False,,
