@@ -783,3 +783,5 @@
 - B159 editorial elevation audit: compared the current V2 page against premium editorial/data-feature standards and created a cut/rebuild plan (2026-07-01).
 - B160 narrative cut plan: created a five-act cut matrix and main-flow outline for premium editorial pacing (2026-07-01).
 - B161 flagship sticky zoom concept: designed the premium one-earned-sticky map zoom concept from global relevance to Oberschwaben proof point (2026-07-01).
+- B162 value-chain visual climax redesign: designed the premium visual climax for the bottleneck behind the field and created an SVG wireframe prototype (2026-07-01).
+- B162c keep and polish value-chain scorecard: kept the existing dark scorecard direction, sharpened the title and shortened the lead instead of replacing it with the B162 wireframe (2026-07-01).

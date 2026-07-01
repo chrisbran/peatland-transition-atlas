@@ -43,7 +43,10 @@ Date: 2026-07-01
 
 ### Current changed/untracked files
 
+- ` M docs/B103b_corrected_visible_text_audit.md`
 - ` M docs/B145_felt_embed_candidate_template.txt`
+- ` M index.html`
+- ` M src/styles.css`
 - ` M tasks/done.md`
 - `?? _backup_before_b116_public_page_hardening/`
 - `?? _backup_before_b117_cartographic_hardening/`
@@ -94,11 +97,13 @@ Date: 2026-07-01
 - `?? docs/B141_cartographic_annotation_candidates.csv`
 - `?? docs/B157_area_balance_method_note_hardening.md`
 - `?? docs/B157_area_balance_method_note_hardening_audit.txt`
-- `?? docs/B161_flagship_sticky_zoom_asset_inventory.csv`
-- `?? docs/B161_flagship_sticky_zoom_concept.md`
-- `?? docs/B161_flagship_sticky_zoom_concept_audit.txt`
-- `?? docs/B161_flagship_sticky_zoom_implementation_brief.md`
-- `?? docs/B161_flagship_sticky_zoom_storyboard.md`
+- `?? docs/B162_value_chain_climax_component_inventory.csv`
+- `?? docs/B162_value_chain_climax_storyboard.md`
+- `?? docs/B162_value_chain_visual_climax_redesign.md`
+- `?? docs/B162_value_chain_visual_climax_redesign_audit.txt`
+- `?? docs/B162_value_chain_visual_design_spec.md`
+- `?? docs/B162c_keep_and_polish_value_chain_scorecard.md`
+- `?? docs/B162c_keep_and_polish_value_chain_scorecard_audit.txt`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -117,6 +122,7 @@ Date: 2026-07-01
 - `?? docs/B98c_oberschwaben_public_safe_summary.csv`
 - `?? docs/B99_reposition_transformations_after_oberschwaben.md`
 - `?? docs/B99_transformations_public_readiness_audit.txt`
+- `?? docs/prototypes/B162_value_chain_climax_wireframe.svg`
 - `?? public/maps/bw/README.md`
 - `?? public/maps/europe/README.md`
 - `?? scripts/04_add_hotspot_ranking_layer.py`
@@ -133,7 +139,8 @@ Date: 2026-07-01
 - `?? scripts/131b_scope_box_soften.py`
 - `?? scripts/141_cartographic_annotation_audit.py`
 - `?? scripts/157_area_balance_method_note_hardening.py`
-- `?? scripts/161_flagship_sticky_zoom_concept.py`
+- `?? scripts/162_value_chain_visual_climax_redesign.py`
+- `?? scripts/162c_keep_and_polish_value_chain_scorecard.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`

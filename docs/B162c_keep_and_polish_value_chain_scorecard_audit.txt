@@ -1,0 +1,14 @@
+# B162c keep and polish value-chain scorecard audit
+
+Date: 2026-07-01
+
+Old B162c CSS present before patch: False
+Old scorecard title present before patch: True
+Polished scorecard title present before patch: False
+OK found value-chain scorecard section by anchor: Bis zur Ernte ist die Kette oft anschlussfähig
+OK added b162c-scorecard-polish section class
+Title replacements: 1
+Lead replacements: 1
+Note replacement `Qualitative Synthese, keine Mess...`: 1
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.
