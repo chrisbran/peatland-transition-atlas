@@ -1,0 +1,10 @@
+# B152 Oberschwaben/Felt integration consolidation audit
+
+Date: 2026-07-01
+
+B149 block found: True
+iframe preserved: True
+share URL preserved: True
+B151 notice preserved or defaulted: True
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.
