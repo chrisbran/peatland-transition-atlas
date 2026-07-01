@@ -1,0 +1,11 @@
+# B154 Oberschwaben flow spacing polish audit
+
+Date: 2026-07-01
+
+B149/B152 Felt block present before patch: True
+Old B154 transition present before patch: False
+Old B154 CSS present before patch: False
+OK found Flächenbilanz section by anchor: Die Schnittmenge macht den Prüfbedarf sichtbar, nicht die Lösung
+OK inserted B154 transition between Felt block and Flächenbilanz
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

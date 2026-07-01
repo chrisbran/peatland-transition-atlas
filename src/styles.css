@@ -6448,3 +6448,43 @@ body > pre:first-child {
   }
 }
 /* B152_OBERSCHWABEN_FELT_INTEGRATION_CONSOLIDATION_END */
+
+/* B154_OBERSCHWABEN_FLOW_SPACING_POLISH_START */
+.b152-felt-integration {
+  padding-bottom: clamp(1.6rem, 4vw, 3rem);
+}
+
+.b154-oberschwaben-flow-transition {
+  width: min(100% - 2rem, 74rem);
+  max-width: 68rem;
+  margin: clamp(-0.4rem, -0.6vw, 0rem) auto clamp(0.8rem, 2.3vw, 1.5rem);
+  padding: 0.72rem 0.95rem;
+  border-left: 3px solid rgba(8, 127, 122, 0.58);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.48);
+}
+
+.b154-oberschwaben-flow-transition p {
+  max-width: 48rem;
+  margin: 0;
+  color: var(--muted, #637266);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.b154-oberschwaben-flow-transition + section {
+  padding-top: clamp(1.5rem, 3.4vw, 2.7rem);
+}
+
+@media (max-width: 760px) {
+  .b154-oberschwaben-flow-transition {
+    width: min(100% - 1.25rem, 74rem);
+    margin-block: 0 1rem;
+    padding: 0.68rem 0.82rem;
+  }
+
+  .b154-oberschwaben-flow-transition p {
+    font-size: 0.86rem;
+  }
+}
+/* B154_OBERSCHWABEN_FLOW_SPACING_POLISH_END */
