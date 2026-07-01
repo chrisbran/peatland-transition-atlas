@@ -1,0 +1,7 @@
+id,replacements,replacement,reason
+frame_mismatch_sentence,1,"In der Praxis entscheidet sich das Thema dort, wo Wasserstand, Nutzung, Eigentum, Betriebe und Wertschöpfungsketten zusammenkommen.",reduces repeated Umsetzung in the Frame-Mismatch paragraph
+frame_step_heading,1,Lokale Ketten entscheiden,turns a topic label into a sharper statement title
+value_chain_scaling_sentence,1,"Kleinere Mengen, fehlende Skalierung oder unsichere Absatzwege begrenzen die Marktfähigkeit.",makes the value-chain bottleneck more specific
+water_governance_start_sentence,1,"Deshalb beginnt Abstimmung oft dort, wo Zuständigkeiten nicht deckungsgleich sind.",fits the water/governance argument more precisely
+water_governance_consequence_sentence,1,"Planung braucht zusätzlich lokale Wasserkenntnis, Abstimmung zwischen Eigentümern und Betrieben sowie tragfähige Bewirtschaftungs- und Verwertungspfade.",uses planning language in a planning/governance sentence
+consequence_sentence,1,Für die Praxis reicht die Flächenperspektive aber nicht aus:,keeps the concluding sentence concrete and avoids repetition

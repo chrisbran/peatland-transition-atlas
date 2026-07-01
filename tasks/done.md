@@ -777,3 +777,4 @@
 - B153 map role and redundancy audit: inventoried map/graphic roles after Felt integration and documented static-vs-interactive Oberschwaben roles (2026-07-01).
 - B154 Oberschwaben flow spacing polish: added a quiet transition and spacing polish between static map, Felt deepening and area balance (2026-07-01).
 - B155 publication gate register: documented remaining publication gates for Felt, legal notices, source/method status and project disclaimer (2026-07-01).
+- B156 visible Umsetzung wording polish: reduced repeated visible uses of Umsetzung with more specific wording (2026-07-01).

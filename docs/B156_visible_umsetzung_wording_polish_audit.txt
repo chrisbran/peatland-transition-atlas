@@ -1,0 +1,18 @@
+# B156 visible Umsetzung wording polish audit
+
+Date: 2026-07-01
+
+`Umsetzung` count in index.html before: 7
+`Umsetzung` count in index.html after: 1
+
+Replacement results:
+- frame_mismatch_sentence: 1
+- frame_step_heading: 1
+- value_chain_scaling_sentence: 1
+- water_governance_start_sentence: 1
+- water_governance_consequence_sentence: 1
+- consequence_sentence: 1
+
+OK: All planned replacements matched at least once.
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

@@ -25,7 +25,7 @@ B103b separates actual visible text from hidden/retired archive text.
 
 | Pattern group | Count |
 |---|---:|
-| Umsetzung* | 6 |
+| Umsetzung* | 0 |
 | Transform* | 9 |
 | Wertschöpfung* | 20 |
 | wird zu/zur/zum/eine | 0 |
@@ -38,7 +38,7 @@ B103b separates actual visible text from hidden/retired archive text.
 
 | Category | Severity | Count |
 |---|---|---:|
-| wording | review | 6 |
+| none | none | 0 |
 
 ## Hidden/retired findings summary
 
@@ -54,42 +54,7 @@ B103b separates actual visible text from hidden/retired archive text.
 
 ## First visible review candidates
 
-### 1. wording / review: `Umsetzung`
-
-Context: rbodenschutz beginnt als Klimathema – und wird vor Ort zur Nutzungsfrage Globale Karten erklären, warum Moore relevant sind. Die Umsetzung entscheidet sich aber dort, wo Wasserstand, Nutzung, Eigentum, Betriebe und Wertschöpfungsketten zusammenkommen. 01 Klima macht
-
-Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
-
-### 2. wording / review: `Umsetzung`
-
-Context: nden den Handlungsdruck. 02 Raum macht Planung notwendig Karten zeigen, dass Moorbodenschutz nicht überall gleich aussieht. 03 Umsetzung braucht lokale Ketten Wasser, Bewirtschaftung, Verarbeitung und Abnahme müssen zusammenpassen. Moore sind räumlich konzentriert
-
-Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
-
-### 3. wording / review: `Umsetzung`
-
-Context: etabliert. Verwendung erhöhter Entwicklungsbedarf Kleinere Mengen, fehlende Skalierung oder unsichere Absatzwege begrenzen die Umsetzung. anschlussfähig im Aufbau erhöhter Entwicklungsbedarf Qualitative Einordnung, keine Präzisionszahlen und keine formale Bewertun
-
-Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
-
-### 4. wording / review: `Umsetzung`
-
-Context: nzelnen Fläche entschieden. Der Wasserstand verbindet Parzellen, Betriebe, Gräben, Vorfluter und Nachbarschaften. Deshalb beginnt Umsetzung oft dort, wo Zuständigkeiten nicht deckungsgleich sind. 01 Parzelle zeigt Nutzung, Eigentum und Bewirtschaftung – aber nur eine
-
-Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
-
-### 5. wording / review: `Umsetzung`
-
-Context: Wasserstände gemeinsam steuerbar sind – und wer dafür zusammen planen muss. Konsequenz: Karten können Prüfbedarf sichtbar machen. Umsetzung braucht zusätzlich lokale Wasserkenntnis, Abstimmung zwischen Eigentümern und Betrieben sowie tragfähige Bewirtschaftungs- und Ve
-
-Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
-
-### 6. wording / review: `Umsetzung`
-
-Context: rwertungspfade. Konsequenz Der Hebel verschiebt sich von der Fläche zur Kette Wiedervernässung bleibt der ökologische Kern. Für Umsetzung reicht die Flächenperspektive aber nicht aus: Entscheidend wird, ob Wasser, Nutzung, Verarbeitung und Nachfrage als zusammenhänge
-
-Recommendation: Keep where needed, but reduce repetition and vary with Planung/Praxis/Bewirtschaftung/Förderung.
-
+No findings.
 
 ## First hidden/retired review candidates
 
