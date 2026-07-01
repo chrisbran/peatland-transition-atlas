@@ -769,3 +769,4 @@
 - B145 Felt pilot build sheet: documented the manual Felt styling, annotation, tooltip and embed-candidate workflow for the Oberschwaben map pilot (2026-06-30).
 - B146 Felt pilot candidate documentation: documented the successful Felt pilot, embed availability, mobile check and integration gates (2026-07-01).
 - B147 Felt embed isolated prototype: created a docs-only iframe prototype for local desktop/mobile testing before touching the public page (2026-07-01).
+- B148 Felt integration strategy and responsive gate: documented desktop-embed/mobile-fallback strategy before any live integration (2026-07-01).
