@@ -1,0 +1,22 @@
+section_no,heading,current_act,decision,target_role,estimated_cut_percent,b161_flagship_zoom_role,b162_value_chain_role,note
+1,Moorbodenschutz braucht räumliche Orientierung,A1 Hook / promise,rebuild,value_chain_climax,35,,candidate,Inhalt stark; als erinnerbares Climax-Bild neu denken.
+2,Sechsteilige Kartenstory,Unclear / supporting,keep,main_flow,0,,,"Behalten, aber auf Rolle im Fünf-Akt-Bogen prüfen."
+3,"Fachlicher Demonstrator, keine Eignungskarte",A1 Hook / promise,compress,scope_or_method,50,,,Ein starker Scope-Hinweis reicht; Wiederholungen in Methode/Quellen verschieben.
+4,"Moorbodenschutz wird erst mit Boden, Nutzung und Wasserstand planbar",A1 Hook / promise,rebuild,value_chain_climax,35,,candidate,Inhalt stark; als erinnerbares Climax-Bild neu denken.
+5,"Der Wasserstand entscheidet, ob Moorboden speichert oder emittiert",A2 Why it matters / scale jump,keep,main_flow,0,,,"Behalten, aber auf Rolle im Fünf-Akt-Bogen prüfen."
+6,Moorbodenschutz beginnt als Klimathema – und wird vor Ort zur Nutzungsfrage,A2 Why it matters / scale jump,rebuild,flagship_sticky_zoom,30,candidate,,"Als großer Sticky-Zoom choreografieren; weniger Begleittext, mehr räumliche Verdichtung."
+7,Wo liegen die Moore?,A2 Why it matters / scale jump,rebuild,flagship_sticky_zoom,30,candidate,,"Als großer Sticky-Zoom choreografieren; weniger Begleittext, mehr räumliche Verdichtung."
+8,Der Wasserstand macht aus Moorboden Speicher oder Quelle,A2 Why it matters / scale jump,keep,main_flow,0,,,"Behalten, aber auf Rolle im Fünf-Akt-Bogen prüfen."
+9,In Oberschwaben wird Moorbodenschutz zur konkreten Nutzungsfrage,A2 Why it matters / scale jump,rebuild,flagship_sticky_zoom,30,candidate,,"Als großer Sticky-Zoom choreografieren; weniger Begleittext, mehr räumliche Verdichtung."
+10,Unterschiedliche Flächen brauchen unterschiedliche Transformationspfade,A2 Why it matters / scale jump,rebuild,editorial_visual,25,,,Nicht zwingend löschen; visuell stärker inszenieren.
+11,"Die Karten zeigen Prüfbedarf, aber keine Flächeneignung",A3 Regional concretisation,compress,scope_or_method,50,,,Ein starker Scope-Hinweis reicht; Wiederholungen in Methode/Quellen verschieben.
+12,Warum Oberschwaben?,A2 Why it matters / scale jump,rebuild,flagship_sticky_zoom,30,candidate,,"Als großer Sticky-Zoom choreografieren; weniger Begleittext, mehr räumliche Verdichtung."
+13,"Oberschwaben, wo Moorschutz auf Landwirtschaft trifft",A2 Why it matters / scale jump,keep/tighten,regional_proof_point,15,,,"Kernbeleg. Behalten, aber Dopplung zwischen statischer Karte, Felt und Bilanz weiter reduzieren."
+14,Die statische Karte zeigt die Lage – die interaktive Karte zeigt die Details,A2 Why it matters / scale jump,keep/tighten,regional_proof_point,15,,,"Kernbeleg. Behalten, aber Dopplung zwischen statischer Karte, Felt und Bilanz weiter reduzieren."
+15,"Die Schnittmenge macht den Prüfbedarf sichtbar, nicht die Lösung",A3 Regional concretisation,keep/tighten,regional_proof_point,15,,,"Kernbeleg. Behalten, aber Dopplung zwischen statischer Karte, Felt und Bilanz weiter reduzieren."
+16,"Aus der Schnittmenge folgt Verhandlung, keine Einheitslösung",A2 Why it matters / scale jump,visualise,governance_visual_moment,25,,,Als diagrammatischer Moment stärker als Textblock.
+17,Bis zur Ernte ist die Kette oft anschlussfähig — danach besteht häufig Entwicklungsbedarf.,A2 Why it matters / scale jump,rebuild,value_chain_climax,35,,candidate,Inhalt stark; als erinnerbares Climax-Bild neu denken.
+18,"Nutzungskontexte entscheiden, welche Wertschöpfungspfade plausibel sind",A2 Why it matters / scale jump,rebuild,value_chain_climax,35,,candidate,Inhalt stark; als erinnerbares Climax-Bild neu denken.
+19,"Wasser folgt Einzugsgebieten, nicht Eigentumsgrenzen",A2 Why it matters / scale jump,visualise,governance_visual_moment,25,,,Als diagrammatischer Moment stärker als Textblock.
+20,Der Hebel verschiebt sich von der Fläche zur Kette,A5 Climax / bottleneck behind the field,rebuild,value_chain_climax,35,,candidate,Inhalt stark; als erinnerbares Climax-Bild neu denken.
+21,Grundlagen,A2 Why it matters / scale jump,move/collapse,appendix_details,70,,,Nicht im Hauptfluss ausbreiten; als Appendix/details verfügbar halten.

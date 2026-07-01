@@ -1,0 +1,20 @@
+# B160 narrative cut plan audit
+
+Date: 2026-07-01
+
+Result: PLAN ONLY. No public page files changed.
+
+Input source: B159 CSV
+Sections planned: 21
+Approx. words: 2868
+Estimated weighted cut potential: 34.7 %
+
+Created/updated:
+
+- docs/B160_narrative_cut_plan.md
+- docs/B160_section_cut_matrix.csv
+- docs/B160_main_flow_outline.md
+- docs/B160_narrative_cut_plan_audit.txt
+- tasks/done.md
+
+Recommended next patch: B161 Flagship Sticky Zoom Concept
