@@ -6918,3 +6918,156 @@ body > pre:first-child {
   }
 }
 /* B169_LIVE_STICKY_ZOOM_END */
+
+/* B170_OBERSCHWABEN_STORY_HANDOFF_POLISH_START */
+/* B170: make the handoff from scale zoom to regional use feel intentional and compact. */
+.b170-oberschwaben-handoff {
+  width: min(100% - 2rem, 76rem);
+  margin: clamp(0.75rem, 2vw, 1.5rem) auto clamp(2.25rem, 5vw, 4rem);
+  padding-top: clamp(1rem, 2vw, 1.4rem);
+  border-top: 1px solid rgba(28, 42, 34, 0.14);
+  color: #5e6d63;
+}
+
+.b170-handoff-kicker {
+  margin: 0 0 0.35rem;
+  color: #6b7f51;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.b170-oberschwaben-handoff p:last-child {
+  max-width: 46rem;
+  margin: 0;
+  font-size: clamp(1rem, 1.35vw, 1.18rem);
+  line-height: 1.45;
+}
+
+.b170-oberschwaben-handoff strong {
+  color: #1c2a22;
+  font-weight: 850;
+}
+
+.b170-oberschwaben-detail {
+  scroll-margin-top: 7rem;
+}
+
+.b170-oberschwaben-lead {
+  max-width: 42rem;
+  margin: 1rem 0 clamp(1.25rem, 2vw, 1.75rem);
+  color: #5e6d63;
+  font-size: clamp(1rem, 1.25vw, 1.12rem);
+  line-height: 1.5;
+  text-wrap: pretty;
+}
+
+@media (max-width: 760px) {
+  .b170-oberschwaben-handoff {
+    margin-top: 0.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .b170-oberschwaben-detail {
+    scroll-margin-top: 5rem;
+  }
+}
+/* B170_OBERSCHWABEN_STORY_HANDOFF_POLISH_END */
+
+/* B172_MOBILE_STICKY_ZOOM_POLISH_START */
+/* Mobile polish for the B169 live sticky zoom.
+   Keep desktop unchanged; on phones/tablets place the map stage before the steps
+   and keep it lightly sticky so text and map stay connected. */
+@media (max-width: 860px) {
+  .b169-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .b169-stage-wrap {
+    order: 1;
+    position: sticky;
+    top: 3.15rem;
+    z-index: 3;
+    height: auto;
+    min-height: 0;
+    margin-inline: auto;
+    width: min(100%, 42rem);
+    display: block;
+  }
+
+  .b169-steps {
+    order: 2;
+    padding: 0 0 1rem;
+  }
+
+  .b169-stage {
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    border-radius: 0.9rem;
+    box-shadow: 0 18px 52px rgba(25, 39, 32, 0.22);
+  }
+
+  .b169-stage-label {
+    left: 0.65rem;
+    top: 0.65rem;
+    max-width: calc(100% - 1.3rem);
+    padding: 0.48rem 0.58rem;
+    border-radius: 0.55rem;
+    font-size: 0.74rem;
+    line-height: 1.18;
+  }
+
+  .b169-step {
+    padding: clamp(1.15rem, 7vh, 2.4rem) 0;
+    min-height: clamp(13rem, 46vh, 22rem);
+    justify-content: center;
+    border-bottom: 1px solid rgba(28, 42, 34, 0.08);
+  }
+
+  .b169-step:last-child {
+    border-bottom: 0;
+  }
+
+  .b169-step h3 {
+    max-width: 14em;
+    font-size: clamp(1.55rem, 9vw, 2.4rem);
+  }
+
+  .b169-step p:last-child {
+    max-width: 25rem;
+    font-size: 0.98rem;
+  }
+
+  .b169-mobile-note {
+    display: none;
+  }
+
+  .b169-source-line {
+    margin-top: 1.4rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .b169-live-sticky-zoom {
+    padding-top: 2.5rem;
+  }
+
+  .b169-stage-wrap {
+    top: 3rem;
+    width: 100%;
+  }
+
+  .b169-stage {
+    border-radius: 0.72rem;
+  }
+
+  .b169-step {
+    min-height: 48vh;
+  }
+}
+/* B172_MOBILE_STICKY_ZOOM_POLISH_END */

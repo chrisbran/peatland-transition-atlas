@@ -1,0 +1,14 @@
+# B174 patch B58 for B169 live zoom audit
+
+Date: 2026-07-02
+
+Old B58 contained legacy retired states: True
+Old B58 already contained B169 detection: False
+
+Post-patch checks:
+- B169 marker detection in B58: True
+- B169 script check in B58: True
+- B169 states in B58: True
+- New Oberschwaben no-label map in B58: True
+
+Result: PATCH WRITTEN. Rerun B58.

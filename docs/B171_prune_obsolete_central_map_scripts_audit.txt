@@ -1,0 +1,23 @@
+# B171 prune obsolete central map scripts audit
+
+Date: 2026-07-01
+
+B169 marker present before patch: True
+B169 script present before patch: True
+Script tags inspected: 9
+Script refs removed: 4
+index.html length before: 59498
+index.html length after: 59266
+
+Removed scripts:
+- src/central_global_map_story.js
+- src/central_layer_state_hardener.js
+- src/central_step_state_bridge.js
+- src/central_stage_label_fix.js
+
+Post-patch checks:
+- B169 marker still present: True
+- B169 script still present: True
+- old central script hints still referenced: False
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

@@ -1,0 +1,22 @@
+# B173 publication gate audit run
+
+Date: 2026-07-02
+
+index.html length: 59266
+src/styles.css exists: True
+src/styles.css length: 169012
+
+PASS: 12
+WARN: 0
+FAIL: 0
+
+Failed gates:
+- none
+
+Created/updated:
+- docs/B173_publication_gate_audit.md
+- docs/B173_publication_gate_audit.csv
+- docs/B173_publication_gate_audit_run.txt
+- tasks/done.md
+
+Result: AUDIT COMPLETE. No public page files changed.

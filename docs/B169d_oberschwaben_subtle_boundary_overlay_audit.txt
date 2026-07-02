@@ -1,0 +1,19 @@
+# B169d Oberschwaben subtle boundary overlay audit
+
+Date: 2026-07-01
+
+Selected overlay: public/maps/oberschwaben/oberschwaben_admin_context.png
+Selected mode: fallback_admin_context_softened
+Old oberschwaben overlay count in B169 block: 0
+Inserted oberschwaben overlay: public/maps/oberschwaben/oberschwaben_admin_context.png
+Overlay mode: fallback_admin_context_softened
+
+Candidate count: 7
+
+Post-patch checks:
+- oberschwaben overlay present: True
+- oberschwaben boundary marker present: True
+- soft boundary mode present: True
+- B169d CSS present: True
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

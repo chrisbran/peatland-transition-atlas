@@ -1,0 +1,10 @@
+src,removed,reason
+src/app.js,False,kept
+src/hotspots.js,False,kept
+src/hotspot_base_layer.js,False,kept
+src/bw_peat_layer.js,False,kept
+src/central_global_map_story.js,True,obsolete central map story script after B169 live sticky zoom
+src/central_layer_state_hardener.js,True,obsolete central map story script after B169 live sticky zoom
+src/central_step_state_bridge.js,True,obsolete central map story script after B169 live sticky zoom
+src/central_stage_label_fix.js,True,obsolete central map story script after B169 live sticky zoom
+src/b169_live_sticky_zoom.js,False,kept

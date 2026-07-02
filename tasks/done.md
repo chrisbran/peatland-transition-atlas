@@ -797,3 +797,8 @@
 - B169c live sticky zoom text and artifact fix: removed the separate map annotation rail, eliminated lateral step jumps, and disabled the Oberschwaben admin overlay that made county labels look like artifacts (2026-07-01).
 - B169d Oberschwaben subtle boundary overlay: restored a subdued regional boundary overlay in the live sticky zoom to keep orientation without making Landkreis labels dominate (2026-07-01).
 - B169e replace Oberschwaben zoom map: replaced the live sticky zoom Oberschwaben handoff map with the new no-label Landkreis + Moor-/Feuchtbodenkontext asset and removed overlay hacks (2026-07-01).
+- B170 Oberschwaben story handoff polish: added a compact transition from the live sticky zoom to the Oberschwaben detail section and reframed the section as the step where current use is added to the regional soil context (2026-07-01).
+- B171 prune obsolete central map scripts: removed old central map-story script references after the B169 live sticky zoom replaced that section (2026-07-01).
+- B172 mobile sticky zoom polish: adjusted the live sticky zoom mobile layout so the map remains visually connected to the numbered scroll steps (2026-07-01).
+- B173 publication gate audit: checked release-critical gates such as scope disclaimer, methods, sources, Impressum/Datenschutz, Felt notice, institutional disclaimer, area reference, and absence of raw GIS paths (2026-07-02).
+- B174 patch B58 for B169 live zoom: updated the visual QA script so the new B169 live sticky-zoom state matrix is treated as active and legacy central-map states no longer fail after replacement (2026-07-02).
