@@ -1,6 +1,6 @@
 # B103b - Corrected Visible Text Audit
 
-Date: 2026-06-29
+Date: 2026-07-02
 
 ## Result
 
@@ -26,13 +26,13 @@ B103b separates actual visible text from hidden/retired archive text.
 | Pattern group | Count |
 |---|---:|
 | Umsetzung* | 0 |
-| Transform* | 8 |
-| Wertschöpfung* | 11 |
+| Transform* | 7 |
+| Wertschöpfung* | 18 |
 | wird zu/zur/zum/eine | 0 |
 | übersetz* | 0 |
 | Suchkulisse/Gesprächskulisse | 0 |
 | prototype/explorer | 0 |
-| English cue words | 0 |
+| English cue words | 2 |
 
 ## Visible findings summary
 

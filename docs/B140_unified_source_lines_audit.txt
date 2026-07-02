@@ -1,0 +1,15 @@
+# B140 unified source lines audit
+
+Date: 2026-06-30
+
+Method anchor present before patch: True
+Existing B140 note blocks before patch: 0
+Existing B140 CSS block before patch: False
+OK B130 sourcebox: added method link
+OK FRAME_BRIDGE: inserted source/method line before section end; anchor=Moorbodenschutz beginnt als Klimathema
+OK GLOBAL_CONTEXT: inserted source/method line before section end; anchor=Moore sind räumlich konzentriert und klimatisch wirksam
+OK REGIONAL_CONTEXT: inserted source/method line before section end; anchor=Die Schnittmenge macht den Prüfbedarf sichtbar, nicht die Lösung
+OK WATER_GOVERNANCE: inserted source/method line before section end; anchor=Wasser folgt Einzugsgebieten, nicht Eigentumsgrenzen
+OK CONSEQUENCE_KICKER: inserted source/method line before section end; anchor=Der Hebel verschiebt sich von der Fläche zur Kette
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

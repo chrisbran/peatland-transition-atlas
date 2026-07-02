@@ -1,0 +1,26 @@
+# B169 live sticky zoom integration prototype audit
+
+Date: 2026-07-01
+
+Existing B169 block before patch: False
+Existing B169 CSS before patch: False
+Existing B169 JS ref before patch: False
+Central-story script still referenced before patch: True
+OK found central map section by anchor: Moore sind räumlich konzentriert und klimatisch wirksam
+OK inserted B169 script reference before </body>
+
+Post-patch checks:
+- B169 block present: True
+- B169 script ref present: True
+- B169 JS exists: True
+- B169 CSS present: True
+- state `global-peat` in index: True
+- state `global-pressure-total` in index: True
+- state `global-pressure-density` in index: True
+- state `europe-bridge` in index: True
+- state `germany-extent` in index: True
+- state `germany-types` in index: True
+- state `baden-wuerttemberg` in index: True
+- state `oberschwaben-handoff` in index: True
+
+Result: LIVE PROTOTYPE PATCH WRITTEN. Run B103b and B58 before commit.

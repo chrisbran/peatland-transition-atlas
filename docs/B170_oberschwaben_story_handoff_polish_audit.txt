@@ -1,0 +1,21 @@
+# B170 Oberschwaben story handoff polish audit
+
+Date: 2026-07-01
+
+B169 marker present before patch: True
+Old B170 bridge present before patch: False
+Old B170 CSS present before patch: False
+OK inserted B170 bridge after B169 sticky zoom
+OK found Oberschwaben section by anchor `Oberschwaben: wo Moorschutz auf Landwirtschaft trifft` with score 9
+OK added b170-oberschwaben-detail class
+Oberschwaben title replacements: 1
+OK inserted B170 Oberschwaben lead after first heading
+Duplicate intro paragraphs removed: 0
+
+Post-patch checks:
+- B170 bridge present: True
+- B170 Oberschwaben lead present: True
+- B170 CSS present: True
+- phrase `Jetzt kommt die heutige Nutzung dazu` present: True
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

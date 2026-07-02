@@ -1,0 +1,15 @@
+# B144 Oberschwaben map export manifest audit
+
+Date: 2026-06-30
+
+Result: DOCUMENTATION ONLY. No public page files changed.
+
+Created/updated:
+
+- docs/B144_oberschwaben_map_export_manifest.md
+- docs/B144_oberschwaben_map_export_readme.md
+- docs/B144_oberschwaben_felt_pilot_export_manifest.csv
+- docs/B144_oberschwaben_map_export_manifest_audit.txt
+- tasks/done.md
+
+Raw GIS/export files are intentionally not created and not staged.

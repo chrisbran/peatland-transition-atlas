@@ -1,0 +1,25 @@
+# B167b restore BW layer to sticky zoom audit
+
+Date: 2026-07-01
+
+Old prototype existed: True
+Old prototype had bw state: False
+Old prototype had bw asset: False
+
+Step audit:
+- global-peat: base=public/maps/global/global_gpm2_peat_extent.png exists=True; overlay=public/maps/global/global_country_borders.png exists=True
+- global-pressure-total: base=public/maps/global/global_hotspots_total.png exists=True; overlay=public/maps/global/global_country_borders.png exists=True
+- global-pressure-density: base=public/maps/global/global_hotspots_density.png exists=True; overlay=public/maps/global/global_country_borders.png exists=True
+- europe-bridge: base=public/maps/europe/europe_gpm2_peat_extent.png exists=True; overlay=public/maps/europe/europe_country_borders.png exists=True
+- germany-extent: base=public/maps/germany/germany_thuenen_moor_extent.png exists=True; overlay=public/maps/germany/germany_admin_context.png exists=True
+- germany-types: base=public/maps/germany/germany_thuenen_moor_types.png exists=True; overlay=public/maps/germany/germany_admin_context.png exists=True
+- baden-wuerttemberg: base=public/maps/bw/bw_bk50_moor_extent.png exists=True; overlay=public/maps/bw/bw_admin_context.png exists=True
+- oberschwaben-handoff: base=public/maps/oberschwaben/oberschwaben_agriculture_moor_intersection.png exists=True; overlay=public/maps/oberschwaben/oberschwaben_admin_context.png exists=True
+
+Post-patch checks:
+- baden-wuerttemberg state in prototype: True
+- bw_bk50_moor_extent.png in prototype: True
+- bw_admin_context.png in prototype: True
+- oberschwaben-handoff still present: True
+
+Result: PROTOTYPE PATCH WRITTEN. No public page files changed.

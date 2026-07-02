@@ -1,0 +1,8 @@
+# B130c central value-chain sources audit
+
+Date: 2026-06-30
+
+Old B130c source block present before patch: False
+OK inserted value-chain source rows before table row: Eigene Auswertungen und Kartenexporte
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

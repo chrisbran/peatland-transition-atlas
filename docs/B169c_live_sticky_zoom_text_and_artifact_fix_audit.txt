@@ -1,0 +1,22 @@
+# B169c live sticky zoom text and artifact fix audit
+
+Date: 2026-07-01
+
+Global annotation text count before: 1
+b169-annotation class count before: 2
+Oberschwaben overlay before: True
+
+Block replacement audit:
+- Old B169 block length: 7093
+- Old annotation figcaption present: True
+- Old oberschwaben overlay present: True
+- New B169 block length: 6725
+
+Post-patch checks:
+- B169 block present: True
+- b169-annotation removed from index: True
+- oberschwaben overlay removed from index: True
+- CSS translateX removed for active step: True
+- JS annotation handling removed: True
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

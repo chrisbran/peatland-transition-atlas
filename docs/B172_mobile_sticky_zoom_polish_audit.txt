@@ -1,0 +1,19 @@
+# B172 mobile sticky zoom polish audit
+
+Date: 2026-07-01
+
+Old B172 CSS present before patch: False
+Prerequisite checks:
+- B169 live sticky zoom block: True
+- B169 live sticky zoom JS: True
+- Mobile media query exists: True
+- B169 layout class exists: True
+- B169 stage wrapper exists: True
+
+Post-patch checks:
+- B172 CSS present: True
+- mobile order stage first present: True
+- mobile order steps second present: True
+- sticky mobile stage present: True
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

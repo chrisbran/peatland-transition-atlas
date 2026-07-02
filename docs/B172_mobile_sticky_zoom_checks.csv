@@ -1,0 +1,6 @@
+check,file,required,found,pattern
+B169 live sticky zoom block,index.html,True,True,<!-- B169_LIVE_STICKY_ZOOM_START -->
+B169 live sticky zoom JS,index.html,True,True,src/b169_live_sticky_zoom.js
+Mobile media query exists,src/styles.css,True,True,@media (max-width: 860px)
+B169 layout class exists,src/styles.css,True,True,.b169-layout
+B169 stage wrapper exists,src/styles.css,True,True,.b169-stage-wrap

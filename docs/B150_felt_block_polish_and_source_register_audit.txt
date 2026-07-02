@@ -1,0 +1,11 @@
+# B150 Felt block polish and source register audit
+
+Date: 2026-07-01
+
+B149 block found: True
+iframe preserved from B149 block: True
+share URL preserved from B149 block: True
+OK replaced B149 block with polished wording
+OK inserted B150 source register before end of section containing anchor: Quellen, Methodik und Nutzungsrechte
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

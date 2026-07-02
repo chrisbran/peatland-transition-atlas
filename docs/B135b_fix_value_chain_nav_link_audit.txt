@@ -1,0 +1,10 @@
+# B135b fix value-chain nav link audit
+
+Date: 2026-06-30
+
+Whole-document occurrences of 'Wertschöpfung' before patch: 18
+Nav href '#wertschoepfung' present before patch: False
+OK target id already present: wertschoepfung
+OK inserted nav link 'Wertschöpfung' before 'Prüfpfade' inside <nav>
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

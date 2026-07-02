@@ -1,6 +1,11 @@
 # B58 - Visual QA and Commit Check
 
-Date: 2026-06-29
+Date: 2026-07-02
+
+## 0. Active map-story mode
+
+- OK active mode: B169 live sticky zoom
+- INFO legacy central map-story source files may still exist in `src/`, but they are not treated as active wiring unless referenced by `index.html`.
 
 ## 1. Required map PNGs
 
@@ -13,23 +18,29 @@ Date: 2026-06-29
 - OK `public/maps/germany/germany_admin_context.png` — PNG header RGBA (1600, 900) bit_depth=8
 - OK `public/maps/germany/germany_thuenen_moor_extent.png` — PNG header RGBA (1600, 900) bit_depth=8
 - OK `public/maps/germany/germany_thuenen_moor_types.png` — PNG header RGBA (1600, 900) bit_depth=8
+- OK `public/maps/bw/bw_bk50_moor_extent.png` — PNG header RGBA (1600, 900) bit_depth=8
+- OK `public/maps/bw/bw_admin_context.png` — PNG header RGBA (1600, 900) bit_depth=8
+- OK `public/maps/oberschwaben/oberschwaben_landkreise_moor_nolabel.png` — PNG header RGBA (1600, 900) bit_depth=8
 
-## 2. Required central-story scripts
+## 2. Required map-story scripts
 
-- OK `src/central_global_map_story.js`
-- OK `src/central_layer_state_hardener.js`
-- OK `src/central_step_state_bridge.js`
-- OK `src/central_stage_label_fix.js`
+- OK `src/b169_live_sticky_zoom.js`
+- OK no legacy central map-story scripts referenced by `index.html`
 
 ## 3. index.html reference check
 
 - OK no broken local script/image references detected
 
-## 4. Central story states
+## 4. Active map-story states
 
-- OK `europe-peat`
-- OK `germany-thuenen-extent`
-- OK `germany-thuenen-types`
+- OK `global-peat` — index=True, scripts=True
+- OK `global-pressure-total` — index=True, scripts=True
+- OK `global-pressure-density` — index=True, scripts=True
+- OK `europe-bridge` — index=True, scripts=True
+- OK `germany-extent` — index=True, scripts=True
+- OK `germany-types` — index=True, scripts=True
+- OK `baden-wuerttemberg` — index=True, scripts=True
+- OK `oberschwaben-handoff` — index=True, scripts=True
 
 ## 5. Unwanted reference check
 
@@ -39,17 +50,25 @@ Date: 2026-06-29
 
 ## 6. Git status / commit hygiene
 
-- OK no obvious raw-data/GIS files visible in git status
+- OK no obvious staged raw-data/GIS files visible in git status
 
 ### Current changed/untracked files
 
 - ` M docs/B103b_corrected_visible_text_audit.md`
-- ` M docs/B58_visual_qa_and_commit_check.md`
-- ` M index.html`
+- ` M docs/B145_felt_embed_candidate_template.txt`
+- `A  docs/B170_oberschwaben_handoff_changes.csv`
+- `A  docs/B170_oberschwaben_story_handoff_polish.md`
+- `A  docs/B170_oberschwaben_story_handoff_polish_audit.txt`
+- `A  docs/B171_prune_obsolete_central_map_scripts.md`
+- `A  docs/B171_prune_obsolete_central_map_scripts_audit.txt`
+- `A  docs/B171_pruned_script_refs.csv`
+- `MM docs/B58_visual_qa_and_commit_check.md`
+- `M  index.html`
+- `A  scripts/170_oberschwaben_story_handoff_polish.py`
+- `A  scripts/171_prune_obsolete_central_map_scripts.py`
 - ` M scripts/58_visual_qa_and_commit_check.py`
-- ` M src/central_global_map_story.js`
-- ` M src/styles.css`
-- ` M tasks/done.md`
+- `MM src/styles.css`
+- `MM tasks/done.md`
 - `?? _backup_before_b116_public_page_hardening/`
 - `?? _backup_before_b117_cartographic_hardening/`
 - `?? _backup_before_b117c_oberschwaben_palette_restyle/`
@@ -86,26 +105,46 @@ Date: 2026-06-29
 - `?? docs/B123c_central_controller_audit.csv`
 - `?? docs/B123c_central_scrolly_single_controller.md`
 - `?? docs/B123c_central_scrolly_single_controller_audit.txt`
-- `?? docs/B125_source_and_method_audit.txt`
-- `?? docs/B125_source_and_method_register.md`
-- `?? docs/B125b_data_rights_and_attribution_audit.txt`
-- `?? docs/B125b_data_rights_and_attribution_register.md`
-- `?? docs/B125c_compact_source_method_rights.md`
-- `?? docs/B125c_compact_source_method_rights_audit.txt`
-- `?? docs/B126_publication_wording_polish.md`
-- `?? docs/B126_publication_wording_polish_audit.txt`
-- `?? docs/B127_publication_frame_and_sequence_tightening.md`
-- `?? docs/B127_publication_frame_and_sequence_tightening_audit.txt`
-- `?? docs/B127b_remove_bw_boundary_only_step.md`
-- `?? docs/B127b_remove_bw_boundary_only_step_audit.txt`
-- `?? docs/B127c_unwire_removed_boundary_states.md`
-- `?? docs/B127c_unwire_removed_boundary_states_audit.txt`
-- `?? docs/B127d_patch_b58_retired_boundary_states.md`
-- `?? docs/B127d_patch_b58_retired_boundary_states_audit.txt`
-- `?? docs/B127e_finalize_b58_retired_state_audit.md`
-- `?? docs/B127e_finalize_b58_retired_state_audit.txt`
-- `?? docs/B127f_final_microcopy_cleanup.md`
-- `?? docs/B127f_final_microcopy_cleanup_audit.txt`
+- `?? docs/B130_engpass_climax_graphic.md`
+- `?? docs/B130_engpass_climax_graphic_audit.txt`
+- `?? docs/B130b_option_a_replace_engpass.md`
+- `?? docs/B130b_option_a_replace_engpass_audit.txt`
+- `?? docs/B131_scope_box_and_positioning.md`
+- `?? docs/B131_scope_box_and_positioning_audit.txt`
+- `?? docs/B131b_scope_box_soften.md`
+- `?? docs/B131b_scope_box_soften_audit.txt`
+- `?? docs/B141_cartographic_annotation_audit.md`
+- `?? docs/B141_cartographic_annotation_audit.txt`
+- `?? docs/B141_cartographic_annotation_candidates.csv`
+- `?? docs/B157_area_balance_method_note_hardening.md`
+- `?? docs/B157_area_balance_method_note_hardening_audit.txt`
+- `?? docs/B162_value_chain_climax_component_inventory.csv`
+- `?? docs/B162_value_chain_climax_storyboard.md`
+- `?? docs/B162_value_chain_visual_climax_redesign.md`
+- `?? docs/B162_value_chain_visual_climax_redesign_audit.txt`
+- `?? docs/B162_value_chain_visual_design_spec.md`
+- `?? docs/B165_flagship_sticky_zoom_prototype.md`
+- `?? docs/B165_flagship_sticky_zoom_prototype_audit.txt`
+- `?? docs/B165_flagship_sticky_zoom_prototype_inventory.csv`
+- `?? docs/B165b_flagship_sticky_zoom_boundary_overlays.md`
+- `?? docs/B165b_flagship_sticky_zoom_boundary_overlays_audit.txt`
+- `?? docs/B169_live_sticky_zoom_integration_prototype.md`
+- `?? docs/B169_live_sticky_zoom_integration_prototype_audit.txt`
+- `?? docs/B169_live_sticky_zoom_state_matrix.csv`
+- `?? docs/B169c_live_sticky_zoom_state_matrix.csv`
+- `?? docs/B169c_live_sticky_zoom_text_and_artifact_fix.md`
+- `?? docs/B169c_live_sticky_zoom_text_and_artifact_fix_audit.txt`
+- `?? docs/B169d_oberschwaben_boundary_candidates.csv`
+- `?? docs/B169d_oberschwaben_subtle_boundary_overlay.md`
+- `?? docs/B169d_oberschwaben_subtle_boundary_overlay_audit.txt`
+- `?? docs/B172_mobile_sticky_zoom_checks.csv`
+- `?? docs/B172_mobile_sticky_zoom_polish.md`
+- `?? docs/B172_mobile_sticky_zoom_polish_audit.txt`
+- `?? docs/B173_publication_gate_audit.csv`
+- `?? docs/B173_publication_gate_audit.md`
+- `?? docs/B173_publication_gate_audit_run.txt`
+- `?? docs/B174_patch_b58_for_b169_live_zoom.md`
+- `?? docs/B174_patch_b58_for_b169_live_zoom_audit.txt`
 - `?? docs/B76_static_design_dummies.md`
 - `?? docs/B95d_fiona_wfs_direct_access_probe.md`
 - `?? docs/B95f_fiona_wfs_post_namespace_probe.md`
@@ -124,8 +163,10 @@ Date: 2026-06-29
 - `?? docs/B98c_oberschwaben_public_safe_summary.csv`
 - `?? docs/B99_reposition_transformations_after_oberschwaben.md`
 - `?? docs/B99_transformations_public_readiness_audit.txt`
+- `?? docs/prototypes/B162_value_chain_climax_wireframe.svg`
 - `?? public/maps/bw/README.md`
 - `?? public/maps/europe/README.md`
+- `?? public/maps/oberschwaben/oberschwaben_landkreise_moor_nolabel.png`
 - `?? scripts/04_add_hotspot_ranking_layer.py`
 - `?? scripts/103_public_text_audit_only.py`
 - `?? scripts/103b_corrected_visible_text_audit.py`
@@ -134,17 +175,23 @@ Date: 2026-06-29
 - `?? scripts/123a_central_scrolly_caption_cleanup_and_state_audit.py`
 - `?? scripts/123b_runtime_caption_source_cleanup_and_scrolly_state_probe.py`
 - `?? scripts/123c_central_scrolly_single_controller_stabilization.py`
-- `?? scripts/125_source_and_method_register.py`
-- `?? scripts/125b_data_rights_and_attribution_register.py`
-- `?? scripts/125c_compact_source_method_rights.py`
-- `?? scripts/126_publication_wording_polish.py`
-- `?? scripts/127_publication_frame_and_sequence_tightening.py`
-- `?? scripts/127b_remove_bw_boundary_only_step.py`
-- `?? scripts/127c_unwire_removed_boundary_states.py`
-- `?? scripts/127d_patch_b58_retired_boundary_states.py`
-- `?? scripts/127e_finalize_b58_retired_state_audit.py`
-- `?? scripts/127f_final_microcopy_cleanup.py`
+- `?? scripts/130_engpass_climax_graphic.py`
+- `?? scripts/130b_option_a_replace_engpass.py`
+- `?? scripts/131_scope_box_and_positioning.py`
+- `?? scripts/131b_scope_box_soften.py`
+- `?? scripts/141_cartographic_annotation_audit.py`
+- `?? scripts/157_area_balance_method_note_hardening.py`
+- `?? scripts/162_value_chain_visual_climax_redesign.py`
+- `?? scripts/165_flagship_sticky_zoom_prototype.py`
+- `?? scripts/165b_flagship_sticky_zoom_boundary_overlays.py`
+- `?? scripts/169_live_sticky_zoom_integration_prototype.py`
+- `?? scripts/169b_live_sticky_zoom_annotation_and_spacing_fix.py`
+- `?? scripts/169c_live_sticky_zoom_text_and_artifact_fix.py`
+- `?? scripts/169d_oberschwaben_subtle_boundary_overlay.py`
 - `?? scripts/16_create_peat_soils_source_inventory.py`
+- `?? scripts/172_mobile_sticky_zoom_polish.py`
+- `?? scripts/173_publication_gate_audit.py`
+- `?? scripts/174_patch_b58_for_b169_live_zoom.py`
 - `?? scripts/17_prepare_bk50_moor_layer_workflow.py`
 - `?? scripts/18_build_bk50_moor_web_layer_from_geojson.py`
 - `?? scripts/22_prepare_germany_organic_soils_workflow.py`
@@ -188,32 +235,11 @@ Date: 2026-06-29
 
 - `index.html`
 - `src/styles.css`
-- `src/central_global_map_story.js`
-- `src/central_layer_state_hardener.js`
-- `src/central_step_state_bridge.js`
-- `src/central_stage_label_fix.js`
-- `public/maps/germany/README.md`
-- `public/maps/germany/germany_admin_context.png`
-- `public/maps/germany/germany_thuenen_moor_extent.png`
-- `public/maps/germany/germany_thuenen_moor_types.png`
-- `scripts/48_prepare_germany_thuenen_frame_workflow.py`
-- `scripts/50_fix_germany_state_binding.py`
-- `scripts/51_add_hard_central_layer_controller.py`
-- `scripts/52_add_central_step_state_bridge.py`
-- `scripts/54_restore_original_thuenen_legend_colors.py`
-- `scripts/55_fix_thuenen_legend_inline_swatches.py`
-- `scripts/56_fix_central_stage_label.py`
-- `scripts/57_refine_germany_thuenen_story_text.py`
-- `docs/B19c_germany_thuenen_frame_workflow.md`
-- `docs/B50_fix_germany_state_binding.md`
-- `docs/B51_hard_central_map_layer_controller.md`
-- `docs/B52_central_step_state_bridge.md`
-- `docs/B54_restore_original_thuenen_legend_colors.md`
-- `docs/B55_fix_thuenen_legend_inline_swatches.md`
-- `docs/B56_fix_central_map_stage_label.md`
-- `docs/B57_refine_germany_thuenen_story_text.md`
+- `src/b169_live_sticky_zoom.js`
+- `public/maps/oberschwaben/oberschwaben_landkreise_moor_nolabel.png`
+- `scripts/58_visual_qa_and_commit_check.py`
 - `tasks/done.md`
 
 ## Result
 
-PASS — no blocking QA issues detected.
+PASS

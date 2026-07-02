@@ -1,0 +1,8 @@
+path,exists,size_bytes,score,source
+public/maps/oberschwaben/oberschwaben_admin_context.png,True,47880,25,preferred
+public/maps/oberschwaben/oberschwaben_landkreis_boundaries.png,False,,39,preferred
+public/maps/oberschwaben/oberschwaben_county_boundaries.png,False,,39,preferred
+public/maps/oberschwaben/oberschwaben_admin_context_no_labels.png,False,,39,preferred
+public/maps/oberschwaben/oberschwaben_admin_boundaries.png,False,,39,preferred
+public/maps/oberschwaben/oberschwaben_boundary_outline.png,False,,32,preferred
+public/maps/oberschwaben/oberschwaben_boundaries.png,False,,32,preferred

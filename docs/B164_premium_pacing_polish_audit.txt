@@ -1,0 +1,30 @@
+# B164 premium pacing polish audit
+
+Date: 2026-07-01
+
+Approx. word count before: 3001
+Approx. word count after: 2947
+Approx. delta: 54
+
+Replacement results:
+- hero_subtitle: 1
+- hero_card_3_title: 1
+- hero_card_3_body: 1
+- core_argument_heading: 1
+- core_argument_body: 1
+- regional_heading: 1
+- regional_intro: 1
+- paths_heading: 1
+- paths_lead: 1
+- oberschwaben_heading_punctuation: 1
+- felt_heading: 1
+- felt_lead: 1
+- felt_to_balance_transition: 1
+- area_balance_heading: 1
+- area_balance_body: 1
+- negotiation_heading: 1
+- value_context_heading: 1
+
+OK: All planned pacing replacements matched at least once.
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

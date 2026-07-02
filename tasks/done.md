@@ -746,3 +746,59 @@
 - Removed the redundant standalone `Werte gerundet.` line after the Oberschwaben FIONA/BK50/GISCO data-basis note.
 - Kept the earlier explicit note: `Hinweis: Stilllegung und unklare Zuweisungen sind separat ausgewiesen; Werte gerundet.`
 - Did not modify maps, CSS, data or scrolly logic.
+- B130 engpass climax graphic: added a responsive V2 bottleneck graphic ahead of the value-chain reference block (2026-06-30).
+- B130b option A replacement: replaced the earlier engpass graphic with a more cautious schematic scorecard and explicit source box (2026-06-30).
+- B130c central value-chain sources: added IPCC, VIP and Brandenburg value-chain references to the central source table (2026-06-30).
+- B131 scope box and positioning: added a concise V2 scope box near the page top (2026-06-30).
+- B131b scope box soften: replaced the dominant scope box with a compact inline scope note (2026-06-30).
+- B131c scope note contrast: strengthened contrast and subtle separation for the compact scope note (2026-06-30).
+- B132 statement titles: converted selected section and graphic headings from topic labels to claim-based titles (2026-06-30).
+- B133 method in brief: added a compact method transparency block and clarified footer positioning (2026-06-30).
+- B135 value-chain navigation anchor: added a navigation target for the value-chain/Engpass section (2026-06-30).
+- B135b fix value-chain nav link: inserted the missing Wertschöpfung navigation link using nav-only detection (2026-06-30).
+- B136 frame mismatch bridge: added a compact narrative bridge from climate framing to local implementation (2026-06-30).
+- B136b frame bridge alignment: centered the frame-mismatch bridge and added safe horizontal gutters (2026-06-30).
+- B137 consequence kicker: added a concise end-of-story consequence block before sources (2026-06-30).
+- B138 soil-context precision note: clarified that the regional BK50 layer is a Moor-/Feuchtbodenkontext, not a parcel-level peat-soil proof or suitability map (2026-06-30).
+- B139 water governance block: added a planning-level section on parcels, farms and hydrological units (2026-06-30).
+- B140 unified source lines: added compact source/method lines and method links for key V2 narrative and map blocks (2026-06-30).
+- B140b source lines reduce noise: removed source lines from editorial narrative blocks and softened remaining map source lines (2026-06-30).
+- B141 cartographic annotation audit: inventoried candidate sections for map/graphic annotation follow-up (2026-06-30).
+- B143 map upgrade decision: documented a separate Oberschwaben map-quality pilot instead of replacing the current map stack immediately (2026-06-30).
+- B144 Oberschwaben map export manifest: documented local export files, QA gates and no-commit rules for the Felt pilot (2026-06-30).
+- B145 Felt pilot build sheet: documented the manual Felt styling, annotation, tooltip and embed-candidate workflow for the Oberschwaben map pilot (2026-06-30).
+- B146 Felt pilot candidate documentation: documented the successful Felt pilot, embed availability, mobile check and integration gates (2026-07-01).
+- B147 Felt embed isolated prototype: created a docs-only iframe prototype for local desktop/mobile testing before touching the public page (2026-07-01).
+- B148 Felt integration strategy and responsive gate: documented desktop-embed/mobile-fallback strategy before any live integration (2026-07-01).
+- B149 Felt desktop embed/mobile fallback prototype: added a reversible page-level prototype with desktop iframe and mobile external-link fallback (2026-07-01).
+- B150 Felt block polish and source register: polished public wording for the Felt map block and added a central source-register note (2026-07-01).
+- B151 Felt external-service notice: added a compact third-party map-service notice below the Felt map block (2026-07-01).
+- B152 Oberschwaben/Felt integration consolidation: reframed the Felt block as an interactive deepening of the static Oberschwaben map and reduced redundancy (2026-07-01).
+- B153 map role and redundancy audit: inventoried map/graphic roles after Felt integration and documented static-vs-interactive Oberschwaben roles (2026-07-01).
+- B154 Oberschwaben flow spacing polish: added a quiet transition and spacing polish between static map, Felt deepening and area balance (2026-07-01).
+- B155 publication gate register: documented remaining publication gates for Felt, legal notices, source/method status and project disclaimer (2026-07-01).
+- B156 visible Umsetzung wording polish: reduced repeated visible uses of Umsetzung with more specific wording (2026-07-01).
+- B157 area-balance method-note hardening: clarified that the ~19,900 ha balance comes from the original GIS intersection, not the simplified Felt geometry (2026-07-01).
+- B158 reduce notice density: reduced visible warning/notice clutter by removing the Felt Lesart box, shortening the external-service notice and collapsing the area-balance method note (2026-07-01).
+- B159 editorial elevation audit: compared the current V2 page against premium editorial/data-feature standards and created a cut/rebuild plan (2026-07-01).
+- B160 narrative cut plan: created a five-act cut matrix and main-flow outline for premium editorial pacing (2026-07-01).
+- B161 flagship sticky zoom concept: designed the premium one-earned-sticky map zoom concept from global relevance to Oberschwaben proof point (2026-07-01).
+- B162 value-chain visual climax redesign: designed the premium visual climax for the bottleneck behind the field and created an SVG wireframe prototype (2026-07-01).
+- B162c keep and polish value-chain scorecard: kept the existing dark scorecard direction, sharpened the title and shortened the lead instead of replacing it with the B162 wireframe (2026-07-01).
+- B163 main-flow caveat reduction: consolidated repeated visible caveats while keeping core scope and method boundaries intact (2026-07-01).
+- B164 premium pacing polish: tightened section titles, leads and transitions for a more editorial main-flow rhythm (2026-07-01).
+- B165 flagship sticky zoom prototype: created an isolated prototype for the global-to-regional sticky zoom using existing map assets (2026-07-01).
+- B165b flagship sticky zoom boundary overlays: added political-boundary overlays to the isolated sticky-zoom prototype (2026-07-01).
+- B166 full layer inventory and sticky state matrix: inventoried map assets and documented the complete target state matrix, including density map and regional boundary-pairing issues (2026-07-01).
+- B167 sticky zoom state repair: repaired the isolated sticky-zoom prototype by splitting total/density pressure states and using a matching regional boundary overlay (2026-07-01).
+- B167b restore BW layer to sticky zoom: added a dedicated Baden-Württemberg layer between Germany and Oberschwaben in the isolated sticky-zoom prototype (2026-07-01).
+- B168 sticky zoom integration plan: planned how to integrate the repaired B167b sticky-zoom logic into the existing dark central map story without replacing the stable main page structure (2026-07-01).
+- B169 live sticky zoom integration prototype: integrated the repaired eight-step sticky-zoom state matrix into the live page using the existing dark map-story direction (2026-07-01).
+- B169c live sticky zoom text and artifact fix: removed the separate map annotation rail, eliminated lateral step jumps, and disabled the Oberschwaben admin overlay that made county labels look like artifacts (2026-07-01).
+- B169d Oberschwaben subtle boundary overlay: restored a subdued regional boundary overlay in the live sticky zoom to keep orientation without making Landkreis labels dominate (2026-07-01).
+- B169e replace Oberschwaben zoom map: replaced the live sticky zoom Oberschwaben handoff map with the new no-label Landkreis + Moor-/Feuchtbodenkontext asset and removed overlay hacks (2026-07-01).
+- B170 Oberschwaben story handoff polish: added a compact transition from the live sticky zoom to the Oberschwaben detail section and reframed the section as the step where current use is added to the regional soil context (2026-07-01).
+- B171 prune obsolete central map scripts: removed old central map-story script references after the B169 live sticky zoom replaced that section (2026-07-01).
+- B172 mobile sticky zoom polish: adjusted the live sticky zoom mobile layout so the map remains visually connected to the numbered scroll steps (2026-07-01).
+- B173 publication gate audit: checked release-critical gates such as scope disclaimer, methods, sources, Impressum/Datenschutz, Felt notice, institutional disclaimer, area reference, and absence of raw GIS paths (2026-07-02).
+- B174 patch B58 for B169 live zoom: updated the visual QA script so the new B169 live sticky-zoom state matrix is treated as active and legacy central-map states no longer fail after replacement (2026-07-02).

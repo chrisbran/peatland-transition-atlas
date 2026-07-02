@@ -1,0 +1,11 @@
+# B158 reduce notice density audit
+
+Date: 2026-07-01
+
+Removed B152 Felt Lesart box matches: 1 (found 1)
+Compacted B151 external-service notice matches: 1 (found 1)
+Collapsed B157 area method note matches: 1 (found 1)
+
+OK: Expected notice-density reductions were applied.
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

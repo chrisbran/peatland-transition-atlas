@@ -1,0 +1,10 @@
+# B133 method in brief audit
+
+Date: 2026-06-30
+
+Old B133 HTML block present before patch: False
+Old B133 CSS block present before patch: False
+OK inserted method-in-brief before heading containing: Methodische Hinweise
+OK footer wording replaced 1x
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

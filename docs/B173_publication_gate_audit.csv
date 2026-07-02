@@ -1,0 +1,13 @@
+gate,label,required,inverse,status,matches,why
+scope_disclaimer,Fachlicher Demonstrator / keine Eignungskarte,True,False,PASS,Fachlicher\s+Demonstrator; keine\s+Eignungskarte; keine\s+Standortprüfung,The page must not be read as a parcel-level suitability or decision map.
+method_short,Methode in Kürze,True,False,PASS,Methode\s+in\s+Kürze; methode-in-kuerze,Method transparency must be available from map/source lines.
+sources_section,Quellen / source section,True,False,PASS,>\s*Quellen\s*<; Quellenbasis; Datenbasis,Publication needs visible source trail.
+impressum,Impressum,True,False,PASS,Impressum; impressum,Public German-facing page should have an Impressum path before wider release.
+datenschutz,Datenschutz,True,False,PASS,Datenschutz; datenschutz,"Public page, especially with an external Felt element/link, needs a privacy path."
+external_felt_notice,Felt / external provider notice,True,False,PASS,Felt; externe\s+Karte,External map integration or link needs visible provider/privacy context.
+hohenheim_disclaimer,Hohenheim / SOLAMO-BW disclaimer,True,False,PASS,Hohenheim; SOLAMO; SOLAMO-BW; Universität\s+Hohenheim,Institutional context and disclaimer/freigabe gate must be explicit before publication.
+oberschwaben_area_reference,"Oberschwaben area reference around 19,900 ha",True,False,PASS,"19[.,]\s*900\s*ha",The central Oberschwaben area figure should be visible and sourceable.
+source_line_under_graphics,Source/method lines under graphics,True,False,PASS,Datenbasis:; Quelle:; Quellenbasis; kartografische\s+Aufbereitung,Graphics should carry compact source/method lines.
+no_raw_gis_refs,No raw local GIS/data paths in index,True,True,PASS,,Public page must not expose local/raw GIS paths.
+b169_live_zoom,B169 live sticky zoom present,True,False,PASS,B169_LIVE_STICKY_ZOOM_START; b169_live_sticky_zoom\.js; oberschwaben_landkreise_moor_nolabel\.png,The new premium map sequence should be active after B169e/B172.
+value_chain_scorecard,Value-chain scorecard present,True,False,PASS,Bis\s+zur\s+Ernte\s+ist\s+vieles\s+anschlussfähig; Danach\s+wird\s+es\s+eng; Wertschöpfung; Scorecard,The value-chain climax is one of the core V2 narrative moments.

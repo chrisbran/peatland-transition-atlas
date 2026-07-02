@@ -1,0 +1,9 @@
+# B136 frame mismatch bridge audit
+
+Date: 2026-06-30
+
+Old B136 HTML block present before patch: False
+Old B136 CSS block present before patch: False
+OK inserted B136 frame bridge before section containing anchor: Moore sind räumlich konzentriert und klimatisch wirksam
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

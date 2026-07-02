@@ -1,0 +1,17 @@
+# B169e replace Oberschwaben zoom map audit
+
+Date: 2026-07-01
+
+- Old B169 block length: 6786
+- Old used intersection asset: False
+- Old used new no-label asset: True
+- Old oberschwaben overlay present: False
+
+Post-patch checks:
+- new Oberschwaben no-label asset in index: True
+- old Oberschwaben intersection asset absent from B169 block: True
+- oberschwaben overlay absent from B169 block: True
+- B169d CSS removed: True
+- JS label updated: True
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.

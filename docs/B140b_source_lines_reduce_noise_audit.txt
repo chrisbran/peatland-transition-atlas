@@ -1,0 +1,14 @@
+# B140b source lines reduce noise audit
+
+Date: 2026-06-30
+
+B140 note blocks before patch: 5
+Removed FRAME_BRIDGE: 1
+Removed WATER_GOVERNANCE: 1
+Removed CONSEQUENCE_KICKER: 1
+Kept GLOBAL_CONTEXT present after removal step: True
+Kept REGIONAL_CONTEXT present after removal step: True
+OK replaced B140 CSS with quieter, centered source-line styling
+B140 note blocks after patch: 2
+
+Result: PATCH WRITTEN. Run B103b and B58 before commit.
