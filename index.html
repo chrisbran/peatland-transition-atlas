@@ -218,6 +218,16 @@
     Datenbasis: Global Peatland Map 2.0, FAOSTAT, Thünen-Kulisse organischer Böden, BK50 Baden-Württemberg und eigene kartografische Aufbereitung.
     <a href="#methode-in-kuerze">Methode in Kürze</a>.
   </p>
+<!-- B178_SCALE_CHANGE_NOTE_START -->
+<p class="b178-scale-change-note">
+  <strong>Hinweis zum Maßstabswechsel:</strong> Die Deutschlandkarte zeigt die Thünen-Kulisse
+  organischer Böden – den klimarelevanten Kern. Die Oberschwaben-Karte nutzt den
+  breiteren BK50-Moor-/Feuchtbodenkontext als Prüfkulisse. Beide sind bewusst
+  verschieden: Der organische Boden ist die Klimazielgröße, der Feuchtbodenkontext
+  markiert zusätzlich, wo genauer hingesehen werden muss.
+</p>
+<!-- /B178_SCALE_CHANGE_NOTE_END -->
+
 </section>
 <!-- /B169_LIVE_STICKY_ZOOM_END -->
 <!-- B170_OBERSCHWABEN_HANDOFF_START -->
@@ -442,55 +452,11 @@
  <article class="moore-ob-step moore-ob-step--boundary" data-ob-step data-state="method-boundary">
  <p class="moore-ob-step-label">5 / Einordnung</p>
  <h3>Einordnung statt Entscheidung</h3>
- <p>
- Die Karte ordnet die Überschneidung von landwirtschaftlicher Nutzung und Moor-/Feuchtbodenkontext räumlich ein. Entscheidungen brauchen eine Standortprüfung.
- </p>
+ 
  </article>
  </div>
  </div>
 </section>
-
-<!-- B149_FELT_DESKTOP_EMBED_MOBILE_FALLBACK_START -->
-<section class="b149-felt-pilot b152-felt-integration" id="oberschwaben-felt-pilot" aria-labelledby="b149-felt-title" data-publication-state="candidate">
-  <div class="section-inner">
-    <div class="b149-felt-pilot__inner">
-      <p class="eyebrow">Interaktive Vertiefung</p>
-      <h2 id="b149-felt-title">Erst die Lage. Dann die Details.</h2>
-      <p class="b149-felt-pilot__lead">
-        Die statische Karte ordnet ein. Die interaktive Version vertieft: Sie zeigt dieselbe Schnittmenge als scharfe Vektorkarte mit Landkreisorientierung.
-      </p>
-<div class="b149-felt-pilot__desktop" aria-label="Interaktive Felt-Karte für Oberschwaben">
-        <div class="b149-felt-pilot__frame">
-          <iframe allowfullscreen loading="lazy" class="b149-felt-iframe" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Oberschwaben-Moor-Feuchtbodenkontext-Pilot-VaKZdOYFRw9B2SzH1sdk39AD?loc=47.9524%2C9.489%2C10z&legend=1&cooperativeGestures=1&link=1&geolocation=0&zoomControls=1&scaleBar=1" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-        </div>
-      </div>
-
-      <div class="b149-felt-pilot__mobile" role="note" aria-label="Mobile Alternative zur interaktiven Karte">
-        <p class="b149-felt-pilot__mobile-title">Interaktive Vertiefung separat öffnen</p>
-        <p>
-          Auf kleinen Bildschirmen ist die externe Kartenansicht in einem eigenen Tab
-          besser lesbar. Die Kernaussage bleibt: Die Schnittmenge markiert Prüfbedarf,
-          nicht automatisch Eignung.
-        </p>
-        <a class="b149-felt-pilot__button" href="https://felt.com/map/Oberschwaben-Moor-Feuchtbodenkontext-Pilot-VaKZdOYFRw9B2SzH1sdk39AD?share=1&amp;amp;amp;loc=47.9524,9.489,10z" target="_blank" rel="noopener noreferrer">
-          Interaktive Karte öffnen
-        </a>
-      </div>
-
-      <p class="b149-felt-pilot__source">
-        Interaktive Karte: Felt; Basiskarte/Daten: OpenStreetMap. Eigene GIS-Aufbereitung
-        aus landwirtschaftlicher Nutzung und BK50-Moor-/Feuchtbodenkontext, via mapshaper
-        für den Webeinsatz vereinfacht. Methodische Grenzen siehe <a href="#methode-in-kuerze">Methode in Kürze</a>.
-      </p>
-      <!-- B151_FELT_EXTERNAL_SERVICE_NOTICE_START -->
-<p class="b151-felt-external-notice">
-  Externer Kartendienst: Felt/OpenStreetMap. Details stehen im Quellen- und Methodenbereich.
-</p>
-<!-- /B151_FELT_EXTERNAL_SERVICE_NOTICE_END -->
-    </div>
-  </div>
-</section>
-<!-- /B149_FELT_DESKTOP_EMBED_MOBILE_FALLBACK_END -->
 
 <!-- B154_OBERSCHWABEN_FLOW_TRANSITION_START -->
 <div class="b154-oberschwaben-flow-transition" role="note" aria-label="Übergang von interaktiver Karte zur Flächenbilanz">
@@ -505,19 +471,42 @@
 <!-- B96_OBERSCHWABEN_SCROLLY_END -->
 
 <!-- B101_OBERSCHWABEN_KEY_FIGURES_START -->
-<section id="oberschwaben-key-figures" class="section moore-ob-keyfigures" aria-labelledby="oberschwaben-keyfigures-title">
+<!-- B176_LOCAL_CARTOGRAPHIC_DEPTH_START -->
+<!-- B180B_RESTORED_LOCAL_CARTOGRAPHIC_DEPTH_START -->
+<section class="b176-local-cartographic-depth b180b-restored-local-cartographic-depth" aria-labelledby="b180b-local-cartographic-depth-title">
+  <div class="b176-local-cartographic-depth__inner">
+    <p class="b176-local-cartographic-depth__kicker">Kartografische Vertiefung</p>
+    <h2 id="b180b-local-cartographic-depth-title">Die Detailkarte bleibt lokal</h2>
+    <p class="b176-local-cartographic-depth__lead">
+      Die Detailkarte bleibt bewusst eine lokale, redaktionelle Grafik: Sie zeigt
+      die Schnittmenge aus heutiger Nutzung und Moor-/Feuchtbodenkontext, ohne beim
+      Seitenaufruf einen externen Kartendienst zu laden.
+    </p>
+    <p class="b176-local-cartographic-depth__source">
+      Eigene GIS-Aufbereitung aus FIONA 2024, BK50-Moor-/Feuchtbodenkontext und GISCO NUTS 2024;
+      lokale Darstellung als redaktionelle Kartengrafik. Methodische Grenzen siehe <a href="#methode">Methode in Kürze</a>.
+    </p>
+  </div>
+</section>
+<!-- /B180B_RESTORED_LOCAL_CARTOGRAPHIC_DEPTH_END -->
+<!-- /B176_LOCAL_CARTOGRAPHIC_DEPTH_END -->
+<section id="oberschwaben-key-figures" class="section moore-ob-keyfigures b178-area-balance" aria-labelledby="oberschwaben-keyfigures-title">
  <div class="moore-ob-keyfigures-inner">
  <div class="moore-ob-keyfigures-copy">
  <p class="eyebrow">Flächenbilanz</p>
- <h2 id="oberschwaben-keyfigures-title">Die Schnittmenge zeigt die Größenordnung</h2>
- <p>
- Die Verschneidung zeigt, dass die Überschneidung von landwirtschaftlicher Nutzung und Moor-/Feuchtbodenkontext auch in der Bilanz relevant wird.
- </p>
+ <h2 id="oberschwaben-keyfigures-title">Vier von fünf Hektar sind Grünland — und das verändert die Transformationsfrage</h2>
+ <p class="b178-balance-lead">Rund 82&nbsp;% der Schnittmenge ist Grünland. Das ist die vergleichsweise anschlussfähige Seite der Bilanz: Grünland lässt sich eher an höhere Wasserstände anpassen als Ackerland. Die eigentliche Härte steckt in den rund 16&nbsp;% Ackerland und in kleineren Sonderfällen, wo Nutzung und nasser Boden schwerer zusammengehen.</p>
  </div>
 
  <div class="moore-ob-keyfigures-grid" aria-label="Gerundete Kennzahlen zur Oberschwaben-Schnittmenge">
  <article class="moore-ob-keyfigure moore-ob-keyfigure--primary">
  <span class="moore-ob-keyfigure-value">~19.900 ha</span>
+<!-- B178_AREA_CAVEAT_START -->
+<span class="b178-area-caveat">
+  Oberschwaben, BK50-basiert. Orientierungsgröße, keine Flächeneignung –
+  nicht als exakte oder entscheidungsreife Zahl zitieren.
+</span>
+<!-- /B178_AREA_CAVEAT_END -->
  <span class="moore-ob-keyfigure-label">landwirtschaftliche Nutzung im Moor-/Feuchtbodenkontext</span>
  </article>
 
@@ -549,12 +538,7 @@
 <!-- B157_AREA_BALANCE_METHOD_NOTE_START -->
 <details class="b157-area-method-note">
   <summary>Berechnungsgrundlage der Hektarbilanz</summary>
-  <p>
-    Die Hektarbilanz basiert auf der ursprünglichen GIS-Verschneidung von FIONA 2024,
-    BK50-Moor-/Feuchtbodenkontext und GISCO NUTS 2024. Die für Felt/mapshaper
-    vereinfachte Web-Geometrie wurde nicht für die Flächenberechnung verwendet.
-  </p>
-</details>
+  </details>
 <!-- /B157_AREA_BALANCE_METHOD_NOTE_END -->
 </p>
 <p class="moore-source-line moore-ob-keyfigures-source">
@@ -636,84 +620,56 @@
 
 <!-- B102_USAGE_VALUE_CHAIN_MATRIX_START -->
 <!-- B130_ENGPASS_CLIMAX_START -->
-<section class="section section-dark b130-engpass-climax b130-option-a b162c-scorecard-polish" aria-labelledby="b130-option-a-title" id="wertschoepfung">
-  <div class="section-inner">
-    <p class="eyebrow">Schematische Einordnung</p>
-    <h2 id="b130-option-a-title">Bis zur Ernte ist vieles anschlussfähig.<br>Danach wird es eng.</h2>
-    <p class="b162c-scorecard-lead">Die Grafik verdichtet die zentrale Engstelle: Auf dem Feld und bis zur Ernte gibt es erprobte Ansätze. Dahinter entscheiden Logistik, Verarbeitung, Standards und Abnahme darüber, ob nasse Nutzung skalierbar wird.</p>
+<section class="section section-dark b130-engpass-climax b130-option-a b162c-scorecard-polish b179b-clean-engpass-section" aria-labelledby="b130-option-a-title" id="wertschoepfung">
+  <div class="b179b-engpass-inner">
+    <p class="b179b-engpass-kicker">Schematische Einordnung</p>
+    <h2>Bis zur Ernte ist vieles anschlussfähig. Danach wird es eng.</h2>
+    <p class="b179b-engpass-lead">Auf dem Feld und bis zur Ernte gibt es erprobte Ansätze. Dahinter entscheiden Logistik, Verarbeitung, Standards und Abnahme darüber, ob nasse Nutzung skalierbar wird.</p>
+    <!-- B179_BOTTLENECK_GRAPHIC_START -->
+<figure class="b179-bottleneck-figure" aria-labelledby="b179-bottleneck-title b179-bottleneck-desc">
+  <div class="b179-bottleneck-scroll" role="group" aria-label="Wertschöpfungskette als Flaschenhals">
+    <svg class="b179-bottleneck-svg" viewBox="0 0 820 392" role="img" aria-labelledby="b179-bottleneck-title b179-bottleneck-desc">
+      <title id="b179-bottleneck-title">Wertschöpfungskette als Flaschenhals</title>
+      <desc id="b179-bottleneck-desc">Ein Band beginnt bei Anbau und Ernte breit und grün. Ab Aufbereitung verengt es sich über Verarbeitung, Abnahme, Standards und Verwendung und färbt sich von Ocker zu Terrakotta. Die Verjüngung markiert die Engstelle der Kette.</desc>
 
-    <div class="b130-scorecard" role="img" aria-label="Schematische qualitative Einordnung der Wertschöpfungskette von Anbau bis Verwendung. Anbau und Ernte sind als anschlussfähig markiert, Aufbereitung und Logistik als im Aufbau, die nachgelagerten Stufen Verarbeitung, Abnahme, Standards und Verwendung als Bereiche mit erhöhtem Entwicklungsbedarf.">
-      <div class="b130-scorecard__grid">
-        <article class="b130-cell b130-cell--good">
-          <div class="b130-cell__status" aria-hidden="true"></div>
-          <h3>Anbau</h3>
-          <p class="b130-cell__meta">anschlussfähig</p>
-        </article>
+      <g class="b179-bottleneck-band" stroke="#f7f4ec" stroke-width="2">
+        <polygon points="70,70 167,73 167,267 70,270" fill="#8a9d54"></polygon>
+        <polygon points="167,73 264,80 264,260 167,267" fill="#8a9d54"></polygon>
+        <polygon points="264,80 361,106 361,234 264,260" fill="#cf9a3c"></polygon>
+        <polygon points="361,106 458,128 458,212 361,234" fill="#bd5438"></polygon>
+        <polygon points="458,128 555,140 555,200 458,212" fill="#bd5438"></polygon>
+        <polygon points="555,140 652,146 652,194 555,200" fill="#bd5438"></polygon>
+        <polygon points="652,146 749,150 749,190 652,194" fill="#bd5438"></polygon>
+      </g>
 
-        <article class="b130-cell b130-cell--good">
-          <div class="b130-cell__status" aria-hidden="true"></div>
-          <h3>Ernte</h3>
-          <p class="b130-cell__meta">anschlussfähig</p>
-        </article>
+      <g class="b179-bottleneck-marker">
+        <line x1="361" y1="58" x2="361" y2="286" stroke="#9c4a30" stroke-width="1" stroke-dasharray="3 4"></line>
+        <text x="361" y="48" text-anchor="middle" font-size="13" font-weight="700" fill="#9c4a30">ab hier: Engstelle</text>
+      </g>
 
-        <article class="b130-cell b130-cell--build">
-          <div class="b130-cell__status" aria-hidden="true"></div>
-          <h3>Aufbereitung &amp; Logistik</h3>
-          <p class="b130-cell__meta">im Aufbau</p>
-          <p class="b130-cell__note">Technik, Lagerung und Logistik sind teils vorhanden, müssen aber standort- und produktbezogen weiterentwickelt werden.</p>
-        </article>
+      <g class="b179-bottleneck-labels" font-size="13" fill="#55524a" text-anchor="middle" font-weight="550">
+        <text x="118" y="300">Anbau</text>
+        <text x="215" y="300">Ernte</text>
+        <text x="312" y="300">Aufbereitung</text>
+        <text x="409" y="300">Verarbeitung</text>
+        <text x="506" y="300">Abnahme</text>
+        <text x="603" y="300">Standards</text>
+        <text x="700" y="300">Verwendung</text>
+      </g>
 
-        <article class="b130-cell b130-cell--gap">
-          <div class="b130-cell__status" aria-hidden="true"></div>
-          <h3>Verarbeitung</h3>
-          <p class="b130-cell__meta">erhöhter Entwicklungsbedarf</p>
-          <p class="b130-cell__note">Für viele Pfade fehlen noch ausreichend Anlagen, Routinen oder belastbare Verarbeitungsoptionen.</p>
-        </article>
-
-        <article class="b130-cell b130-cell--gap">
-          <div class="b130-cell__status" aria-hidden="true"></div>
-          <h3>Abnahme &amp; Markt</h3>
-          <p class="b130-cell__meta">erhöhter Entwicklungsbedarf</p>
-          <p class="b130-cell__note">Nachfrage, verlässliche Abnehmer und Marktzugang sind oft noch die eigentliche Engstelle.</p>
-        </article>
-
-        <article class="b130-cell b130-cell--gap">
-          <div class="b130-cell__status" aria-hidden="true"></div>
-          <h3>Standards &amp; Zertifizierung</h3>
-          <p class="b130-cell__meta">erhöhter Entwicklungsbedarf</p>
-          <p class="b130-cell__note">Standards, Nachweise und Marktrahmen sind für viele Produkte noch nicht breit etabliert.</p>
-        </article>
-
-        <article class="b130-cell b130-cell--gap">
-          <div class="b130-cell__status" aria-hidden="true"></div>
-          <h3>Verwendung</h3>
-          <p class="b130-cell__meta">erhöhter Entwicklungsbedarf</p>
-          <p class="b130-cell__note">Kleinere Mengen, fehlende Skalierung oder unsichere Absatzwege begrenzen die Marktfähigkeit.</p>
-        </article>
-      </div>
-
-      <div class="b130-legend" aria-label="Legende zur qualitativen Einordnung">
-        <span class="b130-legend__item"><span class="b130-legend__swatch b130-legend__swatch--good" aria-hidden="true"></span>anschlussfähig</span>
-        <span class="b130-legend__item"><span class="b130-legend__swatch b130-legend__swatch--build" aria-hidden="true"></span>im Aufbau</span>
-        <span class="b130-legend__item"><span class="b130-legend__swatch b130-legend__swatch--gap" aria-hidden="true"></span>erhöhter Entwicklungsbedarf</span>
-      </div>
-    </div>
-
-    <p class="b130-engpass-note">
-      Qualitative Synthese, keine Messgrafik und keine formale Bewertung einzelner Produkte oder Regionen.
-    </p>
-
-    <aside class="b130-source-box" aria-labelledby="b130-source-box-title">
-      <h3 id="b130-source-box-title">Quellenbasis dieser schematischen Einordnung</h3>
-      <ul>
-        <li><strong>IPCC:</strong> <em>2013 Supplement to the 2006 IPCC Guidelines for National Greenhouse Gas Inventories: Wetlands</em> (insbesondere Chapter 2 und Chapter 3) – Grundlage für die Klima- und Wasserstandslogik organischer Böden.</li>
-        <li><strong>Universität Greifswald / VIP:</strong> <em>Endbericht „Vorpommern Initiative Paludikultur“</em> – belegt die Bedeutung von Nachfrage, Absatzmöglichkeiten, Produktentwicklung und Zertifizierung für neue Wertschöpfungsketten.</li>
-        <li><strong>MLUK Brandenburg:</strong> <em>Brandenburgs Moore klimafreundlich bewirtschaften</em> – zeigt Verwertungsoptionen, Pilotmaßstab, Marktbezug und den weiteren Entwicklungsbedarf von Verwertungsketten.</li>
-      </ul>
-      <p>
-        Die konkrete Darstellung ist eine redaktionelle Synthese aus diesen Quellen und dient der Orientierung. <a href="#methode-in-kuerze">Methode in Kürze</a>.
-      </p>
-    </aside>
+      <g class="b179-bottleneck-legend" font-size="13" fill="#55524a">
+        <rect x="70" y="340" width="13" height="13" rx="2" fill="#8a9d54"></rect>
+        <text x="90" y="351">anschlussfähig</text>
+        <rect x="228" y="340" width="13" height="13" rx="2" fill="#cf9a3c"></rect>
+        <text x="248" y="351">im Aufbau</text>
+        <rect x="345" y="340" width="13" height="13" rx="2" fill="#bd5438"></rect>
+        <text x="365" y="351">erhöhter Entwicklungsbedarf</text>
+      </g>
+    </svg>
+  </div>
+  <figcaption class="b179-bottleneck-source">Schematische Synthese aus IPCC Wetlands Supplement (2014), VIP Paludikultur-Endbericht und MLUK Brandenburg: Brandenburgs Moore klimafreundlich bewirtschaften. Qualitative Einordnung, keine Messgrafik.</figcaption>
+</figure>
+<!-- /B179_BOTTLENECK_GRAPHIC_END -->
   </div>
 </section>
 <!-- /B130_ENGPASS_CLIMAX_END -->
@@ -869,36 +825,27 @@
 </section>
 <!-- /B139_WATER_GOVERNANCE_END -->
 
-<section class="b137-consequence-kicker" aria-labelledby="b137-consequence-title">
-  <div class="section-inner">
-    <div class="b137-consequence-kicker__inner">
-      <p class="eyebrow">Konsequenz</p>
-      <h2 id="b137-consequence-title">Der Hebel verschiebt sich von der Fläche zur Kette</h2>
-      <p class="b137-consequence-kicker__lead">
-        Wiedervernässung bleibt der ökologische Kern. Für die Praxis reicht die Flächenperspektive aber nicht aus: Entscheidend wird, ob Wasser, Nutzung, Verarbeitung und Nachfrage als
-        zusammenhängendes System funktionieren.
-      </p>
-
-      <div class="b137-consequence-kicker__grid" aria-label="Drei Konsequenzen aus der räumlichen Einordnung">
-        <article>
-          <span>01</span>
-          <h3>Mehr Wiedervernässung ist notwendig, aber nicht ausreichend</h3>
-          <p>Ohne passende Nutzung und Abnahme entstehen aus nassen Flächen noch keine tragfähigen Pfade.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Planung muss hydrologische Einheiten ernst nehmen</h3>
-          <p>Parzellen, Betriebe und Wasserhaushalt passen selten deckungsgleich zusammen.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Wertschöpfung muss vor der Skalierung mitgedacht werden</h3>
-          <p>Verarbeitung, Standards, Mengen und Nachfrage entscheiden, welche Optionen regional anschlussfähig werden.</p>
-        </article>
-      </div>
-    </div>
+<!-- B181_CLOSING_COUNTERPOINT_START -->
+<section class="b181-closing-counterpoint" aria-labelledby="b181-closing-counterpoint-title">
+  <div class="b181-closing-counterpoint__inner">
+    <p class="b181-closing-counterpoint__kicker">Einordnung</p>
+    <h2 id="b181-closing-counterpoint-title">Der Engpass ist real — aber nicht überall derselbe</h2>
+    <p class="b181-closing-counterpoint__lead">
+      Die Kettenperspektive erklärt, warum nasse Nutzung nicht allein auf der Fläche
+      entschieden wird. Sie ist aber kein Argument gegen Wiedervernässung selbst:
+      Wo Klimaschutz das primäre Ziel ist, geringe Nutzungsintensität vorliegt oder
+      verlässliche Förderung Betriebe absichert, kann Wiedervernässung auch ohne
+      Produktmarkt sinnvoll sein.
+    </p>
+    <p class="b181-closing-counterpoint__close">
+      Der Engpass liegt vor allem dort, wo nasse Nutzung skaliert, Produkte abgesetzt
+      und Betriebe dauerhaft eingebunden werden sollen. Er ist ein Argument gegen
+      naive Skalierung — nicht gegen Moorbodenschutz.
+    </p>
   </div>
 </section>
+<!-- /B181_CLOSING_COUNTERPOINT_END -->
+
 <!-- /B137_CONSEQUENCE_KICKER_END -->
 
 <section id="quellen-methodik" class="b125-source-register b125-source-register--compact" aria-labelledby="b125SourceTitle">
@@ -1037,18 +984,6 @@
     </div>
   </details>
 
-<!-- B150_FELT_SOURCE_REGISTER_START -->
-<div class="b150-felt-source-register" role="note" aria-label="Quellenhinweis zur interaktiven Oberschwaben-Karte">
-  <h3>Interaktive Oberschwaben-Karte</h3>
-  <p>
-    Felt-Embed mit Basiskarte und Hintergrunddaten von OpenStreetMap. Eigene GIS-Aufbereitung
-    aus FIONA 2024, BK50-Moor-/Feuchtbodenkontext und GISCO/NUTS-Landkreisgrenzen;
-    vereinfachter GeoJSON-Export via mapshaper. Die Darstellung ist eine Orientierungskarte
-    für Prüfbedarf, keine hydrologische Modellierung und keine parzellenscharfe Eignungs-
-    oder Priorisierungskarte.
-  </p>
-</div>
-<!-- /B150_FELT_SOURCE_REGISTER_END -->
 </section>
 <!-- /B125_SOURCE_AND_METHOD_REGISTER -->
 

@@ -54,13 +54,54 @@ Date: 2026-07-02
 
 ### Current changed/untracked files
 
+- ` M docs/B58_visual_qa_and_commit_check.md`
+- ` M index.html`
+- ` M src/styles.css`
 - ` M tasks/done.md`
-- `?? docs/B175_post_publication_review_pass.md`
-- `?? docs/B175_post_publication_review_pass_audit.txt`
-- `?? docs/B175_publication_review_checklist.md`
-- `?? docs/B175_review_candidates.csv`
-- `?? docs/B175_section_inventory.csv`
-- `?? scripts/175_post_publication_review_pass.py`
+- `?? docs/B176_remove_felt_from_public_page.md`
+- `?? docs/B176_remove_felt_from_public_page_audit.txt`
+- `?? docs/B176_removed_felt_fragments.csv`
+- `?? docs/B177_external_links_inventory.csv`
+- `?? docs/B177_external_request_audit.md`
+- `?? docs/B177_external_request_audit_run.txt`
+- `?? docs/B177_loaded_external_resources.csv`
+- `?? docs/B177_provider_token_scan.csv`
+- `?? docs/B177b_remove_residual_felt_tokens.md`
+- `?? docs/B177b_remove_residual_felt_tokens_audit.txt`
+- `?? docs/B177b_removed_residual_felt_tokens.csv`
+- `?? docs/B178_copy_hardening_changes.csv`
+- `?? docs/B178_scale_change_area_balance_copy_hardening.md`
+- `?? docs/B178_scale_change_area_balance_copy_hardening_audit.txt`
+- `?? docs/B179_engpass_replacement_changes.csv`
+- `?? docs/B179_replace_engpass_scorecard_with_bottleneck_graphic.md`
+- `?? docs/B179_replace_engpass_scorecard_with_bottleneck_graphic_audit.txt`
+- `?? docs/B179b_clean_engpass_bottleneck_section.md`
+- `?? docs/B179b_clean_engpass_bottleneck_section_audit.txt`
+- `?? docs/B179b_removed_engpass_remnants.csv`
+- `?? docs/B180_redundancy_disclaimer_diet.md`
+- `?? docs/B180_redundancy_disclaimer_diet_audit.txt`
+- `?? docs/B180_removed_redundant_disclaimers.csv`
+- `?? docs/B180b_disclaimer_and_marker_changes.csv`
+- `?? docs/B180b_restore_b176_and_tighten_disclaimer_diet.md`
+- `?? docs/B180b_restore_b176_and_tighten_disclaimer_diet_audit.txt`
+- `?? docs/B181_closing_counterpoint_and_schlussbogen.md`
+- `?? docs/B181_closing_counterpoint_and_schlussbogen_audit.txt`
+- `?? docs/B181_closing_counterpoint_changes.csv`
+- `?? docs/B182_final_qa_and_v2_1_0_release.md`
+- `?? docs/B182_final_qa_and_v2_1_0_release_audit.txt`
+- `?? docs/B182_release_signals.csv`
+- `?? docs/B182_v2_1_0_release_checklist.md`
+- `?? docs/B182_v2_1_0_release_notes.md`
+- `?? scripts/176_remove_felt_from_public_page.py`
+- `?? scripts/177_external_request_audit.py`
+- `?? scripts/177b_remove_residual_felt_tokens.py`
+- `?? scripts/178_scale_change_area_balance_copy_hardening.py`
+- `?? scripts/179_replace_engpass_scorecard_with_bottleneck_graphic.py`
+- `?? scripts/179b_clean_engpass_bottleneck_section.py`
+- `?? scripts/180_redundancy_disclaimer_diet.py`
+- `?? scripts/180b_restore_b176_and_tighten_disclaimer_diet.py`
+- `?? scripts/181_closing_counterpoint_and_schlussbogen.py`
+- `?? scripts/182_final_qa_and_v2_1_0_release.py`
 
 ## 7. Suggested add list for this milestone
 

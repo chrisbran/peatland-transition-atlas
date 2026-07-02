@@ -1,0 +1,25 @@
+# B180 redundancy / disclaimer diet audit
+
+Date: 2026-07-02
+
+Post-patch checks:
+- Removed block count: 1
+- Scope box still present: True
+- Method section still present: True
+- B178 area caveat still present: True
+- B179 bottleneck graphic still present: True
+- B176 local cartographic depth still present: False
+- No Felt token in index: True
+- No iframe in index: True
+- B169 live sticky zoom still present: True
+
+Counts:
+- keine_eignungskarte: 3 -> 3
+- keine_priorisierung: 3 -> 3
+- keine_hydrologie: 3 -> 3
+- keine_betrieb: 3 -> 3
+- keine_flaecheneignung: 2 -> 2
+- standortpruefung: 3 -> 2
+- entscheidungsreif: 1 -> 1
+
+Result: PATCH WRITTEN. Run B177, B103b and B58 before continuing.

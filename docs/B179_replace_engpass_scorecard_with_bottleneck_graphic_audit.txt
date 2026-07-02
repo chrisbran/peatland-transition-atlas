@@ -1,0 +1,26 @@
+# B179 replace Engpass scorecard with bottleneck graphic audit
+
+Date: 2026-07-02
+
+Post-patch checks:
+- B179 marker present exactly once: True
+- B179 figure present: True
+- B179 SVG present: True
+- Heading present: True
+- Lead present: True
+- Source line present: True
+- No animation/replay terms in index: False
+- No Felt token in index: True
+- No iframe in index: True
+- B176 local cartographic depth still present: False
+- B178 scale-change note still present: True
+- B169 live sticky zoom still present: True
+- B179 CSS present exactly once: True
+
+Changes:
+- heading: normalized — Bis zur Ernte ist vieles anschlussfähig. Danach wird es eng.
+- lead: replaced — Auf dem Feld und bis zur Ernte gibt es erprobte Ansätze. Dahinter entscheiden Logistik, Verarbeitung, Standards und Abnahme darüber, ob nasse Nutzung skalierbar wird.
+- graphic: replaced_class_block — Replaced existing scorecard/value-chain class block.
+- section: patched — Engpass section patched with static bottleneck graphic.
+
+Result: PATCH WRITTEN. Run B177, B103b and B58 before commit.

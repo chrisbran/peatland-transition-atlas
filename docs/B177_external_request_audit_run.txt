@@ -1,0 +1,32 @@
+# B177 external request audit run
+
+Date: 2026-07-02
+
+Git:
+- Branch: main
+- HEAD: 5bdc26a (HEAD -> main, origin/main, origin/HEAD) Add post-publication V2 review audit
+
+Counts:
+- Active loaded external resources: 0
+- All loaded external URL literals/resources: 2
+- Passive external links: 16
+- Provider token rows: 6
+- External map/tile resource references: 0
+
+Checks:
+- B176 marker present: True
+- iframe in index: False
+- Felt hits in index: 0
+- OSM/OpenStreetMap hits in index: 0
+
+Result: PASS
+
+Failures: none
+
+Created/updated:
+- docs/B177_external_request_audit.md
+- docs/B177_external_request_audit_run.txt
+- docs/B177_loaded_external_resources.csv
+- docs/B177_external_links_inventory.csv
+- docs/B177_provider_token_scan.csv
+- tasks/done.md

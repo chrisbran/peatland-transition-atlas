@@ -803,3 +803,13 @@
 - B173 publication gate audit: checked release-critical gates such as scope disclaimer, methods, sources, Impressum/Datenschutz, Felt notice, institutional disclaimer, area reference, and absence of raw GIS paths (2026-07-02).
 - B174 patch B58 for B169 live zoom: updated the visual QA script so the new B169 live sticky-zoom state matrix is treated as active and legacy central-map states no longer fail after replacement (2026-07-02).
 - B175 post-publication review pass: created an audit-only inventory, review-candidate list and manual QA checklist for the newly published V2 page (2026-07-02).
+- B176 remove Felt from public page: removed the external Felt/OpenStreetMap iframe/link path and replaced it with a local cartographic-depth note while keeping the regional static map untouched (2026-07-02).
+- B177 external request audit: verified that the public page no longer loads Felt/OpenStreetMap or other external map viewers on page view and inventoried passive outbound links (2026-07-02).
+- B177b remove residual Felt tokens: removed leftover Felt source-register/CSS tokens after the public iframe removal so the external-request audit can pass cleanly (2026-07-02).
+- B178 scale-change and area-balance copy hardening: added an explicit Thünen-vs-BK50 scale-change note, made the 19,900-ha figure screenshot-safe, and reframed the area balance around the 82% Grünland / 16% Ackerland interpretation (2026-07-02).
+- B179 replace Engpass scorecard with bottleneck graphic: replaced the old value-chain scorecard with a static editorial bottleneck SVG, no animation and no external assets (2026-07-02).
+- B179b clean Engpass bottleneck section: removed old scorecard remnants below the new static bottleneck graphic and rebuilt the section as a single visual climax (2026-07-02).
+- B180 redundancy/disclaimer diet: reduced repeated defensive caveats outside the scope and method sections while keeping the main scope box, B178 area caveat and method section intact (2026-07-02).
+- B180b restore B176 marker and tighten disclaimer diet: restored the local-cartography note required by the external-request audit and reduced formulaic disclaimer repetitions outside protected scope/method blocks (2026-07-02).
+- B181 closing counterpoint and Schlussbogen: replaced the repeated final Fläche-zu-Kette conclusion with a compact counterpoint that limits the chain thesis without weakening the Moorbodenschutz argument (2026-07-02).
+- B182 final QA and v2.1.0 release prep: documented the post-Felt V2.1 release state, final QA checklist, release notes and tag instructions (2026-07-02).

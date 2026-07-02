@@ -1,0 +1,21 @@
+# B181 closing counterpoint and Schlussbogen audit
+
+Date: 2026-07-02
+
+Post-patch checks:
+- B181 marker present exactly once: True
+- New closing heading present: True
+- Old closing heading absent: True
+- Counterpoint text present: True
+- Naive scaling line present: True
+- B176 local cartographic depth still present: True
+- B178 area caveat still present: True
+- B179 bottleneck graphic still present: True
+- No Felt token in index: True
+- No iframe in index: True
+- B181 CSS present exactly once: True
+
+Changes:
+- closing_section: replaced — Replaced section containing `Der Hebel verschiebt sich von der Fläche zur Kette`. Old visible text length: 731.
+
+Result: PATCH WRITTEN. Run B177, B103b and B58 before final QA.

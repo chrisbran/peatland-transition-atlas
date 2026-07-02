@@ -1,0 +1,29 @@
+# B182 final QA and v2.1.0 release audit
+
+Date: 2026-07-02
+
+No public page files changed.
+
+Git:
+- Branch: main
+- HEAD: 5bdc26a (HEAD -> main, origin/main, origin/HEAD) Add post-publication V2 review audit
+- Tags at HEAD: —
+
+Counts:
+- PASS: 15
+- WARN: 0
+- FAIL: 0
+- Visible word count approx.: 2776
+
+Core checks:
+- B169 live sticky zoom: True
+- B176 local cartographic depth: True
+- B178 scale-change note: True
+- B178 area caveat: True
+- B179 bottleneck graphic: True
+- B181 closing counterpoint: True
+- No Felt token: True
+- No OpenStreetMap token: True
+- No iframe: True
+
+Result: PASS

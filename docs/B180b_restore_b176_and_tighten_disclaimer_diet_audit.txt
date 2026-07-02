@@ -1,0 +1,36 @@
+# B180b restore B176 marker and tighten disclaimer diet audit
+
+Date: 2026-07-02
+
+Post-patch checks:
+- B176 marker present: True
+- B180b restored local cartographic depth present: True
+- B176 local text present: True
+- B178 area caveat still present: True
+- B179 bottleneck graphic still present: True
+- Scope box still present: True
+- Method section still present: True
+- No Felt token in index: True
+- No OpenStreetMap token in index: True
+- No iframe in index: True
+- CSS marker present exactly once: True
+
+Counts:
+- keine_eignungskarte: 3 -> 3
+- keine_priorisierung: 3 -> 3
+- keine_hydrologie: 3 -> 3
+- keine_betrieb: 3 -> 3
+- standortpruefung: 2 -> 2
+
+Changes:
+- b176_marker: restored — Inserted compact local cartographic-depth section immediately before area balance.
+- long_cluster_und: no_extra_occurrences — No unprotected occurrences beyond keep limit 2.
+- long_cluster_commas: no_extra_occurrences — No unprotected occurrences beyond keep limit 2.
+- short_eignung_priorisierung_cluster: no_extra_occurrences — No unprotected occurrences beyond keep limit 2.
+- term_keine_eignungskarte: no_extra_occurrences — No unprotected occurrences beyond keep limit 2.
+- term_keine_priorisierung: no_extra_occurrences — No unprotected occurrences beyond keep limit 2.
+- term_keine_hydrologie: no_extra_occurrences — No unprotected occurrences beyond keep limit 2.
+- term_keine_betrieb: no_extra_occurrences — No unprotected occurrences beyond keep limit 2.
+- term_standortpruefung: no_extra_occurrences — No unprotected occurrences beyond keep limit 2.
+
+Result: PATCH WRITTEN. Rerun B177, B103b and B58.

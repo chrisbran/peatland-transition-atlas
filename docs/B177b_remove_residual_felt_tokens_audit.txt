@@ -1,0 +1,16 @@
+# B177b remove residual Felt tokens audit
+
+Date: 2026-07-02
+
+Post-patch checks:
+- index felt count: 0
+- index openstreetmap/osm count: 0
+- index iframe count: 0
+- css felt count: 5
+- css openstreetmap/osm count: 0
+- css iframe count: 0
+- B176 marker still present: False
+- B169 live sticky zoom still present: True
+- regional static map phrase still present: True
+
+Result: PATCH WRITTEN. Rerun B177, B103b and B58.

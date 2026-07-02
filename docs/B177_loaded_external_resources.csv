@@ -1,0 +1,3 @@
+tag;attr;url;domain;rel;reason
+js-string-url;string;http://www.w3.org/2000/svg;www.w3.org;;"External URL literal in src/hotspot_base_layer.js; review whether it loads."
+js-string-url;string;http://www.w3.org/2000/svg;www.w3.org;;"External URL literal in src/hotspots.js; review whether it loads."

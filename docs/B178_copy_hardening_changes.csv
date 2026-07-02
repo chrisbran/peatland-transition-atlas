@@ -1,0 +1,7 @@
+change;status;detail
+scale_change_note;inserted;Inserted B178 scale-change note after B169 source line.
+balance_title;replaced;Vier von fünf Hektar sind Grünland — und das verändert die Transformationsfrage
+balance_lead;inserted_or_replaced;Added interpretive 82% Grünland / 16% Ackerland lead.
+area_caveat;inserted;Added screenshot-proof caveat directly to 19,900 ha number.
+old_generic_area_hint;not_found;Removed generic hint if superseded by B178 inline caveat.
+area_balance;patched;Located by anchor Die Schnittmenge zeigt die Größenordnung.

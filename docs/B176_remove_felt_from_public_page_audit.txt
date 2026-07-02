@@ -1,0 +1,21 @@
+# B176 remove Felt from public page audit
+
+Date: 2026-07-02
+
+Provider counts:
+- felt: 30 -> 5
+- openstreetmap: 3 -> 0
+- iframe: 1 -> 0
+- felt_url: 2 -> 0
+
+Post-patch checks:
+- B176 local replacement present: True
+- B176 CSS present: True
+- no Felt text remains in index: False
+- no OpenStreetMap text remains in index: True
+- no iframe remains in index: True
+- regional static map phrase still present: True
+- B169 live sticky zoom still present: True
+- Oberschwaben no-label map still present: True
+
+Result: PATCH WRITTEN. Run B103b, B58 and then B177 external-request audit.

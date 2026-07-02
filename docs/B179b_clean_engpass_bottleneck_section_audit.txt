@@ -1,0 +1,23 @@
+# B179b clean Engpass bottleneck section audit
+
+Date: 2026-07-02
+
+Post-patch checks:
+- B179 marker present exactly once: True
+- B179 figure present: True
+- B179b clean section class present: True
+- Visible text after B179 figure inside section is very short: True
+- No scorecard/reifegrad tokens after B179 figure: True
+- No animation/replay terms in index: False
+- No Felt token in index: True
+- No iframe in index: True
+- B176 local cartographic depth still present: False
+- B178 scale-change note still present: True
+- B169 live sticky zoom still present: True
+- B179b CSS present exactly once: True
+
+Changes:
+- old_remnants_after_figure: none — No visible text after B179 figure inside section.
+- b179_section: no_change — Section was not modified.
+
+Result: PATCH WRITTEN. Run B177, B103b and B58 before continuing.

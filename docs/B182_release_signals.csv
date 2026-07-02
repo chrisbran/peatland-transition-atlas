@@ -1,0 +1,16 @@
+category;label;mode;count;status;detail
+source_signal;B169 live sticky zoom;must;1;PASS;`B169_LIVE_STICKY_ZOOM_START` found
+source_signal;B176 local cartographic depth;must;1;PASS;`B176_LOCAL_CARTOGRAPHIC_DEPTH_START` found
+source_signal;B178 scale-change note;must;1;PASS;`B178_SCALE_CHANGE_NOTE_START` found
+source_signal;B178 area caveat;must;1;PASS;`B178_AREA_CAVEAT_START` found
+source_signal;B179 bottleneck graphic;must;1;PASS;`B179_BOTTLENECK_GRAPHIC_START` found
+source_signal;B181 closing counterpoint;must;1;PASS;`B181_CLOSING_COUNTERPOINT_START` found
+source_signal;No Felt token;must_not_lower;0;PASS;`felt` not found
+source_signal;No OpenStreetMap token;must_not_lower;0;PASS;`openstreetmap` not found
+source_signal;No iframe;must_not_lower;0;PASS;`<iframe` not found
+source_signal;Scope box;must;2;PASS;`Fachlicher Demonstrator` found
+source_signal;Method section;must;4;PASS;`Methode in Kürze` found
+source_signal;Sources section;should;1;PASS;`Datengrundlagen, Rechte und Quellenvermerke` found
+report;B177 external request audit;expected_pass;1;PASS;docs/B177_external_request_audit_run.txt matches expected PASS pattern
+report;B58 visual QA;expected_pass;1;PASS;docs/B58_visual_qa_and_commit_check.md matches expected PASS pattern
+report;B103b visible text audit;expected_pass;1;PASS;docs/B103b_corrected_visible_text_audit.md matches expected PASS pattern
