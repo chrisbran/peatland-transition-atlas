@@ -1,0 +1,15 @@
+type;severity;label;count;detail
+term_density;review;Warn-/Caveat-Dichte;19;High count can be fine, but review for repetition/caveat fatigue.
+term_density;review;Methode/Quelle-Dichte;22;High count can be fine, but review for repetition/caveat fatigue.
+term_density;review;Wertschöpfungs-Dichte;56;High count can be fine, but review for repetition/caveat fatigue.
+term_density;review;Transformations-Dichte;34;High count can be fine, but review for repetition/caveat fatigue.
+term_density;review;Oberschwaben-Dichte;16;High count can be fine, but review for repetition/caveat fatigue.
+release_signal;ok;v2_scope_box;1;Signal `Fachlicher Demonstrator` found.
+release_signal;ok;b169_live_zoom;1;Signal `B169_LIVE_STICKY_ZOOM_START` found.
+release_signal;ok;oberschwaben_no_label_map;1;Signal `oberschwaben_landkreise_moor_nolabel.png` found.
+release_signal;ok;b170_handoff;1;Signal `Bis hierher ging es um Maßstab und Bodenkontext` found.
+release_signal;ok;value_chain_climax;1;Signal `Bis zur Ernte ist vieles anschlussfähig` found.
+release_signal;ok;method_short;1;Signal `Methode in Kürze` found.
+release_signal;ok;sources_rights;1;Signal `Datengrundlagen, Rechte und Quellenvermerke` found.
+release_signal;ok;impressum_privacy;1;Signal `Impressum · Datenschutz` found.
+release_signal;ok;v2_public_tag_hint;1;Signal `Stand: Juni 2026` found.

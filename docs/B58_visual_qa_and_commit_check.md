@@ -54,7 +54,13 @@ Date: 2026-07-02
 
 ### Current changed/untracked files
 
-- ` M docs/B58_visual_qa_and_commit_check.md`
+- ` M tasks/done.md`
+- `?? docs/B175_post_publication_review_pass.md`
+- `?? docs/B175_post_publication_review_pass_audit.txt`
+- `?? docs/B175_publication_review_checklist.md`
+- `?? docs/B175_review_candidates.csv`
+- `?? docs/B175_section_inventory.csv`
+- `?? scripts/175_post_publication_review_pass.py`
 
 ## 7. Suggested add list for this milestone
 

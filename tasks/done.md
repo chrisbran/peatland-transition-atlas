@@ -802,3 +802,4 @@
 - B172 mobile sticky zoom polish: adjusted the live sticky zoom mobile layout so the map remains visually connected to the numbered scroll steps (2026-07-01).
 - B173 publication gate audit: checked release-critical gates such as scope disclaimer, methods, sources, Impressum/Datenschutz, Felt notice, institutional disclaimer, area reference, and absence of raw GIS paths (2026-07-02).
 - B174 patch B58 for B169 live zoom: updated the visual QA script so the new B169 live sticky-zoom state matrix is treated as active and legacy central-map states no longer fail after replacement (2026-07-02).
+- B175 post-publication review pass: created an audit-only inventory, review-candidate list and manual QA checklist for the newly published V2 page (2026-07-02).
